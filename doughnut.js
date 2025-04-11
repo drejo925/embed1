@@ -223,9 +223,10 @@ class Doughnut {
         this._innerPaths = null;
         this._outerPaths = null;
         this._selectedDimInfo = null;
+        this._hoveredDimInfo = null;
 
         this._canvas.addEventListener("mousemove", (e) => { this._checkMouse(e, false) });
-        this._canvas.addEventListener("click", (e) => { this._checkMouse(e, true) });
+        //this._canvas.addEventListener("click", (e) => { this._checkMouse(e, true) });
 
         // Call first draw
         this.update();
@@ -1124,7 +1125,7 @@ setLabelsVisible(visible) {
         //this._ctx.fillText("Doughnut", this._middleX, this._middleY + this._textSize)
 
         if (this._selectedDimInfo) {
-            this._ctx.strokeStyle = "blue";
+            this._ctx.strokeStyle = "#666666";
             this._ctx.stroke(this._selectedDimInfo.path)
         }
     }
