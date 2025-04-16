@@ -146,91 +146,103 @@ class Doughnut {
     // innerId: Optional id of paragraph to show inner dimensions list
     // outerId: Optional id of paragraph to show outer dimensions list
     // exportId: Optional id of textarea to show export CSV string
-    constructor(size, donutScale, textSize, canvasId, divId, infoId, innerId, outerId, exportId) {
-        this._donutSize = size;
-        this._textSize = textSize;
-        if (donutScale >= 0.5 && donutScale <= 1.5) {
-            this._donutScale = donutScale;
-        } else {
-            this._donutScale = 1.0;
-        }
-        this._canvasId = canvasId;
-        this._divId = divId;
-        this._infoId = infoId;
-        this._innerId = innerId;
-        this._outerId = outerId;
-        this._exportId = exportId;
+    // PASTE THIS ENTIRE CONSTRUCTOR INTO doughnut.js
+// REPLACING THE EXISTING constructor FUNCTION
 
-        //this._debug("size: " + this._donutSize + " / scale: " + this._donutScale);
-
-        // Fudge factor adjusetment for hard coded values to be scaled based on given size
-        let fudge = (size / 640); // og: 
-
-        // Size of doughnut dimensions
-        this._middleX = this._donutSize / 2;
-        this._middleY = this._donutSize / 2;
-        this._donutLineSize = Math.round(16 * fudge);  // For the outer/inner safe zone lines
-        this._donutMargin = Math.round(150 * fudge);   // The space around the whole doughnut diagram
-        this._section = (this._donutSize - this._donutMargin) / 8;
-
-        //changed to get rid of inner circle
-        this._inInner = 0;
-
-        this._donutRingSize = this._section * this._donutScale;
-        let overlapDonut = (this._donutRingSize - this._section) / 2;
-        //this._debug("section: " + this._section + " / donutRingSize: " + this._donutRingSize + " / overlap: " + overlapDonut);
-        
-        //this._outInner = this._inInner + this._section - overlapDonut; <- original code - i changed to keep spcae in inner circle
-        this._outInner = this._section + this._section - overlapDonut;
-
-        this._inDonut = this._outInner;
-        this._outDonut = this._inDonut + this._donutRingSize;
-        this._midDonut = this._inDonut + (this._outDonut - this._inDonut) / 2;
-        this._inOuter = this._outDonut;
-
-        //Modified to be 1.5 X bigger - took away
-        this._outOuter = this._inOuter + (this._section - overlapDonut) * 1.5;
-        this._extraDonut = this._outOuter + Math.round((25* 1.5) * fudge);   // For the complete overshoot
-
-        this._arcLineWidth = 2;
-        this._textInner = this._outInner + (this._section / 2);
-        this._textOuter = this._outOuter - this._textSize;
-        this._donutFrosting = "rgb(3,134,173)";
-        this._donutFilling = "rgb(126,208,247)";
-
-        // Dimension level values
-        this._minDonutLevelRadius = -100;
-        this._normalDonutLevelRadius = 100;
-        this._maxDonutLevelRadius = 150;    // For maximum overshoot! (change since I made bigger? 150* 1.5)
-
-        this._canvas = document.getElementById(canvasId);
-        this._ctx = this._canvas.getContext("2d");
-        // Set size of canvas & div to the required doughnut size
-        this._canvas.style.width = this._donutSize;
-        this._canvas.style.height = this._donutSize;
-        this._canvas.width = this._donutSize;
-        this._canvas.height = this._donutSize;
-        let div = document.getElementById(divId);
-        div.style.maxWidth = this._donutSize;
-
-        this._grdGlobal = this._ctx.createRadialGradient(this._middleX, this._middleY, this._outOuter, this._middleX, this._middleY, this._extraDonut);
-        this._grdGlobal.addColorStop(0, "rgb(251, 138, 152)");
-        this._grdGlobal.addColorStop(1, "white");
-
-        this._grd = this._grdGlobal;
-        this._innerDims = new _DoughnutDimensions("inner", this._normalDonutLevelRadius);
-        this._outerDims = new _DoughnutDimensions("outer", this._maxDonutLevelRadius);
-        this._innerPaths = null;
-        this._outerPaths = null;
-        this._selectedDimInfo = null;
-        this._hoveredDimInfo = null;
-
-        this._canvas.addEventListener("mousemove", (e) => { this._checkMouse(e, false) });
-        //this._canvas.addEventListener("click", (e) => { this._checkMouse(e, true) });
-
-        // Call first draw
-        this.update();
+constructor(size, donutScale, textSize, canvasId, divId, infoId, innerId, outerId, exportId) {
+    console.log(`CONSTRUCTOR CALLED for ${this.constructor.name} - Canvas ID: ${canvasId}, _inInner will be set to 10`); // Add this line
+    this._donutSize = size;
+    this._textSize = textSize;
+    if (donutScale >= 0.5 && donutScale <= 1.5) {
+        this._donutScale = donutScale;
+    } else {
+        this._donutScale = 1.0;
     }
+    this._canvasId = canvasId;
+    this._divId = divId;
+    this._infoId = infoId;
+    this._innerId = innerId;
+    this._outerId = outerId;
+    this._exportId = exportId;
+
+
+    //this._debug("size: " + this._donutSize + " / scale: " + this._donutScale);
+
+    // Fudge factor adjusetment for hard coded values to be scaled based on given size
+    let fudge = (size / 640); // og:
+
+    // Size of doughnut dimensions
+    this._middleX = this._donutSize / 2;
+    this._middleY = this._donutSize / 2;
+    this._donutLineSize = Math.round(16 * fudge);  // For the outer/inner safe zone lines
+    this._donutMargin = Math.round(150 * fudge);   // The space around the whole doughnut diagram
+    this._section = (this._donutSize - this._donutMargin) / 8;
+
+    // **** KEY CHANGE: Set _inInner to a small positive radius ****
+    // This is the radius where value=100 will terminate.
+    this._inInner = 10; // ADJUST THIS VALUE (e.g., 5, 8, 12, 15) AS NEEDED
+    // **** END KEY CHANGE ****
+
+    this._donutRingSize = this._section * this._donutScale;
+    let overlapDonut = (this._donutRingSize - this._section) / 2;
+    //this._debug("section: " + this._section + " / donutRingSize: " + this._donutRingSize + " / overlap: " + overlapDonut);
+
+    //this._outInner = this._inInner + this._section - overlapDonut; <- original code
+    // The calculation from your reverted file seems independent of _inInner's value.
+    // If you intended _outInner to be relative to _inInner, adjust this line.
+    // For now, using the calculation from your provided reverted file:
+    this._outInner = this._section + this._section - overlapDonut;
+
+    this._inDonut = this._outInner;
+    this._outDonut = this._inDonut + this._donutRingSize;
+    this._midDonut = this._inDonut + (this._outDonut - this._inDonut) / 2;
+    this._inOuter = this._outDonut;
+
+    //Modified to be 1.5 X bigger - took away
+    this._outOuter = this._inOuter + (this._section - overlapDonut) * 1.5;
+    this._extraDonut = this._outOuter + Math.round((25* 1.5) * fudge);   // For the complete overshoot
+
+    this._arcLineWidth = 2;
+    // Adjust text radii if needed, based on how _outInner is calculated
+    this._textInner = this._outInner + (this._section / 2);
+    this._textOuter = this._outOuter - this._textSize;
+    this._donutFrosting = "rgb(3,134,173)";
+    this._donutFilling = "rgb(126,208,247)";
+
+    // Dimension level values
+    this._minDonutLevelRadius = -100;
+    this._normalDonutLevelRadius = 100; // Logical range [0, 100]
+    this._maxDonutLevelRadius = 150;    // For maximum overshoot!
+
+    this._canvas = document.getElementById(canvasId);
+    this._ctx = this._canvas.getContext("2d");
+    // Set size of canvas & div to the required doughnut size
+    this._canvas.style.width = this._donutSize;
+    this._canvas.style.height = this._donutSize;
+    this._canvas.width = this._donutSize;
+    this._canvas.height = this._donutSize;
+    let div = document.getElementById(divId);
+    div.style.maxWidth = this._donutSize;
+
+    this._grdGlobal = this._ctx.createRadialGradient(this._middleX, this._middleY, this._outOuter, this._middleX, this._middleY, this._extraDonut);
+    this._grdGlobal.addColorStop(0, "rgb(251, 138, 152)");
+    this._grdGlobal.addColorStop(1, "white");
+
+    this._grd = this._grdGlobal;
+    this._innerDims = new _DoughnutDimensions("inner", this._normalDonutLevelRadius);
+    this._outerDims = new _DoughnutDimensions("outer", this._maxDonutLevelRadius);
+    this._innerPaths = null;
+    this._outerPaths = null;
+    this._selectedDimInfo = null;
+    this._hoveredDimInfo = null;
+
+    this._canvas.addEventListener("mousemove", (e) => { this._checkMouse(e, false) });
+    //this._canvas.addEventListener("click", (e) => { this._checkMouse(e, true) });
+
+    // Call first draw
+    this.update();
+}
+
 
     _matchingDimInfos(one, two) {
         if (!one && !two) { return true; }
@@ -510,39 +522,122 @@ class Doughnut {
 // totalDegrees: total degrees to fill with all dimensions (usually 2 * Math.PI)
 // max: Outer radius for Path2D hit detection
 // min: Inner radius for Path2D hit detection
-_drawArcsRange(radiiOut, radiiIn, radiiColour, start, totalDegrees, max, min) {
+
+
+// PASTE THIS ENTIRE FUNCTION INTO BOTH doughnut.js AND doughnut_svg.js
+// REPLACING THE EXISTING _drawArcsRange FUNCTION
+
+// PASTE THIS HELPER FUNCTION INSIDE BOTH Doughnut and Doughnut_SVG classes
+// (Before _drawArcsRange)
+
+/**
+ * Finds the intersection point of a line segment and a circle.
+ * Assumes the line starts outside or on the circle and points somewhat inwards.
+ * @param {number} p1x - Line segment start X
+ * @param {number} p1y - Line segment start Y
+ * @param {number} p2x - Line segment end X (the point the line is directed towards)
+ * @param {number} p2y - Line segment end Y
+ * @param {number} radius - Target circle radius
+ * @param {number} cx - Circle center X
+ * @param {number} cy - Circle center Y
+ * @returns {object|null} {x, y} coordinates of the intersection point on the circle, or null if no valid intersection.
+ */
+_getPointOnLineSegmentAtRadius(p1x, p1y, p2x, p2y, radius, cx, cy) {
+    // Vector P1->P2 (direction vector)
+    const vx = p2x - p1x;
+    const vy = p2y - p1y;
+    // Vector C->P1 (from circle center to line start)
+    const dx = p1x - cx;
+    const dy = p1y - cy;
+
+    const a = vx * vx + vy * vy; // Dot product V.V
+    const b = 2 * (dx * vx + dy * vy); // Dot product 2 * D.V
+    const c = dx * dx + dy * dy - radius * radius; // Dot product D.D - r^2
+
+    // Quadratic equation: a*t^2 + b*t + c = 0
+    const delta = b * b - 4 * a * c; // Discriminant
+
+    if (delta < 0 || a === 0) {
+        // No real intersection or line is a point
+        // console.warn("No intersection or zero length line", {a,b,c,delta});
+        return null;
+    }
+
+    // Calculate potential t values (parameter along the line P1 + t*V)
+    const sqrtDelta = Math.sqrt(delta);
+    const t1 = (-b + sqrtDelta) / (2 * a);
+    const t2 = (-b - sqrtDelta) / (2 * a);
+
+    // Find the valid 't' - we want the intersection point that is 'forward' from p1 towards p2
+    // and results in a point ON the circle.
+    // For lines starting outside and pointing inwards, the smaller positive 't' is usually the first hit.
+    let t = null;
+
+    // Check if t1 or t2 represent points *between* p1 and p2 (0 <= t <= 1)
+    // or slightly beyond p1 (t near 0) as the first intersection point.
+    const tolerance = 1e-6; // Tolerance for floating point comparisons
+    const t1Valid = (t1 >= -tolerance); // t1 is forward or very close to p1
+    const t2Valid = (t2 >= -tolerance); // t2 is forward or very close to p1
+
+    if (t1Valid && t2Valid) {
+        t = Math.min(t1, t2); // Choose the intersection closer to p1
+    } else if (t1Valid) {
+        t = t1;
+    } else if (t2Valid) {
+        t = t2;
+    }
+
+    // If a valid 't' was found, calculate the intersection point
+    if (t !== null) {
+        // Clamp t to reasonable bounds if needed, though solving the quadratic should give the exact point
+        // t = Math.max(0, Math.min(1, t)); // Optional: Clamp strictly between p1 and p2 if required
+
+        return {
+            x: p1x + t * vx,
+            y: p1y + t * vy
+        };
+    }
+
+    // console.warn("No valid 't' found for intersection", {t1, t2});
+    return null; // No valid intersection found in the forward direction
+}
+
+
+
+_drawArcsRange(radiiOut, radiiIn, radiiColour, start, totalDegrees, max, min, calculatedAngularGap) {
     let numTopLevelArcs = radiiOut.length; // Number of dimensions
     if (numTopLevelArcs === 0) return []; // Handle empty case
 
     let topLevelArcStart = start;
-    let topLevelArcDegrees = totalDegrees / numTopLevelArcs; // Angle per dimension
-    let paths = []; // Will store Path2D objects for hit detection
+    let topLevelArcDegrees = (numTopLevelArcs > 0) ? totalDegrees / numTopLevelArcs : 0;
+    let paths = [];
 
-    // --- Configuration ---
-    const dimensionGap = 0.04; // Increased gap
-    const epsilonOverlap = 0.006; // Tiny overlap for adjacent sub-wedges
-    // --- End Configuration ---
+    const dimensionGap = calculatedAngularGap;
+    const symmetricBoundaryOverlap = 0.05; // Keep small symmetric overlap (adjust if needed)
+    const innerRadiusTolerance = 0.1; // Tolerance for checking if innerR == _inInner (NO LONGER USED for logic branch)
+    const zeroRadiusTolerance = 0.1;
 
     // Iterate through each top-level dimension
     for (let dimIdx = 0; dimIdx < numTopLevelArcs; dimIdx++) {
         let topLevelArcEnd = topLevelArcStart + topLevelArcDegrees;
-
-        // Calculate the drawable space for this dimension, accounting for gaps
-        let drawableStart = topLevelArcStart + dimensionGap / 2;
-        let drawableEnd = topLevelArcEnd - dimensionGap / 2;
-        // Ensure drawable space isn't negative if gap is too large for the segment
+        let drawableStart = topLevelArcStart + dimensionGap / 2; // Absolute start for this dim
+        let drawableEnd = topLevelArcEnd - dimensionGap / 2;     // Absolute end for this dim
         let drawableTotalDegrees = Math.max(0, drawableEnd - drawableStart);
 
-        let dimOuterRadii = radiiOut[dimIdx]; // Array of outer radii for this dimension's levels
-        let dimInnerRadii = radiiIn[dimIdx];   // Array of inner radii
-        let dimColours = radiiColour[dimIdx]; // Array of colours
-        let numLevels = dimOuterRadii.length; // Number of levels in this dimension
-        if (numLevels === 0) continue; // Skip if a dimension has no levels
+        // Get data for the current dimension
+        let dimOuterRadii = radiiOut[dimIdx];
+        let dimInnerRadii = radiiIn[dimIdx];
+        let dimColours = radiiColour[dimIdx];
+        let numLevels = dimOuterRadii.length;
 
-        let levelArcDegrees = drawableTotalDegrees / numLevels; // Angle per level wedge within drawable space
-
-        // Initialize path array for this dimension
         paths[dimIdx] = [];
+
+        if (numLevels === 0) {
+             topLevelArcStart = topLevelArcEnd;
+             continue;
+        }
+
+        let levelDrawableDegrees = (numLevels > 0) ? drawableTotalDegrees / numLevels : 0;
 
         // Iterate through the levels within the current dimension
         for (let levelIdx = 0; levelIdx < numLevels; levelIdx++) {
@@ -550,47 +645,136 @@ _drawArcsRange(radiiOut, radiiIn, radiiColour, start, totalDegrees, max, min) {
             let innerR = dimInnerRadii[levelIdx];
             let colour = dimColours[levelIdx];
 
-            // Calculate precise angles for drawing this level wedge (within drawable space)
-            let currentLevelStart = drawableStart + levelIdx * levelArcDegrees;
-            let currentLevelEnd = currentLevelStart + levelArcDegrees;
+            // Calculate THEORETICAL start and end angles
+            let currentLevelStart = drawableStart + levelIdx * levelDrawableDegrees;
+            let currentLevelEnd = currentLevelStart + levelDrawableDegrees;
 
-            // --- Calculate angles for actual drawing (with potential overlap) ---
+            // --- Apply SMALL SYMMETRIC Overlap to get DRAW angles ---
             let drawStart = currentLevelStart;
             let drawEnd = currentLevelEnd;
+            if (levelIdx > 0) { drawStart -= symmetricBoundaryOverlap / 2; }
+            if (levelIdx < numLevels - 1) { drawEnd += symmetricBoundaryOverlap / 2; }
+            drawStart = Math.max(drawStart, drawableStart);
+            drawEnd = Math.min(drawEnd, drawableEnd);
+            // --- End Symmetric Overlap ---
 
-            // Add overlap to the end angle if it's a multi-level dimension and NOT the last level
-            if (numLevels > 1 && levelIdx < numLevels - 1) {
-                drawEnd += epsilonOverlap;
+            const safeOuterR = Math.max(0, outerR);
+            const safeInnerR = Math.max(0, innerR);
+
+            if (safeOuterR < zeroRadiusTolerance || Math.abs(safeOuterR - safeInnerR) < zeroRadiusTolerance) {
+                paths[dimIdx][levelIdx] = new Path2D();
+                continue;
             }
-            // --- End Drawing Angle Calculation ---
-
 
             // --- Draw the individual level wedge ---
             this._ctx.fillStyle = colour;
             this._ctx.beginPath();
-            // Use the calculated drawStart and drawEnd angles
-            this._ctx.arc(this._middleX, this._middleY, outerR, drawStart, drawEnd);
-            this._ctx.arc(this._middleX, this._middleY, innerR, drawEnd, drawStart, true); // Reversed inner arc
-            this._ctx.closePath();
-            this._ctx.fill();
+
+            if (drawStart < drawEnd - 1e-9) {
+                // 1. Draw the outer arc (always) - USE ADJUSTED ANGLES
+                this._ctx.arc(this._middleX, this._middleY, safeOuterR, drawStart, drawEnd, false);
+
+                const isInnerDimension = (safeOuterR <= this._outInner + innerRadiusTolerance); // Use tolerance for safety
+
+                // 3. Choose drawing logic - UNIFIED FOR INNER DIMENSIONS
+                //    (Removed the separate 'Triangle Tip' logic branch)
+                if (isInnerDimension && safeInnerR > zeroRadiusTolerance) {
+                    // --- *** UNIFIED Hybrid Logic (Handles ALL Inner Wedges > 0 radius) *** ---
+                    // Internal boundaries are RADIAL, outer edges use HYBRID intersection.
+                    // When safeInnerR is very small (value=100), inner arc appears as near-point.
+
+                    let P_inner_start = null;
+                    let P_inner_end = null;
+                    let calculationSuccess = true;
+
+                    // Use THEORETICAL angles for tip direction calculation
+                    const tipAngle = currentLevelStart + levelDrawableDegrees / 2;
+                    const tipX_center = this._middleX + this._inInner * Math.cos(tipAngle);
+                    const tipY_center = this._middleY + this._inInner * Math.sin(tipAngle);
+
+                    // Use ADJUSTED angles for outer endpoints
+                    const outerStartX = this._middleX + safeOuterR * Math.cos(drawStart);
+                    const outerStartY = this._middleY + safeOuterR * Math.sin(drawStart);
+                    const outerEndX = this._middleX + safeOuterR * Math.cos(drawEnd);
+                    const outerEndY = this._middleY + safeOuterR * Math.sin(drawEnd);
+
+                    // --- Calculate Inner Start Point ---
+                    if (levelIdx === 0) { // First level's left edge uses hybrid logic
+                        P_inner_start = this._getPointOnLineSegmentAtRadius(outerStartX, outerStartY, tipX_center, tipY_center, safeInnerR, this._middleX, this._middleY);
+                    } else { // Internal boundary: Use radial point
+                        P_inner_start = {
+                            x: this._middleX + safeInnerR * Math.cos(drawStart),
+                            y: this._middleY + safeInnerR * Math.sin(drawStart)
+                        };
+                    }
+
+                    // --- Calculate Inner End Point ---
+                    if (levelIdx === numLevels - 1) { // Last level's right edge uses hybrid logic
+                        P_inner_end = this._getPointOnLineSegmentAtRadius(outerEndX, outerEndY, tipX_center, tipY_center, safeInnerR, this._middleX, this._middleY);
+                    } else { // Internal boundary: Use radial point
+                        P_inner_end = {
+                            x: this._middleX + safeInnerR * Math.cos(drawEnd),
+                            y: this._middleY + safeInnerR * Math.sin(drawEnd)
+                        };
+                    }
+
+                    // Check if calculations succeeded
+                    if (!P_inner_start || !P_inner_end) {
+                        calculationSuccess = false;
+                        console.warn("Hybrid wedge point calculation failed.", { dimIdx, levelIdx, P_inner_start, P_inner_end });
+                    }
+
+                    // --- Draw Path ---
+                    if (calculationSuccess) {
+                        // Calculate angles from the determined points
+                        const innerStartAngle = Math.atan2(P_inner_start.y - this._middleY, P_inner_start.x - this._middleX);
+                        const innerEndAngle = Math.atan2(P_inner_end.y - this._middleY, P_inner_end.x - this._middleX);
+
+                        this._ctx.lineTo(P_inner_end.x, P_inner_end.y); // Line from outer end to inner end point
+
+                        // Draw inner arc counter-clockwise
+                        if (Math.abs(innerEndAngle - innerStartAngle) > 1e-6) {
+                             this._ctx.arc(this._middleX, this._middleY, safeInnerR, innerEndAngle, innerStartAngle, true);
+                        } else {
+                             this._ctx.lineTo(P_inner_start.x, P_inner_start.y);
+                        }
+                        // closePath connects P_inner_start back to outerStartX/Y
+                    } else {
+                        // Fallback: Draw standard arc using ADJUSTED angles
+                        this._ctx.arc(this._middleX, this._middleY, safeInnerR, drawEnd, drawStart, true);
+                    }
+                    // --- *** END UNIFIED Hybrid Logic *** ---
+
+                } else { // Outer Dimension OR Inner wedge hitting radius 0 (should not happen)
+                    // --- Standard Arc Logic (for Outer Wedges) --- USE ADJUSTED ANGLES
+                    this._ctx.arc(this._middleX, this._middleY, safeInnerR, drawEnd, drawStart, true);
+                }
+
+                // 4. Close the path and fill
+                this._ctx.closePath();
+                this._ctx.fill();
+            }
             // --- End Drawing ---
 
-
-            // --- Path2D for Mouse Interaction ---
-            // Calculate the *original* angular slice for hit detection (ignoring visual gap and overlap)
-            let hitDetectLevelAngle = topLevelArcDegrees / numLevels;
-            let hitDetectStart = topLevelArcStart + levelIdx * hitDetectLevelAngle;
+            // --- Path2D for Mouse Interaction (Uses ORIGINAL angles without gap/overlap) ---
+            let hitDetectTotalAnglePerDim = topLevelArcDegrees;
+            let hitDetectLevelAngle = (numLevels > 0) ? hitDetectTotalAnglePerDim / numLevels : 0;
+            let hitDetectStart = drawableStart + levelIdx * levelDrawableDegrees; // Use absolute start + offset (THEORETICAL)
             let hitDetectEnd = hitDetectStart + hitDetectLevelAngle;
 
-            // Create Path2D covering the full original angular slice for this level
+            let hitMinR = Math.max(0, min);
+            let hitMaxR = Math.max(hitMinR, max);
+
             let p = new Path2D();
-            p.arc(this._middleX, this._middleY, max, hitDetectStart, hitDetectEnd);
-            p.arc(this._middleX, this._middleY, min, hitDetectEnd, hitDetectStart, true);
-            p.closePath();
-            paths[dimIdx][levelIdx] = p; // Store path based on dimension and level index
+            if (hitDetectStart < hitDetectEnd) {
+                p.arc(this._middleX, this._middleY, hitMaxR, hitDetectStart, hitDetectEnd, false);
+                p.arc(this._middleX, this._middleY, hitMinR, hitDetectEnd, hitDetectStart, true);
+                p.closePath();
+            }
+            paths[dimIdx][levelIdx] = p;
             // --- End Path2D ---
         }
-        topLevelArcStart = topLevelArcEnd; // Move to the next dimension's start angle
+        topLevelArcStart = topLevelArcEnd;
     }
     return paths;
 }
@@ -599,19 +783,28 @@ _drawArcsRange(radiiOut, radiiIn, radiiColour, start, totalDegrees, max, min) {
 
 
 
-_drawArcs(radiiOut, radiiIn, radiiColour, strokeColour, max, min) {
+
+
+
+
+
+
+
+_drawArcs(radiiOut, radiiIn, radiiColour, strokeColour, max, min, calculatedAngularGap) {
     // Note: strokeColour passed here is no longer used for individual wedge outlines
-    // as those were removed earlier. It might be relevant if a global stroke is added later.
     this._ctx.lineWidth = this._arcLineWidth; // May not be needed if only filling
     this._ctx.strokeStyle = strokeColour; // May not be needed if only filling
 
-    // Initial call to _drawArcsRange - isSubLevel is false (or defaults to false)
-    let paths = this._drawArcsRange(radiiOut, radiiIn, radiiColour, 0, (2 * Math.PI), max, min, false);
+    // Pass the calculatedAngularGap down to _drawArcsRange
+    let paths = this._drawArcsRange(radiiOut, radiiIn, radiiColour, 0, (2 * Math.PI), max, min, calculatedAngularGap);
 
     this._ctx.lineWidth = 1; // Reset line width
     return paths;
 }
 
+
+// PASTE THIS ENTIRE FUNCTION INTO doughnut.js
+// REPLACING THE EXISTING _drawDimensions FUNCTION
 
 _drawDimensions(dims, extMax, extMin) {
     const INNER = 0;
@@ -622,10 +815,14 @@ _drawDimensions(dims, extMax, extMin) {
     const greyColor = "rgb(211, 211, 211)"; // Standard lightgray
     const transparentGreyColor = "rgba(211, 211, 211, 0)"; // Transparent lightgray
 
+    // --- Configuration for Visual Gaps ---
+    // ADJUST THESE VALUES (in pixels/units)
+    const desiredInnerVisualGap = 0.4; // Target visual gap between INNER wedges at radius _inInner
+    const desiredOuterVisualGap = 8; // Target visual gap between OUTER wedges at radius _inOuter
+    const fallbackAngularGap = 0.04; // Fallback if radius is too small (shouldn't be needed for inner now)
+    // --- End Configuration ---
+
     // --- Gradient Configuration ---
-    // Value between 0 and 1. Higher value shifts transparency further away from the opaque end.
-    // 0.0 = original (full transition)
-    // 0.3 = starts/ends transparency 30% of the way into the gradient band
     const gradientShift = 0.3;
     // --- End Gradient Configuration ---
 
@@ -634,23 +831,56 @@ _drawDimensions(dims, extMax, extMin) {
         let inRadii = [];
         let outRadii = [];
         let colRadii = [];
-        // Scaling factors remain the same
+        // Scaling factor: maps logical range [0, 100] to physical range [extMin, extMax]
+        // For inner: [this._inInner, this._outInner]
+        // For outer: [this._inOuter, this._outOuter]
         let extScale = (extMax - extMin) / this._normalDonutLevelRadius;
-        let intScale = ((this._outDonut - this._inDonut) / 2) / this._normalDonutLevelRadius; // Used for negative overshoot only
+        // intScale is only for negative overshoot
+        let intScale = ((this._outDonut - this._inDonut) / 2) / this._normalDonutLevelRadius;
 
         let type = null;
-        let minRadiusForHitDetect = 0, maxRadiusForHitDetect = 0; // Renamed from min/max to avoid confusion
+        let minRadiusForHitDetect = 0, maxRadiusForHitDetect = 0;
+        let angularGapForThisSet = fallbackAngularGap; // Initialize with fallback
 
-        // Determine type and hit detection boundaries
+        // Determine type, hit detection boundaries, and CALCULATE ANGULAR GAP
         if (extMax > this._outDonut) { // Corresponds to OUTER dimensions
             type = OUTER;
-            minRadiusForHitDetect = this._inOuter; // Use defined boundaries for hit detection
+            minRadiusForHitDetect = this._inOuter;
             maxRadiusForHitDetect = this._outOuter;
+            // Calculate angular gap for OUTER wedges based on _inOuter
+            const relevantRadius = this._inOuter;
+            if (relevantRadius > 1 && dims.length() > 1) {
+                angularGapForThisSet = desiredOuterVisualGap / relevantRadius;
+            } else if (dims.length() <= 1) {
+                angularGapForThisSet = 0;
+            } else {
+                angularGapForThisSet = fallbackAngularGap;
+            }
+
         } else { // Corresponds to INNER dimensions
             type = INNER;
-            minRadiusForHitDetect = this._inInner; // Use defined boundaries for hit detection
+            minRadiusForHitDetect = this._inInner; // Now > 0
             maxRadiusForHitDetect = this._outInner;
+             // Calculate angular gap for INNER wedges based on _inInner (which is > 0)
+            const relevantRadius = this._inInner;
+            if (relevantRadius > 1 && dims.length() > 1) { // Check > 1 for safety
+                 // Angle = ArcLength / Radius
+                angularGapForThisSet = desiredInnerVisualGap / relevantRadius;
+            } else if (dims.length() <= 1) {
+                 angularGapForThisSet = 0;
+            } else {
+                // Fallback if _inInner was somehow set <= 1
+                angularGapForThisSet = fallbackAngularGap;
+            }
         }
+
+        // --- Limit the calculated angular gap ---
+        const maxAllowedGapFraction = 0.5; // Gap cannot be more than 50% of the slice
+        const anglePerDimension = (dims.length() > 0) ? (2 * Math.PI) / dims.length() : (2 * Math.PI);
+        angularGapForThisSet = Math.min(angularGapForThisSet, anglePerDimension * maxAllowedGapFraction);
+        angularGapForThisSet = Math.max(0, angularGapForThisSet); // Ensure non-negative
+        // --- End Gap Limiting ---
+
 
         for (let dim = 0; dim < dims.length(); dim++) {
             let levels = dims.get(dim).levels;
@@ -665,73 +895,61 @@ _drawDimensions(dims, extMax, extMin) {
 
                 if (this._isNotNumber(val)) {
                     // --- Handle Invalid Data: Apply Grey Gradient ---
-                    // For gradient purposes, treat invalid data as spanning the full band
-                    inner = extMin;
-                    outer = extMax;
-
+                    inner = extMin; // Use the band's min radius
+                    outer = extMax; // Use the band's max radius
                     if (type == INNER) {
-                        // Inner wedge: Gradient Grey (outer) -> Transparent (inner)
                         col = this._ctx.createRadialGradient(this._middleX, this._middleY, inner, this._middleX, this._middleY, outer);
-                        // Shift the start of transparency outwards
-                        col.addColorStop(gradientShift, transparentGreyColor); // Transparent starts at gradientShift offset
-                        col.addColorStop(1, greyColor);                      // Grey at outer radius (offset 1)
+                        col.addColorStop(gradientShift, transparentGreyColor);
+                        col.addColorStop(1, greyColor);
                     } else { // type == OUTER
-                        // Outer wedge: Gradient Grey (inner) -> Transparent (outer)
                         col = this._ctx.createRadialGradient(this._middleX, this._middleY, inner, this._middleX, this._middleY, outer);
-                        col.addColorStop(0, greyColor);                      // Grey at inner radius (offset 0)
-                        // Shift the end of transparency inwards
-                        col.addColorStop(1.0 - gradientShift, transparentGreyColor); // Transparent ends at 1-gradientShift offset
+                        col.addColorStop(0, greyColor);
+                        col.addColorStop(1.0 - gradientShift, transparentGreyColor);
                     }
-                    // --- End Gradient Handling ---
-
                 } else {
                     // --- Handle Valid Data (including negative overshoot) ---
                     if (type == INNER) {
                         if (val < 0) {
-                            // Negative value (overshoot inwards from outer edge)
-                            inner = extMax; // Starts at the outer edge
-                            outer = extMax + (val * intScale); // val is negative, so this moves inwards
-                            col = "white"; // Keep negative overshoot white for now
+                            inner = extMax; // Starts at _outInner
+                            outer = extMax + (val * intScale); // Moves inwards
+                            col = "white";
                         } else {
-                            // Normal positive value
-                            inner = extMin + ((this._normalDonutLevelRadius - val) * extScale); // Calculate inner edge based on value
-                            outer = extMax; // Extends to the outer edge
-                            // col remains this._grd (default pink gradient)
+                            // Normal positive value: val=100 -> inner=extMin (_inInner), val=0 -> inner=extMax (_outInner)
+                            let scaledVal = Math.min(val, this._normalDonutLevelRadius); // Cap at 100
+                            inner = extMin + ((this._normalDonutLevelRadius - scaledVal) * extScale);
+                            outer = extMax; // Always _outInner
+                            // col remains this._grd
                         }
                     } else { // type == OUTER
                         if (val < 0) {
-                            // Negative value (overshoot inwards from inner edge)
-                            inner = extMin + (val * intScale); // val is negative, so this moves inwards
-                            outer = extMin; // Ends at the inner edge
-                            col = "white"; // Keep negative overshoot white for now
+                            inner = extMin + (val * intScale); // Moves inwards from _inOuter
+                            outer = extMin; // Ends at _inOuter
+                            col = "white";
                         } else {
-                            // Normal positive value
-                            inner = extMin; // Starts at the inner edge
-                            let potentialOuter = extMin + (val * extScale); // Calculate potential outer edge
-                    outer = Math.min(potentialOuter, this._middleX); // Cap the radius at the canvas edge
-                    // col remains this._grd (default pink gradient)
+                            // Normal positive value: val=0 -> outer=extMin (_inOuter), val=100 -> outer=_inOuter + 100*extScale
+                            inner = extMin; // Starts at _inOuter
+                            let potentialOuter = extMin + (val * extScale);
+                            outer = Math.min(potentialOuter, this._middleX); // Cap radius at center
+                            // col remains this._grd
                         }
                     }
-                    // --- End Valid Data Handling ---
                 }
-
-                // Store calculated radii and color/gradient for this level
-                inArcs.push(inner);
-                outArcs.push(outer);
+                // Ensure radii are not negative
+                inArcs.push(Math.max(0, inner));
+                outArcs.push(Math.max(0, outer));
                 cols.push(col);
             }
-            // Store arrays for the entire dimension
             inRadii[dim] = inArcs;
             outRadii[dim] = outArcs;
             colRadii[dim] = cols;
         }
 
-        // Call _drawArcs to draw all wedges for this type (INNER or OUTER)
-        // Pass the correct hit detection radii (min/maxRadiusForHitDetect)
-        paths = this._drawArcs(outRadii, inRadii, colRadii, "white", maxRadiusForHitDetect, minRadiusForHitDetect);
+        // Call _drawArcs, passing the CALCULATED angularGapForThisSet
+        paths = this._drawArcs(outRadii, inRadii, colRadii, "white", maxRadiusForHitDetect, minRadiusForHitDetect, angularGapForThisSet);
     }
     return paths;
 }
+
 
     /**
      * Draws text curved along a specified radius and angle.
@@ -834,198 +1052,169 @@ _drawDimensions(dims, extMax, extMin) {
     }
 
 
-    _drawLabels() {
-        if (!this._showLabels) { // Check the flag
-            return; // Skip drawing if flag is false
-        }
+    // PASTE THIS ENTIRE FUNCTION INTO doughnut.js
+// REPLACING THE EXISTING _drawLabels FUNCTION
 
-        // --- Static Corridor Labels ---
-        const staticLabelColor = "white";
-        const smallerTextSize = Math.max(8, this._textSize * 0.90);
-        const radiusLightBlueEdge = this._outDonut - this._donutLineSize;
-        const radiusInnerBandEdge = this._inDonut + this._donutLineSize;
-        const radiusHoleEdge = this._inDonut;
-        const radiusOuterBandEdge = this._outDonut;
+_drawLabels() {
+    if (!this._showLabels) { // Check the flag
+        return; // Skip drawing if flag is false
+    }
 
-        // 1. "Sustainable quality care for all" - Bottom center
-        const radiusLightBlueMid = (radiusInnerBandEdge + radiusLightBlueEdge) / 2;
-        const angleBottomCenter = Math.PI / 2; // This is on the bottom half
-        let sustainableText = "Sustainable quality care for all";
+    // --- Static Corridor Labels ---
+    const staticLabelColor = "white";
+    const smallerTextSize = Math.max(8, this._textSize * 0.90);
+    const radiusLightBlueEdge = this._outDonut - this._donutLineSize;
+    const radiusInnerBandEdge = this._inDonut + this._donutLineSize;
+    const radiusHoleEdge = this._inDonut;
+    const radiusOuterBandEdge = this._outDonut;
 
-        // --- REVERSE THE TEXT STRING (Workaround for SVG export on bottom half) ---
-        // Since angleBottomCenter is PI/2, it's always on the bottom half.
-        sustainableText = sustainableText.split('').reverse().join('');
-        // --- END REVERSE THE TEXT STRING ---
+    // **** ADD Adjustment Factor for Canvas Rendering ****
+    // This value nudges the text slightly inwards (downwards visually)
+    // Adjust this multiplier (e.g., 0.1, 0.15, 0.2) if needed.
+    const canvasVerticalOffset = this._textSize * 0.15;
+    // **** END Adjustment Factor ****
 
-        this._drawCurvedText(
-            sustainableText, // Pass the reversed string
-            radiusLightBlueMid,
-            angleBottomCenter,
-            staticLabelColor,
-            this._textSize * 1.1
-        );
+    // 1. "Sustainable quality care for all" - Bottom center
+    const radiusLightBlueMid = (radiusInnerBandEdge + radiusLightBlueEdge) / 2;
+    const angleBottomCenter = Math.PI / 2;
+    let sustainableText = "Sustainable quality care for all";
+    sustainableText = sustainableText.split('').reverse().join(''); // Keep reversal for bottom
+    this._drawCurvedText(
+        sustainableText,
+        radiusLightBlueMid, // No offset needed for this one usually
+        angleBottomCenter,
+        staticLabelColor,
+        this._textSize * 1.1
+    );
 
-        // 2. "HEALTHCARE FOUNDATION" - Top center (No reversal needed)
-        const radiusInnerDarkBlueMid = (radiusHoleEdge + radiusInnerBandEdge) / 2;
-        const angleTopCenter = 3 * Math.PI / 2; // Top half
-        this._drawCurvedText(
-            "HEALTHCARE FOUNDATION", // Original string
-            radiusInnerDarkBlueMid,
-            angleTopCenter,
-            staticLabelColor,
-            smallerTextSize
-        );
+    // 2. "HEALTHCARE FOUNDATION" - Top center (Apply Offset)
+    const radiusInnerDarkBlueMid = (radiusHoleEdge + radiusInnerBandEdge) / 2 - canvasVerticalOffset; // Subtract offset
+    const angleTopCenter = 3 * Math.PI / 2;
+    this._drawCurvedText(
+        "HEALTHCARE FOUNDATION",
+        radiusInnerDarkBlueMid, // Use adjusted radius
+        angleTopCenter,
+        staticLabelColor,
+        smallerTextSize
+    );
 
-        // 3. "ECOLOGICAL CEILING" - Top center (No reversal needed)
-        const radiusOuterDarkBlueMid = (radiusLightBlueEdge + radiusOuterBandEdge) / 2;
-        // Use same angleTopCenter
-        this._drawCurvedText(
-            "ECOLOGICAL CEILING", // Original string
-            radiusOuterDarkBlueMid,
-            angleTopCenter,
-            staticLabelColor,
-            smallerTextSize
-        );
-        // --- End Static Corridor Labels ---
+    // 3. "ECOLOGICAL CEILING" - Top center (Apply Offset)
+    const radiusOuterDarkBlueMid = (radiusLightBlueEdge + radiusOuterBandEdge) / 2 - canvasVerticalOffset; // Subtract offset
+    // Use same angleTopCenter
+    this._drawCurvedText(
+        "ECOLOGICAL CEILING",
+        radiusOuterDarkBlueMid, // Use adjusted radius
+        angleTopCenter,
+        staticLabelColor,
+        smallerTextSize
+    );
+    // --- End Static Corridor Labels ---
 
-        // Reset context defaults specifically for dynamic labels
-        // Using Roboto font and #484848 color as requested previously
-        this._ctx.font = this._textSize + "px Roboto, Arial, sans-serif";
-        this._ctx.fillStyle = "#484848";
-        this._ctx.textAlign = "center";
-        this._ctx.textBaseline = "middle";
+    // Reset context defaults specifically for dynamic labels
+    this._ctx.font = this._textSize + "px Roboto, Arial, sans-serif";
+    this._ctx.fillStyle = "#484848";
+    this._ctx.textAlign = "center";
+    this._ctx.textBaseline = "middle";
 
-        // --- Inner Labels (Curved, Flipped Bottom) ---
-        let innerDims = this._innerDims;
-        let defaultInnerLabelRadius = this._inDonut - this._textSize;
-        defaultInnerLabelRadius = Math.max(this._textSize, defaultInnerLabelRadius);
-        let numInnerArcs = innerDims.length();
+    // --- Inner Labels (Curved, Flipped Bottom) ---
+    let innerDims = this._innerDims;
+    let defaultInnerLabelRadius = this._inDonut - this._textSize;
+    defaultInnerLabelRadius = Math.max(this._textSize, defaultInnerLabelRadius);
+    let numInnerArcs = innerDims.length();
 
-        if (numInnerArcs > 0) {
-            let innerArcDegrees = (2 * Math.PI) / numInnerArcs;
+    if (numInnerArcs > 0) {
+        let innerArcDegrees = (2 * Math.PI) / numInnerArcs;
 
-            for (let dim = 0; dim < numInnerArcs; dim++) {
-                // --- GET ORIGINAL TEXT ---
-                let text = innerDims.get(dim).name; // Get original text
-                // --- END GET ORIGINAL TEXT ---
+        for (let dim = 0; dim < numInnerArcs; dim++) {
+            let text = innerDims.get(dim).name;
+            let segmentCenterAngle = ((dim * innerArcDegrees) + (innerArcDegrees / 2)) % (2 * Math.PI);
+            if (segmentCenterAngle < 0) segmentCenterAngle += (2 * Math.PI);
 
-                let segmentCenterAngle = ((dim * innerArcDegrees) + (innerArcDegrees / 2)) % (2 * Math.PI);
-                if (segmentCenterAngle < 0) segmentCenterAngle += (2 * Math.PI);
+            let radiusToUse = defaultInnerLabelRadius;
+            let rotationOffset;
 
-                let radiusToUse = defaultInnerLabelRadius;
-                let rotationOffset;
+            if (segmentCenterAngle > 1e-9 && segmentCenterAngle < Math.PI - 1e-9) {
+                rotationOffset = -Math.PI / 2;
+                text = text.split('').reverse().join('');
+            } else {
+                rotationOffset = Math.PI / 2;
+            }
 
-                // Determine rotation offset based on angle AND REVERSE TEXT FOR BOTTOM HALF
-                if (segmentCenterAngle > 1e-9 && segmentCenterAngle < Math.PI - 1e-9) {
-                    // Bottom Half
-                    rotationOffset = -Math.PI / 2; // Upright rotation
+            const textWidth = this._ctx.measureText(text).width;
+            const totalTextAngle = (radiusToUse > 1) ? textWidth / radiusToUse : 0;
+            const textStartAngle = segmentCenterAngle - totalTextAngle / 2;
 
-                    // --- REVERSE THE TEXT STRING (Workaround for SVG export) ---
-                    text = text.split('').reverse().join(''); // Reverse the string here
-                    // --- END REVERSE THE TEXT STRING ---
+            let currentAngle = textStartAngle;
+            for (let i = 0; i < text.length; i++) {
+                const char = text[i];
+                const charWidth = this._ctx.measureText(char).width;
+                const charAngleWidth = (radiusToUse > 1) ? charWidth / radiusToUse : 0;
+                const charCenterAngle = currentAngle + charAngleWidth / 2;
 
-                } else {
-                    // Top Half
-                    rotationOffset = Math.PI / 2; // Tangent rotation
-                    // Text remains unchanged for the top half
-                }
+                const x = this._middleX + radiusToUse * Math.cos(charCenterAngle);
+                const y = this._middleY + radiusToUse * Math.sin(charCenterAngle);
+                const rotation = charCenterAngle + rotationOffset;
 
-                // --- Now proceed with calculations using the potentially reversed 'text' ---
-                const textWidth = this._ctx.measureText(text).width;
-                const totalTextAngle = (radiusToUse > 1) ? textWidth / radiusToUse : 0;
-                const textStartAngle = segmentCenterAngle - totalTextAngle / 2;
+                this._ctx.save();
+                this._ctx.translate(x, y);
+                this._ctx.rotate(rotation);
+                this._ctx.fillText(char, 0, 0);
+                this._ctx.restore();
 
-                // --- Draw each character individually - ALWAYS FORWARDS (using potentially reversed text) ---
-                let currentAngle = textStartAngle;
-                for (let i = 0; i < text.length; i++) {
-                    const char = text[i]; // Get character L->R from the (potentially reversed) string
-                    const charWidth = this._ctx.measureText(char).width;
-                    const charAngleWidth = (radiusToUse > 1) ? charWidth / radiusToUse : 0;
-                    const charCenterAngle = currentAngle + charAngleWidth / 2;
-
-                    const x = this._middleX + radiusToUse * Math.cos(charCenterAngle);
-                    const y = this._middleY + radiusToUse * Math.sin(charCenterAngle);
-                    const rotation = charCenterAngle + rotationOffset;
-
-                    this._ctx.save();
-                    this._ctx.translate(x, y);
-                    this._ctx.rotate(rotation);
-                    this._ctx.fillText(char, 0, 0); // Uses font/color set above
-                    this._ctx.restore();
-
-                    currentAngle += charAngleWidth;
-                }
-                // --- End Character Drawing ---
+                currentAngle += charAngleWidth;
             }
         }
+    }
 
 
-        // --- Outer Labels (Curved, Flipped Bottom) ---
-        let outerDims = this._outerDims;
-        let defaultOuterLabelRadius = this._inOuter + (this._outOuter - this._inOuter) / 2;
-        let numOuterArcs = outerDims.length();
-        if (numOuterArcs > 0) {
-            let outerArcDegrees = (2 * Math.PI) / numOuterArcs;
+    // --- Outer Labels (Curved, Flipped Bottom) ---
+    let outerDims = this._outerDims;
+    let defaultOuterLabelRadius = this._inOuter + (this._outOuter - this._inOuter) / 2;
+    let numOuterArcs = outerDims.length();
+    if (numOuterArcs > 0) {
+        let outerArcDegrees = (2 * Math.PI) / numOuterArcs;
 
-            for (let dim = 0; dim < numOuterArcs; dim++) {
-                // --- GET ORIGINAL TEXT ---
-                let text = outerDims.get(dim).name; // Get original text
-                // --- END GET ORIGINAL TEXT ---
+        for (let dim = 0; dim < numOuterArcs; dim++) {
+            let text = outerDims.get(dim).name;
+            let segmentCenterAngle = ((dim * outerArcDegrees) + (outerArcDegrees / 2)) % (2 * Math.PI);
+            if (segmentCenterAngle < 0) segmentCenterAngle += (2 * Math.PI);
 
-                let segmentCenterAngle = ((dim * outerArcDegrees) + (outerArcDegrees / 2)) % (2 * Math.PI);
-                if (segmentCenterAngle < 0) segmentCenterAngle += (2 * Math.PI);
+            let radiusToUse = defaultOuterLabelRadius;
+            let rotationOffset;
 
-                let radiusToUse = defaultOuterLabelRadius;
-                let rotationOffset;
+            if (segmentCenterAngle > 1e-9 && segmentCenterAngle < Math.PI - 1e-9) {
+                rotationOffset = -Math.PI / 2;
+                text = text.split('').reverse().join('');
+            } else {
+                rotationOffset = Math.PI / 2;
+            }
 
-                // Determine rotation offset based on angle AND REVERSE TEXT FOR BOTTOM HALF
-                if (segmentCenterAngle > 1e-9 && segmentCenterAngle < Math.PI - 1e-9) {
-                    // Bottom Half
-                    rotationOffset = -Math.PI / 2; // Upright rotation
+            const textWidth = this._ctx.measureText(text).width;
+            const totalTextAngle = (radiusToUse > 1) ? textWidth / radiusToUse : 0;
+            const textStartAngle = segmentCenterAngle - totalTextAngle / 2;
 
-                     // --- REVERSE THE TEXT STRING (Workaround for SVG export) ---
-                    text = text.split('').reverse().join(''); // Reverse the string here
-                    // --- END REVERSE THE TEXT STRING ---
+            let currentAngle = textStartAngle;
+            for (let i = 0; i < text.length; i++) {
+                const char = text[i];
+                const charWidth = this._ctx.measureText(char).width;
+                const charAngleWidth = (radiusToUse > 1) ? charWidth / radiusToUse : 0;
+                const charCenterAngle = currentAngle + charAngleWidth / 2;
 
-                    // Optional radius adjustment (keep if desired)
-                    // radiusToUse = defaultOuterLabelRadius - this._textSize * 0.5;
-                    // radiusToUse = Math.max(this._inOuter + this._textSize * 0.5, radiusToUse);
-                } else {
-                    // Top Half
-                    rotationOffset = Math.PI / 2; // Tangent rotation
-                     // Text remains unchanged for the top half
-                }
+                const x = this._middleX + radiusToUse * Math.cos(charCenterAngle);
+                const y = this._middleY + radiusToUse * Math.sin(charCenterAngle);
+                const rotation = charCenterAngle + rotationOffset;
 
-                // --- Now proceed with calculations using the potentially reversed 'text' ---
-                const textWidth = this._ctx.measureText(text).width;
-                const totalTextAngle = (radiusToUse > 1) ? textWidth / radiusToUse : 0;
-                const textStartAngle = segmentCenterAngle - totalTextAngle / 2;
+                this._ctx.save();
+                this._ctx.translate(x, y);
+                this._ctx.rotate(rotation);
+                this._ctx.fillText(char, 0, 0);
+                this._ctx.restore();
 
-                // --- Draw each character individually - ALWAYS FORWARDS (using potentially reversed text) ---
-                let currentAngle = textStartAngle;
-                for (let i = 0; i < text.length; i++) {
-                    const char = text[i]; // Get character L->R from the (potentially reversed) string
-                    const charWidth = this._ctx.measureText(char).width;
-                    const charAngleWidth = (radiusToUse > 1) ? charWidth / radiusToUse : 0;
-                    const charCenterAngle = currentAngle + charAngleWidth / 2;
-
-                    const x = this._middleX + radiusToUse * Math.cos(charCenterAngle);
-                    const y = this._middleY + radiusToUse * Math.sin(charCenterAngle);
-                    const rotation = charCenterAngle + rotationOffset;
-
-                    this._ctx.save();
-                    this._ctx.translate(x, y);
-                    this._ctx.rotate(rotation);
-                    this._ctx.fillText(char, 0, 0); // Uses font/color set above
-                    this._ctx.restore();
-
-                    currentAngle += charAngleWidth;
-                }
-                // --- End Character Drawing ---
+                currentAngle += charAngleWidth;
             }
         }
-    } // End of _drawLabels
-
+    }
+} // End of _drawLabels
 
 
 
