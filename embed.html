@@ -99,7 +99,8 @@
 
     /* Controls and SVG Area */
     #controlsBox,
-    #plotDisplayArea {
+    #plotDisplayArea,
+    #dataTableContainer /* Include data table container */ {
         max-width: 800px;
         margin: 15px auto;
     }
@@ -211,6 +212,30 @@
 
     label { margin-right: 5px; font-weight: bold; } /* General label */
 
+    /* --- Data Table Styling --- */
+    #dataTableContainer table {
+        width: 90%; /* Adjust width as needed */
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-collapse: collapse;
+        font-size: 0.9em;
+    }
+    #dataTableContainer th,
+    #dataTableContainer td {
+        border: 1px solid #ddd;
+        padding: 6px;
+        text-align: left;
+    }
+    #dataTableContainer th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+    #dataTableContainer h4 { /* Style for plot name headings */
+        margin-top: 15px;
+        margin-bottom: 5px;
+        font-size: 1.1em;
+    }
+
 </style>
 
 <body>
@@ -264,6 +289,11 @@
         <!-- Selectable SVGs will be injected here -->
     </div>
 
+    <!-- 4. Area for the Data Table -->
+    <div id="dataTableContainer" style="margin-top: 20px; padding: 10px; border-top: 1px solid #ccc;">
+        <!-- Data table(s) will be inserted here by JavaScript -->
+    </div>
+
     <!-- Hidden elements needed for SVG initialization -->
     <canvas id="doughnutCanvas" style="display: none;"></canvas>
     <div id="doughnutDiv" style="display: none;"></div>
@@ -273,9 +303,9 @@
 
 
     <!-- Load JS libraries -->
+    <script src="doughnut.js?v=2.1"></script> <!-- Use correct cache-busting version -->
+    <script src="doughnut_svg.js?v=2.1"></script> <!-- Use correct cache-busting version -->
     <script src="canvas2svg.js"></script>
-    <script src="doughnut.js?4.7"></script> <!-- Canvas Class - MAKE SURE YOU MADE THE CHANGES -->
-    <script src="doughnut_svg.js?4.7"></script> <!-- SVG Generation Class -->
 
     <script>
         // --- Constants ---
@@ -287,27 +317,73 @@
         const defaultSelectedPlots = ["Afghanistan", "Honduras", "United States"];
 
         // --- Global variables ---
-        let allPlotData = null;
+        let allPlotData = null; // Will store { plotName: [ { dimensionType, dimensionName, value, levelLabel }, ... ], ... }
         let plotDimensionDataCache = {};
         let globalDonutInstance = null; // Instance for the top Canvas plot
         let isSvgLabelsVisible = false; // State for SVG label visibility
+        let sortedPlotNames = []; // Keep sorted list globally
 
-        // --- CSV Parsing Function ---
+        // --- Robust CSV Line Parser ---
+        function parseCsvLine(line) {
+            const values = [];
+            // Regex to match quoted or unquoted fields, handling commas correctly
+            const regex = /(?:"([^"]*(?:""[^"]*)*)"|([^,]*))(?:,|$)/g; // Handles escaped quotes ""
+            let match;
+            regex.lastIndex = 0; // Reset index for global regex
+
+            while ((match = regex.exec(line)) !== null) {
+                let value = '';
+                if (match[1] !== undefined) {
+                    // Quoted field: replace escaped double quotes "" with single "
+                    value = match[1].replace(/""/g, '"');
+                } else if (match[2] !== undefined) {
+                    // Unquoted field
+                    value = match[2];
+                }
+                values.push(value.trim()); // Add the extracted value, trimmed
+
+                // Stop if the regex match didn't end with a comma (i.e., end of line)
+                if (match[0].slice(-1) !== ',') break;
+            }
+            // Handle cases where the line might end with a comma (empty last field)
+            if (line.slice(-1) === ',' && values.length > 0) {
+                 values.push('');
+            }
+            return values;
+        }
+
+        // --- Modified CSV Parsing Function (Stores Objects) ---
         function parsePlotDataCSV(csvString) {
             const lines = csvString.trim().split('\n');
-            const plots = {};
-            if (lines.length <= 1) return plots;
+            const plots = {}; // Object to hold plot data
+            if (lines.length <= 1) return plots; // Handle empty or header-only CSV
+
+            // Skip header row (i=0)
             for (let i = 1; i < lines.length; i++) {
                 const line = lines[i].trim();
-                if (line === "") continue;
-                const values = line.split(',');
-                if (values.length !== 5) { console.warn(`Skipping invalid CSV line: ${line}`); continue; }
-                const plotName = values[0].trim();
-                const dataLine = `${values[1].trim()},${values[2].trim()},${values[3].trim()},${values[4].trim()}`;
-                if (!plots[plotName]) plots[plotName] = [];
-                plots[plotName].push(dataLine);
+                if (line === "") continue; // Skip empty lines
+
+                const values = parseCsvLine(line); // Use robust parser
+
+                // Expecting: PlotName, Type, Name, Value, Label
+                if (values.length >= 5) { // Check if we got at least 5 values
+                    const plotName = values[0]; // Correctly parsed name
+                    const dimensionType = values[1] || '';
+                    const dimensionName = values[2] || '';
+                    const value = values[3] || '';
+                    const levelLabel = values[4] || '';
+
+                    if (!plots[plotName]) {
+                        plots[plotName] = []; // Initialize array for this plot if new
+                    }
+                    // Store structured data object
+                    plots[plotName].push({ dimensionType, dimensionName, value, levelLabel });
+
+                } else {
+                     console.warn(`Skipping invalid CSV line after parsing: ${line} -> Parsed:`, values);
+                }
             }
-            return plots;
+            return plots; // Return the object containing arrays of data objects
          }
 
         // --- Function to Create a Checkbox Item ---
@@ -318,20 +394,20 @@
 
             const checkbox = document.createElement('input');
             checkbox.type = 'checkbox';
+            // Sanitize name for ID - replace non-alphanumeric with hyphen
             const safeId = `plot-checkbox-${name.replace(/[^a-zA-Z0-9]/g, '-')}`;
             checkbox.id = safeId;
             checkbox.value = name;
             checkbox.onchange = handlePlotSelectionChange;
 
-            if (name === globalPlotName) {
-                checkbox.checked = false;
-            } else if (defaultSelectedPlots.includes(name)) {
+            // Check if this plot should be initially selected
+            if (defaultSelectedPlots.includes(name)) {
                 checkbox.checked = true;
             }
 
             const label = document.createElement('label');
             label.htmlFor = checkbox.id;
-            label.textContent = name;
+            label.textContent = name; // Display original name
 
             itemDiv.appendChild(checkbox);
             itemDiv.appendChild(label);
@@ -339,40 +415,37 @@
         }
 
         // --- Function to Populate Checkbox List and Global Selector ---
-        function populatePlotList() {
+        function populatePlotList(plotNames) { // Accepts sorted plot names
             const listContainer = document.getElementById('plotListContainer');
             const globalSelector = document.getElementById('globalPlotSelector');
             listContainer.innerHTML = '';
             globalSelector.innerHTML = '';
 
-            if (!allPlotData || Object.keys(allPlotData).length === 0) {
+            if (!plotNames || plotNames.length === 0) {
                 listContainer.innerHTML = '<p>No plots found</p>';
                 globalSelector.innerHTML = '<option value="">No plots</option>';
                 return;
             }
-            let plotNames = Object.keys(allPlotData);
+
             let globalExists = plotNames.includes(globalPlotName);
 
             // Populate SVG Checkbox List
+            // Pin Global plot if it exists
             if (globalExists) {
                 listContainer.appendChild(createCheckboxItem(globalPlotName, true));
             }
-            let otherPlotNames = plotNames.filter(name => name !== globalPlotName);
-            otherPlotNames.sort();
-            otherPlotNames.forEach(name => listContainer.appendChild(createCheckboxItem(name, false)));
-
-            // Populate Global Canvas Selector Dropdown
-            plotNames.sort((a, b) => {
-                 if (a === globalPlotName) return -1;
-                 if (b === globalPlotName) return 1;
-                 return a.localeCompare(b);
+            // Add other plots, already sorted
+            plotNames.filter(name => name !== globalPlotName).forEach(name => {
+                listContainer.appendChild(createCheckboxItem(name, false));
             });
+
+            // Populate Global Canvas Selector Dropdown (already sorted with Global first)
             plotNames.forEach(name => {
                 const option = document.createElement('option');
                 option.value = name;
-                option.textContent = name;
+                option.textContent = name; // Display original name
                 if (name === globalPlotName) {
-                    option.selected = true;
+                    option.selected = true; // Select Global by default
                 }
                 globalSelector.appendChild(option);
             });
@@ -384,7 +457,8 @@
             const items = document.querySelectorAll('#plotListContainer .plot-list-item');
             items.forEach(item => {
                 const label = item.querySelector('label');
-                const plotName = label.textContent.toLowerCase();
+                const plotName = label.textContent.toLowerCase(); // Use original name for searching
+                // Show pinned items OR items matching the search term
                 item.style.display = (item.classList.contains('pinned') || plotName.includes(searchTerm)) ? 'block' : 'none';
             });
          }
@@ -392,29 +466,31 @@
         // --- Select/Deselect All Functions ---
         function selectAllPlots() {
             const checkboxes = document.querySelectorAll('#plotListContainer input[type="checkbox"]');
-            checkboxes.forEach(cb => { if (cb.closest('.plot-list-item').style.display !== 'none') cb.checked = true; });
-            handlePlotSelectionChange();
+            checkboxes.forEach(cb => {
+                // Only check if the item is currently visible (respects filter)
+                if (cb.closest('.plot-list-item').style.display !== 'none') {
+                    cb.checked = true;
+                }
+            });
+            handlePlotSelectionChange(); // Update display
         }
 
         function deselectAllPlots() {
             const checkboxes = document.querySelectorAll('#plotListContainer input[type="checkbox"]');
             checkboxes.forEach(cb => cb.checked = false);
-            handlePlotSelectionChange();
+            handlePlotSelectionChange(); // Update display
         }
 
-        // --- Function to Import Data (Generic) ---
+        // --- Function to Load Data into a Doughnut Instance ---
         function loadSpecificPlotData(plotName, targetInstance) {
              if (!targetInstance || !allPlotData || !allPlotData[plotName]) return false;
-             const plotDataLines = allPlotData[plotName];
-             const plotCsvString = plotDataLines.join('\n');
-             const lines = plotCsvString.trim().split('\n');
-             if (lines.length > 0) {
-                for (let i = 0; i < lines.length; i++) {
-                    const values = lines[i].split(',');
-                    if (values.length === 4) {
-                        targetInstance.addDimension(values[0].trim(), values[1].trim(), values[2].trim(), values[3].trim());
-                    } else { console.warn(`Skipping invalid data line during import: ${lines[i]}`); }
-                }
+             const plotDataRows = allPlotData[plotName]; // Get the array of data objects
+
+             if (plotDataRows.length > 0) {
+                plotDataRows.forEach(row => {
+                    // Use the properties from the stored object
+                    targetInstance.addDimension(row.dimensionType, row.dimensionName, row.value, row.levelLabel);
+                });
                 return true;
              }
              return false;
@@ -423,19 +499,28 @@
         // --- Function to Import Data and Cache (Only for SVG generation) ---
         function importAndCacheDataForSVG(plotName, targetInstance) {
              if (!targetInstance || !allPlotData || !allPlotData[plotName]) return null;
+
+             // Check cache first
              if (plotDimensionDataCache[plotName]) {
                  const cachedData = plotDimensionDataCache[plotName];
+                 // Load from cache directly into the instance
                  cachedData.inner.forEach(dim => dim.levels.forEach(lvl => targetInstance.addDimension('inner', dim.name, lvl.value, lvl.label)));
                  cachedData.outer.forEach(dim => dim.levels.forEach(lvl => targetInstance.addDimension('outer', dim.name, lvl.value, lvl.label)));
-                 return cachedData;
+                 return cachedData; // Return cached structured data
              }
+
+             // Not cached: Load data into the instance
              loadSpecificPlotData(plotName, targetInstance);
+
+             // Cache the structured data from the instance *after* loading
+             // Use JSON stringify/parse for a deep copy to avoid mutation issues
              const structuredData = {
                  inner: JSON.parse(JSON.stringify(targetInstance._innerDims.dimensions)),
                  outer: JSON.parse(JSON.stringify(targetInstance._outerDims.dimensions))
              };
              plotDimensionDataCache[plotName] = structuredData;
-             return structuredData;
+
+             return structuredData; // Return the newly created structured data
         }
 
 
@@ -449,6 +534,7 @@
                 const svgRoot = svgDoc.documentElement;
 
                 if (svgRoot && svgRoot.tagName.toLowerCase() === 'svg') {
+                    // Make SVG responsive
                     svgRoot.setAttribute('viewBox', `0 0 ${plotSize} ${plotSize}`);
                     svgRoot.removeAttribute('width');
                     svgRoot.removeAttribute('height');
@@ -465,92 +551,116 @@
              if (hoverSpan) hoverSpan.textContent = hoverText || "None";
         }
 
+        // --- Function to Sanitize String for Use as ID ---
+        function sanitizeId(str) {
+            // Replace non-alphanumeric characters with hyphens
+            return str.replace(/[^a-zA-Z0-9]/g, '-');
+        }
 
-        // --- Function to Load and Display a Single SVG Plot ---
-        function loadAndDisplayPlot(plotName) {
+        // --- Function to Update the Displayed SVG Plots ---
+        function updateDisplayedPlots(selectedPlotNames) {
             const plotDisplayArea = document.getElementById('plotDisplayArea');
-            if (!plotDisplayArea || !allPlotData || !allPlotData[plotName]) {
-                console.error(`Data or display area not ready for plot: ${plotName}`);
-                return;
-            }
-            console.log(`Rendering SVG plot: ${plotName}`);
+            if (!plotDisplayArea) return;
 
-            const tempDonutSVG = new Doughnut_SVG(plotSize, plotScale, plotTextSize,
-                "doughnutCanvas", "doughnutDiv", null, null, null, null);
+            plotDisplayArea.innerHTML = ''; // Clear previous plots
 
-            importAndCacheDataForSVG(plotName, tempDonutSVG);
-            // Set label visibility based on global state BEFORE generating SVG
-            tempDonutSVG.setLabelsVisible(isSvgLabelsVisible);
+            // Determine layout class based on number of plots
+            plotDisplayArea.classList.toggle('multi-row', selectedPlotNames.length >= maxPlotsFirstRow);
 
-            const finalSvgElement = generateAndProcessSVG(plotName, tempDonutSVG);
-
-            const plotContainer = document.createElement('div');
-            plotContainer.className = 'plot-container';
-
-            const plotTitle = document.createElement('p');
-            plotTitle.className = 'plot-title';
-            plotTitle.textContent = plotName;
-
-            plotContainer.appendChild(plotTitle);
-
-            if (finalSvgElement) {
-                plotContainer.appendChild(finalSvgElement);
-            } else {
-                plotContainer.innerHTML += tempDonutSVG.exportSVG(); // Fallback
+            if (selectedPlotNames.length === 0) {
+                 plotDisplayArea.innerHTML = '<p style="text-align: center; width: 100%; color: #555;">Select plots from the list above.</p>';
+                 return; // Exit early if no plots selected
             }
 
-            plotDisplayArea.appendChild(plotContainer);
+            // Create and append plots
+            selectedPlotNames.forEach(plotName => {
+                if (allPlotData[plotName]) {
+                    const plotContainer = document.createElement('div');
+                    // Use sanitized name for ID to avoid issues with special characters
+                    plotContainer.id = `plot-${sanitizeId(plotName)}`;
+                    plotContainer.className = 'plot-container';
+
+                    const plotTitle = document.createElement('p');
+                    plotTitle.className = 'plot-title';
+                    plotTitle.textContent = plotName; // Display original name
+
+                    plotContainer.appendChild(plotTitle);
+
+                    // Create a temporary SVG instance for this plot
+                    const tempDonutSVG = new Doughnut_SVG(plotSize, plotScale, plotTextSize,
+                        "doughnutCanvas", "doughnutDiv", null, null, null, null);
+
+                    // Load data (use caching mechanism)
+                    importAndCacheDataForSVG(plotName, tempDonutSVG);
+
+                    // Set label visibility based on global state BEFORE generating SVG
+                    tempDonutSVG.setLabelsVisible(isSvgLabelsVisible);
+
+                    // Generate and process the SVG element
+                    const finalSvgElement = generateAndProcessSVG(plotName, tempDonutSVG);
+
+                    if (finalSvgElement) {
+                        plotContainer.appendChild(finalSvgElement);
+                    } else {
+                        // Fallback or error message if SVG generation failed
+                        plotContainer.innerHTML += '<p style="color:red;">Error generating plot</p>';
+                    }
+                    plotDisplayArea.appendChild(plotContainer);
+                } else {
+                    console.warn(`Data not found for selected plot: ${plotName}`);
+                }
+            });
+
+            // **** ADD CALL TO UPDATE DATA TABLE ****
+            updateDataTable(selectedPlotNames); // Update the data table with selected plots
+            // **** END OF ADDED CALL ****
         }
 
 
-        // --- Function to handle checkbox changes and update SVG display ---
+        // --- Function to handle checkbox changes and update display ---
         function handlePlotSelectionChange() {
-            const plotDisplayArea = document.getElementById('plotDisplayArea');
             const selectedPlotsBox = document.getElementById('selectedPlotsDisplayBox');
             const checkboxes = document.querySelectorAll('#plotListContainer input[type="checkbox"]');
             const selectedPlotNames = [];
 
             checkboxes.forEach(cb => { if (cb.checked) selectedPlotNames.push(cb.value); });
 
-            if (plotDisplayArea) plotDisplayArea.innerHTML = '';
-            if (selectedPlotsBox) selectedPlotsBox.innerHTML = '';
-
-            if (plotDisplayArea) {
-                plotDisplayArea.classList.toggle('multi-row', selectedPlotNames.length >= maxPlotsFirstRow);
-            }
-
+            // Update the tags display
+            if (selectedPlotsBox) selectedPlotsBox.innerHTML = ''; // Clear previous tags
             if (selectedPlotNames.length > 0) {
+                // Sort selected names (optional, but nice for tags)
                 selectedPlotNames.sort((a, b) => {
-                    if (a === globalPlotName) return -1;
+                    if (a === globalPlotName) return -1; // Keep Global first if selected
                     if (b === globalPlotName) return 1;
-                    return a.localeCompare(b);
+                    return a.localeCompare(b); // Alphabetical otherwise
                 });
 
                 selectedPlotNames.forEach(name => {
                     const tag = document.createElement('span');
                     tag.className = 'selected-plot-tag';
-                    tag.textContent = name;
-                    tag.dataset.plotName = name;
+                    tag.textContent = name; // Display original name
+                    tag.dataset.plotName = name; // Store original name for removal
                     tag.onclick = handleTagClick;
                     selectedPlotsBox.appendChild(tag);
                 });
-                // Render SVG plots
-                selectedPlotNames.forEach(plotName => loadAndDisplayPlot(plotName));
             } else {
                 if (selectedPlotsBox) selectedPlotsBox.innerHTML = '<span style="color: #888; font-style: italic;">None</span>';
-                if (plotDisplayArea) plotDisplayArea.innerHTML = '<p style="text-align: center; width: 100%; color: #555;">Select plots from the list above.</p>';
             }
+
+            // Update the SVG plots display area
+            updateDisplayedPlots(selectedPlotNames); // Pass the selected names
          }
 
         // --- Function to handle clicking on a selected plot tag ---
         function handleTagClick(event) {
              const plotNameToRemove = event.target.dataset.plotName;
             if (!plotNameToRemove) return;
+            // Sanitize name to find the correct checkbox ID
             const safeId = `plot-checkbox-${plotNameToRemove.replace(/[^a-zA-Z0-9]/g, '-')}`;
             const checkbox = document.getElementById(safeId);
             if (checkbox) {
-                checkbox.checked = false;
-                handlePlotSelectionChange();
+                checkbox.checked = false; // Uncheck the box
+                handlePlotSelectionChange(); // Trigger update
             } else { console.warn(`Could not find checkbox for tag: ${plotNameToRemove}`); }
          }
 
@@ -583,8 +693,6 @@
                 if (svgElement) {
                     // Find all text elements within this SVG
                     const textElements = svgElement.querySelectorAll('text');
-                    console.log(`Toggling ${textElements.length} labels in ${container.querySelector('.plot-title')?.textContent} to ${isSvgLabelsVisible}`);
-
                     // Toggle visibility based on the global state
                     textElements.forEach(textEl => {
                         textEl.style.visibility = isSvgLabelsVisible ? 'visible' : 'hidden';
@@ -593,14 +701,72 @@
             });
          }
 
+        // --- Function to Update the Data Table ---
+        function updateDataTable(plotNames) {
+            const container = document.getElementById('dataTableContainer');
+            if (!container) return; // Exit if container not found
+
+            container.innerHTML = ''; // Clear previous table(s)
+
+            if (!plotNames || plotNames.length === 0) {
+                container.innerHTML = '<p>Select a plot above to view its data.</p>';
+                return;
+            }
+
+            let tableHtml = '';
+
+            plotNames.forEach(plotName => {
+                const plotSpecificData = allPlotData[plotName]; // Get array of data objects
+
+                if (plotSpecificData && plotSpecificData.length > 0) {
+                    // Add a heading for each plot's table
+                    tableHtml += `<h4>Data for: ${plotName.replace(/^"|"$/g, '')}</h4>`; // Remove quotes for display
+
+                    tableHtml += `
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Dimension Name</th>
+                                    <th>Value</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                    `;
+
+                    // Sort data alphabetically by DimensionName for consistency
+                    // Use slice() to avoid modifying the original allPlotData array
+                    const sortedData = plotSpecificData.slice().sort((a, b) => a.dimensionName.localeCompare(b.dimensionName));
+
+                    sortedData.forEach(dataRow => {
+                        // Access properties from the data object
+                        tableHtml += `
+                            <tr>
+                                <td>${dataRow.dimensionName}</td>
+                                <td>${dataRow.value}</td>
+                            </tr>
+                        `;
+                    });
+
+                    tableHtml += `
+                            </tbody>
+                        </table>
+                    `;
+                } else {
+                     tableHtml += `<h4>No data found for: ${plotName.replace(/^"|"$/g, '')}</h4>`;
+                }
+            });
+
+            container.innerHTML = tableHtml;
+        }
+
 
         // --- Fetch and Process CSV on Page Load ---
         async function initializePlots() {
             try {
-                const response = await fetch('doughnut_CSV.csv');
+                const response = await fetch('doughnut_CSV.csv'); // Ensure correct path
                 if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
                 const csvString = await response.text();
-                allPlotData = parsePlotDataCSV(csvString);
+                allPlotData = parsePlotDataCSV(csvString); // Use the modified parser
 
                 // --- Initialize Global Canvas Plot ---
                 const globalInfoBox = document.getElementById('globalInfoBox');
@@ -611,7 +777,7 @@
                         plotSize, plotScale, plotTextSize,
                         "globalDoughnutCanvas",
                         "globalDoughnutDiv",
-                        "globalInfoBox", // Pass container ID
+                        null, // No dedicated infoId needed, handled by override
                         null, null, null
                     );
                     // Override _updateInfo to target specific span
@@ -622,14 +788,16 @@
                     loadSpecificPlotData(globalPlotName, globalDonutInstance);
                     globalDonutInstance.setLabelsVisible(true); // Ensure labels are ON
 
-                    // Attach mousemove listener
+                    // Attach mousemove listener for hover info
                     globalDonutInstance._canvas.addEventListener("mousemove", (e) => {
-                        // Directly call the instance's _checkMouse method
-                        // This method (after modification) handles hover detection,
-                        // cursor change, setting _hoveredDimInfo, updating info text,
-                        // and triggering redraw for the border.
-                        globalDonutInstance._checkMouse(e);
+                        globalDonutInstance._checkMouse(e); // Handles hover detection and info update
                     });
+                    // Attach mouseleave listener to clear hover info
+                    globalDonutInstance._canvas.addEventListener("mouseleave", (e) => {
+                        updateGlobalInfoText("None"); // Clear info when mouse leaves canvas
+                        globalDonutInstance._canvas.style.cursor = "default"; // Reset cursor
+                    });
+
 
                     if(globalPlotTitleEl) globalPlotTitleEl.textContent = globalPlotName;
                     globalDonutInstance._updateInfo("None"); // Set initial text
@@ -641,9 +809,21 @@
                 }
                 // --- End Global Canvas Plot Init ---
 
+                // Sort plot names for UI population
+                let plotNames = Object.keys(allPlotData);
+                sortedPlotNames = plotNames.sort((a, b) => {
+                     if (a === globalPlotName) return -1; // Global first
+                     if (b === globalPlotName) return 1;
+                     return a.localeCompare(b); // Alphabetical otherwise
+                });
 
-                populatePlotList(); // Populate both lists
-                handlePlotSelectionChange(); // Render initially checked SVG plots
+                populatePlotList(sortedPlotNames); // Populate both lists using sorted names
+                handlePlotSelectionChange(); // Render initially checked SVG plots and data table
+
+                // Set initial state of SVG label toggle checkbox
+                const svgLabelCheckbox = document.getElementById('svgLabelToggle');
+                if (svgLabelCheckbox) svgLabelCheckbox.checked = isSvgLabelsVisible;
+
 
             } catch (error) {
                 console.error("Error initializing plots:", error);
@@ -655,6 +835,8 @@
                  if(globalInfoBox) globalInfoBox.innerHTML = '<p style="color: red;">Initialization failed.</p>';
                  const globalPlotTitleEl = document.getElementById('globalPlotTitle');
                  if(globalPlotTitleEl) globalPlotTitleEl.textContent = "Error";
+                 const dataTableContainer = document.getElementById('dataTableContainer');
+                 if(dataTableContainer) dataTableContainer.innerHTML = '<p style="color: red;">Failed to load data.</p>';
             }
         }
 
