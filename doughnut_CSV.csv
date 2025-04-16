@@ -1,11 +1,11 @@
 PlotName,DimensionType,DimensionName,Value,LevelLabel
-Global,outer,Energy use,10.52,1
-Global,outer,Material use,0,1
-Global,outer,Water use,0,1
+Global,outer,Energy use,1.84,1
+Global,outer,Material use,0.00,1
+Global,outer,Water use,0.00,1
 Global,outer,Biodiversity,#N/A,1
-Global,outer,Antibiotic use,0,1
-Global,outer,Climate change,53.38,1
-Global,outer,Air pollution,17.38,1
+Global,outer,Antibiotic use,0.00,1
+Global,outer,Climate change,60.41,1
+Global,outer,Air pollution,19.94,1
 Global,inner,PC,37.03,1
 Global,inner,PC,64.46,2
 Global,inner,SC,15.78,1
@@ -13,25 +13,25 @@ Global,inner,MC,13.32,1
 Global,inner,MC,19.22,2
 Global,inner,SA,19.14,1
 Global,inner,SA,31.96,2
-Global,inner,UN,0,1
-Global,inner,FP,37.9,1
+Global,inner,UN,0.00,1
+Global,inner,FP,37.90,1
 Global,inner,HS,#N/A,1
 Global,inner,CO,38.46,1
-Global,inner,HR,0,1
-Global,inner,PR,0,1
-Global,inner,EX,0,1
+Global,inner,HR,0.00,1
+Global,inner,PR,0.00,1
+Global,inner,EX,0.00,1
 Global,inner,RE,36.66,1
 Global,inner,AM,32.79,1
 Global,inner,EQ,53.66,1
-Global,inner,MR,31.1,1
+Global,inner,MR,31.10,1
 Global,inner,PN,8.11,1
-Afghanistan,outer,Energy use,0,1
-Afghanistan,outer,Material use,0,1
-Afghanistan,outer,Water use,0,1
+Afghanistan,outer,Energy use,0.00,1
+Afghanistan,outer,Material use,0.00,1
+Afghanistan,outer,Water use,0.00,1
 Afghanistan,outer,Biodiversity,#N/A,1
-Afghanistan,outer,Antibiotic use,0,1
-Afghanistan,outer,Climate change,0,1
-Afghanistan,outer,Air pollution,0,1
+Afghanistan,outer,Antibiotic use,0.00,1
+Afghanistan,outer,Climate change,0.00,1
+Afghanistan,outer,Air pollution,0.00,1
 Afghanistan,inner,PC,77.06,1
 Afghanistan,inner,PC,80.26,2
 Afghanistan,inner,SC,48.61,1
@@ -40,7 +40,7 @@ Afghanistan,inner,MC,85.67,2
 Afghanistan,inner,SA,91.66,1
 Afghanistan,inner,SA,14.38,2
 Afghanistan,inner,UN,45.13,1
-Afghanistan,inner,FP,73.4,1
+Afghanistan,inner,FP,73.40,1
 Afghanistan,inner,HS,#N/A,1
 Afghanistan,inner,CO,82.84,1
 Afghanistan,inner,HR,85.37,1
@@ -48,105 +48,2081 @@ Afghanistan,inner,PR,91.85,1
 Afghanistan,inner,EX,74.31,1
 Afghanistan,inner,RE,92.94,1
 Afghanistan,inner,AM,76.52,1
-Afghanistan,inner,EQ,67.6,1
-Afghanistan,inner,MR,52.1,1
+Afghanistan,inner,EQ,67.60,1
+Afghanistan,inner,MR,52.10,1
 Afghanistan,inner,PN,40.54,1
-Albania,outer,Energy use,0,1
-Albania,outer,Material use,0,1
-Albania,outer,Water use,0,1
+Albania,outer,Energy use,0.00,1
+Albania,outer,Material use,0.00,1
+Albania,outer,Water use,0.00,1
 Albania,outer,Biodiversity,#N/A,1
-Albania,outer,Antibiotic use,12.35,1
-Albania,outer,Climate change,24.15,1
-Albania,outer,Air pollution,12.59,1
+Albania,outer,Antibiotic use,7.61,1
+Albania,outer,Climate change,31.81,1
+Albania,outer,Air pollution,8.30,1
 Albania,inner,PC,29.39,1
 Albania,inner,PC,91.32,2
-Albania,inner,SC,0,1
-Albania,inner,MC,0,1
-Albania,inner,MC,0,2
+Albania,inner,SC,0.00,1
+Albania,inner,MC,0.00,1
+Albania,inner,MC,0.00,2
 Albania,inner,SA,5.48,1
 Albania,inner,SA,24.53,2
 Albania,inner,UN,94.24,1
 Albania,inner,FP,24.91,1
 Albania,inner,HS,#N/A,1
 Albania,inner,CO,9.44,1
-Albania,inner,HR,0,1
-Albania,inner,PR,0,1
+Albania,inner,HR,0.00,1
+Albania,inner,PR,0.00,1
 Albania,inner,EX,14.34,1
 Albania,inner,RE,2.35,1
 Albania,inner,AM,10.27,1
-Albania,inner,EQ,33.8,1
+Albania,inner,EQ,33.80,1
 Albania,inner,MR,56.83,1
-Albania,inner,PN,0,1
-United States,outer,Energy use,79.15,1
-United States,outer,Material use,41.71,1
-United States,outer,Water use,27.86,1
-United States,outer,Biodiversity,#N/A,1
-United States,outer,Antibiotic use,19.43,1
-United States,outer,Climate change,150,1
-United States,outer,Air pollution,150,1
-United States,inner,PC,0,1
-United States,inner,PC,6.67,2
-United States,inner,SC,1.31,1
-United States,inner,MC,0,1
-United States,inner,MC,0,2
-United States,inner,SA,12.56,1
-United States,inner,SA,64.82,2
-United States,inner,UN,0,1
-United States,inner,FP,12.97,1
-United States,inner,HS,14.09,1
-United States,inner,CO,0,1
-United States,inner,HR,0,1
-United States,inner,PR,0,1
-United States,inner,EX,0,1
-United States,inner,RE,5.88,1
-United States,inner,AM,0,1
-United States,inner,EQ,41.46,1
-United States,inner,MR,26.66,1
-United States,inner,PN,0,1
-Honduras,outer,Energy use,10.52,1
-Honduras,outer,Material use,0,1
-Honduras,outer,Water use,0,1
-Honduras,outer,Biodiversity,#N/A,1
-Honduras,outer,Antibiotic use,0,1
-Honduras,outer,Climate change,53.38,1
-Honduras,outer,Air pollution,17.38,1
-Honduras,inner,PC,37.03,1
-Honduras,inner,PC,64.46,2
-Honduras,inner,SC,15.78,1
-Honduras,inner,MC,13.32,1
-Honduras,inner,MC,19.22,2
-Honduras,inner,SA,19.14,1
-Honduras,inner,SA,31.96,2
-Honduras,inner,UN,0,1
-Honduras,inner,FP,37.9,1
-Honduras,inner,HS,#N/A,1
-Honduras,inner,CO,38.46,1
-Honduras,inner,HR,0,1
-Honduras,inner,PR,0,1
-Honduras,inner,EX,0,1
-Honduras,inner,RE,36.66,1
-Honduras,inner,AM,32.79,1
-Honduras,inner,EQ,53.66,1
-Honduras,inner,MR,31.1,1
-Honduras,inner,PN,8.11,1
-Guatemala,outer,Energy use,0,1
-Guatemala,outer,Material use,0,1
-Guatemala,outer,Water use,0,1
+Albania,inner,PN,0.00,1
+Algeria,outer,Energy use,0.00,1
+Algeria,outer,Material use,0.00,1
+Algeria,outer,Water use,0.00,1
+Algeria,outer,Biodiversity,#N/A,1
+Algeria,outer,Antibiotic use,32.43,1
+Algeria,outer,Climate change,66.20,1
+Algeria,outer,Air pollution,0.00,1
+Algeria,inner,PC,30.28,1
+Algeria,inner,PC,75.69,2
+Algeria,inner,SC,6.77,1
+Algeria,inner,MC,0.67,1
+Algeria,inner,MC,11.52,2
+Algeria,inner,SA,12.78,1
+Algeria,inner,SA,36.14,2
+Algeria,inner,UN,11.93,1
+Algeria,inner,FP,#N/A,1
+Algeria,inner,HS,#N/A,1
+Algeria,inner,CO,68.29,1
+Algeria,inner,HR,6.72,1
+Algeria,inner,PR,37.34,1
+Algeria,inner,EX,62.06,1
+Algeria,inner,RE,54.12,1
+Algeria,inner,AM,25.49,1
+Algeria,inner,EQ,37.28,1
+Algeria,inner,MR,40.27,1
+Algeria,inner,PN,0.00,1
+American Samoa,outer,Energy use,48.77,1
+American Samoa,outer,Material use,23.84,1
+American Samoa,outer,Water use,0.00,1
+American Samoa,outer,Biodiversity,#N/A,1
+American Samoa,outer,Antibiotic use,#N/A,1
+American Samoa,outer,Climate change,#N/A,1
+American Samoa,outer,Air pollution,#N/A,1
+American Samoa,inner,PC,47.23,1
+American Samoa,inner,PC,85.41,2
+American Samoa,inner,SC,13.04,1
+American Samoa,inner,MC,#N/A,1
+American Samoa,inner,MC,#N/A,2
+American Samoa,inner,SA,29.31,1
+American Samoa,inner,SA,60.91,2
+American Samoa,inner,UN,#N/A,1
+American Samoa,inner,FP,#N/A,1
+American Samoa,inner,HS,#N/A,1
+American Samoa,inner,CO,97.75,1
+American Samoa,inner,HR,#N/A,1
+American Samoa,inner,PR,#N/A,1
+American Samoa,inner,EX,#N/A,1
+American Samoa,inner,RE,#N/A,1
+American Samoa,inner,AM,47.95,1
+American Samoa,inner,EQ,36.93,1
+American Samoa,inner,MR,#N/A,1
+American Samoa,inner,PN,#N/A,1
+Andorra,outer,Energy use,64.59,1
+Andorra,outer,Material use,44.55,1
+Andorra,outer,Water use,0.00,1
+Andorra,outer,Biodiversity,#N/A,1
+Andorra,outer,Antibiotic use,#N/A,1
+Andorra,outer,Climate change,150.00,1
+Andorra,outer,Air pollution,150.00,1
+Andorra,inner,PC,20.24,1
+Andorra,inner,PC,37.30,2
+Andorra,inner,SC,0.00,1
+Andorra,inner,MC,#N/A,1
+Andorra,inner,MC,0.00,2
+Andorra,inner,SA,0.00,1
+Andorra,inner,SA,0.00,2
+Andorra,inner,UN,#N/A,1
+Andorra,inner,FP,#N/A,1
+Andorra,inner,HS,#N/A,1
+Andorra,inner,CO,0.00,1
+Andorra,inner,HR,0.00,1
+Andorra,inner,PR,#N/A,1
+Andorra,inner,EX,0.00,1
+Andorra,inner,RE,#N/A,1
+Andorra,inner,AM,0.00,1
+Andorra,inner,EQ,32.06,1
+Andorra,inner,MR,24.89,1
+Andorra,inner,PN,0.00,1
+Angola,outer,Energy use,0.00,1
+Angola,outer,Material use,0.00,1
+Angola,outer,Water use,0.00,1
+Angola,outer,Biodiversity,#N/A,1
+Angola,outer,Antibiotic use,0.00,1
+Angola,outer,Climate change,1.12,1
+Angola,outer,Air pollution,0.00,1
+Angola,inner,PC,49.93,1
+Angola,inner,PC,85.07,2
+Angola,inner,SC,22.62,1
+Angola,inner,MC,13.18,1
+Angola,inner,MC,51.17,2
+Angola,inner,SA,35.51,1
+Angola,inner,SA,26.53,2
+Angola,inner,UN,62.00,1
+Angola,inner,FP,100.00,1
+Angola,inner,HS,#N/A,1
+Angola,inner,CO,96.94,1
+Angola,inner,HR,55.57,1
+Angola,inner,PR,75.11,1
+Angola,inner,EX,86.71,1
+Angola,inner,RE,57.65,1
+Angola,inner,AM,75.78,1
+Angola,inner,EQ,69.69,1
+Angola,inner,MR,47.66,1
+Angola,inner,PN,48.65,1
+Antigua and Barbuda,outer,Energy use,0.00,1
+Antigua and Barbuda,outer,Material use,0.00,1
+Antigua and Barbuda,outer,Water use,0.00,1
+Antigua and Barbuda,outer,Biodiversity,#N/A,1
+Antigua and Barbuda,outer,Antibiotic use,18.28,1
+Antigua and Barbuda,outer,Climate change,150.00,1
+Antigua and Barbuda,outer,Air pollution,33.30,1
+Antigua and Barbuda,inner,PC,13.34,1
+Antigua and Barbuda,inner,PC,60.62,2
+Antigua and Barbuda,inner,SC,27.22,1
+Antigua and Barbuda,inner,MC,0.00,1
+Antigua and Barbuda,inner,MC,0.00,2
+Antigua and Barbuda,inner,SA,13.28,1
+Antigua and Barbuda,inner,SA,12.85,2
+Antigua and Barbuda,inner,UN,#N/A,1
+Antigua and Barbuda,inner,FP,#N/A,1
+Antigua and Barbuda,inner,HS,#N/A,1
+Antigua and Barbuda,inner,CO,53.81,1
+Antigua and Barbuda,inner,HR,0.00,1
+Antigua and Barbuda,inner,PR,0.00,1
+Antigua and Barbuda,inner,EX,0.00,1
+Antigua and Barbuda,inner,RE,0.00,1
+Antigua and Barbuda,inner,AM,26.23,1
+Antigua and Barbuda,inner,EQ,33.45,1
+Antigua and Barbuda,inner,MR,59.19,1
+Antigua and Barbuda,inner,PN,0.00,1
+Argentina,outer,Energy use,0.00,1
+Argentina,outer,Material use,0.00,1
+Argentina,outer,Water use,0.00,1
+Argentina,outer,Biodiversity,#N/A,1
+Argentina,outer,Antibiotic use,0.72,1
+Argentina,outer,Climate change,150.00,1
+Argentina,outer,Air pollution,46.86,1
+Argentina,inner,PC,16.79,1
+Argentina,inner,PC,76.80,2
+Argentina,inner,SC,9.83,1
+Argentina,inner,MC,0.00,1
+Argentina,inner,MC,0.00,2
+Argentina,inner,SA,24.54,1
+Argentina,inner,SA,0.00,2
+Argentina,inner,UN,0.00,1
+Argentina,inner,FP,26.93,1
+Argentina,inner,HS,72.14,1
+Argentina,inner,CO,0.00,1
+Argentina,inner,HR,0.00,1
+Argentina,inner,PR,0.00,1
+Argentina,inner,EX,0.00,1
+Argentina,inner,RE,1.18,1
+Argentina,inner,AM,23.41,1
+Argentina,inner,EQ,39.72,1
+Argentina,inner,MR,73.68,1
+Argentina,inner,PN,32.43,1
+Armenia,outer,Energy use,20.59,1
+Armenia,outer,Material use,0.00,1
+Armenia,outer,Water use,0.00,1
+Armenia,outer,Biodiversity,#N/A,1
+Armenia,outer,Antibiotic use,0.00,1
+Armenia,outer,Climate change,52.75,1
+Armenia,outer,Air pollution,0.98,1
+Armenia,inner,PC,29.39,1
+Armenia,inner,PC,90.77,2
+Armenia,inner,SC,1.82,1
+Armenia,inner,MC,0.00,1
+Armenia,inner,MC,0.00,2
+Armenia,inner,SA,0.04,1
+Armenia,inner,SA,34.69,2
+Armenia,inner,UN,47.74,1
+Armenia,inner,FP,55.98,1
+Armenia,inner,HS,#N/A,1
+Armenia,inner,CO,14.80,1
+Armenia,inner,HR,0.00,1
+Armenia,inner,PR,0.00,1
+Armenia,inner,EX,0.00,1
+Armenia,inner,RE,5.88,1
+Armenia,inner,AM,17.72,1
+Armenia,inner,EQ,38.33,1
+Armenia,inner,MR,73.09,1
+Armenia,inner,PN,0.00,1
+Aruba,outer,Energy use,0.00,1
+Aruba,outer,Material use,0.00,1
+Aruba,outer,Water use,0.00,1
+Aruba,outer,Biodiversity,#N/A,1
+Aruba,outer,Antibiotic use,#N/A,1
+Aruba,outer,Climate change,150.00,1
+Aruba,outer,Air pollution,47.35,1
+Aruba,inner,PC,13.34,1
+Aruba,inner,PC,#N/A,2
+Aruba,inner,SC,#N/A,1
+Aruba,inner,MC,#N/A,1
+Aruba,inner,MC,#N/A,2
+Aruba,inner,SA,#N/A,1
+Aruba,inner,SA,#N/A,2
+Aruba,inner,UN,#N/A,1
+Aruba,inner,FP,#N/A,1
+Aruba,inner,HS,#N/A,1
+Aruba,inner,CO,#N/A,1
+Aruba,inner,HR,#N/A,1
+Aruba,inner,PR,#N/A,1
+Aruba,inner,EX,#N/A,1
+Aruba,inner,RE,#N/A,1
+Aruba,inner,AM,#N/A,1
+Aruba,inner,EQ,35.89,1
+Aruba,inner,MR,#N/A,1
+Aruba,inner,PN,#N/A,1
+Australia,outer,Energy use,82.65,1
+Australia,outer,Material use,57.26,1
+Australia,outer,Water use,55.77,1
+Australia,outer,Biodiversity,#N/A,1
+Australia,outer,Antibiotic use,27.15,1
+Australia,outer,Climate change,150.00,1
+Australia,outer,Air pollution,150.00,1
+Australia,inner,PC,7.50,1
+Australia,inner,PC,53.70,2
+Australia,inner,SC,0.00,1
+Australia,inner,MC,0.00,1
+Australia,inner,MC,0.00,2
+Australia,inner,SA,0.73,1
+Australia,inner,SA,78.78,2
+Australia,inner,UN,#N/A,1
+Australia,inner,FP,6.95,1
+Australia,inner,HS,#N/A,1
+Australia,inner,CO,0.00,1
+Australia,inner,HR,0.00,1
+Australia,inner,PR,0.00,1
+Australia,inner,EX,0.00,1
+Australia,inner,RE,0.00,1
+Australia,inner,AM,0.00,1
+Australia,inner,EQ,25.09,1
+Australia,inner,MR,19.86,1
+Australia,inner,PN,0.00,1
+Austria,outer,Energy use,69.26,1
+Austria,outer,Material use,40.11,1
+Austria,outer,Water use,0.00,1
+Austria,outer,Biodiversity,#N/A,1
+Austria,outer,Antibiotic use,15.86,1
+Austria,outer,Climate change,150.00,1
+Austria,outer,Air pollution,150.00,1
+Austria,inner,PC,7.50,1
+Austria,inner,PC,50.82,2
+Austria,inner,SC,0.00,1
+Austria,inner,MC,0.00,1
+Austria,inner,MC,0.00,2
+Austria,inner,SA,5.26,1
+Austria,inner,SA,13.83,2
+Austria,inner,UN,#N/A,1
+Austria,inner,FP,#N/A,1
+Austria,inner,HS,#N/A,1
+Austria,inner,CO,0.00,1
+Austria,inner,HR,0.00,1
+Austria,inner,PR,0.00,1
+Austria,inner,EX,0.00,1
+Austria,inner,RE,0.00,1
+Austria,inner,AM,0.00,1
+Austria,inner,EQ,29.27,1
+Austria,inner,MR,33.17,1
+Austria,inner,PN,8.11,1
+Azerbaijan,outer,Energy use,0.00,1
+Azerbaijan,outer,Material use,0.00,1
+Azerbaijan,outer,Water use,0.00,1
+Azerbaijan,outer,Biodiversity,#N/A,1
+Azerbaijan,outer,Antibiotic use,0.00,1
+Azerbaijan,outer,Climate change,77.58,1
+Azerbaijan,outer,Air pollution,0.00,1
+Azerbaijan,inner,PC,29.39,1
+Azerbaijan,inner,PC,80.88,2
+Azerbaijan,inner,SC,1.83,1
+Azerbaijan,inner,MC,0.00,1
+Azerbaijan,inner,MC,0.00,2
+Azerbaijan,inner,SA,0.00,1
+Azerbaijan,inner,SA,0.00,2
+Azerbaijan,inner,UN,#N/A,1
+Azerbaijan,inner,FP,#N/A,1
+Azerbaijan,inner,HS,#N/A,1
+Azerbaijan,inner,CO,23.10,1
+Azerbaijan,inner,HR,0.00,1
+Azerbaijan,inner,PR,0.00,1
+Azerbaijan,inner,EX,50.71,1
+Azerbaijan,inner,RE,16.47,1
+Azerbaijan,inner,AM,34.70,1
+Azerbaijan,inner,EQ,43.21,1
+Azerbaijan,inner,MR,54.46,1
+Azerbaijan,inner,PN,9.46,1
+"Bahamas, The",outer,Energy use,35.62,1
+"Bahamas, The",outer,Material use,29.05,1
+"Bahamas, The",outer,Water use,0.00,1
+"Bahamas, The",outer,Biodiversity,#N/A,1
+"Bahamas, The",outer,Antibiotic use,2.39,1
+"Bahamas, The",outer,Climate change,150.00,1
+"Bahamas, The",outer,Air pollution,61.71,1
+"Bahamas, The",inner,PC,13.34,1
+"Bahamas, The",inner,PC,61.76,2
+"Bahamas, The",inner,SC,22.34,1
+"Bahamas, The",inner,MC,0.61,1
+"Bahamas, The",inner,MC,0.00,2
+"Bahamas, The",inner,SA,21.46,1
+"Bahamas, The",inner,SA,21.36,2
+"Bahamas, The",inner,UN,0.00,1
+"Bahamas, The",inner,FP,#N/A,1
+"Bahamas, The",inner,HS,#N/A,1
+"Bahamas, The",inner,CO,57.64,1
+"Bahamas, The",inner,HR,0.00,1
+"Bahamas, The",inner,PR,0.00,1
+"Bahamas, The",inner,EX,0.00,1
+"Bahamas, The",inner,RE,0.00,1
+"Bahamas, The",inner,AM,35.86,1
+"Bahamas, The",inner,EQ,45.99,1
+"Bahamas, The",inner,MR,64.81,1
+"Bahamas, The",inner,PN,4.05,1
+Bahrain,outer,Energy use,4.48,1
+Bahrain,outer,Material use,0.00,1
+Bahrain,outer,Water use,0.00,1
+Bahrain,outer,Biodiversity,#N/A,1
+Bahrain,outer,Antibiotic use,20.40,1
+Bahrain,outer,Climate change,150.00,1
+Bahrain,outer,Air pollution,51.27,1
+Bahrain,inner,PC,21.29,1
+Bahrain,inner,PC,65.58,2
+Bahrain,inner,SC,6.61,1
+Bahrain,inner,MC,0.00,1
+Bahrain,inner,MC,0.00,2
+Bahrain,inner,SA,5.18,1
+Bahrain,inner,SA,95.96,2
+Bahrain,inner,UN,#N/A,1
+Bahrain,inner,FP,13.73,1
+Bahrain,inner,HS,#N/A,1
+Bahrain,inner,CO,67.59,1
+Bahrain,inner,HR,25.27,1
+Bahrain,inner,PR,32.62,1
+Bahrain,inner,EX,0.00,1
+Bahrain,inner,RE,22.35,1
+Bahrain,inner,AM,10.19,1
+Bahrain,inner,EQ,28.22,1
+Bahrain,inner,MR,47.66,1
+Bahrain,inner,PN,0.00,1
+Bangladesh,outer,Energy use,0.00,1
+Bangladesh,outer,Material use,0.00,1
+Bangladesh,outer,Water use,0.00,1
+Bangladesh,outer,Biodiversity,#N/A,1
+Bangladesh,outer,Antibiotic use,4.74,1
+Bangladesh,outer,Climate change,0.00,1
+Bangladesh,outer,Air pollution,0.00,1
+Bangladesh,inner,PC,35.23,1
+Bangladesh,inner,PC,78.13,2
+Bangladesh,inner,SC,40.33,1
+Bangladesh,inner,MC,4.60,1
+Bangladesh,inner,MC,19.55,2
+Bangladesh,inner,SA,27.94,1
+Bangladesh,inner,SA,29.24,2
+Bangladesh,inner,UN,#N/A,1
+Bangladesh,inner,FP,68.73,1
+Bangladesh,inner,HS,#N/A,1
+Bangladesh,inner,CO,63.87,1
+Bangladesh,inner,HR,72.99,1
+Bangladesh,inner,PR,69.53,1
+Bangladesh,inner,EX,89.54,1
+Bangladesh,inner,RE,71.76,1
+Bangladesh,inner,AM,50.44,1
+Bangladesh,inner,EQ,45.99,1
+Bangladesh,inner,MR,18.38,1
+Bangladesh,inner,PN,0.00,1
+Barbados,outer,Energy use,0.00,1
+Barbados,outer,Material use,0.00,1
+Barbados,outer,Water use,0.00,1
+Barbados,outer,Biodiversity,#N/A,1
+Barbados,outer,Antibiotic use,16.33,1
+Barbados,outer,Climate change,150.00,1
+Barbados,outer,Air pollution,15.39,1
+Barbados,inner,PC,13.34,1
+Barbados,inner,PC,38.03,2
+Barbados,inner,SC,11.10,1
+Barbados,inner,MC,0.00,1
+Barbados,inner,MC,0.00,2
+Barbados,inner,SA,15.64,1
+Barbados,inner,SA,7.90,2
+Barbados,inner,UN,#N/A,1
+Barbados,inner,FP,46.07,1
+Barbados,inner,HS,#N/A,1
+Barbados,inner,CO,52.86,1
+Barbados,inner,HR,0.00,1
+Barbados,inner,PR,0.00,1
+Barbados,inner,EX,15.39,1
+Barbados,inner,RE,29.41,1
+Barbados,inner,AM,24.83,1
+Barbados,inner,EQ,35.19,1
+Barbados,inner,MR,56.83,1
+Barbados,inner,PN,6.76,1
+Belarus,outer,Energy use,4.78,1
+Belarus,outer,Material use,0.00,1
+Belarus,outer,Water use,0.00,1
+Belarus,outer,Biodiversity,#N/A,1
+Belarus,outer,Antibiotic use,13.56,1
+Belarus,outer,Climate change,150.00,1
+Belarus,outer,Air pollution,50.94,1
+Belarus,inner,PC,29.39,1
+Belarus,inner,PC,87.66,2
+Belarus,inner,SC,2.42,1
+Belarus,inner,MC,0.00,1
+Belarus,inner,MC,0.00,2
+Belarus,inner,SA,0.41,1
+Belarus,inner,SA,42.37,2
+Belarus,inner,UN,12.35,1
+Belarus,inner,FP,46.55,1
+Belarus,inner,HS,#N/A,1
+Belarus,inner,CO,2.39,1
+Belarus,inner,HR,0.00,1
+Belarus,inner,PR,0.00,1
+Belarus,inner,EX,0.00,1
+Belarus,inner,RE,0.00,1
+Belarus,inner,AM,3.96,1
+Belarus,inner,EQ,36.93,1
+Belarus,inner,MR,78.71,1
+Belarus,inner,PN,0.00,1
+Belgium,outer,Energy use,58.57,1
+Belgium,outer,Material use,49.57,1
+Belgium,outer,Water use,9.54,1
+Belgium,outer,Biodiversity,#N/A,1
+Belgium,outer,Antibiotic use,31.98,1
+Belgium,outer,Climate change,150.00,1
+Belgium,outer,Air pollution,150.00,1
+Belgium,inner,PC,20.24,1
+Belgium,inner,PC,26.84,2
+Belgium,inner,SC,0.00,1
+Belgium,inner,MC,0.00,1
+Belgium,inner,MC,0.00,2
+Belgium,inner,SA,13.50,1
+Belgium,inner,SA,0.00,2
+Belgium,inner,UN,#N/A,1
+Belgium,inner,FP,#N/A,1
+Belgium,inner,HS,#N/A,1
+Belgium,inner,CO,0.00,1
+Belgium,inner,HR,0.00,1
+Belgium,inner,PR,0.00,1
+Belgium,inner,EX,0.00,1
+Belgium,inner,RE,0.00,1
+Belgium,inner,AM,0.00,1
+Belgium,inner,EQ,30.31,1
+Belgium,inner,MR,21.93,1
+Belgium,inner,PN,0.00,1
+Belize,outer,Energy use,2.22,1
+Belize,outer,Material use,0.50,1
+Belize,outer,Water use,0.00,1
+Belize,outer,Biodiversity,#N/A,1
+Belize,outer,Antibiotic use,0.00,1
+Belize,outer,Climate change,78.17,1
+Belize,outer,Air pollution,17.38,1
+Belize,inner,PC,32.83,1
+Belize,inner,PC,63.75,2
+Belize,inner,SC,25.10,1
+Belize,inner,MC,5.19,1
+Belize,inner,MC,0.00,2
+Belize,inner,SA,52.17,1
+Belize,inner,SA,24.96,2
+Belize,inner,UN,13.85,1
+Belize,inner,FP,17.45,1
+Belize,inner,HS,#N/A,1
+Belize,inner,CO,62.50,1
+Belize,inner,HR,31.06,1
+Belize,inner,PR,63.09,1
+Belize,inner,EX,67.29,1
+Belize,inner,RE,31.76,1
+Belize,inner,AM,41.23,1
+Belize,inner,EQ,49.48,1
+Belize,inner,MR,45.59,1
+Belize,inner,PN,6.76,1
+Benin,outer,Energy use,0.00,1
+Benin,outer,Material use,0.00,1
+Benin,outer,Water use,0.00,1
+Benin,outer,Biodiversity,#N/A,1
+Benin,outer,Antibiotic use,0.00,1
+Benin,outer,Climate change,0.00,1
+Benin,outer,Air pollution,0.00,1
+Benin,inner,PC,49.93,1
+Benin,inner,PC,89.71,2
+Benin,inner,SC,19.43,1
+Benin,inner,MC,39.27,1
+Benin,inner,MC,60.69,2
+Benin,inner,SA,73.24,1
+Benin,inner,SA,23.67,2
+Benin,inner,UN,64.47,1
+Benin,inner,FP,40.22,1
+Benin,inner,HS,#N/A,1
+Benin,inner,CO,98.09,1
+Benin,inner,HR,86.30,1
+Benin,inner,PR,87.98,1
+Benin,inner,EX,95.00,1
+Benin,inner,RE,70.59,1
+Benin,inner,AM,72.18,1
+Benin,inner,EQ,79.44,1
+Benin,inner,MR,25.48,1
+Benin,inner,PN,28.38,1
+Bermuda,outer,Energy use,0.67,1
+Bermuda,outer,Material use,0.00,1
+Bermuda,outer,Water use,0.00,1
+Bermuda,outer,Biodiversity,#N/A,1
+Bermuda,outer,Antibiotic use,21.67,1
+Bermuda,outer,Climate change,150.00,1
+Bermuda,outer,Air pollution,92.16,1
+Bermuda,inner,PC,13.34,1
+Bermuda,inner,PC,61.35,2
+Bermuda,inner,SC,9.11,1
+Bermuda,inner,MC,#N/A,1
+Bermuda,inner,MC,#N/A,2
+Bermuda,inner,SA,3.22,1
+Bermuda,inner,SA,78.09,2
+Bermuda,inner,UN,#N/A,1
+Bermuda,inner,FP,#N/A,1
+Bermuda,inner,HS,#N/A,1
+Bermuda,inner,CO,42.39,1
+Bermuda,inner,HR,#N/A,1
+Bermuda,inner,PR,#N/A,1
+Bermuda,inner,EX,#N/A,1
+Bermuda,inner,RE,#N/A,1
+Bermuda,inner,AM,0.00,1
+Bermuda,inner,EQ,33.80,1
+Bermuda,inner,MR,#N/A,1
+Bermuda,inner,PN,#N/A,1
+Bhutan,outer,Energy use,0.00,1
+Bhutan,outer,Material use,0.00,1
+Bhutan,outer,Water use,0.00,1
+Bhutan,outer,Biodiversity,#N/A,1
+Bhutan,outer,Antibiotic use,10.25,1
+Bhutan,outer,Climate change,46.41,1
+Bhutan,outer,Air pollution,9.57,1
+Bhutan,inner,PC,35.23,1
+Bhutan,inner,PC,90.43,2
+Bhutan,inner,SC,44.77,1
+Bhutan,inner,MC,0.00,1
+Bhutan,inner,MC,3.46,2
+Bhutan,inner,SA,32.70,1
+Bhutan,inner,SA,40.75,2
+Bhutan,inner,UN,#N/A,1
+Bhutan,inner,FP,11.20,1
+Bhutan,inner,HS,#N/A,1
+Bhutan,inner,CO,64.68,1
+Bhutan,inner,HR,43.95,1
+Bhutan,inner,PR,12.88,1
+Bhutan,inner,EX,58.10,1
+Bhutan,inner,RE,35.29,1
+Bhutan,inner,AM,53.94,1
+Bhutan,inner,EQ,43.21,1
+Bhutan,inner,MR,61.56,1
+Bhutan,inner,PN,0.00,1
+Bolivia,outer,Energy use,0.00,1
+Bolivia,outer,Material use,0.00,1
+Bolivia,outer,Water use,0.00,1
+Bolivia,outer,Biodiversity,#N/A,1
+Bolivia,outer,Antibiotic use,9.45,1
+Bolivia,outer,Climate change,15.26,1
+Bolivia,outer,Air pollution,0.00,1
+Bolivia,inner,PC,29.39,1
+Bolivia,inner,PC,52.67,2
+Bolivia,inner,SC,75.79,1
+Bolivia,inner,MC,7.89,1
+Bolivia,inner,MC,2.41,2
+Bolivia,inner,SA,10.62,1
+Bolivia,inner,SA,0.00,2
+Bolivia,inner,UN,33.88,1
+Bolivia,inner,FP,16.01,1
+Bolivia,inner,HS,#N/A,1
+Bolivia,inner,CO,97.28,1
+Bolivia,inner,HR,36.73,1
+Bolivia,inner,PR,49.36,1
+Bolivia,inner,EX,40.85,1
+Bolivia,inner,RE,37.65,1
+Bolivia,inner,AM,56.58,1
+Bolivia,inner,EQ,52.96,1
+Bolivia,inner,MR,16.91,1
+Bolivia,inner,PN,31.08,1
+Bosnia and Herzegovina,outer,Energy use,7.82,1
+Bosnia and Herzegovina,outer,Material use,3.96,1
+Bosnia and Herzegovina,outer,Water use,0.00,1
+Bosnia and Herzegovina,outer,Biodiversity,#N/A,1
+Bosnia and Herzegovina,outer,Antibiotic use,6.62,1
+Bosnia and Herzegovina,outer,Climate change,150.00,1
+Bosnia and Herzegovina,outer,Air pollution,36.04,1
+Bosnia and Herzegovina,inner,PC,29.39,1
+Bosnia and Herzegovina,inner,PC,73.85,2
+Bosnia and Herzegovina,inner,SC,2.65,1
+Bosnia and Herzegovina,inner,MC,0.00,1
+Bosnia and Herzegovina,inner,MC,0.00,2
+Bosnia and Herzegovina,inner,SA,23.48,1
+Bosnia and Herzegovina,inner,SA,6.82,2
+Bosnia and Herzegovina,inner,UN,#N/A,1
+Bosnia and Herzegovina,inner,FP,23.02,1
+Bosnia and Herzegovina,inner,HS,#N/A,1
+Bosnia and Herzegovina,inner,CO,7.82,1
+Bosnia and Herzegovina,inner,HR,0.00,1
+Bosnia and Herzegovina,inner,PR,6.87,1
+Bosnia and Herzegovina,inner,EX,0.00,1
+Bosnia and Herzegovina,inner,RE,1.18,1
+Bosnia and Herzegovina,inner,AM,8.42,1
+Bosnia and Herzegovina,inner,EQ,29.62,1
+Bosnia and Herzegovina,inner,MR,63.92,1
+Bosnia and Herzegovina,inner,PN,22.97,1
+Botswana,outer,Energy use,0.00,1
+Botswana,outer,Material use,0.00,1
+Botswana,outer,Water use,0.00,1
+Botswana,outer,Biodiversity,#N/A,1
+Botswana,outer,Antibiotic use,0.00,1
+Botswana,outer,Climate change,150.00,1
+Botswana,outer,Air pollution,13.84,1
+Botswana,inner,PC,49.93,1
+Botswana,inner,PC,71.13,2
+Botswana,inner,SC,13.08,1
+Botswana,inner,MC,10.06,1
+Botswana,inner,MC,28.45,2
+Botswana,inner,SA,19.95,1
+Botswana,inner,SA,24.90,2
+Botswana,inner,UN,#N/A,1
+Botswana,inner,FP,12.16,1
+Botswana,inner,HS,#N/A,1
+Botswana,inner,CO,91.58,1
+Botswana,inner,HR,25.08,1
+Botswana,inner,PR,12.02,1
+Botswana,inner,EX,18.37,1
+Botswana,inner,RE,27.06,1
+Botswana,inner,AM,61.72,1
+Botswana,inner,EQ,63.41,1
+Botswana,inner,MR,63.63,1
+Botswana,inner,PN,0.00,1
+Brazil,outer,Energy use,0.00,1
+Brazil,outer,Material use,0.00,1
+Brazil,outer,Water use,0.00,1
+Brazil,outer,Biodiversity,#N/A,1
+Brazil,outer,Antibiotic use,0.00,1
+Brazil,outer,Climate change,74.16,1
+Brazil,outer,Air pollution,51.52,1
+Brazil,inner,PC,17.84,1
+Brazil,inner,PC,37.61,2
+Brazil,inner,SC,31.95,1
+Brazil,inner,MC,0.19,1
+Brazil,inner,MC,0.00,2
+Brazil,inner,SA,7.77,1
+Brazil,inner,SA,33.98,2
+Brazil,inner,UN,#N/A,1
+Brazil,inner,FP,33.24,1
+Brazil,inner,HS,#N/A,1
+Brazil,inner,CO,0.00,1
+Brazil,inner,HR,0.00,1
+Brazil,inner,PR,1.72,1
+Brazil,inner,EX,0.00,1
+Brazil,inner,RE,18.82,1
+Brazil,inner,AM,35.23,1
+Brazil,inner,EQ,44.25,1
+Brazil,inner,MR,66.29,1
+Brazil,inner,PN,0.00,1
+British Virgin Islands,outer,Energy use,0.00,1
+British Virgin Islands,outer,Material use,0.00,1
+British Virgin Islands,outer,Water use,0.00,1
+British Virgin Islands,outer,Biodiversity,#N/A,1
+British Virgin Islands,outer,Antibiotic use,#N/A,1
+British Virgin Islands,outer,Climate change,150.00,1
+British Virgin Islands,outer,Air pollution,#N/A,1
+British Virgin Islands,inner,PC,13.34,1
+British Virgin Islands,inner,PC,#N/A,2
+British Virgin Islands,inner,SC,#N/A,1
+British Virgin Islands,inner,MC,#N/A,1
+British Virgin Islands,inner,MC,0.00,2
+British Virgin Islands,inner,SA,#N/A,1
+British Virgin Islands,inner,SA,#N/A,2
+British Virgin Islands,inner,UN,#N/A,1
+British Virgin Islands,inner,FP,#N/A,1
+British Virgin Islands,inner,HS,#N/A,1
+British Virgin Islands,inner,CO,#N/A,1
+British Virgin Islands,inner,HR,#N/A,1
+British Virgin Islands,inner,PR,#N/A,1
+British Virgin Islands,inner,EX,#N/A,1
+British Virgin Islands,inner,RE,#N/A,1
+British Virgin Islands,inner,AM,#N/A,1
+British Virgin Islands,inner,EQ,36.24,1
+British Virgin Islands,inner,MR,#N/A,1
+British Virgin Islands,inner,PN,#N/A,1
+Brunei Darussalam,outer,Energy use,22.66,1
+Brunei Darussalam,outer,Material use,8.36,1
+Brunei Darussalam,outer,Water use,0.00,1
+Brunei Darussalam,outer,Biodiversity,#N/A,1
+Brunei Darussalam,outer,Antibiotic use,14.44,1
+Brunei Darussalam,outer,Climate change,#N/A,1
+Brunei Darussalam,outer,Air pollution,79.82,1
+Brunei Darussalam,inner,PC,38.08,1
+Brunei Darussalam,inner,PC,44.54,2
+Brunei Darussalam,inner,SC,4.46,1
+Brunei Darussalam,inner,MC,0.00,1
+Brunei Darussalam,inner,MC,0.00,2
+Brunei Darussalam,inner,SA,6.82,1
+Brunei Darussalam,inner,SA,37.94,2
+Brunei Darussalam,inner,UN,#N/A,1
+Brunei Darussalam,inner,FP,#N/A,1
+Brunei Darussalam,inner,HS,#N/A,1
+Brunei Darussalam,inner,CO,0.00,1
+Brunei Darussalam,inner,HR,0.00,1
+Brunei Darussalam,inner,PR,0.00,1
+Brunei Darussalam,inner,EX,10.16,1
+Brunei Darussalam,inner,RE,0.00,1
+Brunei Darussalam,inner,AM,28.39,1
+Brunei Darussalam,inner,EQ,37.28,1
+Brunei Darussalam,inner,MR,70.43,1
+Brunei Darussalam,inner,PN,0.00,1
+Bulgaria,outer,Energy use,15.21,1
+Bulgaria,outer,Material use,12.32,1
+Bulgaria,outer,Water use,0.00,1
+Bulgaria,outer,Biodiversity,#N/A,1
+Bulgaria,outer,Antibiotic use,17.19,1
+Bulgaria,outer,Climate change,150.00,1
+Bulgaria,outer,Air pollution,40.72,1
+Bulgaria,inner,PC,8.70,1
+Bulgaria,inner,PC,59.58,2
+Bulgaria,inner,SC,5.09,1
+Bulgaria,inner,MC,0.00,1
+Bulgaria,inner,MC,0.00,2
+Bulgaria,inner,SA,0.00,1
+Bulgaria,inner,SA,35.69,2
+Bulgaria,inner,UN,#N/A,1
+Bulgaria,inner,FP,59.89,1
+Bulgaria,inner,HS,#N/A,1
+Bulgaria,inner,CO,35.56,1
+Bulgaria,inner,HR,0.00,1
+Bulgaria,inner,PR,0.00,1
+Bulgaria,inner,EX,0.00,1
+Bulgaria,inner,RE,0.00,1
+Bulgaria,inner,AM,14.87,1
+Bulgaria,inner,EQ,37.98,1
+Bulgaria,inner,MR,66.88,1
+Bulgaria,inner,PN,0.00,1
+Burkina Faso,outer,Energy use,0.00,1
+Burkina Faso,outer,Material use,0.00,1
+Burkina Faso,outer,Water use,0.00,1
+Burkina Faso,outer,Biodiversity,#N/A,1
+Burkina Faso,outer,Antibiotic use,0.00,1
+Burkina Faso,outer,Climate change,0.00,1
+Burkina Faso,outer,Air pollution,0.00,1
+Burkina Faso,inner,PC,56.37,1
+Burkina Faso,inner,PC,91.07,2
+Burkina Faso,inner,SC,23.06,1
+Burkina Faso,inner,MC,16.81,1
+Burkina Faso,inner,MC,46.10,2
+Burkina Faso,inner,SA,99.54,1
+Burkina Faso,inner,SA,9.93,2
+Burkina Faso,inner,UN,23.05,1
+Burkina Faso,inner,FP,23.56,1
+Burkina Faso,inner,HS,#N/A,1
+Burkina Faso,inner,CO,98.26,1
+Burkina Faso,inner,HR,79.87,1
+Burkina Faso,inner,PR,98.71,1
+Burkina Faso,inner,EX,89.92,1
+Burkina Faso,inner,RE,80.00,1
+Burkina Faso,inner,AM,77.22,1
+Burkina Faso,inner,EQ,76.31,1
+Burkina Faso,inner,MR,23.41,1
+Burkina Faso,inner,PN,0.00,1
+Burundi,outer,Energy use,0.00,1
+Burundi,outer,Material use,0.00,1
+Burundi,outer,Water use,0.00,1
+Burundi,outer,Biodiversity,#N/A,1
+Burundi,outer,Antibiotic use,0.00,1
+Burundi,outer,Climate change,0.00,1
+Burundi,outer,Air pollution,0.00,1
+Burundi,inner,PC,56.37,1
+Burundi,inner,PC,85.25,2
+Burundi,inner,SC,29.55,1
+Burundi,inner,MC,36.83,1
+Burundi,inner,MC,28.63,2
+Burundi,inner,SA,44.86,1
+Burundi,inner,SA,31.90,2
+Burundi,inner,UN,48.56,1
+Burundi,inner,FP,13.43,1
+Burundi,inner,HS,#N/A,1
+Burundi,inner,CO,97.44,1
+Burundi,inner,HR,85.23,1
+Burundi,inner,PR,#N/A,1
+Burundi,inner,EX,97.83,1
+Burundi,inner,RE,75.29,1
+Burundi,inner,AM,81.71,1
+Burundi,inner,EQ,71.08,1
+Burundi,inner,MR,34.35,1
+Burundi,inner,PN,1.35,1
+Cabo Verde,outer,Energy use,0.00,1
+Cabo Verde,outer,Material use,0.00,1
+Cabo Verde,outer,Water use,0.00,1
+Cabo Verde,outer,Biodiversity,#N/A,1
+Cabo Verde,outer,Antibiotic use,0.00,1
+Cabo Verde,outer,Climate change,33.89,1
+Cabo Verde,outer,Air pollution,0.00,1
+Cabo Verde,inner,PC,49.93,1
+Cabo Verde,inner,PC,79.43,2
+Cabo Verde,inner,SC,0.00,1
+Cabo Verde,inner,MC,0.00,1
+Cabo Verde,inner,MC,0.00,2
+Cabo Verde,inner,SA,27.76,1
+Cabo Verde,inner,SA,17.63,2
+Cabo Verde,inner,UN,#N/A,1
+Cabo Verde,inner,FP,#N/A,1
+Cabo Verde,inner,HS,#N/A,1
+Cabo Verde,inner,CO,94.50,1
+Cabo Verde,inner,HR,45.78,1
+Cabo Verde,inner,PR,22.75,1
+Cabo Verde,inner,EX,53.32,1
+Cabo Verde,inner,RE,0.00,1
+Cabo Verde,inner,AM,39.91,1
+Cabo Verde,inner,EQ,39.72,1
+Cabo Verde,inner,MR,63.63,1
+Cabo Verde,inner,PN,0.00,1
+Cambodia,outer,Energy use,0.00,1
+Cambodia,outer,Material use,0.00,1
+Cambodia,outer,Water use,0.00,1
+Cambodia,outer,Biodiversity,#N/A,1
+Cambodia,outer,Antibiotic use,0.00,1
+Cambodia,outer,Climate change,0.00,1
+Cambodia,outer,Air pollution,0.00,1
+Cambodia,inner,PC,54.12,1
+Cambodia,inner,PC,63.35,2
+Cambodia,inner,SC,47.95,1
+Cambodia,inner,MC,12.84,1
+Cambodia,inner,MC,0.66,2
+Cambodia,inner,SA,5.50,1
+Cambodia,inner,SA,17.03,2
+Cambodia,inner,UN,#N/A,1
+Cambodia,inner,FP,50.27,1
+Cambodia,inner,HS,#N/A,1
+Cambodia,inner,CO,98.28,1
+Cambodia,inner,HR,76.97,1
+Cambodia,inner,PR,75.54,1
+Cambodia,inner,EX,78.04,1
+Cambodia,inner,RE,61.18,1
+Cambodia,inner,AM,60.81,1
+Cambodia,inner,EQ,49.83,1
+Cambodia,inner,MR,9.22,1
+Cambodia,inner,PN,6.76,1
+Cameroon,outer,Energy use,0.00,1
+Cameroon,outer,Material use,0.00,1
+Cameroon,outer,Water use,0.00,1
+Cameroon,outer,Biodiversity,#N/A,1
+Cameroon,outer,Antibiotic use,0.00,1
+Cameroon,outer,Climate change,0.00,1
+Cameroon,outer,Air pollution,0.00,1
+Cameroon,inner,PC,49.93,1
+Cameroon,inner,PC,93.73,2
+Cameroon,inner,SC,13.06,1
+Cameroon,inner,MC,31.91,1
+Cameroon,inner,MC,51.97,2
+Cameroon,inner,SA,53.62,1
+Cameroon,inner,SA,0.07,2
+Cameroon,inner,UN,41.29,1
+Cameroon,inner,FP,#N/A,1
+Cameroon,inner,HS,#N/A,1
+Cameroon,inner,CO,97.82,1
+Cameroon,inner,HR,87.07,1
+Cameroon,inner,PR,0.00,1
+Cameroon,inner,EX,87.83,1
+Cameroon,inner,RE,81.18,1
+Cameroon,inner,AM,68.20,1
+Cameroon,inner,EQ,72.13,1
+Cameroon,inner,MR,42.04,1
+Cameroon,inner,PN,20.27,1
+Canada,outer,Energy use,75.99,1
+Canada,outer,Material use,66.49,1
+Canada,outer,Water use,0.00,1
+Canada,outer,Biodiversity,#N/A,1
+Canada,outer,Antibiotic use,12.94,1
+Canada,outer,Climate change,150.00,1
+Canada,outer,Air pollution,150.00,1
+Canada,inner,PC,26.69,1
+Canada,inner,PC,0.00,2
+Canada,inner,SC,0.00,1
+Canada,inner,MC,0.00,1
+Canada,inner,MC,0.00,2
+Canada,inner,SA,2.01,1
+Canada,inner,SA,30.45,2
+Canada,inner,UN,#N/A,1
+Canada,inner,FP,9.85,1
+Canada,inner,HS,#N/A,1
+Canada,inner,CO,0.00,1
+Canada,inner,HR,0.00,1
+Canada,inner,PR,0.00,1
+Canada,inner,EX,0.00,1
+Canada,inner,RE,0.00,1
+Canada,inner,AM,0.00,1
+Canada,inner,EQ,30.31,1
+Canada,inner,MR,0.00,1
+Canada,inner,PN,0.00,1
+Cayman Islands,outer,Energy use,0.00,1
+Cayman Islands,outer,Material use,0.00,1
+Cayman Islands,outer,Water use,0.00,1
+Cayman Islands,outer,Biodiversity,#N/A,1
+Cayman Islands,outer,Antibiotic use,#N/A,1
+Cayman Islands,outer,Climate change,#N/A,1
+Cayman Islands,outer,Air pollution,69.80,1
+Cayman Islands,inner,PC,13.34,1
+Cayman Islands,inner,PC,#N/A,2
+Cayman Islands,inner,SC,#N/A,1
+Cayman Islands,inner,MC,#N/A,1
+Cayman Islands,inner,MC,#N/A,2
+Cayman Islands,inner,SA,#N/A,1
+Cayman Islands,inner,SA,#N/A,2
+Cayman Islands,inner,UN,#N/A,1
+Cayman Islands,inner,FP,9.12,1
+Cayman Islands,inner,HS,#N/A,1
+Cayman Islands,inner,CO,#N/A,1
+Cayman Islands,inner,HR,#N/A,1
+Cayman Islands,inner,PR,#N/A,1
+Cayman Islands,inner,EX,#N/A,1
+Cayman Islands,inner,RE,#N/A,1
+Cayman Islands,inner,AM,#N/A,1
+Cayman Islands,inner,EQ,37.63,1
+Cayman Islands,inner,MR,#N/A,1
+Cayman Islands,inner,PN,#N/A,1
+Central African Republic,outer,Energy use,0.00,1
+Central African Republic,outer,Material use,0.00,1
+Central African Republic,outer,Water use,0.00,1
+Central African Republic,outer,Biodiversity,#N/A,1
+Central African Republic,outer,Antibiotic use,0.00,1
+Central African Republic,outer,Climate change,0.00,1
+Central African Republic,outer,Air pollution,0.00,1
+Central African Republic,inner,PC,56.37,1
+Central African Republic,inner,PC,97.43,2
+Central African Republic,inner,SC,53.66,1
+Central African Republic,inner,MC,66.40,1
+Central African Republic,inner,MC,71.92,2
+Central African Republic,inner,SA,66.56,1
+Central African Republic,inner,SA,23.80,2
+Central African Republic,inner,UN,65.02,1
+Central African Republic,inner,FP,#N/A,1
+Central African Republic,inner,HS,#N/A,1
+Central African Republic,inner,CO,98.05,1
+Central African Republic,inner,HR,78.11,1
+Central African Republic,inner,PR,#N/A,1
+Central African Republic,inner,EX,94.77,1
+Central African Republic,inner,RE,94.12,1
+Central African Republic,inner,AM,100.00,1
+Central African Republic,inner,EQ,90.94,1
+Central African Republic,inner,MR,55.35,1
+Central African Republic,inner,PN,64.86,1
+Chad,outer,Energy use,0.00,1
+Chad,outer,Material use,0.00,1
+Chad,outer,Water use,0.00,1
+Chad,outer,Biodiversity,#N/A,1
+Chad,outer,Antibiotic use,0.00,1
+Chad,outer,Climate change,0.00,1
+Chad,outer,Air pollution,0.00,1
+Chad,inner,PC,56.37,1
+Chad,inner,PC,85.89,2
+Chad,inner,SC,29.35,1
+Chad,inner,MC,86.20,1
+Chad,inner,MC,71.63,2
+Chad,inner,SA,100.00,1
+Chad,inner,SA,48.77,2
+Chad,inner,UN,78.88,1
+Chad,inner,FP,26.18,1
+Chad,inner,HS,#N/A,1
+Chad,inner,CO,99.29,1
+Chad,inner,HR,100.00,1
+Chad,inner,PR,87.98,1
+Chad,inner,EX,95.89,1
+Chad,inner,RE,89.41,1
+Chad,inner,AM,85.28,1
+Chad,inner,EQ,98.95,1
+Chad,inner,MR,45.29,1
+Chad,inner,PN,31.08,1
+Channel Islands,outer,Energy use,64.59,1
+Channel Islands,outer,Material use,44.55,1
+Channel Islands,outer,Water use,0.00,1
+Channel Islands,outer,Biodiversity,#N/A,1
+Channel Islands,outer,Antibiotic use,#N/A,1
+Channel Islands,outer,Climate change,#N/A,1
+Channel Islands,outer,Air pollution,#N/A,1
+Channel Islands,inner,PC,20.24,1
+Channel Islands,inner,PC,#N/A,2
+Channel Islands,inner,SC,#N/A,1
+Channel Islands,inner,MC,#N/A,1
+Channel Islands,inner,MC,#N/A,2
+Channel Islands,inner,SA,#N/A,1
+Channel Islands,inner,SA,#N/A,2
+Channel Islands,inner,UN,#N/A,1
+Channel Islands,inner,FP,#N/A,1
+Channel Islands,inner,HS,#N/A,1
+Channel Islands,inner,CO,#N/A,1
+Channel Islands,inner,HR,#N/A,1
+Channel Islands,inner,PR,#N/A,1
+Channel Islands,inner,EX,#N/A,1
+Channel Islands,inner,RE,#N/A,1
+Channel Islands,inner,AM,#N/A,1
+Channel Islands,inner,EQ,#N/A,1
+Channel Islands,inner,MR,#N/A,1
+Channel Islands,inner,PN,#N/A,1
+Chile,outer,Energy use,20.69,1
+Chile,outer,Material use,5.77,1
+Chile,outer,Water use,0.00,1
+Chile,outer,Biodiversity,#N/A,1
+Chile,outer,Antibiotic use,0.00,1
+Chile,outer,Climate change,150.00,1
+Chile,outer,Air pollution,86.28,1
+Chile,inner,PC,16.79,1
+Chile,inner,PC,36.09,2
+Chile,inner,SC,11.05,1
+Chile,inner,MC,0.00,1
+Chile,inner,MC,0.00,2
+Chile,inner,SA,2.99,1
+Chile,inner,SA,8.29,2
+Chile,inner,UN,#N/A,1
+Chile,inner,FP,41.09,1
+Chile,inner,HS,#N/A,1
+Chile,inner,CO,0.00,1
+Chile,inner,HR,0.00,1
+Chile,inner,PR,22.75,1
+Chile,inner,EX,0.00,1
+Chile,inner,RE,4.71,1
+Chile,inner,AM,4.56,1
+Chile,inner,EQ,35.89,1
+Chile,inner,MR,39.97,1
+Chile,inner,PN,0.00,1
+China,outer,Energy use,0.00,1
+China,outer,Material use,0.00,1
+China,outer,Water use,0.00,1
+China,outer,Biodiversity,#N/A,1
+China,outer,Antibiotic use,0.00,1
+China,outer,Climate change,150.00,1
+China,outer,Air pollution,82.77,1
+China,inner,PC,47.53,1
+China,inner,PC,75.37,2
+China,inner,SC,0.07,1
+China,inner,MC,0.00,1
+China,inner,MC,0.00,2
+China,inner,SA,0.00,1
+China,inner,SA,80.13,2
+China,inner,UN,#N/A,1
+China,inner,FP,68.48,1
+China,inner,HS,#N/A,1
+China,inner,CO,92.87,1
+China,inner,HR,0.00,1
+China,inner,PR,0.00,1
+China,inner,EX,18.08,1
+China,inner,RE,4.71,1
+China,inner,AM,5.65,1
+China,inner,EQ,33.10,1
+China,inner,MR,13.95,1
+China,inner,PN,0.00,1
+Colombia,outer,Energy use,0.00,1
+Colombia,outer,Material use,0.00,1
+Colombia,outer,Water use,0.00,1
+Colombia,outer,Biodiversity,#N/A,1
+Colombia,outer,Antibiotic use,0.00,1
+Colombia,outer,Climate change,66.16,1
+Colombia,outer,Air pollution,25.69,1
+Colombia,inner,PC,23.99,1
+Colombia,inner,PC,39.89,2
+Colombia,inner,SC,35.19,1
+Colombia,inner,MC,0.41,1
+Colombia,inner,MC,0.00,2
+Colombia,inner,SA,2.81,1
+Colombia,inner,SA,81.05,2
+Colombia,inner,UN,0.00,1
+Colombia,inner,FP,23.05,1
+Colombia,inner,HS,77.29,1
+Colombia,inner,CO,44.50,1
+Colombia,inner,HR,8.91,1
+Colombia,inner,PR,34.76,1
+Colombia,inner,EX,0.00,1
+Colombia,inner,RE,42.35,1
+Colombia,inner,AM,21.32,1
+Colombia,inner,EQ,44.60,1
+Colombia,inner,MR,24.89,1
+Colombia,inner,PN,0.00,1
+Comoros,outer,Energy use,0.00,1
+Comoros,outer,Material use,0.00,1
+Comoros,outer,Water use,0.00,1
+Comoros,outer,Biodiversity,#N/A,1
+Comoros,outer,Antibiotic use,0.00,1
+Comoros,outer,Climate change,6.43,1
+Comoros,outer,Air pollution,0.00,1
+Comoros,inner,PC,47.08,1
+Comoros,inner,PC,85.46,2
+Comoros,inner,SC,27.16,1
+Comoros,inner,MC,12.75,1
+Comoros,inner,MC,48.83,2
+Comoros,inner,SA,38.04,1
+Comoros,inner,SA,41.38,2
+Comoros,inner,UN,#N/A,1
+Comoros,inner,FP,#N/A,1
+Comoros,inner,HS,#N/A,1
+Comoros,inner,CO,95.61,1
+Comoros,inner,HR,56.74,1
+Comoros,inner,PR,#N/A,1
+Comoros,inner,EX,79.24,1
+Comoros,inner,RE,47.06,1
+Comoros,inner,AM,71.49,1
+Comoros,inner,EQ,62.02,1
+Comoros,inner,MR,31.40,1
+Comoros,inner,PN,20.27,1
+"Congo, Dem. Rep.",outer,Energy use,0.00,1
+"Congo, Dem. Rep.",outer,Material use,0.00,1
+"Congo, Dem. Rep.",outer,Water use,0.00,1
+"Congo, Dem. Rep.",outer,Biodiversity,#N/A,1
+"Congo, Dem. Rep.",outer,Antibiotic use,0.00,1
+"Congo, Dem. Rep.",outer,Climate change,0.00,1
+"Congo, Dem. Rep.",outer,Air pollution,0.00,1
+"Congo, Dem. Rep.",inner,PC,56.37,1
+"Congo, Dem. Rep.",inner,PC,84.63,2
+"Congo, Dem. Rep.",inner,SC,28.92,1
+"Congo, Dem. Rep.",inner,MC,41.42,1
+"Congo, Dem. Rep.",inner,MC,50.11,2
+"Congo, Dem. Rep.",inner,SA,33.00,1
+"Congo, Dem. Rep.",inner,SA,17.19,2
+"Congo, Dem. Rep.",inner,UN,57.61,1
+"Congo, Dem. Rep.",inner,FP,#N/A,1
+"Congo, Dem. Rep.",inner,HS,#N/A,1
+"Congo, Dem. Rep.",inner,CO,97.18,1
+"Congo, Dem. Rep.",inner,HR,73.23,1
+"Congo, Dem. Rep.",inner,PR,#N/A,1
+"Congo, Dem. Rep.",inner,EX,99.18,1
+"Congo, Dem. Rep.",inner,RE,78.82,1
+"Congo, Dem. Rep.",inner,AM,76.22,1
+"Congo, Dem. Rep.",inner,EQ,79.09,1
+"Congo, Dem. Rep.",inner,MR,34.65,1
+"Congo, Dem. Rep.",inner,PN,40.54,1
+"Congo, Rep.",outer,Energy use,0.00,1
+"Congo, Rep.",outer,Material use,0.00,1
+"Congo, Rep.",outer,Water use,0.00,1
+"Congo, Rep.",outer,Biodiversity,#N/A,1
+"Congo, Rep.",outer,Antibiotic use,0.00,1
+"Congo, Rep.",outer,Climate change,66.85,1
+"Congo, Rep.",outer,Air pollution,0.00,1
+"Congo, Rep.",inner,PC,49.93,1
+"Congo, Rep.",inner,PC,89.19,2
+"Congo, Rep.",inner,SC,22.42,1
+"Congo, Rep.",inner,MC,18.43,1
+"Congo, Rep.",inner,MC,22.17,2
+"Congo, Rep.",inner,SA,26.64,1
+"Congo, Rep.",inner,SA,34.80,2
+"Congo, Rep.",inner,UN,43.62,1
+"Congo, Rep.",inner,FP,#N/A,1
+"Congo, Rep.",inner,HS,#N/A,1
+"Congo, Rep.",inner,CO,95.76,1
+"Congo, Rep.",inner,HR,75.18,1
+"Congo, Rep.",inner,PR,#N/A,1
+"Congo, Rep.",inner,EX,96.71,1
+"Congo, Rep.",inner,RE,62.35,1
+"Congo, Rep.",inner,AM,67.81,1
+"Congo, Rep.",inner,EQ,60.28,1
+"Congo, Rep.",inner,MR,50.91,1
+"Congo, Rep.",inner,PN,16.22,1
+Costa Rica,outer,Energy use,7.69,1
+Costa Rica,outer,Material use,0.00,1
+Costa Rica,outer,Water use,3.88,1
+Costa Rica,outer,Biodiversity,#N/A,1
+Costa Rica,outer,Antibiotic use,0.00,1
+Costa Rica,outer,Climate change,67.78,1
+Costa Rica,outer,Air pollution,47.42,1
+Costa Rica,inner,PC,25.94,1
+Costa Rica,inner,PC,3.33,2
+Costa Rica,inner,SC,28.01,1
+Costa Rica,inner,MC,0.00,1
+Costa Rica,inner,MC,0.00,2
+Costa Rica,inner,SA,25.66,1
+Costa Rica,inner,SA,39.66,2
+Costa Rica,inner,UN,0.00,1
+Costa Rica,inner,FP,20.86,1
+Costa Rica,inner,HS,#N/A,1
+Costa Rica,inner,CO,40.19,1
+Costa Rica,inner,HR,0.00,1
+Costa Rica,inner,PR,56.65,1
+Costa Rica,inner,EX,0.00,1
+Costa Rica,inner,RE,5.88,1
+Costa Rica,inner,AM,15.18,1
+Costa Rica,inner,EQ,34.49,1
+Costa Rica,inner,MR,45.00,1
+Costa Rica,inner,PN,0.00,1
+Cote d'Ivoire,outer,Energy use,0.00,1
+Cote d'Ivoire,outer,Material use,0.00,1
+Cote d'Ivoire,outer,Water use,0.00,1
+Cote d'Ivoire,outer,Biodiversity,#N/A,1
+Cote d'Ivoire,outer,Antibiotic use,0.00,1
+Cote d'Ivoire,outer,Climate change,0.00,1
+Cote d'Ivoire,outer,Air pollution,0.00,1
+Cote d'Ivoire,inner,PC,49.93,1
+Cote d'Ivoire,inner,PC,90.68,2
+Cote d'Ivoire,inner,SC,14.96,1
+Cote d'Ivoire,inner,MC,35.57,1
+Cote d'Ivoire,inner,MC,60.80,2
+Cote d'Ivoire,inner,SA,60.40,1
+Cote d'Ivoire,inner,SA,0.00,2
+Cote d'Ivoire,inner,UN,39.64,1
+Cote d'Ivoire,inner,FP,23.44,1
+Cote d'Ivoire,inner,HS,#N/A,1
+Cote d'Ivoire,inner,CO,97.56,1
+Cote d'Ivoire,inner,HR,83.16,1
+Cote d'Ivoire,inner,PR,#N/A,1
+Cote d'Ivoire,inner,EX,85.96,1
+Cote d'Ivoire,inner,RE,67.06,1
+Cote d'Ivoire,inner,AM,67.18,1
+Cote d'Ivoire,inner,EQ,77.00,1
+Cote d'Ivoire,inner,MR,43.52,1
+Cote d'Ivoire,inner,PN,14.86,1
+Croatia,outer,Energy use,29.32,1
+Croatia,outer,Material use,17.85,1
+Croatia,outer,Water use,0.00,1
+Croatia,outer,Biodiversity,#N/A,1
+Croatia,outer,Antibiotic use,26.79,1
+Croatia,outer,Climate change,150.00,1
+Croatia,outer,Air pollution,61.75,1
+Croatia,inner,PC,20.24,1
+Croatia,inner,PC,67.29,2
+Croatia,inner,SC,0.91,1
+Croatia,inner,MC,0.00,1
+Croatia,inner,MC,0.00,2
+Croatia,inner,SA,1.03,1
+Croatia,inner,SA,44.86,2
+Croatia,inner,UN,#N/A,1
+Croatia,inner,FP,#N/A,1
+Croatia,inner,HS,#N/A,1
+Croatia,inner,CO,0.00,1
+Croatia,inner,HR,0.00,1
+Croatia,inner,PR,0.00,1
+Croatia,inner,EX,0.00,1
+Croatia,inner,RE,0.00,1
+Croatia,inner,AM,0.00,1
+Croatia,inner,EQ,30.66,1
+Croatia,inner,MR,76.34,1
+Croatia,inner,PN,0.00,1
+Cuba,outer,Energy use,0.00,1
+Cuba,outer,Material use,8.84,1
+Cuba,outer,Water use,0.00,1
+Cuba,outer,Biodiversity,#N/A,1
+Cuba,outer,Antibiotic use,0.00,1
+Cuba,outer,Climate change,150.00,1
+Cuba,outer,Air pollution,#N/A,1
+Cuba,inner,PC,25.94,1
+Cuba,inner,PC,39.13,2
+Cuba,inner,SC,34.24,1
+Cuba,inner,MC,0.00,1
+Cuba,inner,MC,0.00,2
+Cuba,inner,SA,0.00,1
+Cuba,inner,SA,30.63,2
+Cuba,inner,UN,0.00,1
+Cuba,inner,FP,#N/A,1
+Cuba,inner,HS,#N/A,1
+Cuba,inner,CO,49.89,1
+Cuba,inner,HR,0.00,1
+Cuba,inner,PR,0.00,1
+Cuba,inner,EX,0.00,1
+Cuba,inner,RE,0.00,1
+Cuba,inner,AM,12.65,1
+Cuba,inner,EQ,37.28,1
+Cuba,inner,MR,51.21,1
+Cuba,inner,PN,0.00,1
+Curacao,outer,Energy use,0.00,1
+Curacao,outer,Material use,0.00,1
+Curacao,outer,Water use,0.00,1
+Curacao,outer,Biodiversity,#N/A,1
+Curacao,outer,Antibiotic use,#N/A,1
+Curacao,outer,Climate change,150.00,1
+Curacao,outer,Air pollution,32.42,1
+Curacao,inner,PC,13.34,1
+Curacao,inner,PC,#N/A,2
+Curacao,inner,SC,#N/A,1
+Curacao,inner,MC,#N/A,1
+Curacao,inner,MC,#N/A,2
+Curacao,inner,SA,#N/A,1
+Curacao,inner,SA,#N/A,2
+Curacao,inner,UN,#N/A,1
+Curacao,inner,FP,#N/A,1
+Curacao,inner,HS,#N/A,1
+Curacao,inner,CO,#N/A,1
+Curacao,inner,HR,#N/A,1
+Curacao,inner,PR,#N/A,1
+Curacao,inner,EX,#N/A,1
+Curacao,inner,RE,#N/A,1
+Curacao,inner,AM,#N/A,1
+Curacao,inner,EQ,35.89,1
+Curacao,inner,MR,#N/A,1
+Curacao,inner,PN,#N/A,1
+Cyprus,outer,Energy use,0.00,1
+Cyprus,outer,Material use,26.51,1
+Cyprus,outer,Water use,0.00,1
+Cyprus,outer,Biodiversity,#N/A,1
+Cyprus,outer,Antibiotic use,34.47,1
+Cyprus,outer,Climate change,150.00,1
+Cyprus,outer,Air pollution,59.62,1
+Cyprus,inner,PC,24.89,1
+Cyprus,inner,PC,36.90,2
+Cyprus,inner,SC,0.00,1
+Cyprus,inner,MC,0.00,1
+Cyprus,inner,MC,0.00,2
+Cyprus,inner,SA,2.30,1
+Cyprus,inner,SA,22.41,2
+Cyprus,inner,UN,#N/A,1
+Cyprus,inner,FP,41.49,1
+Cyprus,inner,HS,#N/A,1
+Cyprus,inner,CO,0.00,1
+Cyprus,inner,HR,0.00,1
+Cyprus,inner,PR,11.16,1
+Cyprus,inner,EX,0.00,1
+Cyprus,inner,RE,2.35,1
+Cyprus,inner,AM,0.00,1
+Cyprus,inner,EQ,28.22,1
+Cyprus,inner,MR,24.30,1
+Cyprus,inner,PN,0.00,1
+Czechia,outer,Energy use,35.24,1
+Czechia,outer,Material use,16.02,1
+Czechia,outer,Water use,0.00,1
+Czechia,outer,Biodiversity,#N/A,1
+Czechia,outer,Antibiotic use,19.61,1
+Czechia,outer,Climate change,150.00,1
+Czechia,outer,Air pollution,81.76,1
+Czechia,inner,PC,20.24,1
+Czechia,inner,PC,31.14,2
+Czechia,inner,SC,1.47,1
+Czechia,inner,MC,0.00,1
+Czechia,inner,MC,0.00,2
+Czechia,inner,SA,4.58,1
+Czechia,inner,SA,31.65,2
+Czechia,inner,UN,#N/A,1
+Czechia,inner,FP,13.06,1
+Czechia,inner,HS,#N/A,1
+Czechia,inner,CO,0.00,1
+Czechia,inner,HR,0.00,1
+Czechia,inner,PR,0.00,1
+Czechia,inner,EX,0.00,1
+Czechia,inner,RE,0.00,1
+Czechia,inner,AM,0.00,1
+Czechia,inner,EQ,31.71,1
+Czechia,inner,MR,56.24,1
+Czechia,inner,PN,0.00,1
+Denmark,outer,Energy use,55.50,1
+Denmark,outer,Material use,41.20,1
+Denmark,outer,Water use,6.18,1
+Denmark,outer,Biodiversity,#N/A,1
+Denmark,outer,Antibiotic use,13.14,1
+Denmark,outer,Climate change,150.00,1
+Denmark,outer,Air pollution,150.00,1
+Denmark,inner,PC,20.24,1
+Denmark,inner,PC,88.93,2
+Denmark,inner,SC,5.55,1
+Denmark,inner,MC,0.00,1
+Denmark,inner,MC,0.00,2
+Denmark,inner,SA,0.00,1
+Denmark,inner,SA,31.41,2
+Denmark,inner,UN,#N/A,1
+Denmark,inner,FP,#N/A,1
+Denmark,inner,HS,#N/A,1
+Denmark,inner,CO,0.00,1
+Denmark,inner,HR,0.00,1
+Denmark,inner,PR,0.00,1
+Denmark,inner,EX,0.00,1
+Denmark,inner,RE,0.00,1
+Denmark,inner,AM,0.00,1
+Denmark,inner,EQ,28.22,1
+Denmark,inner,MR,39.38,1
+Denmark,inner,PN,0.00,1
+Djibouti,outer,Energy use,23.45,1
+Djibouti,outer,Material use,20.08,1
+Djibouti,outer,Water use,0.00,1
+Djibouti,outer,Biodiversity,#N/A,1
+Djibouti,outer,Antibiotic use,0.00,1
+Djibouti,outer,Climate change,38.29,1
+Djibouti,outer,Air pollution,0.00,1
+Djibouti,inner,PC,49.93,1
+Djibouti,inner,PC,85.35,2
+Djibouti,inner,SC,27.33,1
+Djibouti,inner,MC,14.27,1
+Djibouti,inner,MC,60.10,2
+Djibouti,inner,SA,34.79,1
+Djibouti,inner,SA,37.36,2
+Djibouti,inner,UN,#N/A,1
+Djibouti,inner,FP,4.14,1
+Djibouti,inner,HS,#N/A,1
+Djibouti,inner,CO,95.60,1
+Djibouti,inner,HR,96.36,1
+Djibouti,inner,PR,46.35,1
+Djibouti,inner,EX,91.41,1
+Djibouti,inner,RE,65.88,1
+Djibouti,inner,AM,70.14,1
+Djibouti,inner,EQ,69.69,1
+Djibouti,inner,MR,34.35,1
+Djibouti,inner,PN,24.32,1
+Dominica,outer,Energy use,0.00,1
+Dominica,outer,Material use,0.00,1
+Dominica,outer,Water use,0.00,1
+Dominica,outer,Biodiversity,#N/A,1
+Dominica,outer,Antibiotic use,0.00,1
+Dominica,outer,Climate change,92.64,1
+Dominica,outer,Air pollution,11.95,1
+Dominica,inner,PC,22.49,1
+Dominica,inner,PC,71.83,2
+Dominica,inner,SC,24.91,1
+Dominica,inner,MC,3.24,1
+Dominica,inner,MC,49.82,2
+Dominica,inner,SA,56.90,1
+Dominica,inner,SA,41.35,2
+Dominica,inner,UN,#N/A,1
+Dominica,inner,FP,#N/A,1
+Dominica,inner,HS,#N/A,1
+Dominica,inner,CO,61.34,1
+Dominica,inner,HR,0.00,1
+Dominica,inner,PR,0.00,1
+Dominica,inner,EX,33.38,1
+Dominica,inner,RE,0.00,1
+Dominica,inner,AM,48.63,1
+Dominica,inner,EQ,40.07,1
+Dominica,inner,MR,74.27,1
+Dominica,inner,PN,45.95,1
+Dominican Republic,outer,Energy use,0.00,1
+Dominican Republic,outer,Material use,0.00,1
+Dominican Republic,outer,Water use,0.00,1
+Dominican Republic,outer,Biodiversity,#N/A,1
+Dominican Republic,outer,Antibiotic use,0.00,1
+Dominican Republic,outer,Climate change,63.38,1
+Dominican Republic,outer,Air pollution,21.70,1
+Dominican Republic,inner,PC,25.94,1
+Dominican Republic,inner,PC,63.34,2
+Dominican Republic,inner,SC,33.05,1
+Dominican Republic,inner,MC,0.00,1
+Dominican Republic,inner,MC,37.82,2
+Dominican Republic,inner,SA,26.88,1
+Dominican Republic,inner,SA,48.07,2
+Dominican Republic,inner,UN,0.00,1
+Dominican Republic,inner,FP,22.99,1
+Dominican Republic,inner,HS,#N/A,1
+Dominican Republic,inner,CO,61.26,1
+Dominican Republic,inner,HR,0.00,1
+Dominican Republic,inner,PR,46.35,1
+Dominican Republic,inner,EX,24.95,1
+Dominican Republic,inner,RE,22.35,1
+Dominican Republic,inner,AM,48.22,1
+Dominican Republic,inner,EQ,50.87,1
+Dominican Republic,inner,MR,78.41,1
+Dominican Republic,inner,PN,0.00,1
+Ecuador,outer,Energy use,0.00,1
+Ecuador,outer,Material use,0.00,1
+Ecuador,outer,Water use,0.00,1
+Ecuador,outer,Biodiversity,#N/A,1
+Ecuador,outer,Antibiotic use,4.96,1
+Ecuador,outer,Climate change,83.13,1
+Ecuador,outer,Air pollution,4.00,1
+Ecuador,inner,PC,0.00,1
+Ecuador,inner,PC,47.10,2
+Ecuador,inner,SC,37.04,1
+Ecuador,inner,MC,#N/A,1
+Ecuador,inner,MC,0.00,2
+Ecuador,inner,SA,1.85,1
+Ecuador,inner,SA,0.00,2
+Ecuador,inner,UN,0.00,1
+Ecuador,inner,FP,#N/A,1
+Ecuador,inner,HS,#N/A,1
+Ecuador,inner,CO,96.39,1
+Ecuador,inner,HR,0.00,1
+Ecuador,inner,PR,51.50,1
+Ecuador,inner,EX,29.05,1
+Ecuador,inner,RE,52.94,1
+Ecuador,inner,AM,35.37,1
+Ecuador,inner,EQ,43.21,1
+Ecuador,inner,MR,13.65,1
+Ecuador,inner,PN,27.03,1
+"Egypt, Arab Rep.",outer,Energy use,0.00,1
+"Egypt, Arab Rep.",outer,Material use,0.00,1
+"Egypt, Arab Rep.",outer,Water use,0.00,1
+"Egypt, Arab Rep.",outer,Biodiversity,#N/A,1
+"Egypt, Arab Rep.",outer,Antibiotic use,17.34,1
+"Egypt, Arab Rep.",outer,Climate change,#N/A,1
+"Egypt, Arab Rep.",outer,Air pollution,0.00,1
+"Egypt, Arab Rep.",inner,PC,62.97,1
+"Egypt, Arab Rep.",inner,PC,69.73,2
+"Egypt, Arab Rep.",inner,SC,0.00,1
+"Egypt, Arab Rep.",inner,MC,0.00,1
+"Egypt, Arab Rep.",inner,MC,0.00,2
+"Egypt, Arab Rep.",inner,SA,12.35,1
+"Egypt, Arab Rep.",inner,SA,25.13,2
+"Egypt, Arab Rep.",inner,UN,#N/A,1
+"Egypt, Arab Rep.",inner,FP,87.64,1
+"Egypt, Arab Rep.",inner,HS,#N/A,1
+"Egypt, Arab Rep.",inner,CO,74.01,1
+"Egypt, Arab Rep.",inner,HR,47.28,1
+"Egypt, Arab Rep.",inner,PR,58.80,1
+"Egypt, Arab Rep.",inner,EX,50.64,1
+"Egypt, Arab Rep.",inner,RE,72.94,1
+"Egypt, Arab Rep.",inner,AM,37.66,1
+"Egypt, Arab Rep.",inner,EQ,39.02,1
+"Egypt, Arab Rep.",inner,MR,46.18,1
+"Egypt, Arab Rep.",inner,PN,0.00,1
+El Salvador,outer,Energy use,0.00,1
+El Salvador,outer,Material use,0.00,1
+El Salvador,outer,Water use,0.00,1
+El Salvador,outer,Biodiversity,#N/A,1
+El Salvador,outer,Antibiotic use,0.00,1
+El Salvador,outer,Climate change,13.89,1
+El Salvador,outer,Air pollution,0.00,1
+El Salvador,inner,PC,25.94,1
+El Salvador,inner,PC,29.29,2
+El Salvador,inner,SC,44.07,1
+El Salvador,inner,MC,0.00,1
+El Salvador,inner,MC,0.00,2
+El Salvador,inner,SA,2.50,1
+El Salvador,inner,SA,13.33,2
+El Salvador,inner,UN,#N/A,1
+El Salvador,inner,FP,11.43,1
+El Salvador,inner,HS,#N/A,1
+El Salvador,inner,CO,49.01,1
+El Salvador,inner,HR,15.60,1
+El Salvador,inner,PR,57.51,1
+El Salvador,inner,EX,21.88,1
+El Salvador,inner,RE,30.59,1
+El Salvador,inner,AM,32.24,1
+El Salvador,inner,EQ,48.08,1
+El Salvador,inner,MR,29.92,1
+El Salvador,inner,PN,0.00,1
+Equatorial Guinea,outer,Energy use,12.56,1
+Equatorial Guinea,outer,Material use,11.86,1
+Equatorial Guinea,outer,Water use,0.00,1
+Equatorial Guinea,outer,Biodiversity,#N/A,1
+Equatorial Guinea,outer,Antibiotic use,0.00,1
+Equatorial Guinea,outer,Climate change,150.00,1
+Equatorial Guinea,outer,Air pollution,20.55,1
+Equatorial Guinea,inner,PC,49.93,1
+Equatorial Guinea,inner,PC,84.84,2
+Equatorial Guinea,inner,SC,12.50,1
+Equatorial Guinea,inner,MC,12.35,1
+Equatorial Guinea,inner,MC,57.88,2
+Equatorial Guinea,inner,SA,18.49,1
+Equatorial Guinea,inner,SA,54.88,2
+Equatorial Guinea,inner,UN,#N/A,1
+Equatorial Guinea,inner,FP,#N/A,1
+Equatorial Guinea,inner,HS,#N/A,1
+Equatorial Guinea,inner,CO,95.98,1
+Equatorial Guinea,inner,HR,69.60,1
+Equatorial Guinea,inner,PR,#N/A,1
+Equatorial Guinea,inner,EX,68.11,1
+Equatorial Guinea,inner,RE,56.47,1
+Equatorial Guinea,inner,AM,53.31,1
+Equatorial Guinea,inner,EQ,71.78,1
+Equatorial Guinea,inner,MR,45.89,1
+Equatorial Guinea,inner,PN,21.62,1
+Eritrea,outer,Energy use,0.00,1
+Eritrea,outer,Material use,0.00,1
+Eritrea,outer,Water use,0.00,1
+Eritrea,outer,Biodiversity,#N/A,1
+Eritrea,outer,Antibiotic use,#N/A,1
+Eritrea,outer,Climate change,0.99,1
+Eritrea,outer,Air pollution,#N/A,1
+Eritrea,inner,PC,56.37,1
+Eritrea,inner,PC,82.49,2
+Eritrea,inner,SC,46.71,1
+Eritrea,inner,MC,21.83,1
+Eritrea,inner,MC,17.80,2
+Eritrea,inner,SA,56.44,1
+Eritrea,inner,SA,38.57,2
+Eritrea,inner,UN,#N/A,1
+Eritrea,inner,FP,#N/A,1
+Eritrea,inner,HS,#N/A,1
+Eritrea,inner,CO,96.82,1
+Eritrea,inner,HR,67.15,1
+Eritrea,inner,PR,64.38,1
+Eritrea,inner,EX,96.42,1
+Eritrea,inner,RE,55.29,1
+Eritrea,inner,AM,82.12,1
+Eritrea,inner,EQ,58.54,1
+Eritrea,inner,MR,3.30,1
+Eritrea,inner,PN,0.00,1
+Estonia,outer,Energy use,23.66,1
+Estonia,outer,Material use,7.92,1
+Estonia,outer,Water use,0.00,1
+Estonia,outer,Biodiversity,#N/A,1
+Estonia,outer,Antibiotic use,7.24,1
+Estonia,outer,Climate change,150.00,1
+Estonia,outer,Air pollution,68.73,1
+Estonia,inner,PC,43.03,1
+Estonia,inner,PC,75.16,2
+Estonia,inner,SC,0.00,1
+Estonia,inner,MC,0.00,1
+Estonia,inner,MC,0.00,2
+Estonia,inner,SA,0.32,1
+Estonia,inner,SA,53.94,2
+Estonia,inner,UN,#N/A,1
+Estonia,inner,FP,#N/A,1
+Estonia,inner,HS,#N/A,1
+Estonia,inner,CO,0.98,1
+Estonia,inner,HR,0.00,1
+Estonia,inner,PR,0.00,1
+Estonia,inner,EX,0.00,1
+Estonia,inner,RE,0.00,1
+Estonia,inner,AM,0.00,1
+Estonia,inner,EQ,34.49,1
+Estonia,inner,MR,52.10,1
+Estonia,inner,PN,0.00,1
+Eswatini,outer,Energy use,0.00,1
+Eswatini,outer,Material use,0.00,1
+Eswatini,outer,Water use,0.00,1
+Eswatini,outer,Biodiversity,#N/A,1
+Eswatini,outer,Antibiotic use,0.00,1
+Eswatini,outer,Climate change,45.08,1
+Eswatini,outer,Air pollution,6.15,1
+Eswatini,inner,PC,49.93,1
+Eswatini,inner,PC,83.67,2
+Eswatini,inner,SC,24.51,1
+Eswatini,inner,MC,14.72,1
+Eswatini,inner,MC,38.07,2
+Eswatini,inner,SA,36.31,1
+Eswatini,inner,SA,0.00,2
+Eswatini,inner,UN,#N/A,1
+Eswatini,inner,FP,14.07,1
+Eswatini,inner,HS,#N/A,1
+Eswatini,inner,CO,94.57,1
+Eswatini,inner,HR,0.00,1
+Eswatini,inner,PR,#N/A,1
+Eswatini,inner,EX,46.01,1
+Eswatini,inner,RE,2.35,1
+Eswatini,inner,AM,70.26,1
+Eswatini,inner,EQ,73.17,1
+Eswatini,inner,MR,58.90,1
+Eswatini,inner,PN,6.76,1
+Ethiopia,outer,Energy use,0.00,1
+Ethiopia,outer,Material use,0.00,1
+Ethiopia,outer,Water use,0.00,1
+Ethiopia,outer,Biodiversity,#N/A,1
+Ethiopia,outer,Antibiotic use,0.00,1
+Ethiopia,outer,Climate change,0.00,1
+Ethiopia,outer,Air pollution,0.00,1
+Ethiopia,inner,PC,56.37,1
+Ethiopia,inner,PC,96.20,2
+Ethiopia,inner,SC,24.21,1
+Ethiopia,inner,MC,17.07,1
+Ethiopia,inner,MC,55.18,2
+Ethiopia,inner,SA,40.26,1
+Ethiopia,inner,SA,42.42,2
+Ethiopia,inner,UN,17.01,1
+Ethiopia,inner,FP,9.79,1
+Ethiopia,inner,HS,36.10,1
+Ethiopia,inner,CO,96.97,1
+Ethiopia,inner,HR,73.49,1
+Ethiopia,inner,PR,93.13,1
+Ethiopia,inner,EX,97.01,1
+Ethiopia,inner,RE,82.35,1
+Ethiopia,inner,AM,72.52,1
+Ethiopia,inner,EQ,62.72,1
+Ethiopia,inner,MR,14.25,1
+Ethiopia,inner,PN,24.32,1
+Faroe Islands,outer,Energy use,64.59,1
+Faroe Islands,outer,Material use,44.55,1
+Faroe Islands,outer,Water use,0.00,1
+Faroe Islands,outer,Biodiversity,#N/A,1
+Faroe Islands,outer,Antibiotic use,#N/A,1
+Faroe Islands,outer,Climate change,150.00,1
+Faroe Islands,outer,Air pollution,150.00,1
+Faroe Islands,inner,PC,17.09,1
+Faroe Islands,inner,PC,#N/A,2
+Faroe Islands,inner,SC,#N/A,1
+Faroe Islands,inner,MC,#N/A,1
+Faroe Islands,inner,MC,#N/A,2
+Faroe Islands,inner,SA,#N/A,1
+Faroe Islands,inner,SA,#N/A,2
+Faroe Islands,inner,UN,#N/A,1
+Faroe Islands,inner,FP,#N/A,1
+Faroe Islands,inner,HS,#N/A,1
+Faroe Islands,inner,CO,#N/A,1
+Faroe Islands,inner,HR,#N/A,1
+Faroe Islands,inner,PR,#N/A,1
+Faroe Islands,inner,EX,#N/A,1
+Faroe Islands,inner,RE,#N/A,1
+Faroe Islands,inner,AM,#N/A,1
+Faroe Islands,inner,EQ,29.97,1
+Faroe Islands,inner,MR,#N/A,1
+Faroe Islands,inner,PN,#N/A,1
+Fiji,outer,Energy use,48.77,1
+Fiji,outer,Material use,23.84,1
+Fiji,outer,Water use,0.00,1
+Fiji,outer,Biodiversity,#N/A,1
+Fiji,outer,Antibiotic use,0.00,1
+Fiji,outer,Climate change,150.00,1
+Fiji,outer,Air pollution,71.99,1
+Fiji,inner,PC,47.23,1
+Fiji,inner,PC,82.96,2
+Fiji,inner,SC,18.29,1
+Fiji,inner,MC,0.00,1
+Fiji,inner,MC,6.97,2
+Fiji,inner,SA,6.17,1
+Fiji,inner,SA,37.85,2
+Fiji,inner,UN,#N/A,1
+Fiji,inner,FP,#N/A,1
+Fiji,inner,HS,#N/A,1
+Fiji,inner,CO,98.06,1
+Fiji,inner,HR,0.00,1
+Fiji,inner,PR,26.18,1
+Fiji,inner,EX,31.14,1
+Fiji,inner,RE,24.71,1
+Fiji,inner,AM,59.68,1
+Fiji,inner,EQ,46.69,1
+Fiji,inner,MR,47.36,1
+Fiji,inner,PN,0.00,1
+Finland,outer,Energy use,68.51,1
+Finland,outer,Material use,42.80,1
+Finland,outer,Water use,1.28,1
+Finland,outer,Biodiversity,#N/A,1
+Finland,outer,Antibiotic use,18.97,1
+Finland,outer,Climate change,150.00,1
+Finland,outer,Air pollution,150.00,1
+Finland,inner,PC,0.00,1
+Finland,inner,PC,49.21,2
+Finland,inner,SC,0.10,1
+Finland,inner,MC,0.00,1
+Finland,inner,MC,0.00,2
+Finland,inner,SA,0.00,1
+Finland,inner,SA,45.68,2
+Finland,inner,UN,#N/A,1
+Finland,inner,FP,18.91,1
+Finland,inner,HS,#N/A,1
+Finland,inner,CO,0.00,1
+Finland,inner,HR,0.00,1
+Finland,inner,PR,0.00,1
+Finland,inner,EX,0.00,1
+Finland,inner,RE,0.00,1
+Finland,inner,AM,0.00,1
+Finland,inner,EQ,28.92,1
+Finland,inner,MR,39.38,1
+Finland,inner,PN,0.00,1
+France,outer,Energy use,42.44,1
+France,outer,Material use,18.32,1
+France,outer,Water use,0.00,1
+France,outer,Biodiversity,#N/A,1
+France,outer,Antibiotic use,33.05,1
+France,outer,Climate change,150.00,1
+France,outer,Air pollution,90.12,1
+France,inner,PC,11.84,1
+France,inner,PC,47.28,2
+France,inner,SC,0.00,1
+France,inner,MC,0.00,1
+France,inner,MC,0.00,2
+France,inner,SA,7.36,1
+France,inner,SA,13.03,2
+France,inner,UN,#N/A,1
+France,inner,FP,#N/A,1
+France,inner,HS,#N/A,1
+France,inner,CO,0.00,1
+France,inner,HR,0.00,1
+France,inner,PR,0.00,1
+France,inner,EX,0.00,1
+France,inner,RE,4.71,1
+France,inner,AM,0.00,1
+France,inner,EQ,31.01,1
+France,inner,MR,19.27,1
+France,inner,PN,0.00,1
+French Polynesia,outer,Energy use,48.77,1
+French Polynesia,outer,Material use,23.84,1
+French Polynesia,outer,Water use,0.00,1
+French Polynesia,outer,Biodiversity,#N/A,1
+French Polynesia,outer,Antibiotic use,#N/A,1
+French Polynesia,outer,Climate change,150.00,1
+French Polynesia,outer,Air pollution,#N/A,1
+French Polynesia,inner,PC,38.08,1
+French Polynesia,inner,PC,83.14,2
+French Polynesia,inner,SC,#N/A,1
+French Polynesia,inner,MC,#N/A,1
+French Polynesia,inner,MC,#N/A,2
+French Polynesia,inner,SA,#N/A,1
+French Polynesia,inner,SA,#N/A,2
+French Polynesia,inner,UN,#N/A,1
+French Polynesia,inner,FP,#N/A,1
+French Polynesia,inner,HS,#N/A,1
+French Polynesia,inner,CO,#N/A,1
+French Polynesia,inner,HR,#N/A,1
+French Polynesia,inner,PR,#N/A,1
+French Polynesia,inner,EX,#N/A,1
+French Polynesia,inner,RE,#N/A,1
+French Polynesia,inner,AM,#N/A,1
+French Polynesia,inner,EQ,31.01,1
+French Polynesia,inner,MR,#N/A,1
+French Polynesia,inner,PN,#N/A,1
+Gabon,outer,Energy use,33.69,1
+Gabon,outer,Material use,1.27,1
+Gabon,outer,Water use,0.00,1
+Gabon,outer,Biodiversity,#N/A,1
+Gabon,outer,Antibiotic use,0.00,1
+Gabon,outer,Climate change,150.00,1
+Gabon,outer,Air pollution,92.70,1
+Gabon,inner,PC,49.93,1
+Gabon,inner,PC,81.15,2
+Gabon,inner,SC,12.63,1
+Gabon,inner,MC,13.58,1
+Gabon,inner,MC,23.09,2
+Gabon,inner,SA,21.31,1
+Gabon,inner,SA,32.99,2
+Gabon,inner,UN,#N/A,1
+Gabon,inner,FP,10.78,1
+Gabon,inner,HS,#N/A,1
+Gabon,inner,CO,95.61,1
+Gabon,inner,HR,37.14,1
+Gabon,inner,PR,#N/A,1
+Gabon,inner,EX,68.48,1
+Gabon,inner,RE,37.65,1
+Gabon,inner,AM,58.10,1
+Gabon,inner,EQ,56.79,1
+Gabon,inner,MR,43.82,1
+Gabon,inner,PN,27.03,1
+"Gambia, The",outer,Energy use,0.00,1
+"Gambia, The",outer,Material use,0.00,1
+"Gambia, The",outer,Water use,0.00,1
+"Gambia, The",outer,Biodiversity,#N/A,1
+"Gambia, The",outer,Antibiotic use,0.00,1
+"Gambia, The",outer,Climate change,0.00,1
+"Gambia, The",outer,Air pollution,0.00,1
+"Gambia, The",inner,PC,56.37,1
+"Gambia, The",inner,PC,89.12,2
+"Gambia, The",inner,SC,27.21,1
+"Gambia, The",inner,MC,33.69,1
+"Gambia, The",inner,MC,45.33,2
+"Gambia, The",inner,SA,55.68,1
+"Gambia, The",inner,SA,0.00,2
+"Gambia, The",inner,UN,46.50,1
+"Gambia, The",inner,FP,0.56,1
+"Gambia, The",inner,HS,#N/A,1
+"Gambia, The",inner,CO,98.44,1
+"Gambia, The",inner,HR,88.18,1
+"Gambia, The",inner,PR,57.94,1
+"Gambia, The",inner,EX,96.27,1
+"Gambia, The",inner,RE,67.06,1
+"Gambia, The",inner,AM,66.57,1
+"Gambia, The",inner,EQ,67.94,1
+"Gambia, The",inner,MR,44.41,1
+"Gambia, The",inner,PN,8.11,1
+Georgia,outer,Energy use,0.00,1
+Georgia,outer,Material use,0.00,1
+Georgia,outer,Water use,0.00,1
+Georgia,outer,Biodiversity,#N/A,1
+Georgia,outer,Antibiotic use,17.19,1
+Georgia,outer,Climate change,74.25,1
+Georgia,outer,Air pollution,23.56,1
+Georgia,inner,PC,29.39,1
+Georgia,inner,PC,73.44,2
+Georgia,inner,SC,0.41,1
+Georgia,inner,MC,0.00,1
+Georgia,inner,MC,0.00,2
+Georgia,inner,SA,5.92,1
+Georgia,inner,SA,8.48,2
+Georgia,inner,UN,32.51,1
+Georgia,inner,FP,88.40,1
+Georgia,inner,HS,#N/A,1
+Georgia,inner,CO,19.32,1
+Georgia,inner,HR,0.00,1
+Georgia,inner,PR,0.00,1
+Georgia,inner,EX,0.00,1
+Georgia,inner,RE,7.06,1
+Georgia,inner,AM,27.11,1
+Georgia,inner,EQ,38.68,1
+Georgia,inner,MR,64.81,1
+Georgia,inner,PN,2.70,1
+Germany,outer,Energy use,63.94,1
+Germany,outer,Material use,41.45,1
+Germany,outer,Water use,13.89,1
+Germany,outer,Biodiversity,#N/A,1
+Germany,outer,Antibiotic use,13.69,1
+Germany,outer,Climate change,150.00,1
+Germany,outer,Air pollution,98.85,1
+Germany,inner,PC,2.55,1
+Germany,inner,PC,11.64,2
+Germany,inner,SC,0.70,1
+Germany,inner,MC,0.00,1
+Germany,inner,MC,0.00,2
+Germany,inner,SA,5.67,1
+Germany,inner,SA,38.05,2
+Germany,inner,UN,#N/A,1
+Germany,inner,FP,#N/A,1
+Germany,inner,HS,#N/A,1
+Germany,inner,CO,0.00,1
+Germany,inner,HR,0.00,1
+Germany,inner,PR,0.00,1
+Germany,inner,EX,0.00,1
+Germany,inner,RE,2.35,1
+Germany,inner,AM,0.00,1
+Germany,inner,EQ,31.01,1
+Germany,inner,MR,21.05,1
+Germany,inner,PN,0.00,1
+Ghana,outer,Energy use,0.00,1
+Ghana,outer,Material use,0.00,1
+Ghana,outer,Water use,0.00,1
+Ghana,outer,Biodiversity,#N/A,1
+Ghana,outer,Antibiotic use,0.00,1
+Ghana,outer,Climate change,0.00,1
+Ghana,outer,Air pollution,0.00,1
+Ghana,inner,PC,49.93,1
+Ghana,inner,PC,69.60,2
+Ghana,inner,SC,40.22,1
+Ghana,inner,MC,16.76,1
+Ghana,inner,MC,33.01,2
+Ghana,inner,SA,36.89,1
+Ghana,inner,SA,3.16,2
+Ghana,inner,UN,47.46,1
+Ghana,inner,FP,3.74,1
+Ghana,inner,HS,#N/A,1
+Ghana,inner,CO,97.29,1
+Ghana,inner,HR,1.76,1
+Ghana,inner,PR,77.68,1
+Ghana,inner,EX,84.84,1
+Ghana,inner,RE,25.88,1
+Ghana,inner,AM,64.21,1
+Ghana,inner,EQ,65.51,1
+Ghana,inner,MR,33.47,1
+Ghana,inner,PN,0.00,1
+Gibraltar,outer,Energy use,64.59,1
+Gibraltar,outer,Material use,44.55,1
+Gibraltar,outer,Water use,0.00,1
+Gibraltar,outer,Biodiversity,#N/A,1
+Gibraltar,outer,Antibiotic use,#N/A,1
+Gibraltar,outer,Climate change,#N/A,1
+Gibraltar,outer,Air pollution,#N/A,1
+Gibraltar,inner,PC,#N/A,1
+Gibraltar,inner,PC,#N/A,2
+Gibraltar,inner,SC,#N/A,1
+Gibraltar,inner,MC,#N/A,1
+Gibraltar,inner,MC,#N/A,2
+Gibraltar,inner,SA,#N/A,1
+Gibraltar,inner,SA,#N/A,2
+Gibraltar,inner,UN,#N/A,1
+Gibraltar,inner,FP,#N/A,1
+Gibraltar,inner,HS,#N/A,1
+Gibraltar,inner,CO,#N/A,1
+Gibraltar,inner,HR,#N/A,1
+Gibraltar,inner,PR,#N/A,1
+Gibraltar,inner,EX,#N/A,1
+Gibraltar,inner,RE,#N/A,1
+Gibraltar,inner,AM,#N/A,1
+Gibraltar,inner,EQ,35.19,1
+Gibraltar,inner,MR,#N/A,1
+Gibraltar,inner,PN,#N/A,1
+Greece,outer,Energy use,26.51,1
+Greece,outer,Material use,0.00,1
+Greece,outer,Water use,0.00,1
+Greece,outer,Biodiversity,#N/A,1
+Greece,outer,Antibiotic use,52.12,1
+Greece,outer,Climate change,150.00,1
+Greece,outer,Air pollution,52.13,1
+Greece,inner,PC,20.24,1
+Greece,inner,PC,36.52,2
+Greece,inner,SC,0.00,1
+Greece,inner,MC,0.00,1
+Greece,inner,MC,0.00,2
+Greece,inner,SA,13.03,1
+Greece,inner,SA,32.99,2
+Greece,inner,UN,#N/A,1
+Greece,inner,FP,47.54,1
+Greece,inner,HS,100.00,1
+Greece,inner,CO,0.00,1
+Greece,inner,HR,0.00,1
+Greece,inner,PR,0.00,1
+Greece,inner,EX,0.00,1
+Greece,inner,RE,2.35,1
+Greece,inner,AM,0.00,1
+Greece,inner,EQ,31.01,1
+Greece,inner,MR,25.78,1
+Greece,inner,PN,0.00,1
+Greenland,outer,Energy use,71.47,1
+Greenland,outer,Material use,44.55,1
+Greenland,outer,Water use,0.00,1
+Greenland,outer,Biodiversity,#N/A,1
+Greenland,outer,Antibiotic use,#N/A,1
+Greenland,outer,Climate change,150.00,1
+Greenland,outer,Air pollution,150.00,1
+Greenland,inner,PC,20.24,1
+Greenland,inner,PC,56.97,2
+Greenland,inner,SC,6.93,1
+Greenland,inner,MC,#N/A,1
+Greenland,inner,MC,#N/A,2
+Greenland,inner,SA,0.09,1
+Greenland,inner,SA,31.25,2
+Greenland,inner,UN,#N/A,1
+Greenland,inner,FP,#N/A,1
+Greenland,inner,HS,#N/A,1
+Greenland,inner,CO,0.00,1
+Greenland,inner,HR,#N/A,1
+Greenland,inner,PR,#N/A,1
+Greenland,inner,EX,#N/A,1
+Greenland,inner,RE,#N/A,1
+Greenland,inner,AM,18.60,1
+Greenland,inner,EQ,42.51,1
+Greenland,inner,MR,#N/A,1
+Greenland,inner,PN,#N/A,1
+Grenada,outer,Energy use,0.00,1
+Grenada,outer,Material use,0.00,1
+Grenada,outer,Water use,0.00,1
+Grenada,outer,Biodiversity,#N/A,1
+Grenada,outer,Antibiotic use,0.00,1
+Grenada,outer,Climate change,98.83,1
+Grenada,outer,Air pollution,12.07,1
+Grenada,inner,PC,22.49,1
+Grenada,inner,PC,68.15,2
+Grenada,inner,SC,17.45,1
+Grenada,inner,MC,0.00,1
+Grenada,inner,MC,0.00,2
+Grenada,inner,SA,71.89,1
+Grenada,inner,SA,35.99,2
+Grenada,inner,UN,#N/A,1
+Grenada,inner,FP,#N/A,1
+Grenada,inner,HS,#N/A,1
+Grenada,inner,CO,60.80,1
+Grenada,inner,HR,0.00,1
+Grenada,inner,PR,0.00,1
+Grenada,inner,EX,34.28,1
+Grenada,inner,RE,0.00,1
+Grenada,inner,AM,39.59,1
+Grenada,inner,EQ,40.42,1
+Grenada,inner,MR,71.02,1
+Grenada,inner,PN,5.41,1
+Guam,outer,Energy use,48.77,1
+Guam,outer,Material use,23.84,1
+Guam,outer,Water use,0.00,1
+Guam,outer,Biodiversity,#N/A,1
+Guam,outer,Antibiotic use,#N/A,1
+Guam,outer,Climate change,#N/A,1
+Guam,outer,Air pollution,#N/A,1
+Guam,inner,PC,38.08,1
+Guam,inner,PC,#N/A,2
+Guam,inner,SC,0.00,1
+Guam,inner,MC,#N/A,1
+Guam,inner,MC,#N/A,2
+Guam,inner,SA,2.94,1
+Guam,inner,SA,0.00,2
+Guam,inner,UN,#N/A,1
+Guam,inner,FP,#N/A,1
+Guam,inner,HS,#N/A,1
+Guam,inner,CO,95.74,1
+Guam,inner,HR,#N/A,1
+Guam,inner,PR,#N/A,1
+Guam,inner,EX,#N/A,1
+Guam,inner,RE,#N/A,1
+Guam,inner,AM,29.14,1
+Guam,inner,EQ,44.60,1
+Guam,inner,MR,#N/A,1
+Guam,inner,PN,#N/A,1
+Guatemala,outer,Energy use,0.00,1
+Guatemala,outer,Material use,0.00,1
+Guatemala,outer,Water use,0.00,1
 Guatemala,outer,Biodiversity,#N/A,1
-Guatemala,outer,Antibiotic use,0,1
-Guatemala,outer,Climate change,26.05,1
-Guatemala,outer,Air pollution,0,1
+Guatemala,outer,Antibiotic use,0.00,1
+Guatemala,outer,Climate change,34.54,1
+Guatemala,outer,Air pollution,0.00,1
 Guatemala,inner,PC,43.18,1
 Guatemala,inner,PC,69.35,2
-Guatemala,inner,SC,100,1
+Guatemala,inner,SC,100.00,1
 Guatemala,inner,MC,2.21,1
-Guatemala,inner,MC,0,2
+Guatemala,inner,MC,0.00,2
 Guatemala,inner,SA,20.69,1
-Guatemala,inner,SA,0,2
+Guatemala,inner,SA,0.00,2
 Guatemala,inner,UN,12.21,1
 Guatemala,inner,FP,#N/A,1
 Guatemala,inner,HS,#N/A,1
-Guatemala,inner,CO,53.6,1
+Guatemala,inner,CO,53.60,1
 Guatemala,inner,HR,21.34,1
 Guatemala,inner,PR,88.41,1
 Guatemala,inner,EX,44.44,1
@@ -155,29 +2131,3565 @@ Guatemala,inner,AM,51.25,1
 Guatemala,inner,EQ,50.87,1
 Guatemala,inner,MR,28.44,1
 Guatemala,inner,PN,9.46,1
-Germany,outer,Energy use,9.46,1
-Germany,outer,Material use,0,1
-Germany,outer,Water use,0,1
-Germany,outer,Biodiversity,#N/A,1
-Germany,outer,Antibiotic use,12.35,1
-Germany,outer,Climate change,24.15,1
-Germany,outer,Air pollution,12.59,1
-Germany,inner,PC,29.39,1
-Germany,inner,PC,91.32,2
-Germany,inner,SC,0,1
-Germany,inner,MC,0,1
-Germany,inner,MC,0,2
-Germany,inner,SA,5.48,1
-Germany,inner,SA,24.53,2
-Germany,inner,UN,94.24,1
-Germany,inner,FP,24.91,1
-Germany,inner,HS,#N/A,1
-Germany,inner,CO,9.44,1
-Germany,inner,HR,0,1
-Germany,inner,PR,0,1
-Germany,inner,EX,14.34,1
-Germany,inner,RE,2.35,1
-Germany,inner,AM,10.27,1
-Germany,inner,EQ,33.8,1
-Germany,inner,MR,56.83,1
-Germany,inner,PN,0,1
+Guinea,outer,Energy use,0.00,1
+Guinea,outer,Material use,0.00,1
+Guinea,outer,Water use,0.00,1
+Guinea,outer,Biodiversity,#N/A,1
+Guinea,outer,Antibiotic use,0.00,1
+Guinea,outer,Climate change,0.00,1
+Guinea,outer,Air pollution,0.00,1
+Guinea,inner,PC,56.37,1
+Guinea,inner,PC,94.44,2
+Guinea,inner,SC,18.74,1
+Guinea,inner,MC,41.94,1
+Guinea,inner,MC,69.29,2
+Guinea,inner,SA,84.47,1
+Guinea,inner,SA,0.00,2
+Guinea,inner,UN,51.17,1
+Guinea,inner,FP,4.22,1
+Guinea,inner,HS,#N/A,1
+Guinea,inner,CO,98.67,1
+Guinea,inner,HR,90.97,1
+Guinea,inner,PR,#N/A,1
+Guinea,inner,EX,94.25,1
+Guinea,inner,RE,70.59,1
+Guinea,inner,AM,81.97,1
+Guinea,inner,EQ,82.58,1
+Guinea,inner,MR,54.17,1
+Guinea,inner,PN,58.11,1
+Guinea-Bissau,outer,Energy use,0.00,1
+Guinea-Bissau,outer,Material use,0.00,1
+Guinea-Bissau,outer,Water use,0.00,1
+Guinea-Bissau,outer,Biodiversity,#N/A,1
+Guinea-Bissau,outer,Antibiotic use,0.00,1
+Guinea-Bissau,outer,Climate change,0.00,1
+Guinea-Bissau,outer,Air pollution,0.00,1
+Guinea-Bissau,inner,PC,56.37,1
+Guinea-Bissau,inner,PC,85.98,2
+Guinea-Bissau,inner,SC,34.43,1
+Guinea-Bissau,inner,MC,56.84,1
+Guinea-Bissau,inner,MC,78.74,2
+Guinea-Bissau,inner,SA,82.64,1
+Guinea-Bissau,inner,SA,6.32,2
+Guinea-Bissau,inner,UN,20.58,1
+Guinea-Bissau,inner,FP,14.21,1
+Guinea-Bissau,inner,HS,#N/A,1
+Guinea-Bissau,inner,CO,99.00,1
+Guinea-Bissau,inner,HR,76.42,1
+Guinea-Bissau,inner,PR,#N/A,1
+Guinea-Bissau,inner,EX,88.95,1
+Guinea-Bissau,inner,RE,60.00,1
+Guinea-Bissau,inner,AM,84.41,1
+Guinea-Bissau,inner,EQ,73.87,1
+Guinea-Bissau,inner,MR,45.59,1
+Guinea-Bissau,inner,PN,21.62,1
+Guyana,outer,Energy use,0.00,1
+Guyana,outer,Material use,0.00,1
+Guyana,outer,Water use,0.00,1
+Guyana,outer,Biodiversity,#N/A,1
+Guyana,outer,Antibiotic use,0.00,1
+Guyana,outer,Climate change,150.00,1
+Guyana,outer,Air pollution,59.66,1
+Guyana,inner,PC,22.49,1
+Guyana,inner,PC,66.40,2
+Guyana,inner,SC,74.94,1
+Guyana,inner,MC,3.64,1
+Guyana,inner,MC,14.88,2
+Guyana,inner,SA,31.60,1
+Guyana,inner,SA,4.52,2
+Guyana,inner,UN,38.96,1
+Guyana,inner,FP,#N/A,1
+Guyana,inner,HS,#N/A,1
+Guyana,inner,CO,66.70,1
+Guyana,inner,HR,0.00,1
+Guyana,inner,PR,0.00,1
+Guyana,inner,EX,11.13,1
+Guyana,inner,RE,3.53,1
+Guyana,inner,AM,62.25,1
+Guyana,inner,EQ,53.66,1
+Guyana,inner,MR,51.50,1
+Guyana,inner,PN,0.00,1
+Haiti,outer,Energy use,0.00,1
+Haiti,outer,Material use,0.00,1
+Haiti,outer,Water use,0.00,1
+Haiti,outer,Biodiversity,#N/A,1
+Haiti,outer,Antibiotic use,0.00,1
+Haiti,outer,Climate change,0.00,1
+Haiti,outer,Air pollution,0.00,1
+Haiti,inner,PC,14.09,1
+Haiti,inner,PC,92.06,2
+Haiti,inner,SC,92.58,1
+Haiti,inner,MC,24.33,1
+Haiti,inner,MC,43.54,2
+Haiti,inner,SA,87.52,1
+Haiti,inner,SA,28.51,2
+Haiti,inner,UN,40.60,1
+Haiti,inner,FP,#N/A,1
+Haiti,inner,HS,#N/A,1
+Haiti,inner,CO,69.46,1
+Haiti,inner,HR,81.61,1
+Haiti,inner,PR,0.00,1
+Haiti,inner,EX,94.92,1
+Haiti,inner,RE,84.71,1
+Haiti,inner,AM,83.95,1
+Haiti,inner,EQ,65.16,1
+Haiti,inner,MR,60.08,1
+Haiti,inner,PN,52.70,1
+Honduras,outer,Energy use,0.00,1
+Honduras,outer,Material use,0.00,1
+Honduras,outer,Water use,0.00,1
+Honduras,outer,Biodiversity,#N/A,1
+Honduras,outer,Antibiotic use,0.00,1
+Honduras,outer,Climate change,3.29,1
+Honduras,outer,Air pollution,0.00,1
+Honduras,inner,PC,44.98,1
+Honduras,inner,PC,40.47,2
+Honduras,inner,SC,94.41,1
+Honduras,inner,MC,0.16,1
+Honduras,inner,MC,0.00,2
+Honduras,inner,SA,16.93,1
+Honduras,inner,SA,46.27,2
+Honduras,inner,UN,0.00,1
+Honduras,inner,FP,#N/A,1
+Honduras,inner,HS,#N/A,1
+Honduras,inner,CO,56.16,1
+Honduras,inner,HR,76.85,1
+Honduras,inner,PR,78.97,1
+Honduras,inner,EX,61.32,1
+Honduras,inner,RE,80.00,1
+Honduras,inner,AM,57.42,1
+Honduras,inner,EQ,42.51,1
+Honduras,inner,MR,33.47,1
+Honduras,inner,PN,22.97,1
+"Hong Kong SAR, China",outer,Energy use,36.91,1
+"Hong Kong SAR, China",outer,Material use,13.94,1
+"Hong Kong SAR, China",outer,Water use,0.00,1
+"Hong Kong SAR, China",outer,Biodiversity,#N/A,1
+"Hong Kong SAR, China",outer,Antibiotic use,#N/A,1
+"Hong Kong SAR, China",outer,Climate change,150.00,1
+"Hong Kong SAR, China",outer,Air pollution,150.00,1
+"Hong Kong SAR, China",inner,PC,51.27,1
+"Hong Kong SAR, China",inner,PC,#N/A,2
+"Hong Kong SAR, China",inner,SC,#N/A,1
+"Hong Kong SAR, China",inner,MC,#N/A,1
+"Hong Kong SAR, China",inner,MC,#N/A,2
+"Hong Kong SAR, China",inner,SA,#N/A,1
+"Hong Kong SAR, China",inner,SA,#N/A,2
+"Hong Kong SAR, China",inner,UN,#N/A,1
+"Hong Kong SAR, China",inner,FP,#N/A,1
+"Hong Kong SAR, China",inner,HS,#N/A,1
+"Hong Kong SAR, China",inner,CO,#N/A,1
+"Hong Kong SAR, China",inner,HR,#N/A,1
+"Hong Kong SAR, China",inner,PR,#N/A,1
+"Hong Kong SAR, China",inner,EX,#N/A,1
+"Hong Kong SAR, China",inner,RE,#N/A,1
+"Hong Kong SAR, China",inner,AM,#N/A,1
+"Hong Kong SAR, China",inner,EQ,27.18,1
+"Hong Kong SAR, China",inner,MR,#N/A,1
+"Hong Kong SAR, China",inner,PN,#N/A,1
+Hungary,outer,Energy use,34.85,1
+Hungary,outer,Material use,7.15,1
+Hungary,outer,Water use,0.00,1
+Hungary,outer,Biodiversity,#N/A,1
+Hungary,outer,Antibiotic use,15.07,1
+Hungary,outer,Climate change,150.00,1
+Hungary,outer,Air pollution,63.37,1
+Hungary,inner,PC,0.00,1
+Hungary,inner,PC,59.58,2
+Hungary,inner,SC,4.06,1
+Hungary,inner,MC,0.00,1
+Hungary,inner,MC,0.00,2
+Hungary,inner,SA,2.36,1
+Hungary,inner,SA,17.36,2
+Hungary,inner,UN,#N/A,1
+Hungary,inner,FP,34.65,1
+Hungary,inner,HS,#N/A,1
+Hungary,inner,CO,3.61,1
+Hungary,inner,HR,0.00,1
+Hungary,inner,PR,0.00,1
+Hungary,inner,EX,0.00,1
+Hungary,inner,RE,0.00,1
+Hungary,inner,AM,0.00,1
+Hungary,inner,EQ,36.24,1
+Hungary,inner,MR,76.05,1
+Hungary,inner,PN,0.00,1
+Iceland,outer,Energy use,92.26,1
+Iceland,outer,Material use,10.64,1
+Iceland,outer,Water use,0.00,1
+Iceland,outer,Biodiversity,#N/A,1
+Iceland,outer,Antibiotic use,26.21,1
+Iceland,outer,Climate change,150.00,1
+Iceland,outer,Air pollution,94.36,1
+Iceland,inner,PC,20.24,1
+Iceland,inner,PC,0.00,2
+Iceland,inner,SC,0.00,1
+Iceland,inner,MC,0.00,1
+Iceland,inner,MC,0.00,2
+Iceland,inner,SA,3.78,1
+Iceland,inner,SA,54.89,2
+Iceland,inner,UN,#N/A,1
+Iceland,inner,FP,#N/A,1
+Iceland,inner,HS,#N/A,1
+Iceland,inner,CO,0.00,1
+Iceland,inner,HR,0.00,1
+Iceland,inner,PR,0.00,1
+Iceland,inner,EX,0.00,1
+Iceland,inner,RE,0.00,1
+Iceland,inner,AM,0.00,1
+Iceland,inner,EQ,26.13,1
+Iceland,inner,MR,14.54,1
+Iceland,inner,PN,0.00,1
+India,outer,Energy use,0.00,1
+India,outer,Material use,0.00,1
+India,outer,Water use,0.00,1
+India,outer,Biodiversity,#N/A,1
+India,outer,Antibiotic use,0.00,1
+India,outer,Climate change,25.67,1
+India,outer,Air pollution,7.76,1
+India,inner,PC,49.63,1
+India,inner,PC,77.43,2
+India,inner,SC,42.22,1
+India,inner,MC,2.83,1
+India,inner,MC,22.36,2
+India,inner,SA,33.00,1
+India,inner,SA,24.68,2
+India,inner,UN,3.02,1
+India,inner,FP,49.14,1
+India,inner,HS,0.00,1
+India,inner,CO,66.06,1
+India,inner,HR,47.81,1
+India,inner,PR,38.63,1
+India,inner,EX,82.52,1
+India,inner,RE,60.00,1
+India,inner,AM,58.89,1
+India,inner,EQ,50.87,1
+India,inner,MR,25.19,1
+India,inner,PN,0.00,1
+Indonesia,outer,Energy use,0.00,1
+Indonesia,outer,Material use,0.00,1
+Indonesia,outer,Water use,0.00,1
+Indonesia,outer,Biodiversity,#N/A,1
+Indonesia,outer,Antibiotic use,0.00,1
+Indonesia,outer,Climate change,53.11,1
+Indonesia,outer,Air pollution,9.38,1
+Indonesia,inner,PC,80.51,1
+Indonesia,inner,PC,100.00,2
+Indonesia,inner,SC,27.80,1
+Indonesia,inner,MC,8.93,1
+Indonesia,inner,MC,0.00,2
+Indonesia,inner,SA,0.30,1
+Indonesia,inner,SA,59.14,2
+Indonesia,inner,UN,0.00,1
+Indonesia,inner,FP,5.54,1
+Indonesia,inner,HS,#N/A,1
+Indonesia,inner,CO,97.36,1
+Indonesia,inner,HR,16.34,1
+Indonesia,inner,PR,48.93,1
+Indonesia,inner,EX,73.79,1
+Indonesia,inner,RE,15.29,1
+Indonesia,inner,AM,55.99,1
+Indonesia,inner,EQ,46.69,1
+Indonesia,inner,MR,52.39,1
+Indonesia,inner,PN,9.46,1
+"Iran, Islamic Rep.",outer,Energy use,0.00,1
+"Iran, Islamic Rep.",outer,Material use,0.00,1
+"Iran, Islamic Rep.",outer,Water use,0.00,1
+"Iran, Islamic Rep.",outer,Biodiversity,#N/A,1
+"Iran, Islamic Rep.",outer,Antibiotic use,16.70,1
+"Iran, Islamic Rep.",outer,Climate change,150.00,1
+"Iran, Islamic Rep.",outer,Air pollution,0.00,1
+"Iran, Islamic Rep.",inner,PC,22.64,1
+"Iran, Islamic Rep.",inner,PC,57.59,2
+"Iran, Islamic Rep.",inner,SC,4.77,1
+"Iran, Islamic Rep.",inner,MC,0.00,1
+"Iran, Islamic Rep.",inner,MC,0.00,2
+"Iran, Islamic Rep.",inner,SA,8.25,1
+"Iran, Islamic Rep.",inner,SA,7.70,2
+"Iran, Islamic Rep.",inner,UN,#N/A,1
+"Iran, Islamic Rep.",inner,FP,43.23,1
+"Iran, Islamic Rep.",inner,HS,#N/A,1
+"Iran, Islamic Rep.",inner,CO,64.04,1
+"Iran, Islamic Rep.",inner,HR,0.00,1
+"Iran, Islamic Rep.",inner,PR,27.47,1
+"Iran, Islamic Rep.",inner,EX,30.77,1
+"Iran, Islamic Rep.",inner,RE,42.35,1
+"Iran, Islamic Rep.",inner,AM,16.86,1
+"Iran, Islamic Rep.",inner,EQ,37.98,1
+"Iran, Islamic Rep.",inner,MR,10.70,1
+"Iran, Islamic Rep.",inner,PN,0.00,1
+Iraq,outer,Energy use,0.00,1
+Iraq,outer,Material use,0.00,1
+Iraq,outer,Water use,0.00,1
+Iraq,outer,Biodiversity,#N/A,1
+Iraq,outer,Antibiotic use,10.15,1
+Iraq,outer,Climate change,150.00,1
+Iraq,outer,Air pollution,0.00,1
+Iraq,inner,PC,40.63,1
+Iraq,inner,PC,81.01,2
+Iraq,inner,SC,0.00,1
+Iraq,inner,MC,0.53,1
+Iraq,inner,MC,5.25,2
+Iraq,inner,SA,6.15,1
+Iraq,inner,SA,33.88,2
+Iraq,inner,UN,29.08,1
+Iraq,inner,FP,55.08,1
+Iraq,inner,HS,#N/A,1
+Iraq,inner,CO,71.00,1
+Iraq,inner,HR,18.58,1
+Iraq,inner,PR,51.50,1
+Iraq,inner,EX,68.11,1
+Iraq,inner,RE,43.53,1
+Iraq,inner,AM,27.56,1
+Iraq,inner,EQ,43.21,1
+Iraq,inner,MR,75.46,1
+Iraq,inner,PN,0.00,1
+Ireland,outer,Energy use,56.16,1
+Ireland,outer,Material use,32.97,1
+Ireland,outer,Water use,11.91,1
+Ireland,outer,Biodiversity,#N/A,1
+Ireland,outer,Antibiotic use,30.00,1
+Ireland,outer,Climate change,150.00,1
+Ireland,outer,Air pollution,150.00,1
+Ireland,inner,PC,20.24,1
+Ireland,inner,PC,57.20,2
+Ireland,inner,SC,0.00,1
+Ireland,inner,MC,0.00,1
+Ireland,inner,MC,0.00,2
+Ireland,inner,SA,0.00,1
+Ireland,inner,SA,0.00,2
+Ireland,inner,UN,#N/A,1
+Ireland,inner,FP,#N/A,1
+Ireland,inner,HS,#N/A,1
+Ireland,inner,CO,0.00,1
+Ireland,inner,HR,0.00,1
+Ireland,inner,PR,0.00,1
+Ireland,inner,EX,0.00,1
+Ireland,inner,RE,0.00,1
+Ireland,inner,AM,0.00,1
+Ireland,inner,EQ,27.18,1
+Ireland,inner,MR,28.73,1
+Ireland,inner,PN,1.35,1
+Isle of Man,outer,Energy use,64.59,1
+Isle of Man,outer,Material use,44.55,1
+Isle of Man,outer,Water use,0.00,1
+Isle of Man,outer,Biodiversity,#N/A,1
+Isle of Man,outer,Antibiotic use,#N/A,1
+Isle of Man,outer,Climate change,#N/A,1
+Isle of Man,outer,Air pollution,#N/A,1
+Isle of Man,inner,PC,20.24,1
+Isle of Man,inner,PC,#N/A,2
+Isle of Man,inner,SC,#N/A,1
+Isle of Man,inner,MC,#N/A,1
+Isle of Man,inner,MC,#N/A,2
+Isle of Man,inner,SA,#N/A,1
+Isle of Man,inner,SA,#N/A,2
+Isle of Man,inner,UN,#N/A,1
+Isle of Man,inner,FP,#N/A,1
+Isle of Man,inner,HS,#N/A,1
+Isle of Man,inner,CO,#N/A,1
+Isle of Man,inner,HR,#N/A,1
+Isle of Man,inner,PR,#N/A,1
+Isle of Man,inner,EX,#N/A,1
+Isle of Man,inner,RE,#N/A,1
+Isle of Man,inner,AM,#N/A,1
+Isle of Man,inner,EQ,35.54,1
+Isle of Man,inner,MR,#N/A,1
+Isle of Man,inner,PN,#N/A,1
+Israel,outer,Energy use,33.30,1
+Israel,outer,Material use,30.07,1
+Israel,outer,Water use,0.00,1
+Israel,outer,Biodiversity,#N/A,1
+Israel,outer,Antibiotic use,19.71,1
+Israel,outer,Climate change,150.00,1
+Israel,outer,Air pollution,73.66,1
+Israel,inner,PC,20.24,1
+Israel,inner,PC,50.35,2
+Israel,inner,SC,0.00,1
+Israel,inner,MC,0.00,1
+Israel,inner,MC,0.00,2
+Israel,inner,SA,19.20,1
+Israel,inner,SA,26.43,2
+Israel,inner,UN,#N/A,1
+Israel,inner,FP,36.05,1
+Israel,inner,HS,#N/A,1
+Israel,inner,CO,0.00,1
+Israel,inner,HR,0.00,1
+Israel,inner,PR,0.00,1
+Israel,inner,EX,0.00,1
+Israel,inner,RE,11.76,1
+Israel,inner,AM,0.00,1
+Israel,inner,EQ,29.27,1
+Israel,inner,MR,19.27,1
+Israel,inner,PN,0.00,1
+Italy,outer,Energy use,53.80,1
+Italy,outer,Material use,24.66,1
+Italy,outer,Water use,0.00,1
+Italy,outer,Biodiversity,#N/A,1
+Italy,outer,Antibiotic use,28.75,1
+Italy,outer,Climate change,150.00,1
+Italy,outer,Air pollution,81.20,1
+Italy,inner,PC,20.24,1
+Italy,inner,PC,47.87,2
+Italy,inner,SC,0.00,1
+Italy,inner,MC,0.00,1
+Italy,inner,MC,0.00,2
+Italy,inner,SA,0.00,1
+Italy,inner,SA,39.47,2
+Italy,inner,UN,#N/A,1
+Italy,inner,FP,#N/A,1
+Italy,inner,HS,0.00,1
+Italy,inner,CO,0.00,1
+Italy,inner,HR,0.00,1
+Italy,inner,PR,0.00,1
+Italy,inner,EX,0.00,1
+Italy,inner,RE,1.18,1
+Italy,inner,AM,0.00,1
+Italy,inner,EQ,27.87,1
+Italy,inner,MR,33.17,1
+Italy,inner,PN,0.00,1
+Jamaica,outer,Energy use,0.00,1
+Jamaica,outer,Material use,0.00,1
+Jamaica,outer,Water use,0.00,1
+Jamaica,outer,Biodiversity,#N/A,1
+Jamaica,outer,Antibiotic use,0.00,1
+Jamaica,outer,Climate change,77.06,1
+Jamaica,outer,Air pollution,0.00,1
+Jamaica,inner,PC,6.75,1
+Jamaica,inner,PC,69.17,2
+Jamaica,inner,SC,16.09,1
+Jamaica,inner,MC,2.51,1
+Jamaica,inner,MC,7.44,2
+Jamaica,inner,SA,13.31,1
+Jamaica,inner,SA,51.69,2
+Jamaica,inner,UN,#N/A,1
+Jamaica,inner,FP,#N/A,1
+Jamaica,inner,HS,#N/A,1
+Jamaica,inner,CO,57.98,1
+Jamaica,inner,HR,56.53,1
+Jamaica,inner,PR,35.19,1
+Jamaica,inner,EX,33.83,1
+Jamaica,inner,RE,51.76,1
+Jamaica,inner,AM,30.91,1
+Jamaica,inner,EQ,41.11,1
+Jamaica,inner,MR,70.13,1
+Jamaica,inner,PN,0.00,1
+Japan,outer,Energy use,41.49,1
+Japan,outer,Material use,31.49,1
+Japan,outer,Water use,0.00,1
+Japan,outer,Biodiversity,#N/A,1
+Japan,outer,Antibiotic use,5.93,1
+Japan,outer,Climate change,150.00,1
+Japan,outer,Air pollution,85.82,1
+Japan,inner,PC,38.23,1
+Japan,inner,PC,51.08,2
+Japan,inner,SC,0.00,1
+Japan,inner,MC,0.00,1
+Japan,inner,MC,0.00,2
+Japan,inner,SA,0.00,1
+Japan,inner,SA,38.07,2
+Japan,inner,UN,#N/A,1
+Japan,inner,FP,31.24,1
+Japan,inner,HS,#N/A,1
+Japan,inner,CO,0.00,1
+Japan,inner,HR,0.00,1
+Japan,inner,PR,0.00,1
+Japan,inner,EX,0.00,1
+Japan,inner,RE,5.88,1
+Japan,inner,AM,0.00,1
+Japan,inner,EQ,27.18,1
+Japan,inner,MR,26.07,1
+Japan,inner,PN,0.00,1
+Jordan,outer,Energy use,0.00,1
+Jordan,outer,Material use,0.00,1
+Jordan,outer,Water use,0.00,1
+Jordan,outer,Biodiversity,#N/A,1
+Jordan,outer,Antibiotic use,0.00,1
+Jordan,outer,Climate change,78.14,1
+Jordan,outer,Air pollution,0.00,1
+Jordan,inner,PC,0.00,1
+Jordan,inner,PC,40.15,2
+Jordan,inner,SC,0.00,1
+Jordan,inner,MC,0.00,1
+Jordan,inner,MC,0.00,2
+Jordan,inner,SA,0.00,1
+Jordan,inner,SA,100.00,2
+Jordan,inner,UN,25.10,1
+Jordan,inner,FP,17.90,1
+Jordan,inner,HS,#N/A,1
+Jordan,inner,CO,69.33,1
+Jordan,inner,HR,0.00,1
+Jordan,inner,PR,48.07,1
+Jordan,inner,EX,45.63,1
+Jordan,inner,RE,8.24,1
+Jordan,inner,AM,14.46,1
+Jordan,inner,EQ,35.54,1
+Jordan,inner,MR,44.70,1
+Jordan,inner,PN,0.00,1
+Kazakhstan,outer,Energy use,0.00,1
+Kazakhstan,outer,Material use,0.00,1
+Kazakhstan,outer,Water use,0.00,1
+Kazakhstan,outer,Biodiversity,#N/A,1
+Kazakhstan,outer,Antibiotic use,7.41,1
+Kazakhstan,outer,Climate change,150.00,1
+Kazakhstan,outer,Air pollution,71.33,1
+Kazakhstan,inner,PC,29.39,1
+Kazakhstan,inner,PC,45.27,2
+Kazakhstan,inner,SC,1.67,1
+Kazakhstan,inner,MC,0.00,1
+Kazakhstan,inner,MC,0.00,2
+Kazakhstan,inner,SA,2.72,1
+Kazakhstan,inner,SA,17.54,2
+Kazakhstan,inner,UN,2.47,1
+Kazakhstan,inner,FP,10.47,1
+Kazakhstan,inner,HS,#N/A,1
+Kazakhstan,inner,CO,19.42,1
+Kazakhstan,inner,HR,0.00,1
+Kazakhstan,inner,PR,0.00,1
+Kazakhstan,inner,EX,18.60,1
+Kazakhstan,inner,RE,0.00,1
+Kazakhstan,inner,AM,24.11,1
+Kazakhstan,inner,EQ,40.77,1
+Kazakhstan,inner,MR,57.12,1
+Kazakhstan,inner,PN,0.00,1
+Kenya,outer,Energy use,0.00,1
+Kenya,outer,Material use,0.00,1
+Kenya,outer,Water use,0.00,1
+Kenya,outer,Biodiversity,#N/A,1
+Kenya,outer,Antibiotic use,0.00,1
+Kenya,outer,Climate change,0.00,1
+Kenya,outer,Air pollution,0.00,1
+Kenya,inner,PC,35.53,1
+Kenya,inner,PC,96.31,2
+Kenya,inner,SC,25.38,1
+Kenya,inner,MC,39.91,1
+Kenya,inner,MC,30.63,2
+Kenya,inner,SA,21.22,1
+Kenya,inner,SA,2.62,2
+Kenya,inner,UN,0.00,1
+Kenya,inner,FP,14.61,1
+Kenya,inner,HS,48.50,1
+Kenya,inner,CO,95.98,1
+Kenya,inner,HR,44.97,1
+Kenya,inner,PR,50.21,1
+Kenya,inner,EX,84.39,1
+Kenya,inner,RE,78.82,1
+Kenya,inner,AM,68.82,1
+Kenya,inner,EQ,68.29,1
+Kenya,inner,MR,31.40,1
+Kenya,inner,PN,0.00,1
+Kiribati,outer,Energy use,48.77,1
+Kiribati,outer,Material use,23.84,1
+Kiribati,outer,Water use,0.00,1
+Kiribati,outer,Biodiversity,#N/A,1
+Kiribati,outer,Antibiotic use,0.00,1
+Kiribati,outer,Climate change,150.00,1
+Kiribati,outer,Air pollution,19.61,1
+Kiribati,inner,PC,52.47,1
+Kiribati,inner,PC,95.46,2
+Kiribati,inner,SC,21.34,1
+Kiribati,inner,MC,0.55,1
+Kiribati,inner,MC,39.57,2
+Kiribati,inner,SA,20.81,1
+Kiribati,inner,SA,62.27,2
+Kiribati,inner,UN,30.04,1
+Kiribati,inner,FP,#N/A,1
+Kiribati,inner,HS,#N/A,1
+Kiribati,inner,CO,99.60,1
+Kiribati,inner,HR,14.98,1
+Kiribati,inner,PR,27.47,1
+Kiribati,inner,EX,80.28,1
+Kiribati,inner,RE,27.06,1
+Kiribati,inner,AM,84.55,1
+Kiribati,inner,EQ,55.05,1
+Kiribati,inner,MR,58.31,1
+Kiribati,inner,PN,0.00,1
+"Korea, Dem. People's Rep.",outer,Energy use,0.00,1
+"Korea, Dem. People's Rep.",outer,Material use,0.00,1
+"Korea, Dem. People's Rep.",outer,Water use,0.00,1
+"Korea, Dem. People's Rep.",outer,Biodiversity,#N/A,1
+"Korea, Dem. People's Rep.",outer,Antibiotic use,#N/A,1
+"Korea, Dem. People's Rep.",outer,Climate change,23.45,1
+"Korea, Dem. People's Rep.",outer,Air pollution,#N/A,1
+"Korea, Dem. People's Rep.",inner,PC,53.67,1
+"Korea, Dem. People's Rep.",inner,PC,60.84,2
+"Korea, Dem. People's Rep.",inner,SC,6.33,1
+"Korea, Dem. People's Rep.",inner,MC,3.18,1
+"Korea, Dem. People's Rep.",inner,MC,0.00,2
+"Korea, Dem. People's Rep.",inner,SA,0.00,1
+"Korea, Dem. People's Rep.",inner,SA,55.30,2
+"Korea, Dem. People's Rep.",inner,UN,0.00,1
+"Korea, Dem. People's Rep.",inner,FP,#N/A,1
+"Korea, Dem. People's Rep.",inner,HS,#N/A,1
+"Korea, Dem. People's Rep.",inner,CO,94.48,1
+"Korea, Dem. People's Rep.",inner,HR,0.00,1
+"Korea, Dem. People's Rep.",inner,PR,#N/A,1
+"Korea, Dem. People's Rep.",inner,EX,#N/A,1
+"Korea, Dem. People's Rep.",inner,RE,3.53,1
+"Korea, Dem. People's Rep.",inner,AM,40.16,1
+"Korea, Dem. People's Rep.",inner,EQ,45.64,1
+"Korea, Dem. People's Rep.",inner,MR,11.58,1
+"Korea, Dem. People's Rep.",inner,PN,100.00,1
+"Korea, Rep.",outer,Energy use,56.57,1
+"Korea, Rep.",outer,Material use,34.66,1
+"Korea, Rep.",outer,Water use,4.28,1
+"Korea, Rep.",outer,Biodiversity,#N/A,1
+"Korea, Rep.",outer,Antibiotic use,30.63,1
+"Korea, Rep.",outer,Climate change,150.00,1
+"Korea, Rep.",outer,Air pollution,150.00,1
+"Korea, Rep.",inner,PC,23.99,1
+"Korea, Rep.",inner,PC,0.00,2
+"Korea, Rep.",inner,SC,0.88,1
+"Korea, Rep.",inner,MC,0.00,1
+"Korea, Rep.",inner,MC,0.00,2
+"Korea, Rep.",inner,SA,0.00,1
+"Korea, Rep.",inner,SA,67.87,2
+"Korea, Rep.",inner,UN,#N/A,1
+"Korea, Rep.",inner,FP,33.66,1
+"Korea, Rep.",inner,HS,10.35,1
+"Korea, Rep.",inner,CO,0.00,1
+"Korea, Rep.",inner,HR,0.00,1
+"Korea, Rep.",inner,PR,0.00,1
+"Korea, Rep.",inner,EX,0.00,1
+"Korea, Rep.",inner,RE,0.00,1
+"Korea, Rep.",inner,AM,0.00,1
+"Korea, Rep.",inner,EQ,27.18,1
+"Korea, Rep.",inner,MR,12.18,1
+"Korea, Rep.",inner,PN,0.00,1
+Kosovo,outer,Energy use,64.59,1
+Kosovo,outer,Material use,44.55,1
+Kosovo,outer,Water use,0.00,1
+Kosovo,outer,Biodiversity,#N/A,1
+Kosovo,outer,Antibiotic use,#N/A,1
+Kosovo,outer,Climate change,150.00,1
+Kosovo,outer,Air pollution,59.47,1
+Kosovo,inner,PC,#N/A,1
+Kosovo,inner,PC,#N/A,2
+Kosovo,inner,SC,#N/A,1
+Kosovo,inner,MC,#N/A,1
+Kosovo,inner,MC,0.00,2
+Kosovo,inner,SA,#N/A,1
+Kosovo,inner,SA,#N/A,2
+Kosovo,inner,UN,#N/A,1
+Kosovo,inner,FP,#N/A,1
+Kosovo,inner,HS,#N/A,1
+Kosovo,inner,CO,#N/A,1
+Kosovo,inner,HR,#N/A,1
+Kosovo,inner,PR,#N/A,1
+Kosovo,inner,EX,#N/A,1
+Kosovo,inner,RE,#N/A,1
+Kosovo,inner,AM,#N/A,1
+Kosovo,inner,EQ,32.40,1
+Kosovo,inner,MR,#N/A,1
+Kosovo,inner,PN,#N/A,1
+Kuwait,outer,Energy use,12.58,1
+Kuwait,outer,Material use,0.00,1
+Kuwait,outer,Water use,0.00,1
+Kuwait,outer,Biodiversity,#N/A,1
+Kuwait,outer,Antibiotic use,0.00,1
+Kuwait,outer,Climate change,150.00,1
+Kuwait,outer,Air pollution,53.65,1
+Kuwait,inner,PC,25.94,1
+Kuwait,inner,PC,38.92,2
+Kuwait,inner,SC,0.00,1
+Kuwait,inner,MC,0.00,1
+Kuwait,inner,MC,0.00,2
+Kuwait,inner,SA,2.04,1
+Kuwait,inner,SA,54.04,2
+Kuwait,inner,UN,#N/A,1
+Kuwait,inner,FP,#N/A,1
+Kuwait,inner,HS,#N/A,1
+Kuwait,inner,CO,57.21,1
+Kuwait,inner,HR,0.00,1
+Kuwait,inner,PR,6.44,1
+Kuwait,inner,EX,0.00,1
+Kuwait,inner,RE,0.00,1
+Kuwait,inner,AM,0.00,1
+Kuwait,inner,EQ,28.92,1
+Kuwait,inner,MR,52.98,1
+Kuwait,inner,PN,0.00,1
+Kyrgyzstan Republic,outer,Energy use,0.00,1
+Kyrgyzstan Republic,outer,Material use,0.00,1
+Kyrgyzstan Republic,outer,Water use,0.00,1
+Kyrgyzstan Republic,outer,Biodiversity,#N/A,1
+Kyrgyzstan Republic,outer,Antibiotic use,8.58,1
+Kyrgyzstan Republic,outer,Climate change,30.86,1
+Kyrgyzstan Republic,outer,Air pollution,0.00,1
+Kyrgyzstan Republic,inner,PC,29.39,1
+Kyrgyzstan Republic,inner,PC,87.84,2
+Kyrgyzstan Republic,inner,SC,3.45,1
+Kyrgyzstan Republic,inner,MC,0.00,1
+Kyrgyzstan Republic,inner,MC,0.00,2
+Kyrgyzstan Republic,inner,SA,0.00,1
+Kyrgyzstan Republic,inner,SA,29.17,2
+Kyrgyzstan Republic,inner,UN,14.27,1
+Kyrgyzstan Republic,inner,FP,#N/A,1
+Kyrgyzstan Republic,inner,HS,#N/A,1
+Kyrgyzstan Republic,inner,CO,25.93,1
+Kyrgyzstan Republic,inner,HR,0.00,1
+Kyrgyzstan Republic,inner,PR,0.00,1
+Kyrgyzstan Republic,inner,EX,79.69,1
+Kyrgyzstan Republic,inner,RE,44.71,1
+Kyrgyzstan Republic,inner,AM,33.16,1
+Kyrgyzstan Republic,inner,EQ,42.51,1
+Kyrgyzstan Republic,inner,MR,54.17,1
+Kyrgyzstan Republic,inner,PN,5.41,1
+Lao PDR,outer,Energy use,0.00,1
+Lao PDR,outer,Material use,0.00,1
+Lao PDR,outer,Water use,0.00,1
+Lao PDR,outer,Biodiversity,#N/A,1
+Lao PDR,outer,Antibiotic use,0.00,1
+Lao PDR,outer,Climate change,0.00,1
+Lao PDR,outer,Air pollution,0.00,1
+Lao PDR,inner,PC,32.83,1
+Lao PDR,inner,PC,79.02,2
+Lao PDR,inner,SC,24.05,1
+Lao PDR,inner,MC,4.86,1
+Lao PDR,inner,MC,30.20,2
+Lao PDR,inner,SA,5.20,1
+Lao PDR,inner,SA,17.66,2
+Lao PDR,inner,UN,3.70,1
+Lao PDR,inner,FP,19.00,1
+Lao PDR,inner,HS,0.00,1
+Lao PDR,inner,CO,99.58,1
+Lao PDR,inner,HR,73.65,1
+Lao PDR,inner,PR,51.07,1
+Lao PDR,inner,EX,88.72,1
+Lao PDR,inner,RE,68.24,1
+Lao PDR,inner,AM,69.53,1
+Lao PDR,inner,EQ,51.57,1
+Lao PDR,inner,MR,17.50,1
+Lao PDR,inner,PN,8.11,1
+Latvia,outer,Energy use,34.64,1
+Latvia,outer,Material use,6.30,1
+Latvia,outer,Water use,0.00,1
+Latvia,outer,Biodiversity,#N/A,1
+Latvia,outer,Antibiotic use,9.10,1
+Latvia,outer,Climate change,150.00,1
+Latvia,outer,Air pollution,78.79,1
+Latvia,inner,PC,20.24,1
+Latvia,inner,PC,72.19,2
+Latvia,inner,SC,1.25,1
+Latvia,inner,MC,0.00,1
+Latvia,inner,MC,0.00,2
+Latvia,inner,SA,1.32,1
+Latvia,inner,SA,34.25,2
+Latvia,inner,UN,#N/A,1
+Latvia,inner,FP,60.26,1
+Latvia,inner,HS,#N/A,1
+Latvia,inner,CO,7.22,1
+Latvia,inner,HR,0.00,1
+Latvia,inner,PR,0.00,1
+Latvia,inner,EX,0.00,1
+Latvia,inner,RE,2.35,1
+Latvia,inner,AM,6.95,1
+Latvia,inner,EQ,38.33,1
+Latvia,inner,MR,63.04,1
+Latvia,inner,PN,0.00,1
+Lebanon,outer,Energy use,0.00,1
+Lebanon,outer,Material use,0.00,1
+Lebanon,outer,Water use,0.00,1
+Lebanon,outer,Biodiversity,#N/A,1
+Lebanon,outer,Antibiotic use,12.61,1
+Lebanon,outer,Climate change,94.20,1
+Lebanon,outer,Air pollution,0.00,1
+Lebanon,inner,PC,30.28,1
+Lebanon,inner,PC,50.70,2
+Lebanon,inner,SC,0.00,1
+Lebanon,inner,MC,0.00,1
+Lebanon,inner,MC,0.00,2
+Lebanon,inner,SA,33.17,1
+Lebanon,inner,SA,53.50,2
+Lebanon,inner,UN,#N/A,1
+Lebanon,inner,FP,#N/A,1
+Lebanon,inner,HS,#N/A,1
+Lebanon,inner,CO,60.08,1
+Lebanon,inner,HR,0.00,1
+Lebanon,inner,PR,0.00,1
+Lebanon,inner,EX,54.15,1
+Lebanon,inner,RE,54.12,1
+Lebanon,inner,AM,9.07,1
+Lebanon,inner,EQ,33.10,1
+Lebanon,inner,MR,45.89,1
+Lebanon,inner,PN,47.30,1
+Lesotho,outer,Energy use,0.00,1
+Lesotho,outer,Material use,0.00,1
+Lesotho,outer,Water use,0.00,1
+Lesotho,outer,Biodiversity,#N/A,1
+Lesotho,outer,Antibiotic use,0.00,1
+Lesotho,outer,Climate change,50.46,1
+Lesotho,outer,Air pollution,0.00,1
+Lesotho,inner,PC,49.93,1
+Lesotho,inner,PC,72.18,2
+Lesotho,inner,SC,36.71,1
+Lesotho,inner,MC,43.05,1
+Lesotho,inner,MC,85.01,2
+Lesotho,inner,SA,43.19,1
+Lesotho,inner,SA,0.00,2
+Lesotho,inner,UN,0.00,1
+Lesotho,inner,FP,#N/A,1
+Lesotho,inner,HS,#N/A,1
+Lesotho,inner,CO,94.64,1
+Lesotho,inner,HR,58.58,1
+Lesotho,inner,PR,#N/A,1
+Lesotho,inner,EX,75.65,1
+Lesotho,inner,RE,75.29,1
+Lesotho,inner,AM,80.85,1
+Lesotho,inner,EQ,87.11,1
+Lesotho,inner,MR,51.80,1
+Lesotho,inner,PN,4.05,1
+Liberia,outer,Energy use,0.00,1
+Liberia,outer,Material use,0.00,1
+Liberia,outer,Water use,0.00,1
+Liberia,outer,Biodiversity,#N/A,1
+Liberia,outer,Antibiotic use,0.00,1
+Liberia,outer,Climate change,0.00,1
+Liberia,outer,Air pollution,0.00,1
+Liberia,inner,PC,56.37,1
+Liberia,inner,PC,91.51,2
+Liberia,inner,SC,17.84,1
+Liberia,inner,MC,50.53,1
+Liberia,inner,MC,65.28,2
+Liberia,inner,SA,60.54,1
+Liberia,inner,SA,16.94,2
+Liberia,inner,UN,37.72,1
+Liberia,inner,FP,19.00,1
+Liberia,inner,HS,#N/A,1
+Liberia,inner,CO,97.83,1
+Liberia,inner,HR,77.78,1
+Liberia,inner,PR,39.06,1
+Liberia,inner,EX,86.18,1
+Liberia,inner,RE,65.88,1
+Liberia,inner,AM,64.76,1
+Liberia,inner,EQ,71.43,1
+Liberia,inner,MR,49.73,1
+Liberia,inner,PN,10.81,1
+Libya,outer,Energy use,35.07,1
+Libya,outer,Material use,11.10,1
+Libya,outer,Water use,0.00,1
+Libya,outer,Biodiversity,#N/A,1
+Libya,outer,Antibiotic use,12.12,1
+Libya,outer,Climate change,150.00,1
+Libya,outer,Air pollution,42.75,1
+Libya,inner,PC,30.28,1
+Libya,inner,PC,85.08,2
+Libya,inner,SC,11.08,1
+Libya,inner,MC,0.18,1
+Libya,inner,MC,0.00,2
+Libya,inner,SA,20.32,1
+Libya,inner,SA,0.00,2
+Libya,inner,UN,#N/A,1
+Libya,inner,FP,#N/A,1
+Libya,inner,HS,#N/A,1
+Libya,inner,CO,69.72,1
+Libya,inner,HR,0.00,1
+Libya,inner,PR,0.00,1
+Libya,inner,EX,30.55,1
+Libya,inner,RE,5.88,1
+Libya,inner,AM,24.05,1
+Libya,inner,EQ,40.42,1
+Libya,inner,MR,59.49,1
+Libya,inner,PN,22.97,1
+Liechtenstein,outer,Energy use,64.59,1
+Liechtenstein,outer,Material use,44.55,1
+Liechtenstein,outer,Water use,0.00,1
+Liechtenstein,outer,Biodiversity,#N/A,1
+Liechtenstein,outer,Antibiotic use,#N/A,1
+Liechtenstein,outer,Climate change,150.00,1
+Liechtenstein,outer,Air pollution,#N/A,1
+Liechtenstein,inner,PC,20.24,1
+Liechtenstein,inner,PC,81.73,2
+Liechtenstein,inner,SC,#N/A,1
+Liechtenstein,inner,MC,#N/A,1
+Liechtenstein,inner,MC,#N/A,2
+Liechtenstein,inner,SA,#N/A,1
+Liechtenstein,inner,SA,#N/A,2
+Liechtenstein,inner,UN,#N/A,1
+Liechtenstein,inner,FP,#N/A,1
+Liechtenstein,inner,HS,#N/A,1
+Liechtenstein,inner,CO,#N/A,1
+Liechtenstein,inner,HR,#N/A,1
+Liechtenstein,inner,PR,#N/A,1
+Liechtenstein,inner,EX,#N/A,1
+Liechtenstein,inner,RE,#N/A,1
+Liechtenstein,inner,AM,#N/A,1
+Liechtenstein,inner,EQ,27.53,1
+Liechtenstein,inner,MR,#N/A,1
+Liechtenstein,inner,PN,#N/A,1
+Lithuania,outer,Energy use,16.83,1
+Lithuania,outer,Material use,0.00,1
+Lithuania,outer,Water use,0.00,1
+Lithuania,outer,Biodiversity,#N/A,1
+Lithuania,outer,Antibiotic use,19.80,1
+Lithuania,outer,Climate change,150.00,1
+Lithuania,outer,Air pollution,68.14,1
+Lithuania,inner,PC,20.24,1
+Lithuania,inner,PC,#N/A,2
+Lithuania,inner,SC,2.54,1
+Lithuania,inner,MC,0.00,1
+Lithuania,inner,MC,0.00,2
+Lithuania,inner,SA,0.84,1
+Lithuania,inner,SA,37.87,2
+Lithuania,inner,UN,#N/A,1
+Lithuania,inner,FP,#N/A,1
+Lithuania,inner,HS,#N/A,1
+Lithuania,inner,CO,7.29,1
+Lithuania,inner,HR,0.00,1
+Lithuania,inner,PR,0.00,1
+Lithuania,inner,EX,0.00,1
+Lithuania,inner,RE,0.00,1
+Lithuania,inner,AM,9.60,1
+Lithuania,inner,EQ,40.07,1
+Lithuania,inner,MR,75.16,1
+Lithuania,inner,PN,0.00,1
+Luxembourg,outer,Energy use,74.30,1
+Luxembourg,outer,Material use,53.50,1
+Luxembourg,outer,Water use,10.73,1
+Luxembourg,outer,Biodiversity,#N/A,1
+Luxembourg,outer,Antibiotic use,29.74,1
+Luxembourg,outer,Climate change,150.00,1
+Luxembourg,outer,Air pollution,150.00,1
+Luxembourg,inner,PC,20.24,1
+Luxembourg,inner,PC,44.50,2
+Luxembourg,inner,SC,0.50,1
+Luxembourg,inner,MC,0.00,1
+Luxembourg,inner,MC,0.00,2
+Luxembourg,inner,SA,4.97,1
+Luxembourg,inner,SA,14.03,2
+Luxembourg,inner,UN,#N/A,1
+Luxembourg,inner,FP,12.22,1
+Luxembourg,inner,HS,#N/A,1
+Luxembourg,inner,CO,0.00,1
+Luxembourg,inner,HR,0.00,1
+Luxembourg,inner,PR,0.00,1
+Luxembourg,inner,EX,0.00,1
+Luxembourg,inner,RE,0.00,1
+Luxembourg,inner,AM,0.00,1
+Luxembourg,inner,EQ,28.92,1
+Luxembourg,inner,MR,23.41,1
+Luxembourg,inner,PN,0.00,1
+"Macao SAR, China",outer,Energy use,37.99,1
+"Macao SAR, China",outer,Material use,23.84,1
+"Macao SAR, China",outer,Water use,0.00,1
+"Macao SAR, China",outer,Biodiversity,#N/A,1
+"Macao SAR, China",outer,Antibiotic use,#N/A,1
+"Macao SAR, China",outer,Climate change,150.00,1
+"Macao SAR, China",outer,Air pollution,150.00,1
+"Macao SAR, China",inner,PC,38.08,1
+"Macao SAR, China",inner,PC,#N/A,2
+"Macao SAR, China",inner,SC,#N/A,1
+"Macao SAR, China",inner,MC,#N/A,1
+"Macao SAR, China",inner,MC,#N/A,2
+"Macao SAR, China",inner,SA,#N/A,1
+"Macao SAR, China",inner,SA,#N/A,2
+"Macao SAR, China",inner,UN,#N/A,1
+"Macao SAR, China",inner,FP,#N/A,1
+"Macao SAR, China",inner,HS,#N/A,1
+"Macao SAR, China",inner,CO,#N/A,1
+"Macao SAR, China",inner,HR,#N/A,1
+"Macao SAR, China",inner,PR,#N/A,1
+"Macao SAR, China",inner,EX,#N/A,1
+"Macao SAR, China",inner,RE,#N/A,1
+"Macao SAR, China",inner,AM,#N/A,1
+"Macao SAR, China",inner,EQ,25.78,1
+"Macao SAR, China",inner,MR,#N/A,1
+"Macao SAR, China",inner,PN,#N/A,1
+Madagascar,outer,Energy use,0.00,1
+Madagascar,outer,Material use,0.00,1
+Madagascar,outer,Water use,0.00,1
+Madagascar,outer,Biodiversity,#N/A,1
+Madagascar,outer,Antibiotic use,0.00,1
+Madagascar,outer,Climate change,0.00,1
+Madagascar,outer,Air pollution,0.00,1
+Madagascar,inner,PC,56.37,1
+Madagascar,inner,PC,95.65,2
+Madagascar,inner,SC,33.38,1
+Madagascar,inner,MC,27.90,1
+Madagascar,inner,MC,43.65,2
+Madagascar,inner,SA,35.07,1
+Madagascar,inner,SA,9.65,2
+Madagascar,inner,UN,12.89,1
+Madagascar,inner,FP,#N/A,1
+Madagascar,inner,HS,#N/A,1
+Madagascar,inner,CO,97.21,1
+Madagascar,inner,HR,95.21,1
+Madagascar,inner,PR,#N/A,1
+Madagascar,inner,EX,98.73,1
+Madagascar,inner,RE,74.12,1
+Madagascar,inner,AM,76.26,1
+Madagascar,inner,EQ,63.76,1
+Madagascar,inner,MR,42.34,1
+Madagascar,inner,PN,33.78,1
+Malawi,outer,Energy use,0.00,1
+Malawi,outer,Material use,0.00,1
+Malawi,outer,Water use,0.00,1
+Malawi,outer,Biodiversity,#N/A,1
+Malawi,outer,Antibiotic use,0.00,1
+Malawi,outer,Climate change,0.00,1
+Malawi,outer,Air pollution,0.00,1
+Malawi,inner,PC,56.37,1
+Malawi,inner,PC,87.62,2
+Malawi,inner,SC,32.57,1
+Malawi,inner,MC,26.96,1
+Malawi,inner,MC,24.29,2
+Malawi,inner,SA,41.45,1
+Malawi,inner,SA,4.55,2
+Malawi,inner,UN,0.00,1
+Malawi,inner,FP,8.19,1
+Malawi,inner,HS,#N/A,1
+Malawi,inner,CO,97.68,1
+Malawi,inner,HR,92.64,1
+Malawi,inner,PR,#N/A,1
+Malawi,inner,EX,95.07,1
+Malawi,inner,RE,72.94,1
+Malawi,inner,AM,74.77,1
+Malawi,inner,EQ,63.07,1
+Malawi,inner,MR,20.45,1
+Malawi,inner,PN,0.00,1
+Malaysia,outer,Energy use,0.00,1
+Malaysia,outer,Material use,0.00,1
+Malaysia,outer,Water use,0.00,1
+Malaysia,outer,Biodiversity,#N/A,1
+Malaysia,outer,Antibiotic use,0.00,1
+Malaysia,outer,Climate change,150.00,1
+Malaysia,outer,Air pollution,5.33,1
+Malaysia,inner,PC,43.48,1
+Malaysia,inner,PC,67.83,2
+Malaysia,inner,SC,3.35,1
+Malaysia,inner,MC,0.00,1
+Malaysia,inner,MC,0.00,2
+Malaysia,inner,SA,0.34,1
+Malaysia,inner,SA,64.29,2
+Malaysia,inner,UN,#N/A,1
+Malaysia,inner,FP,4.28,1
+Malaysia,inner,HS,#N/A,1
+Malaysia,inner,CO,95.77,1
+Malaysia,inner,HR,0.00,1
+Malaysia,inner,PR,21.03,1
+Malaysia,inner,EX,7.25,1
+Malaysia,inner,RE,43.53,1
+Malaysia,inner,AM,31.15,1
+Malaysia,inner,EQ,35.54,1
+Malaysia,inner,MR,53.87,1
+Malaysia,inner,PN,0.00,1
+Maldives,outer,Energy use,36.17,1
+Maldives,outer,Material use,23.84,1
+Maldives,outer,Water use,0.00,1
+Maldives,outer,Biodiversity,#N/A,1
+Maldives,outer,Antibiotic use,14.53,1
+Maldives,outer,Climate change,150.00,1
+Maldives,outer,Air pollution,77.38,1
+Maldives,inner,PC,35.23,1
+Maldives,inner,PC,77.84,2
+Maldives,inner,SC,0.00,1
+Maldives,inner,MC,0.00,1
+Maldives,inner,MC,0.00,2
+Maldives,inner,SA,0.00,1
+Maldives,inner,SA,56.72,2
+Maldives,inner,UN,62.83,1
+Maldives,inner,FP,28.91,1
+Maldives,inner,HS,#N/A,1
+Maldives,inner,CO,93.48,1
+Maldives,inner,HR,0.00,1
+Maldives,inner,PR,0.00,1
+Maldives,inner,EX,0.00,1
+Maldives,inner,RE,0.00,1
+Maldives,inner,AM,22.05,1
+Maldives,inner,EQ,27.18,1
+Maldives,inner,MR,34.06,1
+Maldives,inner,PN,0.00,1
+Mali,outer,Energy use,0.00,1
+Mali,outer,Material use,0.00,1
+Mali,outer,Water use,0.00,1
+Mali,outer,Biodiversity,#N/A,1
+Mali,outer,Antibiotic use,0.00,1
+Mali,outer,Climate change,0.00,1
+Mali,outer,Air pollution,0.00,1
+Mali,inner,PC,56.37,1
+Mali,inner,PC,79.14,2
+Mali,inner,SC,30.42,1
+Mali,inner,MC,32.12,1
+Mali,inner,MC,75.53,2
+Mali,inner,SA,89.00,1
+Mali,inner,SA,9.85,2
+Mali,inner,UN,46.36,1
+Mali,inner,FP,4.78,1
+Mali,inner,HS,#N/A,1
+Mali,inner,CO,99.04,1
+Mali,inner,HR,95.14,1
+Mali,inner,PR,96.57,1
+Mali,inner,EX,96.19,1
+Mali,inner,RE,87.06,1
+Mali,inner,AM,75.28,1
+Mali,inner,EQ,77.35,1
+Mali,inner,MR,35.54,1
+Mali,inner,PN,17.57,1
+Malta,outer,Energy use,49.01,1
+Malta,outer,Material use,19.57,1
+Malta,outer,Water use,0.00,1
+Malta,outer,Biodiversity,#N/A,1
+Malta,outer,Antibiotic use,23.74,1
+Malta,outer,Climate change,150.00,1
+Malta,outer,Air pollution,66.28,1
+Malta,inner,PC,41.08,1
+Malta,inner,PC,12.01,2
+Malta,inner,SC,0.00,1
+Malta,inner,MC,0.00,1
+Malta,inner,MC,0.00,2
+Malta,inner,SA,0.37,1
+Malta,inner,SA,59.30,2
+Malta,inner,UN,#N/A,1
+Malta,inner,FP,44.86,1
+Malta,inner,HS,#N/A,1
+Malta,inner,CO,0.00,1
+Malta,inner,HR,0.00,1
+Malta,inner,PR,0.00,1
+Malta,inner,EX,0.00,1
+Malta,inner,RE,10.59,1
+Malta,inner,AM,0.00,1
+Malta,inner,EQ,27.18,1
+Malta,inner,MR,20.45,1
+Malta,inner,PN,0.00,1
+Marshall Islands,outer,Energy use,48.77,1
+Marshall Islands,outer,Material use,23.84,1
+Marshall Islands,outer,Water use,0.00,1
+Marshall Islands,outer,Biodiversity,#N/A,1
+Marshall Islands,outer,Antibiotic use,0.00,1
+Marshall Islands,outer,Climate change,150.00,1
+Marshall Islands,outer,Air pollution,46.83,1
+Marshall Islands,inner,PC,67.47,1
+Marshall Islands,inner,PC,78.04,2
+Marshall Islands,inner,SC,21.24,1
+Marshall Islands,inner,MC,#N/A,1
+Marshall Islands,inner,MC,4.70,2
+Marshall Islands,inner,SA,15.68,1
+Marshall Islands,inner,SA,64.63,2
+Marshall Islands,inner,UN,#N/A,1
+Marshall Islands,inner,FP,#N/A,1
+Marshall Islands,inner,HS,#N/A,1
+Marshall Islands,inner,CO,98.99,1
+Marshall Islands,inner,HR,0.00,1
+Marshall Islands,inner,PR,#N/A,1
+Marshall Islands,inner,EX,47.13,1
+Marshall Islands,inner,RE,20.00,1
+Marshall Islands,inner,AM,70.98,1
+Marshall Islands,inner,EQ,57.14,1
+Marshall Islands,inner,MR,27.55,1
+Marshall Islands,inner,PN,6.76,1
+Mauritania,outer,Energy use,0.00,1
+Mauritania,outer,Material use,0.00,1
+Mauritania,outer,Water use,0.00,1
+Mauritania,outer,Biodiversity,#N/A,1
+Mauritania,outer,Antibiotic use,0.00,1
+Mauritania,outer,Climate change,19.06,1
+Mauritania,outer,Air pollution,0.00,1
+Mauritania,inner,PC,49.93,1
+Mauritania,inner,PC,86.12,2
+Mauritania,inner,SC,11.54,1
+Mauritania,inner,MC,34.17,1
+Mauritania,inner,MC,36.65,2
+Mauritania,inner,SA,33.37,1
+Mauritania,inner,SA,24.13,2
+Mauritania,inner,UN,72.15,1
+Mauritania,inner,FP,#N/A,1
+Mauritania,inner,HS,#N/A,1
+Mauritania,inner,CO,97.14,1
+Mauritania,inner,HR,61.46,1
+Mauritania,inner,PR,#N/A,1
+Mauritania,inner,EX,82.45,1
+Mauritania,inner,RE,55.29,1
+Mauritania,inner,AM,53.79,1
+Mauritania,inner,EQ,59.58,1
+Mauritania,inner,MR,45.29,1
+Mauritania,inner,PN,0.00,1
+Mauritius,outer,Energy use,0.00,1
+Mauritius,outer,Material use,0.00,1
+Mauritius,outer,Water use,0.00,1
+Mauritius,outer,Biodiversity,#N/A,1
+Mauritius,outer,Antibiotic use,3.87,1
+Mauritius,outer,Climate change,74.44,1
+Mauritius,outer,Air pollution,36.15,1
+Mauritius,inner,PC,23.54,1
+Mauritius,inner,PC,35.25,2
+Mauritius,inner,SC,0.00,1
+Mauritius,inner,MC,1.25,1
+Mauritius,inner,MC,0.00,2
+Mauritius,inner,SA,46.58,1
+Mauritius,inner,SA,47.56,2
+Mauritius,inner,UN,#N/A,1
+Mauritius,inner,FP,23.08,1
+Mauritius,inner,HS,#N/A,1
+Mauritius,inner,CO,94.51,1
+Mauritius,inner,HR,0.00,1
+Mauritius,inner,PR,0.00,1
+Mauritius,inner,EX,0.00,1
+Mauritius,inner,RE,14.12,1
+Mauritius,inner,AM,28.93,1
+Mauritius,inner,EQ,43.55,1
+Mauritius,inner,MR,31.10,1
+Mauritius,inner,PN,0.00,1
+Mexico,outer,Energy use,36.22,1
+Mexico,outer,Material use,0.00,1
+Mexico,outer,Water use,0.00,1
+Mexico,outer,Biodiversity,#N/A,1
+Mexico,outer,Antibiotic use,0.00,1
+Mexico,outer,Climate change,150.00,1
+Mexico,outer,Air pollution,22.68,1
+Mexico,inner,PC,41.23,1
+Mexico,inner,PC,50.68,2
+Mexico,inner,SC,61.13,1
+Mexico,inner,MC,0.00,1
+Mexico,inner,MC,0.00,2
+Mexico,inner,SA,7.95,1
+Mexico,inner,SA,54.88,2
+Mexico,inner,UN,0.00,1
+Mexico,inner,FP,12.50,1
+Mexico,inner,HS,0.00,1
+Mexico,inner,CO,51.45,1
+Mexico,inner,HR,0.00,1
+Mexico,inner,PR,63.52,1
+Mexico,inner,EX,1.87,1
+Mexico,inner,RE,21.18,1
+Mexico,inner,AM,36.00,1
+Mexico,inner,EQ,47.04,1
+Mexico,inner,MR,28.14,1
+Mexico,inner,PN,6.76,1
+"Micronesia, Fed. Sts.",outer,Energy use,48.77,1
+"Micronesia, Fed. Sts.",outer,Material use,23.84,1
+"Micronesia, Fed. Sts.",outer,Water use,0.00,1
+"Micronesia, Fed. Sts.",outer,Biodiversity,#N/A,1
+"Micronesia, Fed. Sts.",outer,Antibiotic use,0.00,1
+"Micronesia, Fed. Sts.",outer,Climate change,150.00,1
+"Micronesia, Fed. Sts.",outer,Air pollution,26.10,1
+"Micronesia, Fed. Sts.",inner,PC,47.23,1
+"Micronesia, Fed. Sts.",inner,PC,80.48,2
+"Micronesia, Fed. Sts.",inner,SC,17.94,1
+"Micronesia, Fed. Sts.",inner,MC,0.37,1
+"Micronesia, Fed. Sts.",inner,MC,2.30,2
+"Micronesia, Fed. Sts.",inner,SA,12.93,1
+"Micronesia, Fed. Sts.",inner,SA,61.92,2
+"Micronesia, Fed. Sts.",inner,UN,#N/A,1
+"Micronesia, Fed. Sts.",inner,FP,#N/A,1
+"Micronesia, Fed. Sts.",inner,HS,#N/A,1
+"Micronesia, Fed. Sts.",inner,CO,99.06,1
+"Micronesia, Fed. Sts.",inner,HR,29.90,1
+"Micronesia, Fed. Sts.",inner,PR,#N/A,1
+"Micronesia, Fed. Sts.",inner,EX,74.68,1
+"Micronesia, Fed. Sts.",inner,RE,62.35,1
+"Micronesia, Fed. Sts.",inner,AM,64.94,1
+"Micronesia, Fed. Sts.",inner,EQ,45.99,1
+"Micronesia, Fed. Sts.",inner,MR,30.51,1
+"Micronesia, Fed. Sts.",inner,PN,14.86,1
+Moldova,outer,Energy use,0.00,1
+Moldova,outer,Material use,0.00,1
+Moldova,outer,Water use,0.00,1
+Moldova,outer,Biodiversity,#N/A,1
+Moldova,outer,Antibiotic use,0.00,1
+Moldova,outer,Climate change,78.40,1
+Moldova,outer,Air pollution,1.62,1
+Moldova,inner,PC,1.95,1
+Moldova,inner,PC,91.60,2
+Moldova,inner,SC,3.96,1
+Moldova,inner,MC,0.00,1
+Moldova,inner,MC,0.00,2
+Moldova,inner,SA,0.00,1
+Moldova,inner,SA,36.94,2
+Moldova,inner,UN,21.26,1
+Moldova,inner,FP,39.83,1
+Moldova,inner,HS,#N/A,1
+Moldova,inner,CO,12.37,1
+Moldova,inner,HR,0.00,1
+Moldova,inner,PR,0.00,1
+Moldova,inner,EX,21.14,1
+Moldova,inner,RE,30.59,1
+Moldova,inner,AM,16.87,1
+Moldova,inner,EQ,41.11,1
+Moldova,inner,MR,76.05,1
+Moldova,inner,PN,4.05,1
+Monaco,outer,Energy use,64.59,1
+Monaco,outer,Material use,44.55,1
+Monaco,outer,Water use,0.00,1
+Monaco,outer,Biodiversity,#N/A,1
+Monaco,outer,Antibiotic use,#N/A,1
+Monaco,outer,Climate change,#N/A,1
+Monaco,outer,Air pollution,#N/A,1
+Monaco,inner,PC,20.24,1
+Monaco,inner,PC,#N/A,2
+Monaco,inner,SC,0.00,1
+Monaco,inner,MC,#N/A,1
+Monaco,inner,MC,0.00,2
+Monaco,inner,SA,50.86,1
+Monaco,inner,SA,25.38,2
+Monaco,inner,UN,#N/A,1
+Monaco,inner,FP,#N/A,1
+Monaco,inner,HS,#N/A,1
+Monaco,inner,CO,0.00,1
+Monaco,inner,HR,0.00,1
+Monaco,inner,PR,#N/A,1
+Monaco,inner,EX,0.00,1
+Monaco,inner,RE,#N/A,1
+Monaco,inner,AM,0.00,1
+Monaco,inner,EQ,25.09,1
+Monaco,inner,MR,#N/A,1
+Monaco,inner,PN,0.00,1
+Mongolia,outer,Energy use,0.00,1
+Mongolia,outer,Material use,0.00,1
+Mongolia,outer,Water use,0.00,1
+Mongolia,outer,Biodiversity,#N/A,1
+Mongolia,outer,Antibiotic use,20.22,1
+Mongolia,outer,Climate change,150.00,1
+Mongolia,outer,Air pollution,0.00,1
+Mongolia,inner,PC,47.23,1
+Mongolia,inner,PC,54.32,2
+Mongolia,inner,SC,17.68,1
+Mongolia,inner,MC,0.00,1
+Mongolia,inner,MC,0.00,2
+Mongolia,inner,SA,0.00,1
+Mongolia,inner,SA,10.39,2
+Mongolia,inner,UN,15.64,1
+Mongolia,inner,FP,39.49,1
+Mongolia,inner,HS,#N/A,1
+Mongolia,inner,CO,26.48,1
+Mongolia,inner,HR,0.00,1
+Mongolia,inner,PR,0.00,1
+Mongolia,inner,EX,8.29,1
+Mongolia,inner,RE,20.00,1
+Mongolia,inner,AM,44.81,1
+Mongolia,inner,EQ,42.86,1
+Mongolia,inner,MR,59.78,1
+Mongolia,inner,PN,0.00,1
+Montenegro,outer,Energy use,64.59,1
+Montenegro,outer,Material use,44.55,1
+Montenegro,outer,Water use,0.00,1
+Montenegro,outer,Biodiversity,#N/A,1
+Montenegro,outer,Antibiotic use,25.24,1
+Montenegro,outer,Climate change,150.00,1
+Montenegro,outer,Air pollution,85.37,1
+Montenegro,inner,PC,29.39,1
+Montenegro,inner,PC,59.40,2
+Montenegro,inner,SC,0.00,1
+Montenegro,inner,MC,0.00,1
+Montenegro,inner,MC,0.00,2
+Montenegro,inner,SA,0.00,1
+Montenegro,inner,SA,25.87,2
+Montenegro,inner,UN,57.75,1
+Montenegro,inner,FP,28.91,1
+Montenegro,inner,HS,#N/A,1
+Montenegro,inner,CO,2.54,1
+Montenegro,inner,HR,0.00,1
+Montenegro,inner,PR,0.00,1
+Montenegro,inner,EX,0.00,1
+Montenegro,inner,RE,2.35,1
+Montenegro,inner,AM,0.00,1
+Montenegro,inner,EQ,31.71,1
+Montenegro,inner,MR,66.59,1
+Montenegro,inner,PN,12.16,1
+Morocco,outer,Energy use,0.00,1
+Morocco,outer,Material use,0.00,1
+Morocco,outer,Water use,0.00,1
+Morocco,outer,Biodiversity,#N/A,1
+Morocco,outer,Antibiotic use,0.00,1
+Morocco,outer,Climate change,51.68,1
+Morocco,outer,Air pollution,0.00,1
+Morocco,inner,PC,30.28,1
+Morocco,inner,PC,88.11,2
+Morocco,inner,SC,12.20,1
+Morocco,inner,MC,0.16,1
+Morocco,inner,MC,0.00,2
+Morocco,inner,SA,21.69,1
+Morocco,inner,SA,36.04,2
+Morocco,inner,UN,4.12,1
+Morocco,inner,FP,23.08,1
+Morocco,inner,HS,#N/A,1
+Morocco,inner,CO,72.42,1
+Morocco,inner,HR,67.68,1
+Morocco,inner,PR,75.97,1
+Morocco,inner,EX,61.61,1
+Morocco,inner,RE,47.06,1
+Morocco,inner,AM,42.81,1
+Morocco,inner,EQ,37.28,1
+Morocco,inner,MR,37.61,1
+Morocco,inner,PN,0.00,1
+Mozambique,outer,Energy use,0.00,1
+Mozambique,outer,Material use,0.00,1
+Mozambique,outer,Water use,0.00,1
+Mozambique,outer,Biodiversity,#N/A,1
+Mozambique,outer,Antibiotic use,0.00,1
+Mozambique,outer,Climate change,0.00,1
+Mozambique,outer,Air pollution,0.00,1
+Mozambique,inner,PC,100.00,1
+Mozambique,inner,PC,94.28,2
+Mozambique,inner,SC,52.04,1
+Mozambique,inner,MC,4.96,1
+Mozambique,inner,MC,49.96,2
+Mozambique,inner,SA,61.23,1
+Mozambique,inner,SA,8.17,2
+Mozambique,inner,UN,26.75,1
+Mozambique,inner,FP,10.08,1
+Mozambique,inner,HS,#N/A,1
+Mozambique,inner,CO,97.82,1
+Mozambique,inner,HR,79.59,1
+Mozambique,inner,PR,75.97,1
+Mozambique,inner,EX,93.13,1
+Mozambique,inner,RE,85.88,1
+Mozambique,inner,AM,82.95,1
+Mozambique,inner,EQ,70.73,1
+Mozambique,inner,MR,47.36,1
+Mozambique,inner,PN,27.03,1
+Myanmar,outer,Energy use,0.00,1
+Myanmar,outer,Material use,0.00,1
+Myanmar,outer,Water use,0.00,1
+Myanmar,outer,Biodiversity,#N/A,1
+Myanmar,outer,Antibiotic use,0.00,1
+Myanmar,outer,Climate change,0.00,1
+Myanmar,outer,Air pollution,0.00,1
+Myanmar,inner,PC,47.53,1
+Myanmar,inner,PC,77.78,2
+Myanmar,inner,SC,29.09,1
+Myanmar,inner,MC,9.43,1
+Myanmar,inner,MC,33.01,2
+Myanmar,inner,SA,4.88,1
+Myanmar,inner,SA,33.48,2
+Myanmar,inner,UN,0.14,1
+Myanmar,inner,FP,35.77,1
+Myanmar,inner,HS,#N/A,1
+Myanmar,inner,CO,98.75,1
+Myanmar,inner,HR,83.09,1
+Myanmar,inner,PR,61.80,1
+Myanmar,inner,EX,84.84,1
+Myanmar,inner,RE,71.76,1
+Myanmar,inner,AM,61.74,1
+Myanmar,inner,EQ,56.79,1
+Myanmar,inner,MR,45.00,1
+Myanmar,inner,PN,18.92,1
+Namibia,outer,Energy use,4.64,1
+Namibia,outer,Material use,0.00,1
+Namibia,outer,Water use,0.00,1
+Namibia,outer,Biodiversity,#N/A,1
+Namibia,outer,Antibiotic use,0.00,1
+Namibia,outer,Climate change,79.05,1
+Namibia,outer,Air pollution,23.02,1
+Namibia,inner,PC,47.53,1
+Namibia,inner,PC,64.19,2
+Namibia,inner,SC,19.18,1
+Namibia,inner,MC,12.55,1
+Namibia,inner,MC,24.33,2
+Namibia,inner,SA,23.52,1
+Namibia,inner,SA,8.98,2
+Namibia,inner,UN,#N/A,1
+Namibia,inner,FP,4.28,1
+Namibia,inner,HS,#N/A,1
+Namibia,inner,CO,93.65,1
+Namibia,inner,HR,0.00,1
+Namibia,inner,PR,#N/A,1
+Namibia,inner,EX,33.46,1
+Namibia,inner,RE,28.24,1
+Namibia,inner,AM,57.56,1
+Namibia,inner,EQ,66.55,1
+Namibia,inner,MR,62.74,1
+Namibia,inner,PN,9.46,1
+Nauru,outer,Energy use,48.77,1
+Nauru,outer,Material use,23.84,1
+Nauru,outer,Water use,0.00,1
+Nauru,outer,Biodiversity,#N/A,1
+Nauru,outer,Antibiotic use,0.00,1
+Nauru,outer,Climate change,150.00,1
+Nauru,outer,Air pollution,65.79,1
+Nauru,inner,PC,42.13,1
+Nauru,inner,PC,77.23,2
+Nauru,inner,SC,18.74,1
+Nauru,inner,MC,#N/A,1
+Nauru,inner,MC,18.05,2
+Nauru,inner,SA,18.13,1
+Nauru,inner,SA,46.79,2
+Nauru,inner,UN,#N/A,1
+Nauru,inner,FP,#N/A,1
+Nauru,inner,HS,#N/A,1
+Nauru,inner,CO,98.99,1
+Nauru,inner,HR,0.00,1
+Nauru,inner,PR,#N/A,1
+Nauru,inner,EX,0.00,1
+Nauru,inner,RE,0.00,1
+Nauru,inner,AM,65.18,1
+Nauru,inner,EQ,59.23,1
+Nauru,inner,MR,56.83,1
+Nauru,inner,PN,0.00,1
+Nepal,outer,Energy use,0.00,1
+Nepal,outer,Material use,0.00,1
+Nepal,outer,Water use,0.00,1
+Nepal,outer,Biodiversity,#N/A,1
+Nepal,outer,Antibiotic use,6.97,1
+Nepal,outer,Climate change,0.00,1
+Nepal,outer,Air pollution,0.00,1
+Nepal,inner,PC,35.23,1
+Nepal,inner,PC,93.94,2
+Nepal,inner,SC,49.23,1
+Nepal,inner,MC,9.06,1
+Nepal,inner,MC,18.23,2
+Nepal,inner,SA,34.12,1
+Nepal,inner,SA,33.14,2
+Nepal,inner,UN,17.97,1
+Nepal,inner,FP,30.00,1
+Nepal,inner,HS,#N/A,1
+Nepal,inner,CO,67.22,1
+Nepal,inner,HR,0.00,1
+Nepal,inner,PR,90.56,1
+Nepal,inner,EX,78.79,1
+Nepal,inner,RE,18.82,1
+Nepal,inner,AM,59.58,1
+Nepal,inner,EQ,47.39,1
+Nepal,inner,MR,39.97,1
+Nepal,inner,PN,0.00,1
+Netherlands,outer,Energy use,55.86,1
+Netherlands,outer,Material use,39.36,1
+Netherlands,outer,Water use,2.13,1
+Netherlands,outer,Biodiversity,#N/A,1
+Netherlands,outer,Antibiotic use,0.00,1
+Netherlands,outer,Climate change,150.00,1
+Netherlands,outer,Air pollution,150.00,1
+Netherlands,inner,PC,20.24,1
+Netherlands,inner,PC,59.02,2
+Netherlands,inner,SC,0.87,1
+Netherlands,inner,MC,0.00,1
+Netherlands,inner,MC,0.00,2
+Netherlands,inner,SA,0.00,1
+Netherlands,inner,SA,57.82,2
+Netherlands,inner,UN,#N/A,1
+Netherlands,inner,FP,#N/A,1
+Netherlands,inner,HS,#N/A,1
+Netherlands,inner,CO,0.00,1
+Netherlands,inner,HR,0.00,1
+Netherlands,inner,PR,0.00,1
+Netherlands,inner,EX,0.00,1
+Netherlands,inner,RE,1.18,1
+Netherlands,inner,AM,0.00,1
+Netherlands,inner,EQ,27.18,1
+Netherlands,inner,MR,23.41,1
+Netherlands,inner,PN,0.00,1
+New Caledonia,outer,Energy use,48.77,1
+New Caledonia,outer,Material use,23.84,1
+New Caledonia,outer,Water use,0.00,1
+New Caledonia,outer,Biodiversity,#N/A,1
+New Caledonia,outer,Antibiotic use,#N/A,1
+New Caledonia,outer,Climate change,150.00,1
+New Caledonia,outer,Air pollution,#N/A,1
+New Caledonia,inner,PC,38.08,1
+New Caledonia,inner,PC,#N/A,2
+New Caledonia,inner,SC,#N/A,1
+New Caledonia,inner,MC,#N/A,1
+New Caledonia,inner,MC,#N/A,2
+New Caledonia,inner,SA,#N/A,1
+New Caledonia,inner,SA,#N/A,2
+New Caledonia,inner,UN,#N/A,1
+New Caledonia,inner,FP,#N/A,1
+New Caledonia,inner,HS,#N/A,1
+New Caledonia,inner,CO,#N/A,1
+New Caledonia,inner,HR,#N/A,1
+New Caledonia,inner,PR,#N/A,1
+New Caledonia,inner,EX,#N/A,1
+New Caledonia,inner,RE,#N/A,1
+New Caledonia,inner,AM,#N/A,1
+New Caledonia,inner,EQ,39.37,1
+New Caledonia,inner,MR,#N/A,1
+New Caledonia,inner,PN,#N/A,1
+New Zealand,outer,Energy use,77.11,1
+New Zealand,outer,Material use,41.23,1
+New Zealand,outer,Water use,34.21,1
+New Zealand,outer,Biodiversity,#N/A,1
+New Zealand,outer,Antibiotic use,30.33,1
+New Zealand,outer,Climate change,150.00,1
+New Zealand,outer,Air pollution,150.00,1
+New Zealand,inner,PC,38.08,1
+New Zealand,inner,PC,50.25,2
+New Zealand,inner,SC,1.16,1
+New Zealand,inner,MC,0.00,1
+New Zealand,inner,MC,0.00,2
+New Zealand,inner,SA,2.08,1
+New Zealand,inner,SA,58.74,2
+New Zealand,inner,UN,#N/A,1
+New Zealand,inner,FP,#N/A,1
+New Zealand,inner,HS,#N/A,1
+New Zealand,inner,CO,0.00,1
+New Zealand,inner,HR,0.00,1
+New Zealand,inner,PR,0.00,1
+New Zealand,inner,EX,0.00,1
+New Zealand,inner,RE,0.00,1
+New Zealand,inner,AM,0.00,1
+New Zealand,inner,EQ,32.06,1
+New Zealand,inner,MR,24.59,1
+New Zealand,inner,PN,2.70,1
+Nicaragua,outer,Energy use,0.00,1
+Nicaragua,outer,Material use,0.00,1
+Nicaragua,outer,Water use,0.00,1
+Nicaragua,outer,Biodiversity,#N/A,1
+Nicaragua,outer,Antibiotic use,0.00,1
+Nicaragua,outer,Climate change,5.95,1
+Nicaragua,outer,Air pollution,0.00,1
+Nicaragua,inner,PC,37.18,1
+Nicaragua,inner,PC,37.07,2
+Nicaragua,inner,SC,30.90,1
+Nicaragua,inner,MC,0.68,1
+Nicaragua,inner,MC,0.00,2
+Nicaragua,inner,SA,3.76,1
+Nicaragua,inner,SA,0.00,2
+Nicaragua,inner,UN,#N/A,1
+Nicaragua,inner,FP,#N/A,1
+Nicaragua,inner,HS,#N/A,1
+Nicaragua,inner,CO,49.67,1
+Nicaragua,inner,HR,52.38,1
+Nicaragua,inner,PR,68.67,1
+Nicaragua,inner,EX,55.42,1
+Nicaragua,inner,RE,68.24,1
+Nicaragua,inner,AM,36.50,1
+Nicaragua,inner,EQ,41.46,1
+Nicaragua,inner,MR,39.08,1
+Nicaragua,inner,PN,1.35,1
+Niger,outer,Energy use,0.00,1
+Niger,outer,Material use,0.00,1
+Niger,outer,Water use,0.00,1
+Niger,outer,Biodiversity,#N/A,1
+Niger,outer,Antibiotic use,0.00,1
+Niger,outer,Climate change,0.00,1
+Niger,outer,Air pollution,0.00,1
+Niger,inner,PC,56.37,1
+Niger,inner,PC,96.52,2
+Niger,inner,SC,28.56,1
+Niger,inner,MC,32.20,1
+Niger,inner,MC,81.69,2
+Niger,inner,SA,83.34,1
+Niger,inner,SA,27.64,2
+Niger,inner,UN,52.26,1
+Niger,inner,FP,18.35,1
+Niger,inner,HS,#N/A,1
+Niger,inner,CO,99.12,1
+Niger,inner,HR,95.07,1
+Niger,inner,PR,95.71,1
+Niger,inner,EX,97.83,1
+Niger,inner,RE,90.59,1
+Niger,inner,AM,80.65,1
+Niger,inner,EQ,68.99,1
+Niger,inner,MR,55.94,1
+Niger,inner,PN,6.76,1
+Nigeria,outer,Energy use,0.00,1
+Nigeria,outer,Material use,0.00,1
+Nigeria,outer,Water use,0.00,1
+Nigeria,outer,Biodiversity,#N/A,1
+Nigeria,outer,Antibiotic use,0.00,1
+Nigeria,outer,Climate change,0.00,1
+Nigeria,outer,Air pollution,0.00,1
+Nigeria,inner,PC,49.93,1
+Nigeria,inner,PC,85.45,2
+Nigeria,inner,SC,11.80,1
+Nigeria,inner,MC,84.79,1
+Nigeria,inner,MC,81.40,2
+Nigeria,inner,SA,60.95,1
+Nigeria,inner,SA,0.00,2
+Nigeria,inner,UN,54.05,1
+Nigeria,inner,FP,44.44,1
+Nigeria,inner,HS,1.69,1
+Nigeria,inner,CO,97.99,1
+Nigeria,inner,HR,57.72,1
+Nigeria,inner,PR,#N/A,1
+Nigeria,inner,EX,84.62,1
+Nigeria,inner,RE,67.06,1
+Nigeria,inner,AM,71.81,1
+Nigeria,inner,EQ,100.00,1
+Nigeria,inner,MR,39.97,1
+Nigeria,inner,PN,37.84,1
+North Macedonia,outer,Energy use,2.47,1
+North Macedonia,outer,Material use,1.84,1
+North Macedonia,outer,Water use,0.00,1
+North Macedonia,outer,Biodiversity,#N/A,1
+North Macedonia,outer,Antibiotic use,17.94,1
+North Macedonia,outer,Climate change,150.00,1
+North Macedonia,outer,Air pollution,46.39,1
+North Macedonia,inner,PC,29.39,1
+North Macedonia,inner,PC,59.67,2
+North Macedonia,inner,SC,0.00,1
+North Macedonia,inner,MC,0.00,1
+North Macedonia,inner,MC,0.00,2
+North Macedonia,inner,SA,0.00,1
+North Macedonia,inner,SA,18.88,2
+North Macedonia,inner,UN,62.28,1
+North Macedonia,inner,FP,27.39,1
+North Macedonia,inner,HS,#N/A,1
+North Macedonia,inner,CO,8.54,1
+North Macedonia,inner,HR,0.00,1
+North Macedonia,inner,PR,0.00,1
+North Macedonia,inner,EX,0.00,1
+North Macedonia,inner,RE,0.00,1
+North Macedonia,inner,AM,9.99,1
+North Macedonia,inner,EQ,30.31,1
+North Macedonia,inner,MR,66.59,1
+North Macedonia,inner,PN,5.41,1
+Northern Mariana Islands,outer,Energy use,48.77,1
+Northern Mariana Islands,outer,Material use,23.84,1
+Northern Mariana Islands,outer,Water use,0.00,1
+Northern Mariana Islands,outer,Biodiversity,#N/A,1
+Northern Mariana Islands,outer,Antibiotic use,#N/A,1
+Northern Mariana Islands,outer,Climate change,#N/A,1
+Northern Mariana Islands,outer,Air pollution,#N/A,1
+Northern Mariana Islands,inner,PC,38.08,1
+Northern Mariana Islands,inner,PC,#N/A,2
+Northern Mariana Islands,inner,SC,1.20,1
+Northern Mariana Islands,inner,MC,#N/A,1
+Northern Mariana Islands,inner,MC,#N/A,2
+Northern Mariana Islands,inner,SA,9.72,1
+Northern Mariana Islands,inner,SA,52.24,2
+Northern Mariana Islands,inner,UN,#N/A,1
+Northern Mariana Islands,inner,FP,#N/A,1
+Northern Mariana Islands,inner,HS,#N/A,1
+Northern Mariana Islands,inner,CO,96.03,1
+Northern Mariana Islands,inner,HR,#N/A,1
+Northern Mariana Islands,inner,PR,#N/A,1
+Northern Mariana Islands,inner,EX,#N/A,1
+Northern Mariana Islands,inner,RE,#N/A,1
+Northern Mariana Islands,inner,AM,30.62,1
+Northern Mariana Islands,inner,EQ,33.45,1
+Northern Mariana Islands,inner,MR,#N/A,1
+Northern Mariana Islands,inner,PN,#N/A,1
+Norway,outer,Energy use,70.69,1
+Norway,outer,Material use,63.81,1
+Norway,outer,Water use,11.26,1
+Norway,outer,Biodiversity,#N/A,1
+Norway,outer,Antibiotic use,5.18,1
+Norway,outer,Climate change,150.00,1
+Norway,outer,Air pollution,150.00,1
+Norway,inner,PC,20.24,1
+Norway,inner,PC,47.66,2
+Norway,inner,SC,0.00,1
+Norway,inner,MC,0.00,1
+Norway,inner,MC,0.00,2
+Norway,inner,SA,0.00,1
+Norway,inner,SA,55.23,2
+Norway,inner,UN,#N/A,1
+Norway,inner,FP,#N/A,1
+Norway,inner,HS,#N/A,1
+Norway,inner,CO,0.00,1
+Norway,inner,HR,0.00,1
+Norway,inner,PR,0.00,1
+Norway,inner,EX,0.00,1
+Norway,inner,RE,0.00,1
+Norway,inner,AM,0.00,1
+Norway,inner,EQ,26.48,1
+Norway,inner,MR,23.41,1
+Norway,inner,PN,0.00,1
+Oman,outer,Energy use,0.00,1
+Oman,outer,Material use,1.34,1
+Oman,outer,Water use,0.00,1
+Oman,outer,Biodiversity,#N/A,1
+Oman,outer,Antibiotic use,19.10,1
+Oman,outer,Climate change,150.00,1
+Oman,outer,Air pollution,56.03,1
+Oman,inner,PC,44.98,1
+Oman,inner,PC,75.95,2
+Oman,inner,SC,0.00,1
+Oman,inner,MC,0.00,1
+Oman,inner,MC,0.00,2
+Oman,inner,SA,1.79,1
+Oman,inner,SA,2.99,2
+Oman,inner,UN,#N/A,1
+Oman,inner,FP,#N/A,1
+Oman,inner,HS,#N/A,1
+Oman,inner,CO,67.72,1
+Oman,inner,HR,0.00,1
+Oman,inner,PR,57.51,1
+Oman,inner,EX,14.94,1
+Oman,inner,RE,0.00,1
+Oman,inner,AM,10.39,1
+Oman,inner,EQ,34.49,1
+Oman,inner,MR,68.06,1
+Oman,inner,PN,0.00,1
+Pakistan,outer,Energy use,0.00,1
+Pakistan,outer,Material use,0.00,1
+Pakistan,outer,Water use,0.00,1
+Pakistan,outer,Biodiversity,#N/A,1
+Pakistan,outer,Antibiotic use,13.05,1
+Pakistan,outer,Climate change,0.00,1
+Pakistan,outer,Air pollution,0.00,1
+Pakistan,inner,PC,10.34,1
+Pakistan,inner,PC,85.30,2
+Pakistan,inner,SC,52.17,1
+Pakistan,inner,MC,7.30,1
+Pakistan,inner,MC,97.59,2
+Pakistan,inner,SA,50.15,1
+Pakistan,inner,SA,6.46,2
+Pakistan,inner,UN,36.35,1
+Pakistan,inner,FP,15.17,1
+Pakistan,inner,HS,#N/A,1
+Pakistan,inner,CO,68.37,1
+Pakistan,inner,HR,65.98,1
+Pakistan,inner,PR,85.41,1
+Pakistan,inner,EX,89.54,1
+Pakistan,inner,RE,74.12,1
+Pakistan,inner,AM,70.40,1
+Pakistan,inner,EQ,58.19,1
+Pakistan,inner,MR,60.97,1
+Pakistan,inner,PN,5.41,1
+Palau,outer,Energy use,48.77,1
+Palau,outer,Material use,23.84,1
+Palau,outer,Water use,0.00,1
+Palau,outer,Biodiversity,#N/A,1
+Palau,outer,Antibiotic use,22.04,1
+Palau,outer,Climate change,150.00,1
+Palau,outer,Air pollution,77.41,1
+Palau,inner,PC,38.08,1
+Palau,inner,PC,78.30,2
+Palau,inner,SC,7.53,1
+Palau,inner,MC,#N/A,1
+Palau,inner,MC,0.00,2
+Palau,inner,SA,40.31,1
+Palau,inner,SA,79.49,2
+Palau,inner,UN,#N/A,1
+Palau,inner,FP,#N/A,1
+Palau,inner,HS,#N/A,1
+Palau,inner,CO,96.29,1
+Palau,inner,HR,0.00,1
+Palau,inner,PR,#N/A,1
+Palau,inner,EX,0.00,1
+Palau,inner,RE,0.00,1
+Palau,inner,AM,42.84,1
+Palau,inner,EQ,55.75,1
+Palau,inner,MR,63.92,1
+Palau,inner,PN,0.00,1
+Panama,outer,Energy use,0.00,1
+Panama,outer,Material use,0.00,1
+Panama,outer,Water use,0.00,1
+Panama,outer,Biodiversity,#N/A,1
+Panama,outer,Antibiotic use,0.00,1
+Panama,outer,Climate change,66.49,1
+Panama,outer,Air pollution,25.17,1
+Panama,inner,PC,16.79,1
+Panama,inner,PC,48.23,2
+Panama,inner,SC,26.33,1
+Panama,inner,MC,0.00,1
+Panama,inner,MC,0.00,2
+Panama,inner,SA,7.36,1
+Panama,inner,SA,44.70,2
+Panama,inner,UN,13.44,1
+Panama,inner,FP,17.45,1
+Panama,inner,HS,#N/A,1
+Panama,inner,CO,44.08,1
+Panama,inner,HR,0.00,1
+Panama,inner,PR,24.89,1
+Panama,inner,EX,0.00,1
+Panama,inner,RE,4.71,1
+Panama,inner,AM,24.34,1
+Panama,inner,EQ,44.95,1
+Panama,inner,MR,39.97,1
+Panama,inner,PN,32.43,1
+Papua New Guinea,outer,Energy use,0.00,1
+Papua New Guinea,outer,Material use,0.00,1
+Papua New Guinea,outer,Water use,0.00,1
+Papua New Guinea,outer,Biodiversity,#N/A,1
+Papua New Guinea,outer,Antibiotic use,0.00,1
+Papua New Guinea,outer,Climate change,48.92,1
+Papua New Guinea,outer,Air pollution,0.00,1
+Papua New Guinea,inner,PC,47.23,1
+Papua New Guinea,inner,PC,87.98,2
+Papua New Guinea,inner,SC,6.02,1
+Papua New Guinea,inner,MC,10.57,1
+Papua New Guinea,inner,MC,31.80,2
+Papua New Guinea,inner,SA,19.72,1
+Papua New Guinea,inner,SA,18.00,2
+Papua New Guinea,inner,UN,35.39,1
+Papua New Guinea,inner,FP,#N/A,1
+Papua New Guinea,inner,HS,#N/A,1
+Papua New Guinea,inner,CO,98.91,1
+Papua New Guinea,inner,HR,92.45,1
+Papua New Guinea,inner,PR,100.00,1
+Papua New Guinea,inner,EX,94.32,1
+Papua New Guinea,inner,RE,75.29,1
+Papua New Guinea,inner,AM,72.26,1
+Papua New Guinea,inner,EQ,56.10,1
+Papua New Guinea,inner,MR,15.43,1
+Papua New Guinea,inner,PN,74.32,1
+Paraguay,outer,Energy use,0.00,1
+Paraguay,outer,Material use,0.00,1
+Paraguay,outer,Water use,0.00,1
+Paraguay,outer,Biodiversity,#N/A,1
+Paraguay,outer,Antibiotic use,0.37,1
+Paraguay,outer,Climate change,31.21,1
+Paraguay,outer,Air pollution,32.95,1
+Paraguay,inner,PC,25.94,1
+Paraguay,inner,PC,81.17,2
+Paraguay,inner,SC,44.98,1
+Paraguay,inner,MC,0.10,1
+Paraguay,inner,MC,0.00,2
+Paraguay,inner,SA,17.16,1
+Paraguay,inner,SA,0.00,2
+Paraguay,inner,UN,0.00,1
+Paraguay,inner,FP,#N/A,1
+Paraguay,inner,HS,#N/A,1
+Paraguay,inner,CO,0.00,1
+Paraguay,inner,HR,0.00,1
+Paraguay,inner,PR,63.95,1
+Paraguay,inner,EX,9.79,1
+Paraguay,inner,RE,0.00,1
+Paraguay,inner,AM,37.50,1
+Paraguay,inner,EQ,44.95,1
+Paraguay,inner,MR,100.00,1
+Paraguay,inner,PN,25.68,1
+Peru,outer,Energy use,0.00,1
+Peru,outer,Material use,0.00,1
+Peru,outer,Water use,0.00,1
+Peru,outer,Biodiversity,#N/A,1
+Peru,outer,Antibiotic use,0.00,1
+Peru,outer,Climate change,28.48,1
+Peru,outer,Air pollution,0.00,1
+Peru,inner,PC,25.94,1
+Peru,inner,PC,61.11,2
+Peru,inner,SC,34.97,1
+Peru,inner,MC,0.00,1
+Peru,inner,MC,0.00,2
+Peru,inner,SA,3.19,1
+Peru,inner,SA,0.00,2
+Peru,inner,UN,12.48,1
+Peru,inner,FP,35.43,1
+Peru,inner,HS,87.36,1
+Peru,inner,CO,95.45,1
+Peru,inner,HR,0.57,1
+Peru,inner,PR,38.63,1
+Peru,inner,EX,32.56,1
+Peru,inner,RE,28.24,1
+Peru,inner,AM,23.19,1
+Peru,inner,EQ,43.55,1
+Peru,inner,MR,0.00,1
+Peru,inner,PN,8.11,1
+Philippines,outer,Energy use,0.00,1
+Philippines,outer,Material use,0.00,1
+Philippines,outer,Water use,0.00,1
+Philippines,outer,Biodiversity,#N/A,1
+Philippines,outer,Antibiotic use,0.00,1
+Philippines,outer,Climate change,6.23,1
+Philippines,outer,Air pollution,0.00,1
+Philippines,inner,PC,70.01,1
+Philippines,inner,PC,72.68,2
+Philippines,inner,SC,17.88,1
+Philippines,inner,MC,0.71,1
+Philippines,inner,MC,8.13,2
+Philippines,inner,SA,0.00,1
+Philippines,inner,SA,20.00,2
+Philippines,inner,UN,26.06,1
+Philippines,inner,FP,17.76,1
+Philippines,inner,HS,#N/A,1
+Philippines,inner,CO,97.95,1
+Philippines,inner,HR,0.00,1
+Philippines,inner,PR,66.09,1
+Philippines,inner,EX,63.41,1
+Philippines,inner,RE,21.18,1
+Philippines,inner,AM,56.04,1
+Philippines,inner,EQ,43.90,1
+Philippines,inner,MR,33.17,1
+Philippines,inner,PN,1.35,1
+Poland,outer,Energy use,14.51,1
+Poland,outer,Material use,7.19,1
+Poland,outer,Water use,0.00,1
+Poland,outer,Biodiversity,#N/A,1
+Poland,outer,Antibiotic use,26.47,1
+Poland,outer,Climate change,150.00,1
+Poland,outer,Air pollution,60.00,1
+Poland,inner,PC,67.77,1
+Poland,inner,PC,38.94,2
+Poland,inner,SC,0.93,1
+Poland,inner,MC,0.00,1
+Poland,inner,MC,0.00,2
+Poland,inner,SA,3.35,1
+Poland,inner,SA,30.42,2
+Poland,inner,UN,#N/A,1
+Poland,inner,FP,45.29,1
+Poland,inner,HS,#N/A,1
+Poland,inner,CO,9.64,1
+Poland,inner,HR,0.00,1
+Poland,inner,PR,0.00,1
+Poland,inner,EX,0.00,1
+Poland,inner,RE,0.00,1
+Poland,inner,AM,0.59,1
+Poland,inner,EQ,34.84,1
+Poland,inner,MR,78.71,1
+Poland,inner,PN,0.00,1
+Portugal,outer,Energy use,55.66,1
+Portugal,outer,Material use,22.23,1
+Portugal,outer,Water use,0.00,1
+Portugal,outer,Biodiversity,#N/A,1
+Portugal,outer,Antibiotic use,21.09,1
+Portugal,outer,Climate change,150.00,1
+Portugal,outer,Air pollution,76.90,1
+Portugal,inner,PC,35.38,1
+Portugal,inner,PC,12.65,2
+Portugal,inner,SC,0.00,1
+Portugal,inner,MC,0.00,1
+Portugal,inner,MC,0.00,2
+Portugal,inner,SA,5.32,1
+Portugal,inner,SA,23.62,2
+Portugal,inner,UN,#N/A,1
+Portugal,inner,FP,#N/A,1
+Portugal,inner,HS,#N/A,1
+Portugal,inner,CO,0.00,1
+Portugal,inner,HR,0.00,1
+Portugal,inner,PR,0.00,1
+Portugal,inner,EX,0.00,1
+Portugal,inner,RE,0.00,1
+Portugal,inner,AM,0.00,1
+Portugal,inner,EQ,29.97,1
+Portugal,inner,MR,28.73,1
+Portugal,inner,PN,0.00,1
+Puerto Rico,outer,Energy use,0.00,1
+Puerto Rico,outer,Material use,0.00,1
+Puerto Rico,outer,Water use,0.00,1
+Puerto Rico,outer,Biodiversity,#N/A,1
+Puerto Rico,outer,Antibiotic use,17.81,1
+Puerto Rico,outer,Climate change,#N/A,1
+Puerto Rico,outer,Air pollution,47.80,1
+Puerto Rico,inner,PC,16.79,1
+Puerto Rico,inner,PC,61.43,2
+Puerto Rico,inner,SC,1.54,1
+Puerto Rico,inner,MC,#N/A,1
+Puerto Rico,inner,MC,#N/A,2
+Puerto Rico,inner,SA,19.86,1
+Puerto Rico,inner,SA,51.52,2
+Puerto Rico,inner,UN,#N/A,1
+Puerto Rico,inner,FP,#N/A,1
+Puerto Rico,inner,HS,#N/A,1
+Puerto Rico,inner,CO,48.13,1
+Puerto Rico,inner,HR,#N/A,1
+Puerto Rico,inner,PR,#N/A,1
+Puerto Rico,inner,EX,#N/A,1
+Puerto Rico,inner,RE,#N/A,1
+Puerto Rico,inner,AM,4.97,1
+Puerto Rico,inner,EQ,40.42,1
+Puerto Rico,inner,MR,59.19,1
+Puerto Rico,inner,PN,#N/A,1
+Qatar,outer,Energy use,19.55,1
+Qatar,outer,Material use,0.00,1
+Qatar,outer,Water use,0.00,1
+Qatar,outer,Biodiversity,#N/A,1
+Qatar,outer,Antibiotic use,20.65,1
+Qatar,outer,Climate change,150.00,1
+Qatar,outer,Air pollution,82.55,1
+Qatar,inner,PC,21.29,1
+Qatar,inner,PC,51.84,2
+Qatar,inner,SC,1.18,1
+Qatar,inner,MC,0.00,1
+Qatar,inner,MC,0.00,2
+Qatar,inner,SA,0.00,1
+Qatar,inner,SA,35.63,2
+Qatar,inner,UN,#N/A,1
+Qatar,inner,FP,3.66,1
+Qatar,inner,HS,#N/A,1
+Qatar,inner,CO,60.98,1
+Qatar,inner,HR,0.00,1
+Qatar,inner,PR,59.23,1
+Qatar,inner,EX,0.00,1
+Qatar,inner,RE,0.00,1
+Qatar,inner,AM,0.00,1
+Qatar,inner,EQ,27.53,1
+Qatar,inner,MR,54.17,1
+Qatar,inner,PN,0.00,1
+Romania,outer,Energy use,3.50,1
+Romania,outer,Material use,4.79,1
+Romania,outer,Water use,0.00,1
+Romania,outer,Biodiversity,#N/A,1
+Romania,outer,Antibiotic use,23.89,1
+Romania,outer,Climate change,150.00,1
+Romania,outer,Air pollution,52.00,1
+Romania,inner,PC,1.95,1
+Romania,inner,PC,45.38,2
+Romania,inner,SC,1.53,1
+Romania,inner,MC,0.00,1
+Romania,inner,MC,0.00,2
+Romania,inner,SA,0.00,1
+Romania,inner,SA,31.84,2
+Romania,inner,UN,#N/A,1
+Romania,inner,FP,37.77,1
+Romania,inner,HS,69.57,1
+Romania,inner,CO,0.00,1
+Romania,inner,HR,0.00,1
+Romania,inner,PR,0.00,1
+Romania,inner,EX,0.00,1
+Romania,inner,RE,0.00,1
+Romania,inner,AM,6.61,1
+Romania,inner,EQ,34.84,1
+Romania,inner,MR,76.34,1
+Romania,inner,PN,16.22,1
+Russian Federation,outer,Energy use,23.83,1
+Russian Federation,outer,Material use,1.68,1
+Russian Federation,outer,Water use,0.00,1
+Russian Federation,outer,Biodiversity,#N/A,1
+Russian Federation,outer,Antibiotic use,0.00,1
+Russian Federation,outer,Climate change,150.00,1
+Russian Federation,outer,Air pollution,61.37,1
+Russian Federation,inner,PC,31.48,1
+Russian Federation,inner,PC,71.39,2
+Russian Federation,inner,SC,4.80,1
+Russian Federation,inner,MC,0.00,1
+Russian Federation,inner,MC,0.00,2
+Russian Federation,inner,SA,2.99,1
+Russian Federation,inner,SA,33.25,2
+Russian Federation,inner,UN,#N/A,1
+Russian Federation,inner,FP,21.67,1
+Russian Federation,inner,HS,#N/A,1
+Russian Federation,inner,CO,8.09,1
+Russian Federation,inner,HR,0.00,1
+Russian Federation,inner,PR,0.00,1
+Russian Federation,inner,EX,0.00,1
+Russian Federation,inner,RE,16.47,1
+Russian Federation,inner,AM,10.10,1
+Russian Federation,inner,EQ,45.64,1
+Russian Federation,inner,MR,64.22,1
+Russian Federation,inner,PN,0.00,1
+Rwanda,outer,Energy use,0.00,1
+Rwanda,outer,Material use,0.00,1
+Rwanda,outer,Water use,0.00,1
+Rwanda,outer,Biodiversity,#N/A,1
+Rwanda,outer,Antibiotic use,0.00,1
+Rwanda,outer,Climate change,0.00,1
+Rwanda,outer,Air pollution,0.00,1
+Rwanda,inner,PC,56.37,1
+Rwanda,inner,PC,96.74,2
+Rwanda,inner,SC,26.19,1
+Rwanda,inner,MC,16.39,1
+Rwanda,inner,MC,18.16,2
+Rwanda,inner,SA,35.41,1
+Rwanda,inner,SA,34.79,2
+Rwanda,inner,UN,3.98,1
+Rwanda,inner,FP,3.24,1
+Rwanda,inner,HS,#N/A,1
+Rwanda,inner,CO,95.89,1
+Rwanda,inner,HR,77.51,1
+Rwanda,inner,PR,75.54,1
+Rwanda,inner,EX,86.33,1
+Rwanda,inner,RE,63.53,1
+Rwanda,inner,AM,71.56,1
+Rwanda,inner,EQ,55.40,1
+Rwanda,inner,MR,21.34,1
+Rwanda,inner,PN,0.00,1
+Samoa,outer,Energy use,48.77,1
+Samoa,outer,Material use,23.84,1
+Samoa,outer,Water use,0.00,1
+Samoa,outer,Biodiversity,#N/A,1
+Samoa,outer,Antibiotic use,0.00,1
+Samoa,outer,Climate change,150.00,1
+Samoa,outer,Air pollution,42.70,1
+Samoa,inner,PC,47.23,1
+Samoa,inner,PC,87.99,2
+Samoa,inner,SC,9.92,1
+Samoa,inner,MC,0.00,1
+Samoa,inner,MC,0.00,2
+Samoa,inner,SA,7.82,1
+Samoa,inner,SA,67.93,2
+Samoa,inner,UN,65.84,1
+Samoa,inner,FP,#N/A,1
+Samoa,inner,HS,#N/A,1
+Samoa,inner,CO,98.58,1
+Samoa,inner,HR,19.80,1
+Samoa,inner,PR,#N/A,1
+Samoa,inner,EX,73.34,1
+Samoa,inner,RE,65.88,1
+Samoa,inner,AM,51.12,1
+Samoa,inner,EQ,41.46,1
+Samoa,inner,MR,46.48,1
+Samoa,inner,PN,9.46,1
+San Marino,outer,Energy use,64.59,1
+San Marino,outer,Material use,44.55,1
+San Marino,outer,Water use,0.00,1
+San Marino,outer,Biodiversity,#N/A,1
+San Marino,outer,Antibiotic use,20.79,1
+San Marino,outer,Climate change,#N/A,1
+San Marino,outer,Air pollution,150.00,1
+San Marino,inner,PC,20.24,1
+San Marino,inner,PC,#N/A,2
+San Marino,inner,SC,0.00,1
+San Marino,inner,MC,#N/A,1
+San Marino,inner,MC,0.00,2
+San Marino,inner,SA,0.00,1
+San Marino,inner,SA,0.00,2
+San Marino,inner,UN,#N/A,1
+San Marino,inner,FP,#N/A,1
+San Marino,inner,HS,#N/A,1
+San Marino,inner,CO,0.00,1
+San Marino,inner,HR,0.00,1
+San Marino,inner,PR,#N/A,1
+San Marino,inner,EX,0.00,1
+San Marino,inner,RE,#N/A,1
+San Marino,inner,AM,0.00,1
+San Marino,inner,EQ,28.57,1
+San Marino,inner,MR,#N/A,1
+San Marino,inner,PN,0.00,1
+Sao Tome and Principe,outer,Energy use,0.00,1
+Sao Tome and Principe,outer,Material use,0.00,1
+Sao Tome and Principe,outer,Water use,0.00,1
+Sao Tome and Principe,outer,Biodiversity,#N/A,1
+Sao Tome and Principe,outer,Antibiotic use,0.00,1
+Sao Tome and Principe,outer,Climate change,28.30,1
+Sao Tome and Principe,outer,Air pollution,0.00,1
+Sao Tome and Principe,inner,PC,49.93,1
+Sao Tome and Principe,inner,PC,89.69,2
+Sao Tome and Principe,inner,SC,7.17,1
+Sao Tome and Principe,inner,MC,6.62,1
+Sao Tome and Principe,inner,MC,0.00,2
+Sao Tome and Principe,inner,SA,11.77,1
+Sao Tome and Principe,inner,SA,14.51,2
+Sao Tome and Principe,inner,UN,23.73,1
+Sao Tome and Principe,inner,FP,13.59,1
+Sao Tome and Principe,inner,HS,#N/A,1
+Sao Tome and Principe,inner,CO,97.04,1
+Sao Tome and Principe,inner,HR,43.38,1
+Sao Tome and Principe,inner,PR,0.00,1
+Sao Tome and Principe,inner,EX,80.21,1
+Sao Tome and Principe,inner,RE,36.47,1
+Sao Tome and Principe,inner,AM,55.04,1
+Sao Tome and Principe,inner,EQ,48.78,1
+Sao Tome and Principe,inner,MR,66.59,1
+Sao Tome and Principe,inner,PN,5.41,1
+Saudi Arabia,outer,Energy use,39.21,1
+Saudi Arabia,outer,Material use,23.73,1
+Saudi Arabia,outer,Water use,0.00,1
+Saudi Arabia,outer,Biodiversity,#N/A,1
+Saudi Arabia,outer,Antibiotic use,15.89,1
+Saudi Arabia,outer,Climate change,150.00,1
+Saudi Arabia,outer,Air pollution,67.44,1
+Saudi Arabia,inner,PC,35.38,1
+Saudi Arabia,inner,PC,61.64,2
+Saudi Arabia,inner,SC,0.00,1
+Saudi Arabia,inner,MC,0.00,1
+Saudi Arabia,inner,MC,0.00,2
+Saudi Arabia,inner,SA,6.25,1
+Saudi Arabia,inner,SA,59.49,2
+Saudi Arabia,inner,UN,#N/A,1
+Saudi Arabia,inner,FP,3.69,1
+Saudi Arabia,inner,HS,#N/A,1
+Saudi Arabia,inner,CO,73.52,1
+Saudi Arabia,inner,HR,0.00,1
+Saudi Arabia,inner,PR,15.02,1
+Saudi Arabia,inner,EX,0.00,1
+Saudi Arabia,inner,RE,1.18,1
+Saudi Arabia,inner,AM,17.49,1
+Saudi Arabia,inner,EQ,33.45,1
+Saudi Arabia,inner,MR,33.76,1
+Saudi Arabia,inner,PN,0.00,1
+Senegal,outer,Energy use,0.00,1
+Senegal,outer,Material use,0.00,1
+Senegal,outer,Water use,0.00,1
+Senegal,outer,Biodiversity,#N/A,1
+Senegal,outer,Antibiotic use,0.00,1
+Senegal,outer,Climate change,0.00,1
+Senegal,outer,Air pollution,0.00,1
+Senegal,inner,PC,56.37,1
+Senegal,inner,PC,89.82,2
+Senegal,inner,SC,19.07,1
+Senegal,inner,MC,16.56,1
+Senegal,inner,MC,30.82,2
+Senegal,inner,SA,55.32,1
+Senegal,inner,SA,0.00,2
+Senegal,inner,UN,29.90,1
+Senegal,inner,FP,19.31,1
+Senegal,inner,HS,#N/A,1
+Senegal,inner,CO,97.94,1
+Senegal,inner,HR,93.31,1
+Senegal,inner,PR,75.97,1
+Senegal,inner,EX,90.37,1
+Senegal,inner,RE,69.41,1
+Senegal,inner,AM,67.80,1
+Senegal,inner,EQ,51.57,1
+Senegal,inner,MR,52.98,1
+Senegal,inner,PN,9.46,1
+Serbia,outer,Energy use,9.75,1
+Serbia,outer,Material use,4.46,1
+Serbia,outer,Water use,0.00,1
+Serbia,outer,Biodiversity,#N/A,1
+Serbia,outer,Antibiotic use,15.18,1
+Serbia,outer,Climate change,150.00,1
+Serbia,outer,Air pollution,32.92,1
+Serbia,inner,PC,29.39,1
+Serbia,inner,PC,55.03,2
+Serbia,inner,SC,3.63,1
+Serbia,inner,MC,0.00,1
+Serbia,inner,MC,0.00,2
+Serbia,inner,SA,0.00,1
+Serbia,inner,SA,38.74,2
+Serbia,inner,UN,50.21,1
+Serbia,inner,FP,24.01,1
+Serbia,inner,HS,#N/A,1
+Serbia,inner,CO,8.24,1
+Serbia,inner,HR,0.00,1
+Serbia,inner,PR,0.00,1
+Serbia,inner,EX,0.00,1
+Serbia,inner,RE,35.29,1
+Serbia,inner,AM,2.30,1
+Serbia,inner,EQ,31.71,1
+Serbia,inner,MR,69.54,1
+Serbia,inner,PN,0.00,1
+Seychelles,outer,Energy use,0.00,1
+Seychelles,outer,Material use,0.00,1
+Seychelles,outer,Water use,0.00,1
+Seychelles,outer,Biodiversity,#N/A,1
+Seychelles,outer,Antibiotic use,17.11,1
+Seychelles,outer,Climate change,150.00,1
+Seychelles,outer,Air pollution,42.28,1
+Seychelles,inner,PC,38.98,1
+Seychelles,inner,PC,51.30,2
+Seychelles,inner,SC,20.09,1
+Seychelles,inner,MC,0.00,1
+Seychelles,inner,MC,0.00,2
+Seychelles,inner,SA,0.00,1
+Seychelles,inner,SA,0.00,2
+Seychelles,inner,UN,#N/A,1
+Seychelles,inner,FP,#N/A,1
+Seychelles,inner,HS,#N/A,1
+Seychelles,inner,CO,95.79,1
+Seychelles,inner,HR,0.00,1
+Seychelles,inner,PR,0.00,1
+Seychelles,inner,EX,0.00,1
+Seychelles,inner,RE,0.00,1
+Seychelles,inner,AM,35.46,1
+Seychelles,inner,EQ,44.25,1
+Seychelles,inner,MR,64.22,1
+Seychelles,inner,PN,0.00,1
+Sierra Leone,outer,Energy use,0.00,1
+Sierra Leone,outer,Material use,0.00,1
+Sierra Leone,outer,Water use,0.00,1
+Sierra Leone,outer,Biodiversity,#N/A,1
+Sierra Leone,outer,Antibiotic use,0.00,1
+Sierra Leone,outer,Climate change,0.00,1
+Sierra Leone,outer,Air pollution,0.00,1
+Sierra Leone,inner,PC,56.37,1
+Sierra Leone,inner,PC,91.52,2
+Sierra Leone,inner,SC,19.77,1
+Sierra Leone,inner,MC,32.35,1
+Sierra Leone,inner,MC,68.71,2
+Sierra Leone,inner,SA,85.26,1
+Sierra Leone,inner,SA,8.74,2
+Sierra Leone,inner,UN,30.18,1
+Sierra Leone,inner,FP,46.16,1
+Sierra Leone,inner,HS,#N/A,1
+Sierra Leone,inner,CO,97.94,1
+Sierra Leone,inner,HR,75.11,1
+Sierra Leone,inner,PR,#N/A,1
+Sierra Leone,inner,EX,90.96,1
+Sierra Leone,inner,RE,63.53,1
+Sierra Leone,inner,AM,73.01,1
+Sierra Leone,inner,EQ,76.31,1
+Sierra Leone,inner,MR,53.87,1
+Sierra Leone,inner,PN,0.00,1
+Singapore,outer,Energy use,47.37,1
+Singapore,outer,Material use,15.78,1
+Singapore,outer,Water use,0.00,1
+Singapore,outer,Biodiversity,#N/A,1
+Singapore,outer,Antibiotic use,9.05,1
+Singapore,outer,Climate change,150.00,1
+Singapore,outer,Air pollution,150.00,1
+Singapore,inner,PC,45.58,1
+Singapore,inner,PC,28.17,2
+Singapore,inner,SC,0.00,1
+Singapore,inner,MC,0.00,1
+Singapore,inner,MC,0.00,2
+Singapore,inner,SA,0.00,1
+Singapore,inner,SA,27.41,2
+Singapore,inner,UN,#N/A,1
+Singapore,inner,FP,#N/A,1
+Singapore,inner,HS,#N/A,1
+Singapore,inner,CO,0.00,1
+Singapore,inner,HR,0.00,1
+Singapore,inner,PR,0.00,1
+Singapore,inner,EX,0.00,1
+Singapore,inner,RE,28.24,1
+Singapore,inner,AM,0.00,1
+Singapore,inner,EQ,26.48,1
+Singapore,inner,MR,26.37,1
+Singapore,inner,PN,0.00,1
+Sint Maarten (Dutch part),outer,Energy use,0.00,1
+Sint Maarten (Dutch part),outer,Material use,0.00,1
+Sint Maarten (Dutch part),outer,Water use,0.00,1
+Sint Maarten (Dutch part),outer,Biodiversity,#N/A,1
+Sint Maarten (Dutch part),outer,Antibiotic use,#N/A,1
+Sint Maarten (Dutch part),outer,Climate change,150.00,1
+Sint Maarten (Dutch part),outer,Air pollution,50.70,1
+Sint Maarten (Dutch part),inner,PC,#N/A,1
+Sint Maarten (Dutch part),inner,PC,#N/A,2
+Sint Maarten (Dutch part),inner,SC,#N/A,1
+Sint Maarten (Dutch part),inner,MC,#N/A,1
+Sint Maarten (Dutch part),inner,MC,#N/A,2
+Sint Maarten (Dutch part),inner,SA,#N/A,1
+Sint Maarten (Dutch part),inner,SA,#N/A,2
+Sint Maarten (Dutch part),inner,UN,#N/A,1
+Sint Maarten (Dutch part),inner,FP,#N/A,1
+Sint Maarten (Dutch part),inner,HS,#N/A,1
+Sint Maarten (Dutch part),inner,CO,#N/A,1
+Sint Maarten (Dutch part),inner,HR,#N/A,1
+Sint Maarten (Dutch part),inner,PR,#N/A,1
+Sint Maarten (Dutch part),inner,EX,#N/A,1
+Sint Maarten (Dutch part),inner,RE,#N/A,1
+Sint Maarten (Dutch part),inner,AM,#N/A,1
+Sint Maarten (Dutch part),inner,EQ,37.28,1
+Sint Maarten (Dutch part),inner,MR,#N/A,1
+Sint Maarten (Dutch part),inner,PN,#N/A,1
+Slovak Republic,outer,Energy use,27.63,1
+Slovak Republic,outer,Material use,2.16,1
+Slovak Republic,outer,Water use,0.00,1
+Slovak Republic,outer,Biodiversity,#N/A,1
+Slovak Republic,outer,Antibiotic use,27.11,1
+Slovak Republic,outer,Climate change,150.00,1
+Slovak Republic,outer,Air pollution,63.13,1
+Slovak Republic,inner,PC,20.24,1
+Slovak Republic,inner,PC,33.76,2
+Slovak Republic,inner,SC,1.24,1
+Slovak Republic,inner,MC,0.00,1
+Slovak Republic,inner,MC,0.00,2
+Slovak Republic,inner,SA,0.00,1
+Slovak Republic,inner,SA,34.61,2
+Slovak Republic,inner,UN,#N/A,1
+Slovak Republic,inner,FP,7.46,1
+Slovak Republic,inner,HS,#N/A,1
+Slovak Republic,inner,CO,3.00,1
+Slovak Republic,inner,HR,0.00,1
+Slovak Republic,inner,PR,0.00,1
+Slovak Republic,inner,EX,0.00,1
+Slovak Republic,inner,RE,0.00,1
+Slovak Republic,inner,AM,0.19,1
+Slovak Republic,inner,EQ,35.19,1
+Slovak Republic,inner,MR,59.49,1
+Slovak Republic,inner,PN,0.00,1
+Slovenia,outer,Energy use,43.45,1
+Slovenia,outer,Material use,29.89,1
+Slovenia,outer,Water use,0.00,1
+Slovenia,outer,Biodiversity,#N/A,1
+Slovenia,outer,Antibiotic use,10.87,1
+Slovenia,outer,Climate change,150.00,1
+Slovenia,outer,Air pollution,94.99,1
+Slovenia,inner,PC,20.24,1
+Slovenia,inner,PC,59.40,2
+Slovenia,inner,SC,0.00,1
+Slovenia,inner,MC,0.00,1
+Slovenia,inner,MC,0.00,2
+Slovenia,inner,SA,21.29,1
+Slovenia,inner,SA,23.62,2
+Slovenia,inner,UN,#N/A,1
+Slovenia,inner,FP,10.39,1
+Slovenia,inner,HS,#N/A,1
+Slovenia,inner,CO,0.00,1
+Slovenia,inner,HR,0.00,1
+Slovenia,inner,PR,0.00,1
+Slovenia,inner,EX,0.00,1
+Slovenia,inner,RE,0.00,1
+Slovenia,inner,AM,0.00,1
+Slovenia,inner,EQ,29.62,1
+Slovenia,inner,MR,67.18,1
+Slovenia,inner,PN,1.35,1
+Solomon Islands,outer,Energy use,48.77,1
+Solomon Islands,outer,Material use,23.84,1
+Solomon Islands,outer,Water use,0.00,1
+Solomon Islands,outer,Biodiversity,#N/A,1
+Solomon Islands,outer,Antibiotic use,0.00,1
+Solomon Islands,outer,Climate change,150.00,1
+Solomon Islands,outer,Air pollution,14.24,1
+Solomon Islands,inner,PC,47.23,1
+Solomon Islands,inner,PC,95.78,2
+Solomon Islands,inner,SC,11.48,1
+Solomon Islands,inner,MC,4.53,1
+Solomon Islands,inner,MC,0.00,2
+Solomon Islands,inner,SA,20.10,1
+Solomon Islands,inner,SA,49.28,2
+Solomon Islands,inner,UN,50.75,1
+Solomon Islands,inner,FP,#N/A,1
+Solomon Islands,inner,HS,#N/A,1
+Solomon Islands,inner,CO,99.24,1
+Solomon Islands,inner,HR,52.67,1
+Solomon Islands,inner,PR,#N/A,1
+Solomon Islands,inner,EX,94.25,1
+Solomon Islands,inner,RE,49.41,1
+Solomon Islands,inner,AM,74.08,1
+Solomon Islands,inner,EQ,43.55,1
+Solomon Islands,inner,MR,21.34,1
+Solomon Islands,inner,PN,8.11,1
+Somalia,outer,Energy use,0.00,1
+Somalia,outer,Material use,0.00,1
+Somalia,outer,Water use,0.00,1
+Somalia,outer,Biodiversity,#N/A,1
+Somalia,outer,Antibiotic use,0.00,1
+Somalia,outer,Climate change,0.00,1
+Somalia,outer,Air pollution,0.00,1
+Somalia,inner,PC,56.37,1
+Somalia,inner,PC,88.97,2
+Somalia,inner,SC,50.29,1
+Somalia,inner,MC,47.78,1
+Somalia,inner,MC,84.35,2
+Somalia,inner,SA,69.93,1
+Somalia,inner,SA,35.37,2
+Somalia,inner,UN,100.00,1
+Somalia,inner,FP,0.37,1
+Somalia,inner,HS,#N/A,1
+Somalia,inner,CO,98.63,1
+Somalia,inner,HR,#N/A,1
+Somalia,inner,PR,69.96,1
+Somalia,inner,EX,99.63,1
+Somalia,inner,RE,100.00,1
+Somalia,inner,AM,97.31,1
+Somalia,inner,EQ,91.29,1
+Somalia,inner,MR,39.97,1
+Somalia,inner,PN,64.86,1
+South Africa,outer,Energy use,0.00,1
+South Africa,outer,Material use,0.00,1
+South Africa,outer,Water use,0.00,1
+South Africa,outer,Biodiversity,#N/A,1
+South Africa,outer,Antibiotic use,6.33,1
+South Africa,outer,Climate change,150.00,1
+South Africa,outer,Air pollution,31.38,1
+South Africa,inner,PC,38.08,1
+South Africa,inner,PC,59.79,2
+South Africa,inner,SC,17.76,1
+South Africa,inner,MC,4.93,1
+South Africa,inner,MC,0.00,2
+South Africa,inner,SA,20.52,1
+South Africa,inner,SA,10.42,2
+South Africa,inner,UN,0.00,1
+South Africa,inner,FP,#N/A,1
+South Africa,inner,HS,35.63,1
+South Africa,inner,CO,91.06,1
+South Africa,inner,HR,0.00,1
+South Africa,inner,PR,#N/A,1
+South Africa,inner,EX,2.77,1
+South Africa,inner,RE,67.06,1
+South Africa,inner,AM,49.64,1
+South Africa,inner,EQ,62.72,1
+South Africa,inner,MR,63.63,1
+South Africa,inner,PN,14.86,1
+South Sudan,outer,Energy use,0.00,1
+South Sudan,outer,Material use,0.00,1
+South Sudan,outer,Water use,0.00,1
+South Sudan,outer,Biodiversity,#N/A,1
+South Sudan,outer,Antibiotic use,#N/A,1
+South Sudan,outer,Climate change,0.00,1
+South Sudan,outer,Air pollution,#N/A,1
+South Sudan,inner,PC,56.37,1
+South Sudan,inner,PC,85.29,2
+South Sudan,inner,SC,41.73,1
+South Sudan,inner,MC,100.00,1
+South Sudan,inner,MC,100.00,2
+South Sudan,inner,SA,78.65,1
+South Sudan,inner,SA,48.66,2
+South Sudan,inner,UN,#N/A,1
+South Sudan,inner,FP,32.96,1
+South Sudan,inner,HS,#N/A,1
+South Sudan,inner,CO,97.52,1
+South Sudan,inner,HR,88.57,1
+South Sudan,inner,PR,#N/A,1
+South Sudan,inner,EX,100.00,1
+South Sudan,inner,RE,87.06,1
+South Sudan,inner,AM,76.10,1
+South Sudan,inner,EQ,93.38,1
+South Sudan,inner,MR,34.35,1
+South Sudan,inner,PN,22.97,1
+Spain,outer,Energy use,34.19,1
+Spain,outer,Material use,18.55,1
+Spain,outer,Water use,2.41,1
+Spain,outer,Biodiversity,#N/A,1
+Spain,outer,Antibiotic use,32.86,1
+Spain,outer,Climate change,150.00,1
+Spain,outer,Air pollution,79.97,1
+Spain,inner,PC,15.44,1
+Spain,inner,PC,40.75,2
+Spain,inner,SC,0.01,1
+Spain,inner,MC,0.00,1
+Spain,inner,MC,0.00,2
+Spain,inner,SA,0.00,1
+Spain,inner,SA,17.40,2
+Spain,inner,UN,#N/A,1
+Spain,inner,FP,22.15,1
+Spain,inner,HS,#N/A,1
+Spain,inner,CO,0.00,1
+Spain,inner,HR,0.00,1
+Spain,inner,PR,0.00,1
+Spain,inner,EX,0.00,1
+Spain,inner,RE,1.18,1
+Spain,inner,AM,0.00,1
+Spain,inner,EQ,28.22,1
+Spain,inner,MR,13.65,1
+Spain,inner,PN,0.00,1
+Sri Lanka,outer,Energy use,0.00,1
+Sri Lanka,outer,Material use,0.00,1
+Sri Lanka,outer,Water use,0.00,1
+Sri Lanka,outer,Biodiversity,#N/A,1
+Sri Lanka,outer,Antibiotic use,0.00,1
+Sri Lanka,outer,Climate change,0.00,1
+Sri Lanka,outer,Air pollution,0.31,1
+Sri Lanka,inner,PC,23.69,1
+Sri Lanka,inner,PC,76.63,2
+Sri Lanka,inner,SC,0.00,1
+Sri Lanka,inner,MC,0.00,1
+Sri Lanka,inner,MC,0.00,2
+Sri Lanka,inner,SA,0.00,1
+Sri Lanka,inner,SA,40.27,2
+Sri Lanka,inner,UN,0.96,1
+Sri Lanka,inner,FP,15.31,1
+Sri Lanka,inner,HS,#N/A,1
+Sri Lanka,inner,CO,94.99,1
+Sri Lanka,inner,HR,25.15,1
+Sri Lanka,inner,PR,0.00,1
+Sri Lanka,inner,EX,57.28,1
+Sri Lanka,inner,RE,23.53,1
+Sri Lanka,inner,AM,22.28,1
+Sri Lanka,inner,EQ,34.49,1
+Sri Lanka,inner,MR,38.49,1
+Sri Lanka,inner,PN,0.00,1
+St. Kitts and Nevis,outer,Energy use,0.00,1
+St. Kitts and Nevis,outer,Material use,0.00,1
+St. Kitts and Nevis,outer,Water use,0.00,1
+St. Kitts and Nevis,outer,Biodiversity,#N/A,1
+St. Kitts and Nevis,outer,Antibiotic use,2.43,1
+St. Kitts and Nevis,outer,Climate change,150.00,1
+St. Kitts and Nevis,outer,Air pollution,35.07,1
+St. Kitts and Nevis,inner,PC,13.34,1
+St. Kitts and Nevis,inner,PC,61.78,2
+St. Kitts and Nevis,inner,SC,32.74,1
+St. Kitts and Nevis,inner,MC,#N/A,1
+St. Kitts and Nevis,inner,MC,0.00,2
+St. Kitts and Nevis,inner,SA,11.38,1
+St. Kitts and Nevis,inner,SA,60.25,2
+St. Kitts and Nevis,inner,UN,#N/A,1
+St. Kitts and Nevis,inner,FP,#N/A,1
+St. Kitts and Nevis,inner,HS,#N/A,1
+St. Kitts and Nevis,inner,CO,57.29,1
+St. Kitts and Nevis,inner,HR,0.00,1
+St. Kitts and Nevis,inner,PR,0.00,1
+St. Kitts and Nevis,inner,EX,0.00,1
+St. Kitts and Nevis,inner,RE,27.06,1
+St. Kitts and Nevis,inner,AM,38.09,1
+St. Kitts and Nevis,inner,EQ,42.86,1
+St. Kitts and Nevis,inner,MR,66.59,1
+St. Kitts and Nevis,inner,PN,0.00,1
+St. Lucia,outer,Energy use,0.00,1
+St. Lucia,outer,Material use,0.00,1
+St. Lucia,outer,Water use,0.00,1
+St. Lucia,outer,Biodiversity,#N/A,1
+St. Lucia,outer,Antibiotic use,0.00,1
+St. Lucia,outer,Climate change,150.00,1
+St. Lucia,outer,Air pollution,24.80,1
+St. Lucia,inner,PC,22.49,1
+St. Lucia,inner,PC,63.44,2
+St. Lucia,inner,SC,27.45,1
+St. Lucia,inner,MC,0.28,1
+St. Lucia,inner,MC,0.00,2
+St. Lucia,inner,SA,22.93,1
+St. Lucia,inner,SA,97.62,2
+St. Lucia,inner,UN,#N/A,1
+St. Lucia,inner,FP,17.37,1
+St. Lucia,inner,HS,#N/A,1
+St. Lucia,inner,CO,57.24,1
+St. Lucia,inner,HR,0.00,1
+St. Lucia,inner,PR,23.18,1
+St. Lucia,inner,EX,36.97,1
+St. Lucia,inner,RE,20.00,1
+St. Lucia,inner,AM,35.49,1
+St. Lucia,inner,EQ,41.11,1
+St. Lucia,inner,MR,50.91,1
+St. Lucia,inner,PN,21.62,1
+St. Martin (French part),outer,Energy use,0.00,1
+St. Martin (French part),outer,Material use,0.00,1
+St. Martin (French part),outer,Water use,0.00,1
+St. Martin (French part),outer,Biodiversity,#N/A,1
+St. Martin (French part),outer,Antibiotic use,#N/A,1
+St. Martin (French part),outer,Climate change,#N/A,1
+St. Martin (French part),outer,Air pollution,#N/A,1
+St. Martin (French part),inner,PC,#N/A,1
+St. Martin (French part),inner,PC,#N/A,2
+St. Martin (French part),inner,SC,#N/A,1
+St. Martin (French part),inner,MC,#N/A,1
+St. Martin (French part),inner,MC,#N/A,2
+St. Martin (French part),inner,SA,#N/A,1
+St. Martin (French part),inner,SA,#N/A,2
+St. Martin (French part),inner,UN,#N/A,1
+St. Martin (French part),inner,FP,#N/A,1
+St. Martin (French part),inner,HS,#N/A,1
+St. Martin (French part),inner,CO,#N/A,1
+St. Martin (French part),inner,HR,#N/A,1
+St. Martin (French part),inner,PR,#N/A,1
+St. Martin (French part),inner,EX,#N/A,1
+St. Martin (French part),inner,RE,#N/A,1
+St. Martin (French part),inner,AM,#N/A,1
+St. Martin (French part),inner,EQ,30.66,1
+St. Martin (French part),inner,MR,#N/A,1
+St. Martin (French part),inner,PN,#N/A,1
+St. Vincent and the Grenadines,outer,Energy use,0.00,1
+St. Vincent and the Grenadines,outer,Material use,0.00,1
+St. Vincent and the Grenadines,outer,Water use,0.00,1
+St. Vincent and the Grenadines,outer,Biodiversity,#N/A,1
+St. Vincent and the Grenadines,outer,Antibiotic use,0.00,1
+St. Vincent and the Grenadines,outer,Climate change,85.93,1
+St. Vincent and the Grenadines,outer,Air pollution,16.34,1
+St. Vincent and the Grenadines,inner,PC,22.49,1
+St. Vincent and the Grenadines,inner,PC,65.78,2
+St. Vincent and the Grenadines,inner,SC,21.80,1
+St. Vincent and the Grenadines,inner,MC,0.00,1
+St. Vincent and the Grenadines,inner,MC,0.00,2
+St. Vincent and the Grenadines,inner,SA,13.07,1
+St. Vincent and the Grenadines,inner,SA,43.07,2
+St. Vincent and the Grenadines,inner,UN,#N/A,1
+St. Vincent and the Grenadines,inner,FP,#N/A,1
+St. Vincent and the Grenadines,inner,HS,#N/A,1
+St. Vincent and the Grenadines,inner,CO,61.22,1
+St. Vincent and the Grenadines,inner,HR,0.00,1
+St. Vincent and the Grenadines,inner,PR,0.00,1
+St. Vincent and the Grenadines,inner,EX,41.67,1
+St. Vincent and the Grenadines,inner,RE,0.00,1
+St. Vincent and the Grenadines,inner,AM,43.85,1
+St. Vincent and the Grenadines,inner,EQ,43.55,1
+St. Vincent and the Grenadines,inner,MR,49.43,1
+St. Vincent and the Grenadines,inner,PN,0.00,1
+Sudan,outer,Energy use,0.00,1
+Sudan,outer,Material use,0.00,1
+Sudan,outer,Water use,0.00,1
+Sudan,outer,Biodiversity,#N/A,1
+Sudan,outer,Antibiotic use,0.00,1
+Sudan,outer,Climate change,14.19,1
+Sudan,outer,Air pollution,0.00,1
+Sudan,inner,PC,13.49,1
+Sudan,inner,PC,92.12,2
+Sudan,inner,SC,19.87,1
+Sudan,inner,MC,17.38,1
+Sudan,inner,MC,50.11,2
+Sudan,inner,SA,29.49,1
+Sudan,inner,SA,1.49,2
+Sudan,inner,UN,#N/A,1
+Sudan,inner,FP,#N/A,1
+Sudan,inner,HS,#N/A,1
+Sudan,inner,CO,77.96,1
+Sudan,inner,HR,74.25,1
+Sudan,inner,PR,78.97,1
+Sudan,inner,EX,93.80,1
+Sudan,inner,RE,81.18,1
+Sudan,inner,AM,50.73,1
+Sudan,inner,EQ,63.76,1
+Sudan,inner,MR,53.87,1
+Sudan,inner,PN,52.70,1
+Suriname,outer,Energy use,0.00,1
+Suriname,outer,Material use,0.00,1
+Suriname,outer,Water use,0.00,1
+Suriname,outer,Biodiversity,#N/A,1
+Suriname,outer,Antibiotic use,0.00,1
+Suriname,outer,Climate change,150.00,1
+Suriname,outer,Air pollution,24.84,1
+Suriname,inner,PC,29.39,1
+Suriname,inner,PC,64.29,2
+Suriname,inner,SC,24.18,1
+Suriname,inner,MC,2.30,1
+Suriname,inner,MC,0.00,2
+Suriname,inner,SA,61.06,1
+Suriname,inner,SA,0.00,2
+Suriname,inner,UN,24.01,1
+Suriname,inner,FP,13.71,1
+Suriname,inner,HS,#N/A,1
+Suriname,inner,CO,63.78,1
+Suriname,inner,HR,32.59,1
+Suriname,inner,PR,0.00,1
+Suriname,inner,EX,25.02,1
+Suriname,inner,RE,0.00,1
+Suriname,inner,AM,52.36,1
+Suriname,inner,EQ,45.99,1
+Suriname,inner,MR,60.08,1
+Suriname,inner,PN,24.32,1
+Sweden,outer,Energy use,43.55,1
+Sweden,outer,Material use,29.24,1
+Sweden,outer,Water use,0.00,1
+Sweden,outer,Biodiversity,#N/A,1
+Sweden,outer,Antibiotic use,0.00,1
+Sweden,outer,Climate change,150.00,1
+Sweden,outer,Air pollution,150.00,1
+Sweden,inner,PC,20.24,1
+Sweden,inner,PC,66.76,2
+Sweden,inner,SC,0.00,1
+Sweden,inner,MC,0.00,1
+Sweden,inner,MC,0.00,2
+Sweden,inner,SA,0.00,1
+Sweden,inner,SA,32.62,2
+Sweden,inner,UN,0.00,1
+Sweden,inner,FP,#N/A,1
+Sweden,inner,HS,#N/A,1
+Sweden,inner,CO,0.00,1
+Sweden,inner,HR,0.00,1
+Sweden,inner,PR,19.31,1
+Sweden,inner,EX,0.00,1
+Sweden,inner,RE,0.00,1
+Sweden,inner,AM,0.00,1
+Sweden,inner,EQ,27.18,1
+Sweden,inner,MR,22.52,1
+Sweden,inner,PN,0.00,1
+Switzerland,outer,Energy use,74.44,1
+Switzerland,outer,Material use,49.86,1
+Switzerland,outer,Water use,22.30,1
+Switzerland,outer,Biodiversity,#N/A,1
+Switzerland,outer,Antibiotic use,1.88,1
+Switzerland,outer,Climate change,150.00,1
+Switzerland,outer,Air pollution,150.00,1
+Switzerland,inner,PC,20.24,1
+Switzerland,inner,PC,29.40,2
+Switzerland,inner,SC,0.00,1
+Switzerland,inner,MC,0.00,1
+Switzerland,inner,MC,0.00,2
+Switzerland,inner,SA,0.00,1
+Switzerland,inner,SA,41.36,2
+Switzerland,inner,UN,#N/A,1
+Switzerland,inner,FP,22.23,1
+Switzerland,inner,HS,#N/A,1
+Switzerland,inner,CO,0.00,1
+Switzerland,inner,HR,0.00,1
+Switzerland,inner,PR,0.00,1
+Switzerland,inner,EX,0.00,1
+Switzerland,inner,RE,0.00,1
+Switzerland,inner,AM,0.00,1
+Switzerland,inner,EQ,26.13,1
+Switzerland,inner,MR,0.00,1
+Switzerland,inner,PN,0.00,1
+Syrian Arab Republic,outer,Energy use,0.00,1
+Syrian Arab Republic,outer,Material use,0.00,1
+Syrian Arab Republic,outer,Water use,0.00,1
+Syrian Arab Republic,outer,Biodiversity,#N/A,1
+Syrian Arab Republic,outer,Antibiotic use,17.83,1
+Syrian Arab Republic,outer,Climate change,68.75,1
+Syrian Arab Republic,outer,Air pollution,0.00,1
+Syrian Arab Republic,inner,PC,36.88,1
+Syrian Arab Republic,inner,PC,65.39,2
+Syrian Arab Republic,inner,SC,9.61,1
+Syrian Arab Republic,inner,MC,0.00,1
+Syrian Arab Republic,inner,MC,0.00,2
+Syrian Arab Republic,inner,SA,6.61,1
+Syrian Arab Republic,inner,SA,0.00,2
+Syrian Arab Republic,inner,UN,#N/A,1
+Syrian Arab Republic,inner,FP,#N/A,1
+Syrian Arab Republic,inner,HS,#N/A,1
+Syrian Arab Republic,inner,CO,71.93,1
+Syrian Arab Republic,inner,HR,27.92,1
+Syrian Arab Republic,inner,PR,45.92,1
+Syrian Arab Republic,inner,EX,69.01,1
+Syrian Arab Republic,inner,RE,62.35,1
+Syrian Arab Republic,inner,AM,22.91,1
+Syrian Arab Republic,inner,EQ,42.51,1
+Syrian Arab Republic,inner,MR,54.76,1
+Syrian Arab Republic,inner,PN,32.43,1
+"Taiwan, China",outer,Energy use,35.26,1
+"Taiwan, China",outer,Material use,23.84,1
+"Taiwan, China",outer,Water use,0.00,1
+"Taiwan, China",outer,Biodiversity,#N/A,1
+"Taiwan, China",outer,Antibiotic use,16.99,1
+"Taiwan, China",outer,Climate change,#N/A,1
+"Taiwan, China",outer,Air pollution,#N/A,1
+"Taiwan, China",inner,PC,38.08,1
+"Taiwan, China",inner,PC,20.19,2
+"Taiwan, China",inner,SC,0.00,1
+"Taiwan, China",inner,MC,#N/A,1
+"Taiwan, China",inner,MC,#N/A,2
+"Taiwan, China",inner,SA,0.00,1
+"Taiwan, China",inner,SA,39.31,2
+"Taiwan, China",inner,UN,#N/A,1
+"Taiwan, China",inner,FP,#N/A,1
+"Taiwan, China",inner,HS,#N/A,1
+"Taiwan, China",inner,CO,90.17,1
+"Taiwan, China",inner,HR,#N/A,1
+"Taiwan, China",inner,PR,#N/A,1
+"Taiwan, China",inner,EX,#N/A,1
+"Taiwan, China",inner,RE,#N/A,1
+"Taiwan, China",inner,AM,0.00,1
+"Taiwan, China",inner,EQ,33.10,1
+"Taiwan, China",inner,MR,#N/A,1
+"Taiwan, China",inner,PN,#N/A,1
+Tajikistan,outer,Energy use,0.00,1
+Tajikistan,outer,Material use,0.00,1
+Tajikistan,outer,Water use,0.00,1
+Tajikistan,outer,Biodiversity,#N/A,1
+Tajikistan,outer,Antibiotic use,15.66,1
+Tajikistan,outer,Climate change,8.33,1
+Tajikistan,outer,Air pollution,0.00,1
+Tajikistan,inner,PC,35.83,1
+Tajikistan,inner,PC,93.20,2
+Tajikistan,inner,SC,13.18,1
+Tajikistan,inner,MC,0.00,1
+Tajikistan,inner,MC,4.08,2
+Tajikistan,inner,SA,0.00,1
+Tajikistan,inner,SA,0.00,2
+Tajikistan,inner,UN,31.41,1
+Tajikistan,inner,FP,27.58,1
+Tajikistan,inner,HS,#N/A,1
+Tajikistan,inner,CO,32.77,1
+Tajikistan,inner,HR,0.00,1
+Tajikistan,inner,PR,0.00,1
+Tajikistan,inner,EX,75.73,1
+Tajikistan,inner,RE,47.06,1
+Tajikistan,inner,AM,53.20,1
+Tajikistan,inner,EQ,44.25,1
+Tajikistan,inner,MR,71.61,1
+Tajikistan,inner,PN,0.00,1
+Tanzania,outer,Energy use,0.00,1
+Tanzania,outer,Material use,0.00,1
+Tanzania,outer,Water use,0.00,1
+Tanzania,outer,Biodiversity,#N/A,1
+Tanzania,outer,Antibiotic use,16.97,1
+Tanzania,outer,Climate change,0.00,1
+Tanzania,outer,Air pollution,0.00,1
+Tanzania,inner,PC,49.93,1
+Tanzania,inner,PC,94.32,2
+Tanzania,inner,SC,25.73,1
+Tanzania,inner,MC,14.60,1
+Tanzania,inner,MC,27.75,2
+Tanzania,inner,SA,37.44,1
+Tanzania,inner,SA,7.00,2
+Tanzania,inner,UN,27.30,1
+Tanzania,inner,FP,12.10,1
+Tanzania,inner,HS,#N/A,1
+Tanzania,inner,CO,96.47,1
+Tanzania,inner,HR,86.30,1
+Tanzania,inner,PR,80.26,1
+Tanzania,inner,EX,95.97,1
+Tanzania,inner,RE,76.47,1
+Tanzania,inner,AM,70.37,1
+Tanzania,inner,EQ,57.84,1
+Tanzania,inner,MR,31.40,1
+Tanzania,inner,PN,0.00,1
+Thailand,outer,Energy use,0.00,1
+Thailand,outer,Material use,0.00,1
+Thailand,outer,Water use,0.00,1
+Thailand,outer,Biodiversity,#N/A,1
+Thailand,outer,Antibiotic use,0.00,1
+Thailand,outer,Climate change,97.73,1
+Thailand,outer,Air pollution,50.88,1
+Thailand,inner,PC,29.54,1
+Thailand,inner,PC,53.84,2
+Thailand,inner,SC,2.32,1
+Thailand,inner,MC,0.00,1
+Thailand,inner,MC,0.00,2
+Thailand,inner,SA,0.00,1
+Thailand,inner,SA,84.80,2
+Thailand,inner,UN,0.00,1
+Thailand,inner,FP,5.77,1
+Thailand,inner,HS,#N/A,1
+Thailand,inner,CO,93.00,1
+Thailand,inner,HR,8.03,1
+Thailand,inner,PR,6.87,1
+Thailand,inner,EX,16.73,1
+Thailand,inner,RE,70.59,1
+Thailand,inner,AM,18.84,1
+Thailand,inner,EQ,42.16,1
+Thailand,inner,MR,19.57,1
+Thailand,inner,PN,0.00,1
+Timor-Leste,outer,Energy use,35.26,1
+Timor-Leste,outer,Material use,23.84,1
+Timor-Leste,outer,Water use,0.00,1
+Timor-Leste,outer,Biodiversity,#N/A,1
+Timor-Leste,outer,Antibiotic use,0.00,1
+Timor-Leste,outer,Climate change,#N/A,1
+Timor-Leste,outer,Air pollution,19.16,1
+Timor-Leste,inner,PC,47.23,1
+Timor-Leste,inner,PC,85.21,2
+Timor-Leste,inner,SC,32.35,1
+Timor-Leste,inner,MC,11.62,1
+Timor-Leste,inner,MC,35.49,2
+Timor-Leste,inner,SA,3.57,1
+Timor-Leste,inner,SA,43.67,2
+Timor-Leste,inner,UN,39.92,1
+Timor-Leste,inner,FP,#N/A,1
+Timor-Leste,inner,HS,#N/A,1
+Timor-Leste,inner,CO,100.00,1
+Timor-Leste,inner,HR,46.69,1
+Timor-Leste,inner,PR,#N/A,1
+Timor-Leste,inner,EX,77.45,1
+Timor-Leste,inner,RE,41.18,1
+Timor-Leste,inner,AM,64.87,1
+Timor-Leste,inner,EQ,51.57,1
+Timor-Leste,inner,MR,37.61,1
+Timor-Leste,inner,PN,9.46,1
+Togo,outer,Energy use,0.00,1
+Togo,outer,Material use,0.00,1
+Togo,outer,Water use,0.00,1
+Togo,outer,Biodiversity,#N/A,1
+Togo,outer,Antibiotic use,0.00,1
+Togo,outer,Climate change,0.00,1
+Togo,outer,Air pollution,0.00,1
+Togo,inner,PC,56.37,1
+Togo,inner,PC,89.86,2
+Togo,inner,SC,26.18,1
+Togo,inner,MC,28.55,1
+Togo,inner,MC,41.87,2
+Togo,inner,SA,55.04,1
+Togo,inner,SA,23.90,2
+Togo,inner,UN,48.56,1
+Togo,inner,FP,38.50,1
+Togo,inner,HS,#N/A,1
+Togo,inner,CO,97.62,1
+Togo,inner,HR,92.33,1
+Togo,inner,PR,82.40,1
+Togo,inner,EX,91.79,1
+Togo,inner,RE,74.12,1
+Togo,inner,AM,68.62,1
+Togo,inner,EQ,70.73,1
+Togo,inner,MR,39.68,1
+Togo,inner,PN,6.76,1
+Tonga,outer,Energy use,48.77,1
+Tonga,outer,Material use,23.84,1
+Tonga,outer,Water use,0.00,1
+Tonga,outer,Biodiversity,#N/A,1
+Tonga,outer,Antibiotic use,0.00,1
+Tonga,outer,Climate change,150.00,1
+Tonga,outer,Air pollution,45.45,1
+Tonga,inner,PC,47.23,1
+Tonga,inner,PC,89.68,2
+Tonga,inner,SC,15.51,1
+Tonga,inner,MC,4.83,1
+Tonga,inner,MC,0.00,2
+Tonga,inner,SA,3.47,1
+Tonga,inner,SA,52.13,2
+Tonga,inner,UN,34.43,1
+Tonga,inner,FP,#N/A,1
+Tonga,inner,HS,#N/A,1
+Tonga,inner,CO,98.08,1
+Tonga,inner,HR,0.00,1
+Tonga,inner,PR,#N/A,1
+Tonga,inner,EX,#N/A,1
+Tonga,inner,RE,3.53,1
+Tonga,inner,AM,47.47,1
+Tonga,inner,EQ,45.64,1
+Tonga,inner,MR,61.26,1
+Tonga,inner,PN,0.00,1
+Trinidad and Tobago,outer,Energy use,0.00,1
+Trinidad and Tobago,outer,Material use,0.00,1
+Trinidad and Tobago,outer,Water use,0.00,1
+Trinidad and Tobago,outer,Biodiversity,#N/A,1
+Trinidad and Tobago,outer,Antibiotic use,20.48,1
+Trinidad and Tobago,outer,Climate change,150.00,1
+Trinidad and Tobago,outer,Air pollution,32.91,1
+Trinidad and Tobago,inner,PC,13.34,1
+Trinidad and Tobago,inner,PC,64.61,2
+Trinidad and Tobago,inner,SC,18.21,1
+Trinidad and Tobago,inner,MC,0.00,1
+Trinidad and Tobago,inner,MC,0.00,2
+Trinidad and Tobago,inner,SA,26.30,1
+Trinidad and Tobago,inner,SA,58.94,2
+Trinidad and Tobago,inner,UN,#N/A,1
+Trinidad and Tobago,inner,FP,#N/A,1
+Trinidad and Tobago,inner,HS,#N/A,1
+Trinidad and Tobago,inner,CO,57.96,1
+Trinidad and Tobago,inner,HR,0.00,1
+Trinidad and Tobago,inner,PR,38.20,1
+Trinidad and Tobago,inner,EX,0.00,1
+Trinidad and Tobago,inner,RE,27.06,1
+Trinidad and Tobago,inner,AM,35.29,1
+Trinidad and Tobago,inner,EQ,45.64,1
+Trinidad and Tobago,inner,MR,58.60,1
+Trinidad and Tobago,inner,PN,0.00,1
+Tunisia,outer,Energy use,0.00,1
+Tunisia,outer,Material use,0.00,1
+Tunisia,outer,Water use,0.00,1
+Tunisia,outer,Biodiversity,#N/A,1
+Tunisia,outer,Antibiotic use,33.69,1
+Tunisia,outer,Climate change,73.24,1
+Tunisia,outer,Air pollution,0.00,1
+Tunisia,inner,PC,30.28,1
+Tunisia,inner,PC,78.52,2
+Tunisia,inner,SC,4.12,1
+Tunisia,inner,MC,0.00,1
+Tunisia,inner,MC,0.00,2
+Tunisia,inner,SA,8.80,1
+Tunisia,inner,SA,43.66,2
+Tunisia,inner,UN,16.87,1
+Tunisia,inner,FP,47.12,1
+Tunisia,inner,HS,#N/A,1
+Tunisia,inner,CO,67.04,1
+Tunisia,inner,HR,23.20,1
+Tunisia,inner,PR,3.43,1
+Tunisia,inner,EX,36.82,1
+Tunisia,inner,RE,27.06,1
+Tunisia,inner,AM,16.57,1
+Tunisia,inner,EQ,38.33,1
+Tunisia,inner,MR,35.83,1
+Tunisia,inner,PN,0.00,1
+Turkiye,outer,Energy use,0.00,1
+Turkiye,outer,Material use,6.59,1
+Turkiye,outer,Water use,0.00,1
+Turkiye,outer,Biodiversity,#N/A,1
+Turkiye,outer,Antibiotic use,28.96,1
+Turkiye,outer,Climate change,150.00,1
+Turkiye,outer,Air pollution,49.19,1
+Turkiye,inner,PC,32.68,1
+Turkiye,inner,PC,40.68,2
+Turkiye,inner,SC,0.00,1
+Turkiye,inner,MC,0.00,1
+Turkiye,inner,MC,0.00,2
+Turkiye,inner,SA,0.00,1
+Turkiye,inner,SA,37.05,2
+Turkiye,inner,UN,20.30,1
+Turkiye,inner,FP,11.88,1
+Turkiye,inner,HS,#N/A,1
+Turkiye,inner,CO,67.90,1
+Turkiye,inner,HR,0.00,1
+Turkiye,inner,PR,0.00,1
+Turkiye,inner,EX,0.00,1
+Turkiye,inner,RE,17.65,1
+Turkiye,inner,AM,15.03,1
+Turkiye,inner,EQ,32.75,1
+Turkiye,inner,MR,30.21,1
+Turkiye,inner,PN,0.00,1
+Turkmenistan,outer,Energy use,0.00,1
+Turkmenistan,outer,Material use,0.00,1
+Turkmenistan,outer,Water use,0.59,1
+Turkmenistan,outer,Biodiversity,#N/A,1
+Turkmenistan,outer,Antibiotic use,0.00,1
+Turkmenistan,outer,Climate change,150.00,1
+Turkmenistan,outer,Air pollution,#N/A,1
+Turkmenistan,inner,PC,29.24,1
+Turkmenistan,inner,PC,85.25,2
+Turkmenistan,inner,SC,3.56,1
+Turkmenistan,inner,MC,0.00,1
+Turkmenistan,inner,MC,40.12,2
+Turkmenistan,inner,SA,4.39,1
+Turkmenistan,inner,SA,0.88,2
+Turkmenistan,inner,UN,0.00,1
+Turkmenistan,inner,FP,#N/A,1
+Turkmenistan,inner,HS,#N/A,1
+Turkmenistan,inner,CO,32.15,1
+Turkmenistan,inner,HR,0.00,1
+Turkmenistan,inner,PR,0.00,1
+Turkmenistan,inner,EX,37.72,1
+Turkmenistan,inner,RE,0.00,1
+Turkmenistan,inner,AM,42.60,1
+Turkmenistan,inner,EQ,49.48,1
+Turkmenistan,inner,MR,48.55,1
+Turkmenistan,inner,PN,0.00,1
+Turks and Caicos Islands,outer,Energy use,0.00,1
+Turks and Caicos Islands,outer,Material use,0.00,1
+Turks and Caicos Islands,outer,Water use,0.00,1
+Turks and Caicos Islands,outer,Biodiversity,#N/A,1
+Turks and Caicos Islands,outer,Antibiotic use,#N/A,1
+Turks and Caicos Islands,outer,Climate change,150.00,1
+Turks and Caicos Islands,outer,Air pollution,24.35,1
+Turks and Caicos Islands,inner,PC,#N/A,1
+Turks and Caicos Islands,inner,PC,#N/A,2
+Turks and Caicos Islands,inner,SC,#N/A,1
+Turks and Caicos Islands,inner,MC,#N/A,1
+Turks and Caicos Islands,inner,MC,0.00,2
+Turks and Caicos Islands,inner,SA,#N/A,1
+Turks and Caicos Islands,inner,SA,#N/A,2
+Turks and Caicos Islands,inner,UN,#N/A,1
+Turks and Caicos Islands,inner,FP,#N/A,1
+Turks and Caicos Islands,inner,HS,#N/A,1
+Turks and Caicos Islands,inner,CO,#N/A,1
+Turks and Caicos Islands,inner,HR,#N/A,1
+Turks and Caicos Islands,inner,PR,#N/A,1
+Turks and Caicos Islands,inner,EX,#N/A,1
+Turks and Caicos Islands,inner,RE,#N/A,1
+Turks and Caicos Islands,inner,AM,#N/A,1
+Turks and Caicos Islands,inner,EQ,36.93,1
+Turks and Caicos Islands,inner,MR,#N/A,1
+Turks and Caicos Islands,inner,PN,#N/A,1
+Tuvalu,outer,Energy use,48.77,1
+Tuvalu,outer,Material use,23.84,1
+Tuvalu,outer,Water use,0.00,1
+Tuvalu,outer,Biodiversity,#N/A,1
+Tuvalu,outer,Antibiotic use,0.00,1
+Tuvalu,outer,Climate change,150.00,1
+Tuvalu,outer,Air pollution,37.37,1
+Tuvalu,inner,PC,47.23,1
+Tuvalu,inner,PC,96.37,2
+Tuvalu,inner,SC,15.70,1
+Tuvalu,inner,MC,#N/A,1
+Tuvalu,inner,MC,0.00,2
+Tuvalu,inner,SA,11.48,1
+Tuvalu,inner,SA,53.63,2
+Tuvalu,inner,UN,39.51,1
+Tuvalu,inner,FP,#N/A,1
+Tuvalu,inner,HS,#N/A,1
+Tuvalu,inner,CO,98.34,1
+Tuvalu,inner,HR,0.00,1
+Tuvalu,inner,PR,#N/A,1
+Tuvalu,inner,EX,18.75,1
+Tuvalu,inner,RE,0.00,1
+Tuvalu,inner,AM,61.39,1
+Tuvalu,inner,EQ,58.54,1
+Tuvalu,inner,MR,82.26,1
+Tuvalu,inner,PN,0.00,1
+Uganda,outer,Energy use,0.00,1
+Uganda,outer,Material use,0.00,1
+Uganda,outer,Water use,0.00,1
+Uganda,outer,Biodiversity,#N/A,1
+Uganda,outer,Antibiotic use,0.00,1
+Uganda,outer,Climate change,0.00,1
+Uganda,outer,Air pollution,0.00,1
+Uganda,inner,PC,56.37,1
+Uganda,inner,PC,93.18,2
+Uganda,inner,SC,14.65,1
+Uganda,inner,MC,18.58,1
+Uganda,inner,MC,23.34,2
+Uganda,inner,SA,32.00,1
+Uganda,inner,SA,29.97,2
+Uganda,inner,UN,13.03,1
+Uganda,inner,FP,42.98,1
+Uganda,inner,HS,#N/A,1
+Uganda,inner,CO,96.96,1
+Uganda,inner,HR,47.50,1
+Uganda,inner,PR,#N/A,1
+Uganda,inner,EX,93.43,1
+Uganda,inner,RE,56.47,1
+Uganda,inner,AM,70.55,1
+Uganda,inner,EQ,59.23,1
+Uganda,inner,MR,29.33,1
+Uganda,inner,PN,0.00,1
+Ukraine,outer,Energy use,0.00,1
+Ukraine,outer,Material use,0.00,1
+Ukraine,outer,Water use,0.00,1
+Ukraine,outer,Biodiversity,#N/A,1
+Ukraine,outer,Antibiotic use,0.00,1
+Ukraine,outer,Climate change,150.00,1
+Ukraine,outer,Air pollution,0.00,1
+Ukraine,inner,PC,29.39,1
+Ukraine,inner,PC,80.10,2
+Ukraine,inner,SC,0.03,1
+Ukraine,inner,MC,0.00,1
+Ukraine,inner,MC,0.00,2
+Ukraine,inner,SA,0.00,1
+Ukraine,inner,SA,20.20,2
+Ukraine,inner,UN,#N/A,1
+Ukraine,inner,FP,23.42,1
+Ukraine,inner,HS,#N/A,1
+Ukraine,inner,CO,9.70,1
+Ukraine,inner,HR,0.00,1
+Ukraine,inner,PR,0.00,1
+Ukraine,inner,EX,#N/A,1
+Ukraine,inner,RE,22.35,1
+Ukraine,inner,AM,17.97,1
+Ukraine,inner,EQ,41.81,1
+Ukraine,inner,MR,60.67,1
+Ukraine,inner,PN,9.46,1
+United Arab Emirates,outer,Energy use,0.00,1
+United Arab Emirates,outer,Material use,0.00,1
+United Arab Emirates,outer,Water use,0.00,1
+United Arab Emirates,outer,Biodiversity,#N/A,1
+United Arab Emirates,outer,Antibiotic use,40.12,1
+United Arab Emirates,outer,Climate change,150.00,1
+United Arab Emirates,outer,Air pollution,72.00,1
+United Arab Emirates,inner,PC,65.97,1
+United Arab Emirates,inner,PC,63.39,2
+United Arab Emirates,inner,SC,0.28,1
+United Arab Emirates,inner,MC,0.00,1
+United Arab Emirates,inner,MC,0.00,2
+United Arab Emirates,inner,SA,37.82,1
+United Arab Emirates,inner,SA,0.00,2
+United Arab Emirates,inner,UN,#N/A,1
+United Arab Emirates,inner,FP,1.05,1
+United Arab Emirates,inner,HS,#N/A,1
+United Arab Emirates,inner,CO,66.45,1
+United Arab Emirates,inner,HR,0.00,1
+United Arab Emirates,inner,PR,22.32,1
+United Arab Emirates,inner,EX,0.00,1
+United Arab Emirates,inner,RE,0.00,1
+United Arab Emirates,inner,AM,25.20,1
+United Arab Emirates,inner,EQ,29.27,1
+United Arab Emirates,inner,MR,55.64,1
+United Arab Emirates,inner,PN,0.00,1
+United Kingdom,outer,Energy use,51.63,1
+United Kingdom,outer,Material use,31.21,1
+United Kingdom,outer,Water use,0.00,1
+United Kingdom,outer,Biodiversity,#N/A,1
+United Kingdom,outer,Antibiotic use,17.51,1
+United Kingdom,outer,Climate change,150.00,1
+United Kingdom,outer,Air pollution,89.20,1
+United Kingdom,inner,PC,4.50,1
+United Kingdom,inner,PC,45.14,2
+United Kingdom,inner,SC,1.65,1
+United Kingdom,inner,MC,0.00,1
+United Kingdom,inner,MC,0.00,2
+United Kingdom,inner,SA,6.56,1
+United Kingdom,inner,SA,1.53,2
+United Kingdom,inner,UN,#N/A,1
+United Kingdom,inner,FP,6.64,1
+United Kingdom,inner,HS,34.93,1
+United Kingdom,inner,CO,#N/A,1
+United Kingdom,inner,HR,0.00,1
+United Kingdom,inner,PR,6.44,1
+United Kingdom,inner,EX,0.00,1
+United Kingdom,inner,RE,0.00,1
+United Kingdom,inner,AM,0.00,1
+United Kingdom,inner,EQ,32.75,1
+United Kingdom,inner,MR,11.29,1
+United Kingdom,inner,PN,0.00,1
+United States,outer,Energy use,74.62,1
+United States,outer,Material use,51.51,1
+United States,outer,Water use,36.95,1
+United States,outer,Biodiversity,#N/A,1
+United States,outer,Antibiotic use,23.95,1
+United States,outer,Climate change,150.00,1
+United States,outer,Air pollution,150.00,1
+United States,inner,PC,0.00,1
+United States,inner,PC,6.67,2
+United States,inner,SC,1.31,1
+United States,inner,MC,0.00,1
+United States,inner,MC,0.00,2
+United States,inner,SA,12.56,1
+United States,inner,SA,64.82,2
+United States,inner,UN,0.00,1
+United States,inner,FP,12.97,1
+United States,inner,HS,14.09,1
+United States,inner,CO,0.00,1
+United States,inner,HR,0.00,1
+United States,inner,PR,0.00,1
+United States,inner,EX,0.00,1
+United States,inner,RE,5.88,1
+United States,inner,AM,0.00,1
+United States,inner,EQ,41.46,1
+United States,inner,MR,26.66,1
+United States,inner,PN,0.00,1
+Uruguay,outer,Energy use,5.82,1
+Uruguay,outer,Material use,0.00,1
+Uruguay,outer,Water use,0.00,1
+Uruguay,outer,Biodiversity,#N/A,1
+Uruguay,outer,Antibiotic use,15.88,1
+Uruguay,outer,Climate change,91.75,1
+Uruguay,outer,Air pollution,95.63,1
+Uruguay,inner,PC,16.79,1
+Uruguay,inner,PC,46.93,2
+Uruguay,inner,SC,12.36,1
+Uruguay,inner,MC,0.00,1
+Uruguay,inner,MC,0.00,2
+Uruguay,inner,SA,18.49,1
+Uruguay,inner,SA,34.13,2
+Uruguay,inner,UN,#N/A,1
+Uruguay,inner,FP,5.94,1
+Uruguay,inner,HS,62.31,1
+Uruguay,inner,CO,0.00,1
+Uruguay,inner,HR,0.00,1
+Uruguay,inner,PR,0.86,1
+Uruguay,inner,EX,0.00,1
+Uruguay,inner,RE,1.18,1
+Uruguay,inner,AM,15.22,1
+Uruguay,inner,EQ,40.07,1
+Uruguay,inner,MR,58.60,1
+Uruguay,inner,PN,0.00,1
+Uzbekistan,outer,Energy use,0.00,1
+Uzbekistan,outer,Material use,0.00,1
+Uzbekistan,outer,Water use,0.00,1
+Uzbekistan,outer,Biodiversity,#N/A,1
+Uzbekistan,outer,Antibiotic use,0.00,1
+Uzbekistan,outer,Climate change,93.14,1
+Uzbekistan,outer,Air pollution,0.00,1
+Uzbekistan,inner,PC,80.96,1
+Uzbekistan,inner,PC,74.05,2
+Uzbekistan,inner,SC,1.68,1
+Uzbekistan,inner,MC,0.00,1
+Uzbekistan,inner,MC,0.00,2
+Uzbekistan,inner,SA,0.00,1
+Uzbekistan,inner,SA,13.75,2
+Uzbekistan,inner,UN,#N/A,1
+Uzbekistan,inner,FP,#N/A,1
+Uzbekistan,inner,HS,#N/A,1
+Uzbekistan,inner,CO,25.83,1
+Uzbekistan,inner,HR,0.00,1
+Uzbekistan,inner,PR,0.00,1
+Uzbekistan,inner,EX,49.44,1
+Uzbekistan,inner,RE,35.29,1
+Uzbekistan,inner,AM,42.02,1
+Uzbekistan,inner,EQ,39.02,1
+Uzbekistan,inner,MR,68.36,1
+Uzbekistan,inner,PN,0.00,1
+Vanuatu,outer,Energy use,48.77,1
+Vanuatu,outer,Material use,23.84,1
+Vanuatu,outer,Water use,0.00,1
+Vanuatu,outer,Biodiversity,#N/A,1
+Vanuatu,outer,Antibiotic use,0.00,1
+Vanuatu,outer,Climate change,150.00,1
+Vanuatu,outer,Air pollution,17.43,1
+Vanuatu,inner,PC,47.23,1
+Vanuatu,inner,PC,98.90,2
+Vanuatu,inner,SC,26.64,1
+Vanuatu,inner,MC,2.12,1
+Vanuatu,inner,MC,0.00,2
+Vanuatu,inner,SA,14.78,1
+Vanuatu,inner,SA,46.03,2
+Vanuatu,inner,UN,#N/A,1
+Vanuatu,inner,FP,#N/A,1
+Vanuatu,inner,HS,#N/A,1
+Vanuatu,inner,CO,99.51,1
+Vanuatu,inner,HR,67.34,1
+Vanuatu,inner,PR,#N/A,1
+Vanuatu,inner,EX,92.61,1
+Vanuatu,inner,RE,55.29,1
+Vanuatu,inner,AM,72.72,1
+Vanuatu,inner,EQ,44.95,1
+Vanuatu,inner,MR,50.03,1
+Vanuatu,inner,PN,24.32,1
+"Venezuela, RB",outer,Energy use,0.00,1
+"Venezuela, RB",outer,Material use,0.00,1
+"Venezuela, RB",outer,Water use,0.00,1
+"Venezuela, RB",outer,Biodiversity,#N/A,1
+"Venezuela, RB",outer,Antibiotic use,1.49,1
+"Venezuela, RB",outer,Climate change,150.00,1
+"Venezuela, RB",outer,Air pollution,#N/A,1
+"Venezuela, RB",inner,PC,0.00,1
+"Venezuela, RB",inner,PC,39.89,2
+"Venezuela, RB",inner,SC,46.88,1
+"Venezuela, RB",inner,MC,16.41,1
+"Venezuela, RB",inner,MC,10.90,2
+"Venezuela, RB",inner,SA,9.13,1
+"Venezuela, RB",inner,SA,55.33,2
+"Venezuela, RB",inner,UN,#N/A,1
+"Venezuela, RB",inner,FP,#N/A,1
+"Venezuela, RB",inner,HS,#N/A,1
+"Venezuela, RB",inner,CO,46.52,1
+"Venezuela, RB",inner,HR,18.65,1
+"Venezuela, RB",inner,PR,64.81,1
+"Venezuela, RB",inner,EX,93.13,1
+"Venezuela, RB",inner,RE,61.18,1
+"Venezuela, RB",inner,AM,33.25,1
+"Venezuela, RB",inner,EQ,50.17,1
+"Venezuela, RB",inner,MR,49.73,1
+"Venezuela, RB",inner,PN,48.65,1
+Viet Nam,outer,Energy use,0.00,1
+Viet Nam,outer,Material use,0.00,1
+Viet Nam,outer,Water use,0.00,1
+Viet Nam,outer,Biodiversity,#N/A,1
+Viet Nam,outer,Antibiotic use,25.24,1
+Viet Nam,outer,Climate change,45.29,1
+Viet Nam,outer,Air pollution,16.79,1
+Viet Nam,inner,PC,47.23,1
+Viet Nam,inner,PC,81.81,2
+Viet Nam,inner,SC,6.66,1
+Viet Nam,inner,MC,0.00,1
+Viet Nam,inner,MC,0.00,2
+Viet Nam,inner,SA,0.00,1
+Viet Nam,inner,SA,50.81,2
+Viet Nam,inner,UN,3.98,1
+Viet Nam,inner,FP,23.81,1
+Viet Nam,inner,HS,#N/A,1
+Viet Nam,inner,CO,94.12,1
+Viet Nam,inner,HR,45.31,1
+Viet Nam,inner,PR,0.00,1
+Viet Nam,inner,EX,57.28,1
+Viet Nam,inner,RE,47.06,1
+Viet Nam,inner,AM,30.67,1
+Viet Nam,inner,EQ,45.30,1
+Viet Nam,inner,MR,21.05,1
+Viet Nam,inner,PN,33.78,1
+Virgin Islands (U.S.),outer,Energy use,0.00,1
+Virgin Islands (U.S.),outer,Material use,0.00,1
+Virgin Islands (U.S.),outer,Water use,0.00,1
+Virgin Islands (U.S.),outer,Biodiversity,#N/A,1
+Virgin Islands (U.S.),outer,Antibiotic use,#N/A,1
+Virgin Islands (U.S.),outer,Climate change,#N/A,1
+Virgin Islands (U.S.),outer,Air pollution,50.87,1
+Virgin Islands (U.S.),inner,PC,13.34,1
+Virgin Islands (U.S.),inner,PC,#N/A,2
+Virgin Islands (U.S.),inner,SC,12.57,1
+Virgin Islands (U.S.),inner,MC,#N/A,1
+Virgin Islands (U.S.),inner,MC,#N/A,2
+Virgin Islands (U.S.),inner,SA,5.94,1
+Virgin Islands (U.S.),inner,SA,0.00,2
+Virgin Islands (U.S.),inner,UN,#N/A,1
+Virgin Islands (U.S.),inner,FP,#N/A,1
+Virgin Islands (U.S.),inner,HS,#N/A,1
+Virgin Islands (U.S.),inner,CO,51.75,1
+Virgin Islands (U.S.),inner,HR,#N/A,1
+Virgin Islands (U.S.),inner,PR,#N/A,1
+Virgin Islands (U.S.),inner,EX,#N/A,1
+Virgin Islands (U.S.),inner,RE,#N/A,1
+Virgin Islands (U.S.),inner,AM,28.92,1
+Virgin Islands (U.S.),inner,EQ,37.63,1
+Virgin Islands (U.S.),inner,MR,#N/A,1
+Virgin Islands (U.S.),inner,PN,#N/A,1
+West Bank and Gaza,outer,Energy use,0.00,1
+West Bank and Gaza,outer,Material use,0.00,1
+West Bank and Gaza,outer,Water use,0.00,1
+West Bank and Gaza,outer,Biodiversity,#N/A,1
+West Bank and Gaza,outer,Antibiotic use,#N/A,1
+West Bank and Gaza,outer,Climate change,0.00,1
+West Bank and Gaza,outer,Air pollution,0.00,1
+West Bank and Gaza,inner,PC,30.28,1
+West Bank and Gaza,inner,PC,68.14,2
+West Bank and Gaza,inner,SC,5.81,1
+West Bank and Gaza,inner,MC,#N/A,1
+West Bank and Gaza,inner,MC,0.00,2
+West Bank and Gaza,inner,SA,1.45,1
+West Bank and Gaza,inner,SA,46.85,2
+West Bank and Gaza,inner,UN,19.20,1
+West Bank and Gaza,inner,FP,25.33,1
+West Bank and Gaza,inner,HS,#N/A,1
+West Bank and Gaza,inner,CO,74.12,1
+West Bank and Gaza,inner,HR,7.84,1
+West Bank and Gaza,inner,PR,#N/A,1
+West Bank and Gaza,inner,EX,56.24,1
+West Bank and Gaza,inner,RE,38.82,1
+West Bank and Gaza,inner,AM,27.79,1
+West Bank and Gaza,inner,EQ,37.28,1
+West Bank and Gaza,inner,MR,48.84,1
+West Bank and Gaza,inner,PN,2.70,1
+"Yemen, Rep.",outer,Energy use,0.00,1
+"Yemen, Rep.",outer,Material use,0.00,1
+"Yemen, Rep.",outer,Water use,0.00,1
+"Yemen, Rep.",outer,Biodiversity,#N/A,1
+"Yemen, Rep.",outer,Antibiotic use,0.00,1
+"Yemen, Rep.",outer,Climate change,27.37,1
+"Yemen, Rep.",outer,Air pollution,#N/A,1
+"Yemen, Rep.",inner,PC,3.45,1
+"Yemen, Rep.",inner,PC,74.10,2
+"Yemen, Rep.",inner,SC,22.98,1
+"Yemen, Rep.",inner,MC,9.84,1
+"Yemen, Rep.",inner,MC,36.14,2
+"Yemen, Rep.",inner,SA,32.40,1
+"Yemen, Rep.",inner,SA,0.00,2
+"Yemen, Rep.",inner,UN,#N/A,1
+"Yemen, Rep.",inner,FP,#N/A,1
+"Yemen, Rep.",inner,HS,#N/A,1
+"Yemen, Rep.",inner,CO,77.46,1
+"Yemen, Rep.",inner,HR,90.78,1
+"Yemen, Rep.",inner,PR,#N/A,1
+"Yemen, Rep.",inner,EX,94.77,1
+"Yemen, Rep.",inner,RE,87.06,1
+"Yemen, Rep.",inner,AM,58.66,1
+"Yemen, Rep.",inner,EQ,63.76,1
+"Yemen, Rep.",inner,MR,19.86,1
+"Yemen, Rep.",inner,PN,59.46,1
+Zambia,outer,Energy use,0.00,1
+Zambia,outer,Material use,0.00,1
+Zambia,outer,Water use,0.00,1
+Zambia,outer,Biodiversity,#N/A,1
+Zambia,outer,Antibiotic use,0.00,1
+Zambia,outer,Climate change,0.00,1
+Zambia,outer,Air pollution,0.00,1
+Zambia,inner,PC,49.93,1
+Zambia,inner,PC,89.51,2
+Zambia,inner,SC,28.57,1
+Zambia,inner,MC,5.61,1
+Zambia,inner,MC,43.98,2
+Zambia,inner,SA,33.18,1
+Zambia,inner,SA,2.08,2
+Zambia,inner,UN,12.48,1
+Zambia,inner,FP,0.79,1
+Zambia,inner,HS,#N/A,1
+Zambia,inner,CO,97.22,1
+Zambia,inner,HR,28.35,1
+Zambia,inner,PR,#N/A,1
+Zambia,inner,EX,87.38,1
+Zambia,inner,RE,49.41,1
+Zambia,inner,AM,71.81,1
+Zambia,inner,EQ,66.55,1
+Zambia,inner,MR,28.73,1
+Zambia,inner,PN,13.51,1
+Zimbabwe,outer,Energy use,0.00,1
+Zimbabwe,outer,Material use,0.00,1
+Zimbabwe,outer,Water use,0.00,1
+Zimbabwe,outer,Biodiversity,#N/A,1
+Zimbabwe,outer,Antibiotic use,0.00,1
+Zimbabwe,outer,Climate change,26.40,1
+Zimbabwe,outer,Air pollution,0.00,1
+Zimbabwe,inner,PC,69.12,1
+Zimbabwe,inner,PC,75.81,2
+Zimbabwe,inner,SC,27.78,1
+Zimbabwe,inner,MC,24.88,1
+Zimbabwe,inner,MC,44.71,2
+Zimbabwe,inner,SA,25.00,1
+Zimbabwe,inner,SA,3.96,2
+Zimbabwe,inner,UN,0.00,1
+Zimbabwe,inner,FP,33.27,1
+Zimbabwe,inner,HS,#N/A,1
+Zimbabwe,inner,CO,94.59,1
+Zimbabwe,inner,HR,29.61,1
+Zimbabwe,inner,PR,#N/A,1
+Zimbabwe,inner,EX,95.74,1
+Zimbabwe,inner,RE,50.59,1
+Zimbabwe,inner,AM,77.02,1
+Zimbabwe,inner,EQ,71.43,1
+Zimbabwe,inner,MR,58.31,1
+Zimbabwe,inner,PN,0.00,1
