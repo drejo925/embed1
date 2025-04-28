@@ -29,6 +29,7 @@ class _DoughnutDimensions {
         // Array of dimension objects, which contain array of levels:
         //  {name: "", levels: [{value: N, label: ""}, ...]}
         this._showLabels = true;
+        this._showGridlines = false; // <<< ADD THIS LINE (Default to off)
         this.dimensions = [];
     }
     add(name, value, label) {
@@ -461,6 +462,53 @@ constructor(size, donutScale, textSize, canvasId, divId, infoId, innerId, outerI
     }
 
 
+// PASTE THIS INSIDE Doughnut class (doughnut.js) AND Doughnut_SVG class (doughnut_svg.js)
+// (e.g., after the _drawDoughnut method)
+
+_drawGridlines() {
+    if (!this._showGridlines) { // Check the flag
+        return; // Skip drawing if flag is false
+    }
+
+    const gridlineColor = "#cccccc"; // Light grey
+    const gridlineWidth = 0.5;       // Thin line
+    const dashPattern = [3, 4];      // Dash pattern (3px line, 3px gap)
+
+    this._ctx.save(); // Save current context state
+    this._ctx.strokeStyle = gridlineColor;
+    this._ctx.lineWidth = gridlineWidth;
+    this._ctx.setLineDash(dashPattern); // Apply dash pattern
+
+    const yValues = [25, 50, 75, 100];
+
+    // --- Inner Gridlines ---
+    // Range [0, 100] maps to [_outInner, _inInner] (inverted)
+    const extScaleInner = (this._outInner - this._inInner) / this._normalDonutLevelRadius;
+    yValues.forEach(y => {
+        // Calculate radius: Start at _outInner and move inwards
+        const radius = this._outInner - (y * extScaleInner);
+        if (radius >= this._inInner - 0.1) { // Draw only if radius is >= min inner radius (with tolerance)
+            this._ctx.beginPath();
+            this._ctx.arc(this._middleX, this._middleY, radius, 0, 2 * Math.PI);
+            this._ctx.stroke();
+        }
+    });
+
+    // --- Outer Gridlines ---
+    // Range [0, 100] maps to [_inOuter, _outOuter]
+    const extScaleOuter = (this._outOuter - this._inOuter) / this._normalDonutLevelRadius;
+     yValues.forEach(y => {
+        // Calculate radius: Start at _inOuter and move outwards
+        const radius = this._inOuter + (y * extScaleOuter);
+         if (radius <= this._outOuter + 0.1) { // Draw only if radius is <= max outer radius (with tolerance)
+            this._ctx.beginPath();
+            this._ctx.arc(this._middleX, this._middleY, radius, 0, 2 * Math.PI);
+            this._ctx.stroke();
+        }
+    });
+
+    this._ctx.restore(); // Restore original context state
+}
 
 
     _splitText(text) {
@@ -803,8 +851,7 @@ _drawArcs(radiiOut, radiiIn, radiiColour, strokeColour, max, min, calculatedAngu
 }
 
 
-// PASTE THIS ENTIRE FUNCTION INTO doughnut.js
-// REPLACING THE EXISTING _drawDimensions FUNCTION
+
 
 _drawDimensions(dims, extMax, extMin) {
     const INNER = 0;
@@ -814,16 +861,16 @@ _drawDimensions(dims, extMax, extMin) {
     // Define grey colors for gradients
     const greyColor = "rgb(211, 211, 211)"; // Standard lightgray
     const transparentGreyColor = "rgba(211, 211, 211, 0)"; // Transparent lightgray
+    const whiteColor = "rgb(255, 255, 255)"; // Solid white
 
     // --- Configuration for Visual Gaps ---
-    // ADJUST THESE VALUES (in pixels/units)
-    const desiredInnerVisualGap = 0.4; // Target visual gap between INNER wedges at radius _inInner
-    const desiredOuterVisualGap = 8; // Target visual gap between OUTER wedges at radius _inOuter
-    const fallbackAngularGap = 0.04; // Fallback if radius is too small (shouldn't be needed for inner now)
+    const desiredInnerVisualGap = 0.4;
+    const desiredOuterVisualGap = 8;
+    const fallbackAngularGap = 0.04;
     // --- End Configuration ---
 
     // --- Gradient Configuration ---
-    const gradientShift = 0.3;
+    const gradientShift = 0.3; // Position for inner gradient transition
     // --- End Gradient Configuration ---
 
 
@@ -832,10 +879,7 @@ _drawDimensions(dims, extMax, extMin) {
         let outRadii = [];
         let colRadii = [];
         // Scaling factor: maps logical range [0, 100] to physical range [extMin, extMax]
-        // For inner: [this._inInner, this._outInner]
-        // For outer: [this._inOuter, this._outOuter]
         let extScale = (extMax - extMin) / this._normalDonutLevelRadius;
-        // intScale is only for negative overshoot
         let intScale = ((this._outDonut - this._inDonut) / 2) / this._normalDonutLevelRadius;
 
         let type = null;
@@ -847,7 +891,6 @@ _drawDimensions(dims, extMax, extMin) {
             type = OUTER;
             minRadiusForHitDetect = this._inOuter;
             maxRadiusForHitDetect = this._outOuter;
-            // Calculate angular gap for OUTER wedges based on _inOuter
             const relevantRadius = this._inOuter;
             if (relevantRadius > 1 && dims.length() > 1) {
                 angularGapForThisSet = desiredOuterVisualGap / relevantRadius;
@@ -859,26 +902,23 @@ _drawDimensions(dims, extMax, extMin) {
 
         } else { // Corresponds to INNER dimensions
             type = INNER;
-            minRadiusForHitDetect = this._inInner; // Now > 0
+            minRadiusForHitDetect = this._inInner;
             maxRadiusForHitDetect = this._outInner;
-             // Calculate angular gap for INNER wedges based on _inInner (which is > 0)
             const relevantRadius = this._inInner;
-            if (relevantRadius > 1 && dims.length() > 1) { // Check > 1 for safety
-                 // Angle = ArcLength / Radius
+            if (relevantRadius > 1 && dims.length() > 1) {
                 angularGapForThisSet = desiredInnerVisualGap / relevantRadius;
             } else if (dims.length() <= 1) {
                  angularGapForThisSet = 0;
             } else {
-                // Fallback if _inInner was somehow set <= 1
                 angularGapForThisSet = fallbackAngularGap;
             }
         }
 
         // --- Limit the calculated angular gap ---
-        const maxAllowedGapFraction = 0.5; // Gap cannot be more than 50% of the slice
+        const maxAllowedGapFraction = 0.5;
         const anglePerDimension = (dims.length() > 0) ? (2 * Math.PI) / dims.length() : (2 * Math.PI);
         angularGapForThisSet = Math.min(angularGapForThisSet, anglePerDimension * maxAllowedGapFraction);
-        angularGapForThisSet = Math.max(0, angularGapForThisSet); // Ensure non-negative
+        angularGapForThisSet = Math.max(0, angularGapForThisSet);
         // --- End Gap Limiting ---
 
 
@@ -891,17 +931,22 @@ _drawDimensions(dims, extMax, extMin) {
                 let val = levels[lvl].value;
                 let outer = 0; // Outer radius for drawing the wedge
                 let inner = 0; // Inner radius for drawing the wedge
-                let col = this._grd; // Default: use the main pink gradient
+                let col = this._grd; // Default gradient (set in _setupCanvas)
 
                 if (this._isNotNumber(val)) {
                     // --- Handle Invalid Data: Apply Grey Gradient ---
                     inner = extMin; // Use the band's min radius
                     outer = extMax; // Use the band's max radius
+
                     if (type == INNER) {
+                        // *** MODIFIED INNER NaN GRADIENT: Grey to White ***
                         col = this._ctx.createRadialGradient(this._middleX, this._middleY, inner, this._middleX, this._middleY, outer);
-                        col.addColorStop(gradientShift, transparentGreyColor);
+                        // Start white near the center (inner radius)
+                        col.addColorStop(0, whiteColor);
+                        // Transition to grey at the outer edge (_outInner)
                         col.addColorStop(1, greyColor);
-                    } else { // type == OUTER
+                        // *** END MODIFICATION ***
+                    } else { // type == OUTER (Keep original Grey to Transparent)
                         col = this._ctx.createRadialGradient(this._middleX, this._middleY, inner, this._middleX, this._middleY, outer);
                         col.addColorStop(0, greyColor);
                         col.addColorStop(1.0 - gradientShift, transparentGreyColor);
@@ -912,25 +957,23 @@ _drawDimensions(dims, extMax, extMin) {
                         if (val < 0) {
                             inner = extMax; // Starts at _outInner
                             outer = extMax + (val * intScale); // Moves inwards
-                            col = "white";
+                            col = whiteColor; // Solid white for overshoot
                         } else {
-                            // Normal positive value: val=100 -> inner=extMin (_inInner), val=0 -> inner=extMax (_outInner)
                             let scaledVal = Math.min(val, this._normalDonutLevelRadius); // Cap at 100
                             inner = extMin + ((this._normalDonutLevelRadius - scaledVal) * extScale);
                             outer = extMax; // Always _outInner
-                            // col remains this._grd
+                            // col remains this._grd (pink gradient)
                         }
                     } else { // type == OUTER
                         if (val < 0) {
                             inner = extMin + (val * intScale); // Moves inwards from _inOuter
                             outer = extMin; // Ends at _inOuter
-                            col = "white";
+                            col = whiteColor; // Solid white for overshoot
                         } else {
-                            // Normal positive value: val=0 -> outer=extMin (_inOuter), val=100 -> outer=_inOuter + 100*extScale
                             inner = extMin; // Starts at _inOuter
                             let potentialOuter = extMin + (val * extScale);
                             outer = Math.min(potentialOuter, this._middleX); // Cap radius at center
-                            // col remains this._grd
+                            // col remains this._grd (pink gradient)
                         }
                     }
                 }
@@ -951,6 +994,7 @@ _drawDimensions(dims, extMax, extMin) {
 }
 
 
+
     /**
      * Draws text curved along a specified radius and angle.
      * Handles character-by-character placement and rotation, including flipping for bottom half.
@@ -967,7 +1011,7 @@ _drawDimensions(dims, extMax, extMin) {
         const originalFillStyle = this._ctx.fillStyle;
 
         // Set specific style for this label
-        this._ctx.font = fontSize + "px Roboto, Arial";
+        this._ctx.font = fontSize + "px Arial, sans-serif";
         this._ctx.fillStyle = color;
         this._ctx.textAlign = "center";   // Ensure correct alignment settings
         this._ctx.textBaseline = "middle";
@@ -1088,7 +1132,7 @@ _drawLabels() {
     );
 
     // 2. "HEALTHCARE FOUNDATION" - Top center (Apply Offset)
-    const radiusInnerDarkBlueMid = (radiusHoleEdge + radiusInnerBandEdge) / 2 - canvasVerticalOffset; // Subtract offset
+    const radiusInnerDarkBlueMid = (radiusHoleEdge + radiusInnerBandEdge) / 2 - canvasVerticalOffset/2; // Subtract offset
     const angleTopCenter = 3 * Math.PI / 2;
     this._drawCurvedText(
         "HEALTHCARE FOUNDATION",
@@ -1099,7 +1143,7 @@ _drawLabels() {
     );
 
     // 3. "ECOLOGICAL CEILING" - Top center (Apply Offset)
-    const radiusOuterDarkBlueMid = (radiusLightBlueEdge + radiusOuterBandEdge) / 2 - canvasVerticalOffset; // Subtract offset
+    const radiusOuterDarkBlueMid = (radiusLightBlueEdge + radiusOuterBandEdge) / 2 - canvasVerticalOffset/2; // Subtract offset
     // Use same angleTopCenter
     this._drawCurvedText(
         "ECOLOGICAL CEILING",
@@ -1111,7 +1155,7 @@ _drawLabels() {
     // --- End Static Corridor Labels ---
 
     // Reset context defaults specifically for dynamic labels
-    this._ctx.font = this._textSize + "px Roboto, Arial, sans-serif";
+    this._ctx.font = this._textSize + "px Arial, sans-serif";
     this._ctx.fillStyle = "#484848";
     this._ctx.textAlign = "center";
     this._ctx.textBaseline = "middle";
@@ -1231,6 +1275,11 @@ setLabelsVisible(visible) {
 // myDonut.setLabelsVisible(true); // To show
 // myDonutSVG.setLabelsVisible(true);
 
+setGridlinesVisible(visible) {
+    this._showGridlines = !!visible; // Ensure boolean
+    this.update(); // Redraw the doughnut
+}
+
     _drawInnerDimensions() {
         this._innerPaths = this._drawDimensions(this._innerDims, this._outInner, this._inInner);
     }
@@ -1261,7 +1310,7 @@ setLabelsVisible(visible) {
 
     
     _setupCanvas() {
-        this._ctx.font = this._textSize + "px Roboto, Arial, sans-serif";
+        this._ctx.font = this._textSize + "px Arial, sans-serif";
         this._ctx.fillStyle = "#484848"; // Set new default text color
         this._ctx.textAlign = "center";
         this._ctx.lineWidth = 1;
@@ -1292,32 +1341,44 @@ setLabelsVisible(visible) {
         debug.innerHTML = current + "<br>\n" + text;
     }
 
-    update() {
-        if (this._innerId) {
-            document.getElementById(this._innerId).innerHTML = "Inner: " + this._innerDims.string();
-        }
-        if (this._outerId) {
-            document.getElementById(this._outerId).innerHTML = "Outer: " + this._outerDims.string();
-        }
-        if (this._exportId) {
-            document.getElementById(this._exportId).value = this.export();
-        }
+    // REPLACE the existing update() method in BOTH doughnut.js and doughnut_svg.js
 
-        this._setupCanvas();
-        this._drawDoughnut();
-        this._drawOuterDimensions();
-        this._drawInnerDimensions();
-        this._drawLimits();
-        this._drawLabels();
-        this._ctx.fillStyle = "black";
-        //this._ctx.fillText("Healthcare", this._middleX, this._middleY - this._textSize);
-        //this._ctx.fillText("Doughnut", this._middleX, this._middleY + this._textSize)
-
-        if (this._selectedDimInfo) {
-            this._ctx.strokeStyle = "#666666";
-            this._ctx.stroke(this._selectedDimInfo.path)
-        }
+update() {
+    // Update HTML elements (Keep this part)
+    if (this._innerId) {
+        document.getElementById(this._innerId).innerHTML = "Inner: " + this._innerDims.string();
     }
+    if (this._outerId) {
+        document.getElementById(this._outerId).innerHTML = "Outer: " + this._outerDims.string();
+    }
+    if (this._exportId) {
+        document.getElementById(this._exportId).value = this.export();
+    }
+
+    // Drawing sequence
+    this._setupCanvas();        // 1. Prepare canvas
+    this._drawDoughnut();       // 2. Draw base doughnut rings
+    this._drawGridlines();      // 3. <<< ADD THIS CALL to draw gridlines behind wedges
+    this._drawOuterDimensions();// 4. Draw outer wedges
+    this._drawInnerDimensions();// 5. Draw inner wedges
+    this._drawLimits();         // 6. Draw limit lines (if any)
+    this._drawLabels();         // 7. Draw text labels
+
+    // Draw center text (Keep this part)
+    this._ctx.fillStyle = "black";
+    //this._ctx.fillText("Healthcare", this._middleX, this._middleY - this._textSize);
+    //this._ctx.fillText("Doughnut", this._middleX, this._middleY + this._textSize)
+
+    // Highlight selected dimension (Keep this part)
+    if (this._selectedDimInfo) {
+        // Use a different color/style for selection if needed
+        this._ctx.strokeStyle = "#0000ff"; // Blue for selection example
+        this._ctx.lineWidth = 1.5;
+        this._ctx.stroke(this._selectedDimInfo.path);
+        this._ctx.lineWidth = 1; // Reset line width
+    }
+}
+
 import(csv) {
         const lines = csv.trim().split('\n');
         if (lines.length > 0) {
