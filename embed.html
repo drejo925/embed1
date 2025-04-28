@@ -6,13 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doughnut Viewer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
 </head>
 <style>
     body {
-        font-family: Roboto, Arial, Helvetica, sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
         font-size: small;
         color: #484848;
         margin: 5px;
@@ -23,17 +20,29 @@
         box-sizing: border-box;
     }
 
+    /* PASTE THESE UPDATED CSS RULES INTO the <style> block in embed.html */
+/* Replacing/updating existing rules as needed */
+
     /* --- Containers --- */
-    /* Wrapper for Canvas + Info Box */
+    /* Wrapper for Canvas + Controls */
     #globalDisplayWrapper {
         max-width: 800px;
         margin: 15px auto;
         display: flex; /* Enable Flexbox */
         align-items: flex-start; /* Align items top */
-        gap: 15px; /* Space between canvas and info box */
+        gap: 15px; /* Space between control column and canvas */
     }
 
-    /* Canvas Container */
+    /* *** UPDATED: Left Column Container (Title, Info, Selector, Toggle) *** */
+    #globalControlColumn { /* Renamed from globalRightColumn */
+        flex: 0 0 145px; /* Don't grow, don't shrink, base width 145px */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Left-align items within column */
+        padding-top: 10px; /* Add some top padding */
+    }
+
+    /* Canvas Container (Now on the right) */
     #globalDoughnutDiv {
        flex: 1 1 640px; /* Allow growing/shrinking, base size 640px */
        max-width: 640px; /* Limit canvas size */
@@ -42,15 +51,6 @@
         display: block; /* Prevent extra space below canvas */
         width: 100%; /* Make canvas responsive within its div */
         height: auto;
-    }
-
-    /* Right Column Container (Title, Info, Selector) */
-    #globalRightColumn {
-        flex: 0 0 145px; /* Don't grow, don't shrink, base width 145px */
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start; /* Left-align items within column */
-        padding-top: 10px; /* Add some top padding */
     }
 
     /* Title above Info Box */
@@ -74,36 +74,65 @@
         margin-bottom: 15px; /* Space before selector */
         text-align: left; /* Left align text */
     }
-     #globalInfoBox p {
-        margin: 0.5em 0;
-     }
-     #globalInfoBox strong {
-        font-weight: bold;
-     }
+     #globalInfoBox p { margin: 0.5em 0; }
+     #globalInfoBox strong { font-weight: bold; }
 
     /* Selector Styling */
     #globalSelectorBox {
         width: 100%; /* Take full width of the column */
         text-align: left; /* Left align label/select */
     }
-     #globalSelectorBox label {
-        display: block; /* Label on its own line */
-        margin-bottom: 5px;
-        font-weight: bold;
-     }
-     #globalPlotSelector {
-        width: 100%; /* Make dropdown fill width */
-        padding: 5px;
-     }
+     #globalSelectorBox label { display: block; margin-bottom: 5px; font-weight: bold; }
+     #globalPlotSelector { width: 100%; padding: 5px; }
+
+    /* Canvas Gridline Toggle Styling */
+    #canvasGridlineToggleBox {
+        width: 100%; /* Take full width */
+        text-align: left; /* Align checkbox/label left */
+    }
+     #canvasGridlineToggleBox label { font-weight: normal; cursor: pointer; margin-left: 5px; }
+     #canvasGridlineToggleBox input { vertical-align: middle; cursor: pointer; }
 
 
     /* Controls and SVG Area */
     #controlsBox,
-    #plotDisplayArea,
-    #dataTableContainer /* Include data table container */ {
+    #plotDisplayArea {
         max-width: 800px;
         margin: 15px auto;
     }
+
+    /* *** UPDATED: Data Table Container Styling *** */
+    #dataTableContainer {
+        max-width: 800px; /* Match other containers */
+        margin: 20px auto 15px auto; /* Add margin top/bottom */
+        padding: 10px;
+        border-top: 1px solid #ccc;
+    }
+
+    /* --- Data Table Styling (Keep existing rules) --- */
+    #dataTableContainer table {
+        width: 90%; /* Adjust width as needed */
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-collapse: collapse;
+        font-size: 0.9em;
+    }
+    #dataTableContainer th,
+    #dataTableContainer td {
+        border: 1px solid #ddd;
+        padding: 6px;
+        text-align: left;
+    }
+    #dataTableContainer th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+    #dataTableContainer h4 { /* Style for plot name headings */
+        margin-top: 15px;
+        margin-bottom: 5px;
+        font-size: 1.1em;
+    }
+
 
     #controlsBox {
         padding: 15px 0px;
@@ -240,13 +269,10 @@
 
 <body>
 
-    <!-- 1. Permanent Global Plot Area (Canvas) -->
+    <!-- 1. Permanent Global Plot Area (Canvas + Controls) -->
     <div id="globalDisplayWrapper">
-        <div id="globalDoughnutDiv">
-             <canvas id="globalDoughnutCanvas">Your browser does not support the HTML5 canvas tag.</canvas>
-        </div>
-        <!-- Right Column for Title, Info, Selector -->
-        <div id="globalRightColumn">
+        <!-- *** MOVED: Left Column for Title, Info, Selector, Toggle *** -->
+        <div id="globalControlColumn"> <!-- Renamed from globalRightColumn -->
             <h4 id="globalPlotTitle">Global</h4>
             <div id="globalInfoBox">
                 <p><strong>Hover:</strong> <span id="globalHoverInfo">None</span></p>
@@ -257,12 +283,30 @@
                     <option value="">Loading...</option>
                 </select>
             </div>
+            <div id="canvasGridlineToggleBox" style="margin-top: 10px;">
+                <input type="checkbox" id="canvasGridlineToggle" onchange="toggleCanvasGridlines()">
+                <label for="canvasGridlineToggle" style="font-weight: normal; cursor: pointer;">Show Gridlines</label>
+            </div>
         </div>
+        <!-- *** END MOVED Left Column *** -->
+
+        <!-- Canvas Container (Now on the right) -->
+        <div id="globalDoughnutDiv">
+             <canvas id="globalDoughnutCanvas">Your browser does not support the HTML5 canvas tag.</canvas>
+        </div>
+    </div> <!-- End #globalDisplayWrapper -->
+
+
+    <!-- *** MOVED: Area for the SINGLE Data Table (Linked to Canvas) *** -->
+    <div id="dataTableContainer" style="margin-top: 20px; padding: 10px; border-top: 1px solid #ccc;">
+        <!-- Single data table will be inserted here by JavaScript -->
     </div>
+    <!-- *** END MOVED Data Table Container *** -->
 
 
     <!-- 2. Controls for SVG Plots -->
     <div id="controlsBox">
+        <!-- ... existing SVG controls remain here ... -->
         <label for="plotSearchInput">Search & Select Plot(s) for Below:</label>
         <div id="searchListWrapper">
             <input type="text" id="plotSearchInput" oninput="filterPlotList()" placeholder="Start typing to filter plots...">
@@ -276,23 +320,24 @@
         </div>
         <div id="svgLabelToggleBox">
             <input type="checkbox" id="svgLabelToggle" onchange="toggleSvgLabels()">
-            <label for="svgLabelToggle">Show Labels on SVG Plots</label>
+            <label for="svgLabelToggle">Show Labels</label>
+        </div>
+        <div id="gridlineToggleBox" style="margin-bottom: 10px; text-align: right;">
+            <input type="checkbox" id="gridlineToggle" onchange="toggleSvgGridlines()">
+            <label for="gridlineToggle">Show SVG Gridlines</label>
         </div>
         <label>Currently Displaying (Below):</label>
         <div id="selectedPlotsDisplayBox">
              <span style="color: #888; font-style: italic;">None</span>
         </div>
-    </div>
+    </div> <!-- End #controlsBox -->
+
 
     <!-- 3. Area where selectable SVG plots will be displayed -->
     <div id="plotDisplayArea">
         <!-- Selectable SVGs will be injected here -->
     </div>
 
-    <!-- 4. Area for the Data Table -->
-    <div id="dataTableContainer" style="margin-top: 20px; padding: 10px; border-top: 1px solid #ccc;">
-        <!-- Data table(s) will be inserted here by JavaScript -->
-    </div>
 
     <!-- Hidden elements needed for SVG initialization -->
     <canvas id="doughnutCanvas" style="display: none;"></canvas>
@@ -303,8 +348,8 @@
 
 
     <!-- Load JS libraries -->
-    <script src="doughnut.js?v=2.1"></script> <!-- Use correct cache-busting version -->
-    <script src="doughnut_svg.js?v=2.1"></script> <!-- Use correct cache-busting version -->
+    <script src="doughnut.js?v=2.4"></script> <!-- Use correct cache-busting version -->
+    <script src="doughnut_svg.js?v=2.4"></script> <!-- Use correct cache-busting version -->
     <script src="canvas2svg.js"></script>
 
     <script>
@@ -321,6 +366,8 @@
         let plotDimensionDataCache = {};
         let globalDonutInstance = null; // Instance for the top Canvas plot
         let isSvgLabelsVisible = false; // State for SVG label visibility
+        let isSvgGridlinesVisible = false; // State for SVG gridlines (controlled by #gridlineToggle)
+        let isCanvasGridlinesVisible = false; // State for Canvas gridlines (controlled by #canvasGridlineToggle)
         let sortedPlotNames = []; // Keep sorted list globally
 
         // --- Robust CSV Line Parser ---
@@ -558,98 +605,91 @@
         }
 
         // --- Function to Update the Displayed SVG Plots ---
+        // REPLACE the existing updateDisplayedPlots function in embed.html
+
         function updateDisplayedPlots(selectedPlotNames) {
-            const plotDisplayArea = document.getElementById('plotDisplayArea');
-            if (!plotDisplayArea) return;
+        const plotDisplayArea = document.getElementById('plotDisplayArea');
+        if (!plotDisplayArea) return;
 
-            plotDisplayArea.innerHTML = ''; // Clear previous plots
+        plotDisplayArea.innerHTML = ''; // Clear previous plots
+        plotDisplayArea.classList.toggle('multi-row', selectedPlotNames.length >= maxPlotsFirstRow);
 
-            // Determine layout class based on number of plots
-            plotDisplayArea.classList.toggle('multi-row', selectedPlotNames.length >= maxPlotsFirstRow);
-
-            if (selectedPlotNames.length === 0) {
-                 plotDisplayArea.innerHTML = '<p style="text-align: center; width: 100%; color: #555;">Select plots from the list above.</p>';
-                 return; // Exit early if no plots selected
-            }
-
-            // Create and append plots
-            selectedPlotNames.forEach(plotName => {
-                if (allPlotData[plotName]) {
-                    const plotContainer = document.createElement('div');
-                    // Use sanitized name for ID to avoid issues with special characters
-                    plotContainer.id = `plot-${sanitizeId(plotName)}`;
-                    plotContainer.className = 'plot-container';
-
-                    const plotTitle = document.createElement('p');
-                    plotTitle.className = 'plot-title';
-                    plotTitle.textContent = plotName; // Display original name
-
-                    plotContainer.appendChild(plotTitle);
-
-                    // Create a temporary SVG instance for this plot
-                    const tempDonutSVG = new Doughnut_SVG(plotSize, plotScale, plotTextSize,
-                        "doughnutCanvas", "doughnutDiv", null, null, null, null);
-
-                    // Load data (use caching mechanism)
-                    importAndCacheDataForSVG(plotName, tempDonutSVG);
-
-                    // Set label visibility based on global state BEFORE generating SVG
-                    tempDonutSVG.setLabelsVisible(isSvgLabelsVisible);
-
-                    // Generate and process the SVG element
-                    const finalSvgElement = generateAndProcessSVG(plotName, tempDonutSVG);
-
-                    if (finalSvgElement) {
-                        plotContainer.appendChild(finalSvgElement);
-                    } else {
-                        // Fallback or error message if SVG generation failed
-                        plotContainer.innerHTML += '<p style="color:red;">Error generating plot</p>';
-                    }
-                    plotDisplayArea.appendChild(plotContainer);
-                } else {
-                    console.warn(`Data not found for selected plot: ${plotName}`);
-                }
-            });
-
-            // **** ADD CALL TO UPDATE DATA TABLE ****
-            updateDataTable(selectedPlotNames); // Update the data table with selected plots
-            // **** END OF ADDED CALL ****
+        if (selectedPlotNames.length === 0) {
+             plotDisplayArea.innerHTML = '<p style="text-align: center; width: 100%; color: #555;">Select plots from the list above.</p>';
+             // *** REMOVED call to updateDataTable([]) ***
+             return;
         }
+
+        selectedPlotNames.forEach(plotName => {
+            if (allPlotData[plotName]) {
+                const plotContainer = document.createElement('div');
+                plotContainer.id = `plot-${sanitizeId(plotName)}`;
+                plotContainer.className = 'plot-container';
+
+                const plotTitle = document.createElement('p');
+                plotTitle.className = 'plot-title';
+                plotTitle.textContent = plotName;
+                plotContainer.appendChild(plotTitle);
+
+                const tempDonutSVG = new Doughnut_SVG(plotSize, plotScale, plotTextSize,
+                    "doughnutCanvas", "doughnutDiv", null, null, null, null);
+
+                importAndCacheDataForSVG(plotName, tempDonutSVG);
+
+                tempDonutSVG.setLabelsVisible(isSvgLabelsVisible);
+                tempDonutSVG.setGridlinesVisible(isSvgGridlinesVisible);
+
+                const finalSvgElement = generateAndProcessSVG(plotName, tempDonutSVG);
+
+                if (finalSvgElement) {
+                    plotContainer.appendChild(finalSvgElement);
+                } else {
+                    plotContainer.innerHTML += '<p style="color:red;">Error generating plot</p>';
+                }
+                plotDisplayArea.appendChild(plotContainer);
+            } else {
+                console.warn(`Data not found for selected plot: ${plotName}`);
+            }
+        });
+
+        // *** REMOVED call to updateDataTable(selectedPlotNames) ***
+    }
 
 
         // --- Function to handle checkbox changes and update display ---
         function handlePlotSelectionChange() {
-            const selectedPlotsBox = document.getElementById('selectedPlotsDisplayBox');
-            const checkboxes = document.querySelectorAll('#plotListContainer input[type="checkbox"]');
-            const selectedPlotNames = [];
+        const selectedPlotsBox = document.getElementById('selectedPlotsDisplayBox');
+        const checkboxes = document.querySelectorAll('#plotListContainer input[type="checkbox"]');
+        const selectedPlotNames = [];
 
-            checkboxes.forEach(cb => { if (cb.checked) selectedPlotNames.push(cb.value); });
+        checkboxes.forEach(cb => { if (cb.checked) selectedPlotNames.push(cb.value); });
 
-            // Update the tags display
-            if (selectedPlotsBox) selectedPlotsBox.innerHTML = ''; // Clear previous tags
-            if (selectedPlotNames.length > 0) {
-                // Sort selected names (optional, but nice for tags)
-                selectedPlotNames.sort((a, b) => {
-                    if (a === globalPlotName) return -1; // Keep Global first if selected
-                    if (b === globalPlotName) return 1;
-                    return a.localeCompare(b); // Alphabetical otherwise
-                });
+        // Update the tags display
+        if (selectedPlotsBox) selectedPlotsBox.innerHTML = ''; // Clear previous tags
+        if (selectedPlotNames.length > 0) {
+            selectedPlotNames.sort((a, b) => {
+                if (a === globalPlotName) return -1;
+                if (b === globalPlotName) return 1;
+                return a.localeCompare(b);
+            });
 
-                selectedPlotNames.forEach(name => {
-                    const tag = document.createElement('span');
-                    tag.className = 'selected-plot-tag';
-                    tag.textContent = name; // Display original name
-                    tag.dataset.plotName = name; // Store original name for removal
-                    tag.onclick = handleTagClick;
-                    selectedPlotsBox.appendChild(tag);
-                });
-            } else {
-                if (selectedPlotsBox) selectedPlotsBox.innerHTML = '<span style="color: #888; font-style: italic;">None</span>';
-            }
+            selectedPlotNames.forEach(name => {
+                const tag = document.createElement('span');
+                tag.className = 'selected-plot-tag';
+                tag.textContent = name;
+                tag.dataset.plotName = name;
+                tag.onclick = handleTagClick;
+                selectedPlotsBox.appendChild(tag);
+            });
+        } else {
+            if (selectedPlotsBox) selectedPlotsBox.innerHTML = '<span style="color: #888; font-style: italic;">None</span>';
+        }
 
-            // Update the SVG plots display area
-            updateDisplayedPlots(selectedPlotNames); // Pass the selected names
-         }
+        // Update ONLY the SVG plots display area
+        updateDisplayedPlots(selectedPlotNames); // Pass the selected names for SVGs
+
+        // *** REMOVED call to updateDataTable(selectedPlotNames) ***
+     }
 
         // --- Function to handle clicking on a selected plot tag ---
         function handleTagClick(event) {
@@ -666,20 +706,26 @@
 
          // --- Function to Change the Global Canvas Plot ---
          function changeGlobalPlot() {
-            const selector = document.getElementById('globalPlotSelector');
-            const titleElement = document.getElementById('globalPlotTitle');
-            const selectedPlotName = selector.value;
+        const selector = document.getElementById('globalPlotSelector');
+        const titleElement = document.getElementById('globalPlotTitle');
+        const selectedPlotName = selector.value;
 
-            if (globalDonutInstance && selectedPlotName && allPlotData[selectedPlotName]) {
-                console.log(`Changing global canvas plot to: ${selectedPlotName}`);
-                globalDonutInstance.clearDoughnut(); // Clears data AND resets hover state
-                loadSpecificPlotData(selectedPlotName, globalDonutInstance);
-                globalDonutInstance.setLabelsVisible(true); // Ensure labels are ON for canvas
+        if (globalDonutInstance && selectedPlotName && allPlotData[selectedPlotName]) {
+            console.log(`Changing global canvas plot to: ${selectedPlotName}`);
+            globalDonutInstance.clearDoughnut();
+            loadSpecificPlotData(selectedPlotName, globalDonutInstance);
+            globalDonutInstance.setLabelsVisible(true); // Keep labels on for canvas
+            // Ensure canvas gridlines reflect current toggle state after data load
+            globalDonutInstance.setGridlinesVisible(isCanvasGridlinesVisible);
 
-                if (titleElement) titleElement.textContent = selectedPlotName; // Update title
-                updateGlobalInfoText("None"); // Reset hover text display
-            }
-         }
+            if (titleElement) titleElement.textContent = selectedPlotName;
+            updateGlobalInfoText("None");
+
+            // *** ADD call to update data table ***
+            updateDataTable(selectedPlotName);
+            // *** END ADD call ***
+        }
+     }
 
          // --- Function to Toggle SVG Labels ---
          function toggleSvgLabels() {
@@ -701,147 +747,147 @@
             });
          }
 
-        // --- Function to Update the Data Table ---
-        function updateDataTable(plotNames) {
-            const container = document.getElementById('dataTableContainer');
-            if (!container) return; // Exit if container not found
+         function toggleSvgGridlines() {
+            const checkbox = document.getElementById('gridlineToggle');
+            isSvgGridlinesVisible = checkbox.checked; // Update state
 
-            container.innerHTML = ''; // Clear previous table(s)
-
-            if (!plotNames || plotNames.length === 0) {
-                container.innerHTML = '<p>Select a plot above to view its data.</p>';
-                return;
+            // 1. Update the main canvas instance immediately
+            if (globalDonutInstance) {
+                globalDonutInstance.setGridlinesVisible(isGridlinesVisible);
             }
 
-            let tableHtml = '';
+            // 2. Trigger regeneration of displayed SVG plots
+            //    (Calling handlePlotSelectionChange reads current selections and updates SVGs)
+            handlePlotSelectionChange();
+        }
 
-            plotNames.forEach(plotName => {
-                const plotSpecificData = allPlotData[plotName]; // Get array of data objects
+        function toggleCanvasGridlines() {
+        const checkbox = document.getElementById('canvasGridlineToggle');
+        isCanvasGridlinesVisible = checkbox.checked; // Update Canvas state variable
 
-                if (plotSpecificData && plotSpecificData.length > 0) {
-                    // Add a heading for each plot's table
-                    tableHtml += `<h4>Data for: ${plotName.replace(/^"|"$/g, '')}</h4>`; // Remove quotes for display
+        // Update the main canvas instance immediately
+        if (globalDonutInstance) {
+            globalDonutInstance.setGridlinesVisible(isCanvasGridlinesVisible);
+        }
+    }
 
-                    tableHtml += `
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Dimension Name</th>
-                                    <th>Value</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                    `;
 
-                    // Sort data alphabetically by DimensionName for consistency
-                    // Use slice() to avoid modifying the original allPlotData array
-                    const sortedData = plotSpecificData.slice().sort((a, b) => a.dimensionName.localeCompare(b.dimensionName));
+        // --- Function to Update the Data Table ---
+        function updateDataTable(plotName) { // Changed parameter to single plotName
+        const container = document.getElementById('dataTableContainer');
+        if (!container) return; // Exit if container not found
 
-                    sortedData.forEach(dataRow => {
-                        // Access properties from the data object
-                        tableHtml += `
-                            <tr>
-                                <td>${dataRow.dimensionName}</td>
-                                <td>${dataRow.value}</td>
-                            </tr>
-                        `;
-                    });
+        container.innerHTML = ''; // Clear previous table
 
-                    tableHtml += `
-                            </tbody>
-                        </table>
-                    `;
-                } else {
-                     tableHtml += `<h4>No data found for: ${plotName.replace(/^"|"$/g, '')}</h4>`;
-                }
+        // Check if a valid plotName is provided
+        if (!plotName || !allPlotData || !allPlotData[plotName]) {
+            container.innerHTML = '<p>Select a plot in the main canvas area to view its data.</p>';
+            return;
+        }
+
+        // Get data for the single selected plot
+        const plotSpecificData = allPlotData[plotName];
+        let tableHtml = '';
+
+        if (plotSpecificData && plotSpecificData.length > 0) {
+            // Add a heading for the plot's table
+            tableHtml += `<h4>Data for: ${plotName.replace(/^"|"$/g, '')}</h4>`; // Remove quotes for display
+
+            tableHtml += `
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dimension Name</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+            `;
+
+            // Sort data alphabetically by DimensionName for consistency
+            const sortedData = plotSpecificData.slice().sort((a, b) => a.dimensionName.localeCompare(b.dimensionName));
+
+            sortedData.forEach(dataRow => {
+                tableHtml += `
+                    <tr>
+                        <td>${dataRow.dimensionName}</td>
+                        <td>${dataRow.value}</td>
+                    </tr>
+                `;
             });
 
-            container.innerHTML = tableHtml;
+            tableHtml += `
+                    </tbody>
+                </table>
+            `;
+        } else {
+             tableHtml += `<h4>No data found for: ${plotName.replace(/^"|"$/g, '')}</h4>`;
         }
+
+        container.innerHTML = tableHtml;
+    }
 
 
         // --- Fetch and Process CSV on Page Load ---
         async function initializePlots() {
-            try {
-                const response = await fetch('doughnut_CSV.csv'); // Ensure correct path
-                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-                const csvString = await response.text();
-                allPlotData = parsePlotDataCSV(csvString); // Use the modified parser
+        try {
+            const response = await fetch('doughnut_CSV.csv');
+            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+            const csvString = await response.text();
+            allPlotData = parsePlotDataCSV(csvString);
 
-                // --- Initialize Global Canvas Plot ---
-                const globalInfoBox = document.getElementById('globalInfoBox');
-                const globalPlotTitleEl = document.getElementById('globalPlotTitle');
+            await document.fonts.ready;
+            console.log("Fonts loaded, proceeding with Doughnut initialization.");
 
-                if (allPlotData[globalPlotName] && globalInfoBox) {
-                    globalDonutInstance = new Doughnut(
-                        plotSize, plotScale, plotTextSize,
-                        "globalDoughnutCanvas",
-                        "globalDoughnutDiv",
-                        null, // No dedicated infoId needed, handled by override
-                        null, null, null
-                    );
-                    // Override _updateInfo to target specific span
-                    globalDonutInstance._updateInfo = function(hoverText) {
-                         updateGlobalInfoText(hoverText);
-                    };
+            const globalInfoBox = document.getElementById('globalInfoBox');
+            const globalPlotTitleEl = document.getElementById('globalPlotTitle');
 
-                    loadSpecificPlotData(globalPlotName, globalDonutInstance);
-                    globalDonutInstance.setLabelsVisible(true); // Ensure labels are ON
+            if (allPlotData[globalPlotName] && globalInfoBox) {
+                globalDonutInstance = new Doughnut(
+                    plotSize, plotScale, plotTextSize,
+                    "globalDoughnutCanvas", "globalDoughnutDiv", null, null, null, null
+                );
+                globalDonutInstance._updateInfo = function(hoverText) { updateGlobalInfoText(hoverText); };
 
-                    // Attach mousemove listener for hover info
-                    globalDonutInstance._canvas.addEventListener("mousemove", (e) => {
-                        globalDonutInstance._checkMouse(e); // Handles hover detection and info update
-                    });
-                    // Attach mouseleave listener to clear hover info
-                    globalDonutInstance._canvas.addEventListener("mouseleave", (e) => {
-                        updateGlobalInfoText("None"); // Clear info when mouse leaves canvas
-                        globalDonutInstance._canvas.style.cursor = "default"; // Reset cursor
-                    });
+                loadSpecificPlotData(globalPlotName, globalDonutInstance);
+                globalDonutInstance.setLabelsVisible(true);
+                globalDonutInstance.setGridlinesVisible(isCanvasGridlinesVisible);
 
-
-                    if(globalPlotTitleEl) globalPlotTitleEl.textContent = globalPlotName;
-                    globalDonutInstance._updateInfo("None"); // Set initial text
-
-                } else {
-                    console.error("Global plot data not found or info box missing!");
-                    if(globalInfoBox) globalInfoBox.innerHTML = '<p style="color: red;">Global plot data missing.</p>';
-                    if(globalPlotTitleEl) globalPlotTitleEl.textContent = "Error";
-                }
-                // --- End Global Canvas Plot Init ---
-
-                // Sort plot names for UI population
-                let plotNames = Object.keys(allPlotData);
-                sortedPlotNames = plotNames.sort((a, b) => {
-                     if (a === globalPlotName) return -1; // Global first
-                     if (b === globalPlotName) return 1;
-                     return a.localeCompare(b); // Alphabetical otherwise
+                globalDonutInstance._canvas.addEventListener("mousemove", (e) => { globalDonutInstance._checkMouse(e); });
+                globalDonutInstance._canvas.addEventListener("mouseleave", (e) => {
+                    updateGlobalInfoText("None");
+                    globalDonutInstance._canvas.style.cursor = "default";
                 });
 
-                populatePlotList(sortedPlotNames); // Populate both lists using sorted names
-                handlePlotSelectionChange(); // Render initially checked SVG plots and data table
+                if(globalPlotTitleEl) globalPlotTitleEl.textContent = globalPlotName;
+                updateGlobalInfoText("None");
 
-                // Set initial state of SVG label toggle checkbox
-                const svgLabelCheckbox = document.getElementById('svgLabelToggle');
-                if (svgLabelCheckbox) svgLabelCheckbox.checked = isSvgLabelsVisible;
+                // *** ADD initial call to update data table for canvas plot ***
+                updateDataTable(globalPlotName);
+                // *** END ADD call ***
 
+            } else { /* ... error handling ... */ }
 
-            } catch (error) {
-                console.error("Error initializing plots:", error);
-                const listContainer = document.getElementById('plotListContainer');
-                if (listContainer) listContainer.innerHTML = '<p style="color: red;">Error loading plots</p>';
-                const plotDisplayArea = document.getElementById('plotDisplayArea');
-                 if (plotDisplayArea) plotDisplayArea.innerHTML = '<p style="color: red; text-align: center; width: 100%;">Failed to load plot data from doughnut_CSV.csv.</p>';
-                 const globalInfoBox = document.getElementById('globalInfoBox');
-                 if(globalInfoBox) globalInfoBox.innerHTML = '<p style="color: red;">Initialization failed.</p>';
-                 const globalPlotTitleEl = document.getElementById('globalPlotTitle');
-                 if(globalPlotTitleEl) globalPlotTitleEl.textContent = "Error";
-                 const dataTableContainer = document.getElementById('dataTableContainer');
-                 if(dataTableContainer) dataTableContainer.innerHTML = '<p style="color: red;">Failed to load data.</p>';
-            }
-        }
+            let plotNames = Object.keys(allPlotData);
+            sortedPlotNames = plotNames.sort((a, b) => { /* ... sorting ... */ });
 
-        // --- Initialize ---
-        initializePlots();
+            populatePlotList(sortedPlotNames);
+            handlePlotSelectionChange(); // Renders initial SVGs only now
+
+            // Set initial state of toggle checkboxes
+            const svgLabelCheckbox = document.getElementById('svgLabelToggle');
+            if (svgLabelCheckbox) svgLabelCheckbox.checked = isSvgLabelsVisible;
+            const svgGridlineCheckbox = document.getElementById('gridlineToggle');
+            if (svgGridlineCheckbox) svgGridlineCheckbox.checked = isSvgGridlinesVisible;
+            const canvasGridlineCheckbox = document.getElementById('canvasGridlineToggle');
+            if (canvasGridlineCheckbox) canvasGridlineCheckbox.checked = isCanvasGridlinesVisible;
+
+        } catch (error) { /* ... error handling ... */ }
+    }
+    // *** END modified initializePlots ***
+
+    // --- Initialize ---
+    initializePlots();
 
     </script>
 
