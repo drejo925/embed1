@@ -238,7 +238,7 @@ constructor(size, donutScale, textSize, canvasId, divId, infoId, innerId, outerI
     this._hoveredDimInfo = null;
 
     this._canvas.addEventListener("mousemove", (e) => { this._checkMouse(e, false) });
-    //this._canvas.addEventListener("click", (e) => { this._checkMouse(e, true) });
+    this._canvas.addEventListener("click", (e) => { this._checkMouse(e, true) }); // Enable click
 
     // Call first draw
     this.update();
@@ -264,11 +264,19 @@ constructor(size, donutScale, textSize, canvasId, divId, infoId, innerId, outerI
     }
 
     _checkMouse(e, click) {
-        let hoverDimInfo = this._checkMouseOver(e.offsetX, e.offsetY);
-        let hoverText = "";
+        // Calculate scaled mouse coordinates
+        const rect = this._canvas.getBoundingClientRect();
+        const scaleX = this._canvas.width / rect.width;
+        const scaleY = this._canvas.height / rect.height;
+        const canvasX = (e.clientX - rect.left) * scaleX;
+        const canvasY = (e.clientY - rect.top) * scaleY;
+
+        let hoverDimInfo = this._checkMouseOver(canvasX, canvasY);
+        let currentHoverText = "None";
+
         if (hoverDimInfo) {
             this._canvas.style.cursor = "crosshair";
-            hoverText = this._getDimInfoText(hoverDimInfo);
+            currentHoverText = this._getDimInfoText(hoverDimInfo);
             if (click) {
                 if (this._matchingDimInfos(this._selectedDimInfo, hoverDimInfo)) {
                     // Unselect
@@ -277,25 +285,33 @@ constructor(size, donutScale, textSize, canvasId, divId, infoId, innerId, outerI
                     // New selection
                     this._selectedDimInfo = hoverDimInfo;
                 }
-                this.update()
+                this.update(); // Redraw to show selection highlight
             }
         } else {
             this._canvas.style.cursor = "default";
-            hoverText = "None";
         }
-        this._updateInfo(hoverText);
+
+        let currentSelectedText = "None";
+        if (this._selectedDimInfo) {
+            currentSelectedText = this._getDimInfoText(this._selectedDimInfo);
+        }
+
+        // Call the (potentially overridden) _updateInfo method
+        // The actual _updateInfo method in this class (for index.html)
+        // or the overridden one (for embed.html) will be called.
+        this._updateInfo(currentHoverText, currentSelectedText);
     }
 
-    _updateInfo(hoverText) {
+    // Modified to accept both hover and selected text
+    _updateInfo(currentHoverText, currentSelectedText) {
         if (this._infoId) {
-            let selectText = "None"
-            if (this._selectedDimInfo) {
-                selectText = this._getDimInfoText(this._selectedDimInfo);
-            }
-            let html = "<p>Hover: " + hoverText + "</p><p>Select: " + selectText + "</p>";
+            // This part is primarily for index.html's #dimensionInfo element
+            let html = "<p>Hover: " + (currentHoverText || "None") + "</p><p>Select: " + (currentSelectedText || "None") + "</p>";
             document.getElementById(this._infoId).innerHTML = html;
         }
+        // For embed.html, the overridden function handles its specific spans.
     }
+
     _checkMousePathsDims(dims, paths, x, y) {
         let found = null;
         //this._debug(x + "," + y);
@@ -338,7 +354,7 @@ constructor(size, donutScale, textSize, canvasId, divId, infoId, innerId, outerI
             this._innerDims.add(name, level, label);
         }
         this._selectedDimInfo = null;
-        this._updateInfo("None");
+        this._updateInfo("None", "None"); // Pass both nulls
         this.update();
     }
 
@@ -350,7 +366,7 @@ constructor(size, donutScale, textSize, canvasId, divId, infoId, innerId, outerI
                 this._innerDims.delete(this._selectedDimInfo.dim_num, this._selectedDimInfo.level_num);
             }
             this._selectedDimInfo = null;
-            this._updateInfo("None");
+            this._updateInfo("None", "None"); // Pass both nulls
             this.update();
         }
     }
@@ -697,6 +713,23 @@ _drawArcsRange(radiiOut, radiiIn, radiiColour, start, totalDegrees, max, min, ca
             let currentLevelStart = drawableStart + levelIdx * levelDrawableDegrees;
             let currentLevelEnd = currentLevelStart + levelDrawableDegrees;
 
+            // --- Path2D for Mouse Interaction FIRST ---
+            // This path defines the hoverable area for the dimension's level.
+            // It uses the THEORETICAL angular boundaries (currentLevelStart, currentLevelEnd)
+            // and the full radial extent of the band (min, max parameters).
+            // This ensures that even if a wedge isn't visually drawn (e.g., value is 0),
+            // the area is still hoverable.
+            let hitMinR = Math.max(0, min); // 'min' is this._inInner or this._inOuter
+            let hitMaxR = Math.max(hitMinR, max); // 'max' is this._outInner or this._outOuter
+            let p = new Path2D();
+            if (currentLevelStart < currentLevelEnd - 1e-9) { // Ensure angles are valid for an arc
+                p.arc(this._middleX, this._middleY, hitMaxR, currentLevelStart, currentLevelEnd, false);
+                p.arc(this._middleX, this._middleY, hitMinR, currentLevelEnd, currentLevelStart, true);
+                p.closePath();
+            }
+            paths[dimIdx][levelIdx] = p;
+            // --- End Path2D ---
+
             // --- Apply SMALL SYMMETRIC Overlap to get DRAW angles ---
             let drawStart = currentLevelStart;
             let drawEnd = currentLevelEnd;
@@ -710,7 +743,8 @@ _drawArcsRange(radiiOut, radiiIn, radiiColour, start, totalDegrees, max, min, ca
             const safeInnerR = Math.max(0, innerR);
 
             if (safeOuterR < zeroRadiusTolerance || Math.abs(safeOuterR - safeInnerR) < zeroRadiusTolerance) {
-                paths[dimIdx][levelIdx] = new Path2D();
+                // The Path2D is already created above, so if the wedge isn't visible,
+                // we just skip the drawing part.
                 continue;
             }
 
@@ -803,24 +837,6 @@ _drawArcsRange(radiiOut, radiiIn, radiiColour, start, totalDegrees, max, min, ca
                 this._ctx.fill();
             }
             // --- End Drawing ---
-
-            // --- Path2D for Mouse Interaction (Uses ORIGINAL angles without gap/overlap) ---
-            let hitDetectTotalAnglePerDim = topLevelArcDegrees;
-            let hitDetectLevelAngle = (numLevels > 0) ? hitDetectTotalAnglePerDim / numLevels : 0;
-            let hitDetectStart = drawableStart + levelIdx * levelDrawableDegrees; // Use absolute start + offset (THEORETICAL)
-            let hitDetectEnd = hitDetectStart + hitDetectLevelAngle;
-
-            let hitMinR = Math.max(0, min);
-            let hitMaxR = Math.max(hitMinR, max);
-
-            let p = new Path2D();
-            if (hitDetectStart < hitDetectEnd) {
-                p.arc(this._middleX, this._middleY, hitMaxR, hitDetectStart, hitDetectEnd, false);
-                p.arc(this._middleX, this._middleY, hitMinR, hitDetectEnd, hitDetectStart, true);
-                p.closePath();
-            }
-            paths[dimIdx][levelIdx] = p;
-            // --- End Path2D ---
         }
         topLevelArcStart = topLevelArcEnd;
     }
@@ -1372,7 +1388,7 @@ update() {
     // Highlight selected dimension (Keep this part)
     if (this._selectedDimInfo) {
         // Use a different color/style for selection if needed
-        this._ctx.strokeStyle = "#0000ff"; // Blue for selection example
+        this._ctx.strokeStyle = "#fb8a98"; // New selection color
         this._ctx.lineWidth = 1.5;
         this._ctx.stroke(this._selectedDimInfo.path);
         this._ctx.lineWidth = 1; // Reset line width
