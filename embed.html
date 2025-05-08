@@ -5,13 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito+Sans:wght@500&display=swap" rel="stylesheet">
     <title>Doughnut Viewer</title>
 </head>
 <style>
     body {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: small;
-        color: #484848;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 500;
+        font-size: 19px;
+        line-height: 1.5;
+        color: rgb(34, 35, 34);
         margin: 5px;
         background-color: #fff; /* White background */
     }
@@ -20,13 +25,22 @@
         box-sizing: border-box;
     }
 
-    /* PASTE THESE UPDATED CSS RULES INTO the <style> block in embed.html */
-/* Replacing/updating existing rules as needed */
+    /* Header-like elements */
+    #globalPlotTitle,
+    #controlsBox > label, /* Targets direct label children of controlsBox */
+    #dataTableContainer h4 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 27px;
+        line-height: 1.4;
+        color: rgb(34, 35, 34);
+    }
 
     /* --- Containers --- */
     /* Wrapper for Canvas + Controls */
     #globalDisplayWrapper {
-        max-width: 800px;
+        /* max-width: 800px; */
+        max-width: 1040px; /* Adjusted for 1080px site width */
         margin: 15px auto;
         display: flex; /* Enable Flexbox */
         align-items: flex-start; /* Align items top */
@@ -35,7 +49,8 @@
 
     /* *** UPDATED: Left Column Container (Title, Info, Selector, Toggle) *** */
     #globalControlColumn { /* Renamed from globalRightColumn */
-        flex: 0 0 145px; /* Don't grow, don't shrink, base width 145px */
+        /* flex: 0 0 145px; */
+        flex: 0 0 180px; /* Increased width for control column */
         display: flex;
         flex-direction: column;
         align-items: flex-start; /* Left-align items within column */
@@ -44,8 +59,10 @@
 
     /* Canvas Container (Now on the right) */
     #globalDoughnutDiv {
-       flex: 1 1 640px; /* Allow growing/shrinking, base size 640px */
-       max-width: 640px; /* Limit canvas size */
+       /* flex: 1 1 640px; */
+       flex: 1 1 calc(1040px - 180px - 15px); /* wrapper_width - control_col_width - gap = 845px */
+       /* max-width: 640px; */
+       max-width: calc(1040px - 180px - 15px); /* Ensure it doesn't exceed calculated space */
     }
     #globalDoughnutCanvas {
         display: block; /* Prevent extra space below canvas */
@@ -55,10 +72,9 @@
 
     /* Title above Info Box */
     #globalPlotTitle {
-        font-size: 1.4em; /* Larger title */
-        font-weight: bold;
-        margin-bottom: 10px;
-        color: #333;
+        /* font-family, font-weight, font-size, line-height, color defined in common header style */
+        margin-bottom: 15px; /* Consistent spacing */
+        /* color: #333; */ /* Overridden */
         width: 100%; /* Ensure title takes width for alignment */
         text-align: left; /* Left align title */
     }
@@ -70,8 +86,8 @@
         border: 1px solid #eee;
         border-radius: 8px;
         background-color: #fdfdfd;
-        font-size: 0.9em;
-        margin-bottom: 15px; /* Space before selector */
+        font-size: 0.9em; /* Approx 17px from 19px base */
+        margin-bottom: 15px; /* Consistent spacing */
         text-align: left; /* Left align text */
     }
      #globalInfoBox p { margin: 0.5em 0; }
@@ -80,14 +96,34 @@
     /* Selector Styling */
     #globalSelectorBox {
         width: 100%; /* Take full width of the column */
+        margin-bottom: 15px; /* Consistent spacing */
         text-align: left; /* Left align label/select */
     }
-     #globalSelectorBox label { display: block; margin-bottom: 5px; font-weight: bold; }
-     #globalPlotSelector { width: 100%; padding: 5px; }
+     /* Styles for the new global plot selector */
+    #globalSelectorBox label { /* Label for the search input */
+        display: block;
+        margin-bottom: 8px; /* Increased space */
+        font-weight: bold; /* Will inherit Nunito Sans */
+    }
+    #globalPlotSearchInput {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 8px; /* Increased space */
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-family: 'Nunito Sans', sans-serif; /* Ensure consistent font */
+    }
+    #globalPlotListContainer {
+        max-height: 150px; /* Increased height */
+        overflow-y: auto;
+        border: 1px solid #eee;
+        border-radius: 4px;
+    }
 
     /* Canvas Gridline Toggle Styling */
     #canvasGridlineToggleBox {
         width: 100%; /* Take full width */
+        /* margin-top: 40px; Removed, will rely on margin-bottom of element above */
         text-align: left; /* Align checkbox/label left */
     }
      #canvasGridlineToggleBox label { font-weight: normal; cursor: pointer; margin-left: 5px; }
@@ -97,13 +133,15 @@
     /* Controls and SVG Area */
     #controlsBox,
     #plotDisplayArea {
-        max-width: 800px;
+        /* max-width: 800px; */
+        max-width: 1040px; /* Adjusted for 1080px site width */
         margin: 15px auto;
     }
 
     /* *** UPDATED: Data Table Container Styling *** */
     #dataTableContainer {
-        max-width: 800px; /* Match other containers */
+        /* max-width: 800px; */
+        max-width: 1040px; /* Explicitly set max-width for desktop */
         margin: 20px auto 15px auto; /* Add margin top/bottom */
         padding: 10px;
         border-top: 1px solid #ccc;
@@ -111,14 +149,18 @@
 
     /* --- Data Table Styling (Keep existing rules) --- */
     #dataTableContainer table {
-        width: 90%; /* Adjust width as needed */
+        /* width: 90%; */ /* Changed to 100% to fill its container */
+        width: 100%;
+        table-layout: fixed; /* Force table to obey width */
         margin-top: 10px;
         margin-bottom: 20px;
-        border-collapse: collapse;
+        border-collapse: collapse; /* Approx 17px from 19px base */
         font-size: 0.9em;
     }
     #dataTableContainer th,
     #dataTableContainer td {
+        word-break: break-word; /* Wrap long text in cells */
+        overflow-wrap: break-word; /* Ensure wrapping */
         border: 1px solid #ddd;
         padding: 6px;
         text-align: left;
@@ -128,14 +170,20 @@
         font-weight: bold;
     }
     #dataTableContainer h4 { /* Style for plot name headings */
+        /* font-family, font-weight, font-size, line-height, color defined in common header style */
         margin-top: 15px;
         margin-bottom: 5px;
-        font-size: 1.1em;
+        /* font-size: 1.1em; */ /* Overridden */
     }
 
 
     #controlsBox {
         padding: 15px 0px;
+    }
+    #controlsBox > label { /* Style for "Search & Select..." and "Currently Displaying..." */
+        /* font-family, font-weight, font-size, line-height, color defined in common header style */
+        display: block; /* Make them block to take full width and allow margin */
+        margin-bottom: 8px; /* Add some space below */
     }
 
     #plotDisplayArea {
@@ -158,8 +206,9 @@
     #plotSearchInput {
         width: 100%;
         padding: 10px;
+        padding: 8px; /* Standardized padding */
         border: none;
-        border-bottom: 1px solid #eee;
+        border-bottom: 1px solid #ddd; /* Slightly darker for better definition */
         border-radius: 0;
         outline: none;
     }
@@ -176,12 +225,31 @@
     .plot-list-item:hover { background-color: #f0f0f0; }
     .plot-list-item.pinned { font-weight: bold; background-color: #e8f0fe; border-bottom: 1px solid #ccc; margin-bottom: 6px; }
     .plot-list-item.pinned:hover { background-color: #dbe7fd; }
-    .plot-list-item label { margin-left: 5px; cursor: pointer; font-weight: normal; }
+    .plot-list-item label { margin-left: 5px; cursor: pointer; font-weight: normal; } /* Will inherit Nunito Sans */
     .plot-list-item input[type="checkbox"] { cursor: pointer; vertical-align: middle; }
 
+    /* Styling for items in the new global plot list */
+    .global-plot-list-item {
+        display: block; padding: 6px 10px; cursor: pointer;
+        border-bottom: 1px solid #f0f0f0; font-size: 0.9em; /* Approx 17px */
+    }
+    .global-plot-list-item:last-child { border-bottom: none; }
+    .global-plot-list-item:hover, .global-plot-list-item.selected { background-color: #e8f0fe; }
     #listActions { margin-bottom: 10px; text-align: right; }
-    #listActions button { padding: 4px 10px; margin-left: 5px; font-size: 0.9em; cursor: pointer; border: 1px solid #ccc; background-color: #f0f0f0; border-radius: 4px; }
-    #listActions button:hover { background-color: #e0e0e0; }
+    
+    .plot-list-item, #listActions button, .selected-plot-tag {
+        font-size: 0.85em; /* approx 16px from 19px base, for better fit */
+    }
+    #listActions button {
+        padding: 4px 10px; margin-left: 5px; font-size: 0.9em; cursor: pointer;
+        background-color: #fff;
+        border: 1px solid rgb(34, 35, 34);
+        color: rgb(34, 35, 34);
+        border-radius: 4px;
+        transition: background-color 0.2s, color 0.2s;
+    }
+    #listActions button:hover { background-color: rgb(34, 35, 34); color: #fff; }
+
 
     #selectedPlotsDisplayBox { margin-top: 10px; padding: 8px 0px; min-height: 30px; }
     .selected-plot-tag { display: inline-block; background-color: #e0e0e0; color: #333; padding: 3px 8px; margin: 3px; border-radius: 12px; font-size: 0.9em; cursor: pointer; transition: background-color 0.2s; }
@@ -233,24 +301,26 @@
 
     .plot-title {
         font-size: 1.05em;
-        font-weight: bold;
+        font-weight: bold; /* Will use Nunito Sans bold, approx 20px */
         margin-bottom: 4px;
         color: #333;
         padding-bottom: 0;
     }
-
-    label { margin-right: 5px; font-weight: bold; } /* General label */
+    /* label { margin-right: 5px; font-weight: bold; } */ /* General label - mostly overridden or handled by specific selectors */
 
     /* --- Data Table Styling --- */
     #dataTableContainer table {
-        width: 90%; /* Adjust width as needed */
+        width: 100%; /* Fill its container */
+        table-layout: fixed; /* Force table to obey width */
         margin-top: 10px;
         margin-bottom: 20px;
-        border-collapse: collapse;
+        border-collapse: collapse; /* Approx 17px from 19px base */
         font-size: 0.9em;
     }
     #dataTableContainer th,
     #dataTableContainer td {
+        word-break: break-word; /* Wrap long text in cells */
+        overflow-wrap: break-word; /* Ensure wrapping */
         border: 1px solid #ddd;
         padding: 6px;
         text-align: left;
@@ -259,12 +329,65 @@
         background-color: #f2f2f2;
         font-weight: bold;
     }
-    #dataTableContainer h4 { /* Style for plot name headings */
+    /* #dataTableContainer h4 styling moved to common header style section */
+    /* #dataTableContainer h4 { 
         margin-top: 15px;
         margin-bottom: 5px;
         font-size: 1.1em;
+    } */
+
+    /* --- Mobile Responsiveness --- */
+    @media (max-width: 768px) { /* Tablet and smaller */
+        body {
+            font-size: 17px; /* Slightly smaller base font */
+        }
+
+        #globalPlotTitle,
+        #controlsBox > label,
+        #dataTableContainer h4 {
+            font-size: 24px; /* Slightly smaller headers */
+        }
+
+        #globalDisplayWrapper {
+            flex-direction: column; /* Stack canvas and controls */
+            max-width: 95%; /* Allow a bit more width on tablets */
+        }
+
+        #globalControlColumn,
+        #globalDoughnutDiv {
+            flex-basis: auto; /* Allow natural sizing in column */
+            width: 100%;      /* Take full width */
+            max-width: 100%;
+        }
+        #globalControlColumn {
+            flex: 0 0 auto; /* Don't grow/shrink, auto basis */
+        }
+
+        #controlsBox,
+        #plotDisplayArea,
+        #dataTableContainer {
+            max-width: 95%;
+        }
+
+        #plotDisplayArea.multi-row .plot-container {
+            flex-basis: 50%; /* 2 plots per row */
+            max-width: 50%;
+        }
+
+        .plot-list-item, #listActions button, .selected-plot-tag {
+            font-size: 0.9em; /* Adjust for smaller base font */
+        }
     }
 
+    @media (max-width: 480px) { /* Mobile phones */
+        body {
+            font-size: 16px; /* Even smaller base font */
+        }
+        #plotDisplayArea.multi-row .plot-container {
+            flex-basis: 100%; /* 1 plot per row */
+            max-width: 100%;
+        }
+    }
 </style>
 
 <body>
@@ -274,16 +397,19 @@
         <!-- *** MOVED: Left Column for Title, Info, Selector, Toggle *** -->
         <div id="globalControlColumn"> <!-- Renamed from globalRightColumn -->
             <h4 id="globalPlotTitle">Global</h4>
+            <div id="globalSelectorBox">
+                <!-- New Global Plot Selector UI -->
+                <label for="globalPlotSearchInput">Select plot:</label>
+                <input type="text" id="globalPlotSearchInput" oninput="filterGlobalPlotList()" placeholder="Search plot...">
+                <div id="globalPlotListContainer">
+                    <p style="padding: 5px; color: #888;">Loading plots...</p>
+                </div>
+            </div>
             <div id="globalInfoBox">
                 <p><strong>Hover:</strong> <span id="globalHoverInfo">None</span></p>
+                <p><strong>Selected:</strong> <span id="globalSelectedInfo">None</span></p>
             </div>
-            <div id="globalSelectorBox">
-                <label for="globalPlotSelector">Select Plot:</label>
-                <select id="globalPlotSelector" onchange="changeGlobalPlot()">
-                    <option value="">Loading...</option>
-                </select>
-            </div>
-            <div id="canvasGridlineToggleBox" style="margin-top: 10px;">
+            <div id="canvasGridlineToggleBox"> <!-- Moved Gridline Toggle after InfoBox -->
                 <input type="checkbox" id="canvasGridlineToggle" onchange="toggleCanvasGridlines()">
                 <label for="canvasGridlineToggle" style="font-weight: normal; cursor: pointer;">Show Gridlines</label>
             </div>
@@ -326,7 +452,7 @@
             <input type="checkbox" id="gridlineToggle" onchange="toggleSvgGridlines()">
             <label for="gridlineToggle">Show SVG Gridlines</label>
         </div>
-        <label>Currently Displaying (Below):</label>
+        <label>Currently displaying:</label>
         <div id="selectedPlotsDisplayBox">
              <span style="color: #888; font-style: italic;">None</span>
         </div>
@@ -464,17 +590,19 @@
         // --- Function to Populate Checkbox List and Global Selector ---
         function populatePlotList(plotNames) { // Accepts sorted plot names
             const listContainer = document.getElementById('plotListContainer');
-            const globalSelector = document.getElementById('globalPlotSelector');
+            const globalPlotListDiv = document.getElementById('globalPlotListContainer'); // New global list
+
             listContainer.innerHTML = '';
-            globalSelector.innerHTML = '';
+            globalPlotListDiv.innerHTML = ''; // Clear new global list
 
             if (!plotNames || plotNames.length === 0) {
                 listContainer.innerHTML = '<p>No plots found</p>';
-                globalSelector.innerHTML = '<option value="">No plots</option>';
+                globalPlotListDiv.innerHTML = '<p style="padding: 5px; color: #888;">No plots found</p>';
                 return;
             }
 
             let globalExists = plotNames.includes(globalPlotName);
+            let firstPlotSelected = false;
 
             // Populate SVG Checkbox List
             // Pin Global plot if it exists
@@ -486,18 +614,27 @@
                 listContainer.appendChild(createCheckboxItem(name, false));
             });
 
-            // Populate Global Canvas Selector Dropdown (already sorted with Global first)
+            // Populate New Global Canvas Selector List
             plotNames.forEach(name => {
-                const option = document.createElement('option');
-                option.value = name;
-                option.textContent = name; // Display original name
-                if (name === globalPlotName) {
-                    option.selected = true; // Select Global by default
-                }
-                globalSelector.appendChild(option);
-            });
-         }
+                const item = document.createElement('div');
+                item.className = 'global-plot-list-item';
+                item.textContent = name;
+                item.dataset.plotname = name;
+                item.onclick = function() { selectGlobalPlotFromList(name, this); };
+                globalPlotListDiv.appendChild(item);
 
+                if (name === globalPlotName && !firstPlotSelected) {
+                    item.classList.add('selected'); // Highlight "Global" by default
+                    firstPlotSelected = true;
+                }
+            });
+
+            // If "Global" wasn't found but list isn't empty, select the first actual plot
+            if (!firstPlotSelected && globalPlotListDiv.firstChild && globalPlotListDiv.firstChild.classList) {
+                globalPlotListDiv.firstChild.classList.add('selected');
+                // Optionally, call changeGlobalPlot here if the first item should load immediately
+            }
+         }
         // --- Function to Filter Checkbox List ---
         function filterPlotList() {
             const searchTerm = document.getElementById('plotSearchInput').value.toLowerCase();
@@ -509,6 +646,18 @@
                 item.style.display = (item.classList.contains('pinned') || plotName.includes(searchTerm)) ? 'block' : 'none';
             });
          }
+
+        // --- New Function to Filter Global Plot List ---
+        function filterGlobalPlotList() {
+            const searchTerm = document.getElementById('globalPlotSearchInput').value.toLowerCase();
+            const items = document.querySelectorAll('#globalPlotListContainer .global-plot-list-item');
+            items.forEach(item => {
+                const plotName = item.textContent.toLowerCase();
+                // Show item if it matches the search term
+                item.style.display = plotName.includes(searchTerm) ? 'block' : 'none';
+            });
+        }
+
 
         // --- Select/Deselect All Functions ---
         function selectAllPlots() {
@@ -593,10 +742,15 @@
         }
 
         // --- Function to Update Canvas Info Box Text ---
-        function updateGlobalInfoText(hoverText) {
+        // Modified to accept selectedText as well
+        function updateGlobalInfoText(hoverText, selectedText) {
              const hoverSpan = document.getElementById('globalHoverInfo');
              if (hoverSpan) hoverSpan.textContent = hoverText || "None";
+             const selectedSpan = document.getElementById('globalSelectedInfo');
+             if (selectedSpan) selectedSpan.textContent = selectedText || "None";
         }
+
+
 
         // --- Function to Sanitize String for Use as ID ---
         function sanitizeId(str) {
@@ -704,27 +858,40 @@
             } else { console.warn(`Could not find checkbox for tag: ${plotNameToRemove}`); }
          }
 
-         // --- Function to Change the Global Canvas Plot ---
-         function changeGlobalPlot() {
-        const selector = document.getElementById('globalPlotSelector');
-        const titleElement = document.getElementById('globalPlotTitle');
-        const selectedPlotName = selector.value;
+        // --- New Function to Select a Plot from the Global List ---
+        function selectGlobalPlotFromList(plotName, clickedElement) {
+            // Remove 'selected' class from all other items in this list
+            const allGlobalItems = document.querySelectorAll('#globalPlotListContainer .global-plot-list-item');
+            allGlobalItems.forEach(item => item.classList.remove('selected'));
 
-        if (globalDonutInstance && selectedPlotName && allPlotData[selectedPlotName]) {
-            console.log(`Changing global canvas plot to: ${selectedPlotName}`);
-            globalDonutInstance.clearDoughnut();
-            loadSpecificPlotData(selectedPlotName, globalDonutInstance);
-            globalDonutInstance.setLabelsVisible(true); // Keep labels on for canvas
-            // Ensure canvas gridlines reflect current toggle state after data load
-            globalDonutInstance.setGridlinesVisible(isCanvasGridlinesVisible);
+            // Add 'selected' class to the clicked item
+            if (clickedElement) {
+                clickedElement.classList.add('selected');
+            }
 
-            if (titleElement) titleElement.textContent = selectedPlotName;
-            updateGlobalInfoText("None");
-
-            // *** ADD call to update data table ***
-            updateDataTable(selectedPlotName);
-            // *** END ADD call ***
+            // Call the function to change the plot
+            changeGlobalPlot(plotName);
         }
+
+
+         // --- Modified Function to Change the Global Canvas Plot ---
+         function changeGlobalPlot(plotNameToLoad) { // Now accepts plotName as argument
+            const titleElement = document.getElementById('globalPlotTitle');
+
+            if (globalDonutInstance && plotNameToLoad && allPlotData[plotNameToLoad]) {
+                console.log(`Changing global canvas plot to: ${plotNameToLoad}`);
+                globalDonutInstance.clearDoughnut();
+                loadSpecificPlotData(plotNameToLoad, globalDonutInstance);
+                globalDonutInstance.setLabelsVisible(true); // Keep labels on for canvas
+                globalDonutInstance.setGridlinesVisible(isCanvasGridlinesVisible); // Reflect current toggle state
+
+                if (titleElement) titleElement.textContent = plotNameToLoad;
+                updateGlobalInfoText("None", "None"); // Clear hover and selected info
+
+                updateDataTable(plotNameToLoad); // Update data table for the new plot
+            } else {
+                console.warn(`Could not change global plot to: ${plotNameToLoad}. Data or instance missing.`);
+            }
      }
 
          // --- Function to Toggle SVG Labels ---
@@ -791,7 +958,7 @@
 
         if (plotSpecificData && plotSpecificData.length > 0) {
             // Add a heading for the plot's table
-            tableHtml += `<h4>Data for: ${plotName.replace(/^"|"$/g, '')}</h4>`; // Remove quotes for display
+            tableHtml += `<h4>${plotName.replace(/^"|"$/g, '')} data</h4>`; // Remove quotes for display
 
             tableHtml += `
                 <table>
@@ -805,9 +972,9 @@
             `;
 
             // Sort data alphabetically by DimensionName for consistency
-            const sortedData = plotSpecificData.slice().sort((a, b) => a.dimensionName.localeCompare(b.dimensionName));
+            // const sortedData = plotSpecificData.slice().sort((a, b) => a.dimensionName.localeCompare(b.dimensionName)); // Removed sorting
 
-            sortedData.forEach(dataRow => {
+            plotSpecificData.forEach(dataRow => { // Iterate over original order
                 tableHtml += `
                     <tr>
                         <td>${dataRow.dimensionName}</td>
@@ -847,7 +1014,10 @@
                     plotSize, plotScale, plotTextSize,
                     "globalDoughnutCanvas", "globalDoughnutDiv", null, null, null, null
                 );
-                globalDonutInstance._updateInfo = function(hoverText) { updateGlobalInfoText(hoverText); };
+                // Override _updateInfo to use the new structure
+                globalDonutInstance._updateInfo = function(currentHoverText, currentSelectedText) {
+                    updateGlobalInfoText(currentHoverText, currentSelectedText);
+                };
 
                 loadSpecificPlotData(globalPlotName, globalDonutInstance);
                 globalDonutInstance.setLabelsVisible(true);
@@ -856,7 +1026,8 @@
                 globalDonutInstance._canvas.addEventListener("mousemove", (e) => { globalDonutInstance._checkMouse(e); });
                 globalDonutInstance._canvas.addEventListener("mouseleave", (e) => {
                     updateGlobalInfoText("None");
-                    globalDonutInstance._canvas.style.cursor = "default";
+                    // Selected info remains
+                    if (globalDonutInstance && globalDonutInstance._canvas) globalDonutInstance._canvas.style.cursor = "default";
                 });
 
                 if(globalPlotTitleEl) globalPlotTitleEl.textContent = globalPlotName;
@@ -872,7 +1043,11 @@
             sortedPlotNames = plotNames.sort((a, b) => { /* ... sorting ... */ });
 
             populatePlotList(sortedPlotNames);
-            handlePlotSelectionChange(); // Renders initial SVGs only now
+            // Initial call to changeGlobalPlot if "Global" is the default and should load its data table
+            if (sortedPlotNames.includes(globalPlotName)) {
+                 changeGlobalPlot(globalPlotName); // This will also call updateDataTable
+            }
+            handlePlotSelectionChange(); // Renders initial SVGs
 
             // Set initial state of toggle checkboxes
             const svgLabelCheckbox = document.getElementById('svgLabelToggle');
