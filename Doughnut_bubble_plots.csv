@@ -1,222 +1,219 @@
 Country,Label,Population,IncomeGroup,Biophysical ceiling overshoot (number of indicators),Healthcare foundations acheived,Average ecological multiplier without transformation,Extent of shortfall as a percent,Labels
-Afghanistan,AFG,"42,239,854",Low income,0,0,0.245,68.2%,AFG
-Albania,ALB,"2,745,972",Upper middle income,3,6,1.020,22.0%,
-Algeria,DZA,"45,606,480",Lower middle income,2,1,1.519,30.4%,DZA
-American Samoa,ASM,"43,914",High income,#N/A,#N/A,#N/A,#N/A,
-Andorra,AND,"80,088",High income,#N/A,#N/A,#N/A,#N/A,
-Angola,AGO,"36,684,202",Lower middle income,1,0,0.297,58.9%,AGO
-Antigua and Barbuda,ATG,"94,298",High income,3,7,8.384,18.8%,
-Argentina,ARG,"46,654,581",Upper middle income,3,8,6.716,20.9%,ARG
-Armenia,ARM,"2,777,970",Upper middle income,3,6,1.460,22.8%,
-Aruba,ABW,"106,277",High income,#N/A,#N/A,#N/A,#N/A,
-Australia,AUS,"26,638,544",High income,6,10,129.849,11.3%,
-Austria,AUT,"9,132,383",High income,5,9,27.780,9.2%,
-Azerbaijan,AZE,"10,112,555",Upper middle income,1,6,1.779,21.5%,
-"Bahamas, The",BHS,"412,623",High income,5,6,16.079,20.5%,
-Bahrain,BHR,"1,485,509",High income,4,4,316.057,26.0%,
-Bangladesh,BGD,"172,954,319",Lower middle income,1,1,0.348,46.3%,BGD
-Barbados,BRB,"281,995",High income,3,4,6.342,20.8%,
-Belarus,BLR,"9,178,298",Upper middle income,4,7,13.585,19.1%,
-Belgium,BEL,"11,822,592",High income,6,11,40.777,7.1%,
-Belize,BLZ,"410,825",Upper middle income,4,1,2.199,35.2%,
-Benin,BEN,"13,712,828",Lower middle income,0,0,0.276,61.3%,
-Bermuda,BMU,"63,489",High income,4,#N/A,17.235,#N/A,
-Bhutan,BTN,"787,424",Lower middle income,3,2,1.153,37.2%,
-Bolivia,BOL,"12,388,571",Lower middle income,2,1,0.617,36.0%,BOL
-Bosnia and Herzegovina,BIH,"3,210,847",Upper middle income,5,4,4.846,17.6%,
-Botswana,BWA,"2,675,352",Upper middle income,2,1,3.152,34.9%,
-Brazil,BRA,"216,422,446",Upper middle income,2,5,2.341,19.3%,BRA
-British Virgin Islands,VGB,"31,538",High income,#N/A,#N/A,#N/A,#N/A,
-Brunei Darussalam,BRN,"452,524",High income,#N/A,7,#N/A,17.4%,
-Bulgaria,BGR,"6,430,370",High income,5,8,6.714,19.1%,
-Burkina Faso,BFA,"23,251,485",Low income,0,1,0.175,56.3%,
-Burundi,BDI,"13,238,559",Low income,0,0,0.127,54.1%,
-Cabo Verde,CPV,"598,682",Lower middle income,1,5,0.808,33.4%,
-Cambodia,KHM,"16,944,826",Lower middle income,0,0,0.196,45.2%,
-Cameroon,CMR,"28,647,293",Lower middle income,0,1,0.222,52.5%,
-Canada,CAN,"40,097,761",High income,5,12,78.122,5.8%,CAN
-Cayman Islands,CYM,"69,310",High income,#N/A,#N/A,#N/A,#N/A,
-Central African Republic,CAF,"5,742,315",Low income,0,0,0.118,73.6%,CAF
-Chad,TCD,"18,278,568",Low income,0,0,0.133,73.1%,
-Channel Islands,,"175,346",High income,#N/A,#N/A,#N/A,#N/A,
-Chile,CHL,"19,629,590",High income,4,6,7.974,13.2%,
-China,CHN,"1,410,710,000",Upper middle income,2,6,9.059,25.9%,CHN
-Colombia,COL,"52,085,168",Upper middle income,2,4,1.640,26.6%,COL
-Comoros,COM,"852,075",Lower middle income,1,#N/A,0.491,#N/A,
-"Congo, Dem. Rep.",COD,"102,262,808",Low income,0,0,0.137,59.3%,COD
-"Congo, Rep.",COG,"6,106,869",Lower middle income,1,0,1.298,52.0%,
-Costa Rica,CRI,"5,212,173",Upper middle income,4,6,2.353,18.9%,
-Cote d'Ivoire,CIV,"28,873,034",Lower middle income,0,1,0.276,53.6%,
-Croatia,HRV,"3,853,200",High income,5,9,7.071,15.1%,
-Cuba,CUB,"11,194,449",Upper middle income,#N/A,9,#N/A,16.5%,
-Curacao,,"147,862",High income,#N/A,#N/A,#N/A,#N/A,
-Cyprus,CYP,"1,260,138",High income,4,8,10.532,11.4%,
-Czechia,CZE,"10,873,689",High income,5,9,23.944,11.2%,
-Denmark,DNK,"5,946,952",High income,6,10,35.438,13.4%,
-Djibouti,DJI,"1,136,455",Lower middle income,3,0,1.422,53.4%,DJI
-Dominica,DMA,"73,040",Upper middle income,2,3,2.798,35.9%,
-Dominican Republic,DOM,"11,332,972",Upper middle income,2,4,1.564,32.8%,
-Ecuador,ECU,"18,190,484",Upper middle income,3,5,2.300,27.2%,
-"Egypt, Arab Rep.",EGY,"112,716,598",Lower middle income,#N/A,4,#N/A,40.3%,EGY
-El Salvador,SLV,"6,364,943",Upper middle income,1,3,0.506,24.2%,
-Equatorial Guinea,GNQ,"1,714,671",Upper middle income,4,#N/A,16.376,#N/A,
-Eritrea,ERI,"3,748,901",Low income,#N/A,1,#N/A,52.8%,
-Estonia,EST,"1,366,188",High income,5,9,16.521,16.3%,
-Eswatini,SWZ,"1,210,822",Lower middle income,2,2,1.022,38.3%,
-Ethiopia,ETH,"126,527,060",Low income,0,0,0.134,53.2%,ETH
-Faroe Islands,FRO,"53,270",High income,#N/A,#N/A,#N/A,#N/A,
-Fiji,FJI,"936,375",Upper middle income,4,3,8.230,33.3%,
-Finland,FIN,"5,584,264",High income,6,11,41.744,10.7%,
-France,FRA,"68,170,228",High income,5,9,13.454,8.4%,FRA
-French Polynesia,PYF,"308,872",High income,#N/A,#N/A,#N/A,#N/A,
-Gabon,GAB,"2,436,566",Upper middle income,4,0,14.554,41.9%,GAB
-"Gambia, The",GMB,"2,773,168",Low income,0,1,0.194,52.7%,
-Georgia,GEO,"3,760,365",Upper middle income,3,5,2.136,22.1%,
-Germany,DEU,"84,482,267",High income,6,8,29.240,7.1%,DEU
-Ghana,GHA,"34,121,985",Lower middle income,0,1,0.331,41.7%,
-Gibraltar,GIB,"32,688",High income,#N/A,#N/A,#N/A,#N/A,
-Greece,GRC,"10,361,295",High income,4,9,11.981,17.2%,
+Afghanistan,AFG,"43,245,802",Low income,0,0,0.246,68.2%,AFG
+Albania,ALB,"2,714,353",Upper middle income,3,6,1.014,22.0%,
+Algeria,DZA,"47,124,810",Lower middle income,2,1,1.555,30.4%,DZA
+American Samoa,ASM,"46,397",High income,#N/A,#N/A,#N/A,#N/A,
+Andorra,AND,"82,421",High income,#N/A,#N/A,#N/A,#N/A,
+Angola,AGO,"38,462,944",Lower middle income,1,0,0.306,58.9%,AGO
+Antigua and Barbuda,ATG,"93,991",High income,3,7,8.360,18.8%,
+Argentina,ARG,"45,773,769",Upper middle income,3,8,6.601,20.9%,ARG
+Armenia,ARM,"2,958,334",Upper middle income,3,6,1.519,22.8%,
+Aruba,ABW,"107,481",High income,#N/A,#N/A,#N/A,#N/A,
+Australia,AUS,"27,036,857",High income,6,10,131.757,11.3%,
+Austria,AUT,"9,114,711",High income,5,9,27.738,9.2%,
+Azerbaijan,AZE,"10,250,908",Upper middle income,1,6,1.801,21.5%,
+"Bahamas, The",BHS,"402,158",High income,5,6,15.704,20.5%,
+Bahrain,BHR,"1,632,632",High income,4,4,347.297,26.0%,
+Bangladesh,BGD,"175,000,000",Lower middle income,1,1,0.349,46.3%,BGD
+Barbados,BRB,"282,545",High income,3,4,6.355,20.8%,
+Belarus,BLR,"9,091,662",Upper middle income,4,7,13.464,19.1%,
+Belgium,BEL,"11,817,844",High income,6,11,40.772,7.1%,
+Belize,BLZ,"419,998",Upper middle income,4,1,2.240,35.2%,
+Benin,BEN,"14,638,592",Lower middle income,0,0,0.284,61.3%,
+Bermuda,BMU,"64,596",High income,4,#N/A,17.527,#N/A,
+Bhutan,BTN,"794,103",Lower middle income,3,2,1.160,37.2%,
+Bolivia,BOL,"12,497,579",Lower middle income,2,1,0.620,36.0%,
+Bosnia and Herzegovina,BIH,"3,152,174",Upper middle income,5,4,4.772,17.6%,BIH
+Botswana,BWA,"2,541,631",Upper middle income,2,1,3.006,34.9%,
+Brazil,BRA,"212,500,000",Upper middle income,2,5,2.306,19.3%,BRA
+British Virgin Islands,VGB,"39,602",High income,#N/A,#N/A,#N/A,#N/A,
+Brunei Darussalam,BRN,"464,526",High income,#N/A,7,#N/A,17.4%,
+Bulgaria,BGR,"6,386,858",High income,5,8,6.678,19.1%,
+Burkina Faso,BFA,"23,811,681",Low income,0,1,0.176,56.3%,
+Burundi,BDI,"14,218,895",Low income,0,0,0.128,54.1%,
+Cabo Verde,CPV,"526,102",Lower middle income,1,5,0.744,33.4%,
+Cambodia,KHM,"17,743,392",Lower middle income,0,0,0.201,45.2%,
+Cameroon,CMR,"29,501,541",Lower middle income,0,1,0.225,52.5%,
+Canada,CAN,"40,664,004",High income,5,12,79.200,5.8%,CAN
+Cayman Islands,CYM,"75,151",High income,#N/A,#N/A,#N/A,#N/A,
+Central African Republic,CAF,"5,421,986",Low income,0,0,0.117,73.6%,
+Chad,TCD,"20,651,414",Low income,0,0,0.137,73.1%,
+Channel Islands,,"168,296",High income,#N/A,#N/A,#N/A,#N/A,
+Chile,CHL,"19,812,346",High income,4,6,8.045,13.2%,
+China,CHN,"1,405,000,000",Upper middle income,2,6,9.027,25.9%,CHN
+Colombia,COL,"53,155,999",Upper middle income,2,4,1.669,26.6%,COL
+Comoros,COM,"874,738",Lower middle income,1,#N/A,0.498,#N/A,
+"Congo, Dem. Rep.",COD,"111,000,000",Low income,0,0,0.139,59.3%,COD
+"Congo, Rep.",COG,"6,408,699",Lower middle income,1,0,1.354,52.0%,
+Costa Rica,CRI,"5,141,430",Upper middle income,4,6,2.334,18.9%,
+Cote d'Ivoire,CIV,"32,322,889",Lower middle income,0,1,0.291,53.6%,
+Croatia,HRV,"3,819,177",High income,5,9,7.022,15.1%,
+Cuba,CUB,"10,958,493",Upper middle income,#N/A,9,#N/A,16.5%,
+Curacao,,"147,968",High income,#N/A,#N/A,#N/A,#N/A,
+Cyprus,CYP,"1,364,518",High income,4,8,11.332,11.4%,
+Czechia,CZE,"10,679,146",High income,5,9,23.539,11.2%,
+Denmark,DNK,"5,979,896",High income,6,10,35.633,13.4%,
+Djibouti,DJI,"1,176,399",Lower middle income,3,0,1.449,53.4%,DJI
+Dominica,DMA,"66,038",Upper middle income,2,3,2.569,35.9%,
+Dominican Republic,DOM,"11,474,022",Upper middle income,2,4,1.581,32.8%,
+Ecuador,ECU,"18,212,687",Upper middle income,3,5,2.304,27.2%,
+"Egypt, Arab Rep.",EGY,"117,500,000",Lower middle income,#N/A,4,#N/A,40.3%,EGY
+El Salvador,SLV,"6,351,848",Upper middle income,1,3,0.506,24.2%,
+Equatorial Guinea,GNQ,"1,915,474",Upper middle income,4,#N/A,18.224,#N/A,
+Eritrea,ERI,"3,571,303",Low income,#N/A,1,#N/A,52.8%,
+Estonia,EST,"1,347,109",High income,5,9,16.304,16.3%,
+Eswatini,SWZ,"1,249,498",Lower middle income,2,2,1.048,38.3%,
+Ethiopia,ETH,"133,500,000",Low income,0,0,0.134,53.2%,ETH
+Faroe Islands,FRO,"55,465",High income,#N/A,#N/A,#N/A,#N/A,
+Fiji,FJI,"930,969",Upper middle income,4,3,8.193,33.3%,
+Finland,FIN,"5,592,666",High income,6,11,41.812,10.7%,
+France,FRA,"68,432,100",High income,5,9,13.506,8.4%,FRA
+French Polynesia,PYF,"282,136",High income,#N/A,#N/A,#N/A,#N/A,
+Gabon,GAB,"2,566,041",Upper middle income,4,0,15.291,41.9%,GAB
+"Gambia, The",GMB,"2,791,041",Low income,0,1,0.194,52.7%,
+Georgia,GEO,"3,715,087",Upper middle income,3,5,2.118,22.1%,
+Germany,DEU,"82,619,808",High income,6,8,28.649,7.1%,DEU
+Ghana,GHA,"34,745,843",Lower middle income,0,1,0.335,41.7%,
+Gibraltar,GIB,"39,728",High income,#N/A,#N/A,#N/A,#N/A,
+Greece,GRC,"10,205,416",High income,4,9,11.824,17.2%,
 Greenland,GRL,"56,865",High income,#N/A,#N/A,#N/A,#N/A,
-Grenada,GRD,"126,183",Upper middle income,2,5,3.198,29.2%,
-Guam,GUM,"172,952",High income,#N/A,#N/A,#N/A,#N/A,
-Guatemala,GTM,"17,602,431",Upper middle income,1,2,0.797,37.2%,
-Guinea,GIN,"14,190,612",Lower middle income,0,1,0.290,61.9%,
-Guinea-Bissau,GNB,"2,150,842",Low income,0,0,0.298,58.0%,
-Guyana,GUY,"813,834",High income,2,3,4.851,29.8%,
-Haiti,HTI,"11,724,763",Lower middle income,0,1,0.202,59.8%,
-Honduras,HND,"10,593,798",Lower middle income,1,2,0.321,44.3%,
-"Hong Kong SAR, China",HKG,"7,536,100",High income,#N/A,#N/A,#N/A,#N/A,
-Hungary,HUN,"9,589,872",High income,5,9,9.257,13.8%,
-Iceland,ISL,"393,600",High income,5,11,28.413,7.5%,
-India,IND,"1,428,627,663",Lower middle income,2,2,0.760,38.6%,IND
-Indonesia,IDN,"277,534,122",Upper middle income,2,2,1.095,38.8%,IDN
-"Iran, Islamic Rep.",IRN,"89,172,767",Upper middle income,2,4,10.803,22.0%,IRN
-Iraq,IRQ,"45,504,560",Upper middle income,2,2,15.744,36.1%,IRQ
-Ireland,IRL,"5,262,382",High income,6,11,53.544,8.4%,
-Isle of Man,,"84,710",High income,#N/A,#N/A,#N/A,#N/A,
-Israel,ISR,"9,756,700",High income,5,9,25.348,12.5%,
-Italy,ITA,"58,761,146",High income,5,11,15.901,10.0%,ITA
-Jamaica,JAM,"2,825,544",Upper middle income,1,1,1.818,34.0%,
-Japan,JPN,"124,516,650",High income,5,10,26.097,12.8%,JPN
-Jordan,JOR,"11,337,052",Lower middle income,1,7,1.816,25.0%,JOR
-Kazakhstan,KAZ,"19,900,177",Upper middle income,3,6,28.961,15.0%,
-Kenya,KEN,"55,100,586",Lower middle income,0,2,0.307,44.1%,KEN
-Kiribati,KIR,"133,515",Lower middle income,4,1,4.263,45.3%,
-"Korea, Dem. People's Rep.",PRK,"26,160,821",Low income,#N/A,#N/A,#N/A,#N/A,
-"Korea, Rep.",KOR,"51,712,619",High income,6,11,45.996,9.8%,KOR
-Kosovo,XKX,"1,756,374",Upper middle income,#N/A,#N/A,#N/A,#N/A,
-Kuwait,KWT,"4,310,108",High income,3,8,75.511,16.7%,
-Kyrgyzstan Republic,KGZ,"7,100,800",Lower middle income,2,5,0.706,26.5%,
-Lao PDR,LAO,"7,633,779",Lower middle income,0,1,0.227,39.2%,
-Latvia,LVA,"1,881,750",High income,5,6,5.604,18.1%,
-Lebanon,LBN,"5,353,930",Lower middle income,2,5,2.772,29.5%,
-Lesotho,LSO,"2,330,318",Lower middle income,1,2,0.967,53.6%,
-Liberia,LBR,"5,418,377",Low income,0,0,0.188,54.4%,
-Libya,LBY,"6,888,388",Upper middle income,5,4,49.977,25.0%,LBY
-Liechtenstein,LIE,"39,584",High income,#N/A,#N/A,#N/A,#N/A,
-Lithuania,LTU,"2,871,897",High income,4,#N/A,6.271,#N/A,
-Luxembourg,LUX,"668,606",High income,6,9,72.297,8.8%,
-"Macao SAR, China",,"704,149",High income,#N/A,#N/A,#N/A,#N/A,
-Madagascar,MDG,"30,325,732",Low income,0,0,0.161,56.0%,
-Malawi,MWI,"20,931,751",Low income,0,2,0.141,47.0%,
-Malaysia,MYS,"34,308,525",Upper middle income,2,4,3.786,27.7%,
-Maldives,MDV,"521,021",Upper middle income,5,9,15.550,24.3%,
-Mali,MLI,"23,293,698",Low income,0,0,0.254,61.3%,
-Malta,MLT,"553,214",High income,5,9,14.516,12.7%,
-Marshall Islands,MHL,"41,996",Upper middle income,4,#N/A,11.701,#N/A,
-Mauritania,MRT,"4,862,989",Lower middle income,1,1,0.576,50.2%,
-Mauritius,MUS,"1,261,041",Upper middle income,3,6,2.089,22.9%,
-Mexico,MEX,"128,455,567",Upper middle income,3,5,5.755,25.5%,MEX
-"Micronesia, Fed. Sts.",FSM,"115,224",Lower middle income,4,#N/A,7.998,#N/A,
-Moldova,MDA,"2,486,891",Upper middle income,2,5,2.095,22.1%,
-Monaco,MCO,"36,297",High income,#N/A,#N/A,#N/A,#N/A,
-Mongolia,MNG,"3,447,157",Upper middle income,2,6,5.749,21.5%,MNG
-Montenegro,MNE,"616,177",Upper middle income,5,8,12.605,17.6%,
-Morocco,MAR,"37,840,044",Lower middle income,1,2,1.064,36.6%,MAR
-Mozambique,MOZ,"33,897,354",Low income,0,0,0.167,59.3%,
-Myanmar,MMR,"54,577,997",Lower middle income,0,0,0.308,47.4%,MMR
-Namibia,NAM,"2,604,172",Upper middle income,3,1,2.262,34.8%,
-Nauru,NRU,"12,780",High income,4,#N/A,42.743,#N/A,
-Nepal,NPL,"30,896,590",Lower middle income,1,2,0.419,40.2%,
-Netherlands,NLD,"17,879,488",High income,5,9,27.830,11.9%,
-New Caledonia,NCL,"267,940",High income,#N/A,#N/A,#N/A,#N/A,
-New Zealand,NZL,"5,223,100",High income,6,8,37.322,13.1%,NZL
-Nicaragua,NIC,"7,046,310",Lower middle income,1,2,0.423,32.6%,
-Niger,NER,"27,202,843",Low income,0,0,0.110,64.9%,
-Nigeria,NGA,"223,804,632",Lower middle income,0,1,0.381,57.3%,NGA
-North Macedonia,MKD,"1,811,980",Upper middle income,5,8,4.465,17.7%,
-Northern Mariana Islands,MNP,"49,796",High income,#N/A,#N/A,#N/A,#N/A,
-Norway,NOR,"5,519,594",High income,6,11,39.910,10.8%,
-Oman,OMN,"4,644,384",High income,4,6,58.760,23.7%,
-Pakistan,PAK,"240,485,658",Lower middle income,1,0,0.493,52.2%,PAK
-Palau,PLW,"18,058",High income,5,#N/A,60.616,#N/A,
-Panama,PAN,"4,468,087",High income,2,4,1.631,21.6%,
-Papua New Guinea,PNG,"10,329,931",Lower middle income,1,0,1.046,55.0%,
-Paraguay,PRY,"6,861,524",Upper middle income,3,6,1.077,26.5%,
-Peru,PER,"34,352,719",Upper middle income,1,4,0.675,27.9%,
-Philippines,PHL,"117,337,368",Lower middle income,1,2,0.375,34.2%,PHL
-Poland,POL,"36,685,849",High income,5,7,13.611,18.3%,POL
-Portugal,PRT,"10,525,347",High income,5,10,10.640,8.5%,
-Puerto Rico,PRI,"3,205,691",High income,#N/A,#N/A,#N/A,#N/A,
-Qatar,QAT,"2,716,391",High income,4,8,550.855,18.6%,
-Romania,ROU,"19,056,116",High income,5,8,5.879,17.9%,
-Russian Federation,RUS,"143,826,130",High income,4,6,24.400,18.2%,RUS
-Rwanda,RWA,"14,094,683",Low income,0,1,0.252,46.6%,
-Samoa,WSM,"225,681",Lower middle income,4,2,6.992,43.3%,
-San Marino,SMR,"33,642",High income,#N/A,#N/A,#N/A,#N/A,
-Sao Tome and Principe,STP,"231,856",Lower middle income,1,2,0.729,36.1%,
-Saudi Arabia,SAU,"36,947,025",High income,5,6,111.836,20.1%,SAU
-Senegal,SEN,"17,763,163",Lower middle income,0,1,0.278,51.4%,
-Serbia,SRB,"6,618,026",Upper middle income,5,7,4.379,19.3%,
-Seychelles,SYC,"119,773",High income,3,9,3.684,21.9%,SYC
-Sierra Leone,SLE,"8,791,092",Low income,0,1,0.118,57.0%,
-Singapore,SGP,"5,917,648",High income,5,10,40.622,11.4%,
-Sint Maarten (Dutch part),,"41,163",High income,#N/A,#N/A,#N/A,#N/A,
-Slovak Republic,SVK,"5,426,740",High income,5,8,11.524,11.5%,
-Slovenia,SVN,"2,120,937",High income,5,9,17.378,13.7%,
-Solomon Islands,SLB,"740,424",Lower middle income,4,1,4.751,45.1%,
-Somalia,SOM,"18,143,378",Low income,0,0,0.097,70.3%,
-South Africa,ZAF,"60,414,495",Upper middle income,3,3,11.679,31.7%,ZAF
-South Sudan,SSD,"11,088,796",Low income,#N/A,0,#N/A,71.5%,
-Spain,ESP,"48,373,336",High income,6,9,13.221,8.2%,ESP
-Sri Lanka,LKA,"22,037,000",Lower middle income,1,6,0.460,25.2%,
-St. Kitts and Nevis,KNA,"47,755",High income,3,#N/A,5.764,#N/A,
-St. Lucia,LCA,"180,251",Upper middle income,2,2,3.616,31.7%,
-St. Martin (French part),,"32,077",High income,#N/A,#N/A,#N/A,#N/A,
-St. Vincent and the Grenadines,VCT,"103,698",Upper middle income,2,6,2.460,25.4%,
-Sudan,SDN,"48,109,006",Low income,1,0,0.556,53.2%,SDN
-Suriname,SUR,"623,236",Upper middle income,2,4,7.444,29.1%,
-Sweden,SWE,"10,536,632",High income,4,11,18.830,11.1%,SWE
-Switzerland,CHE,"8,849,852",High income,6,12,45.050,8.2%,CHE
-Syrian Arab Republic,SYR,"23,227,014",Low income,2,3,1.555,34.3%,
-"Taiwan, China",TWN,#N/A,High income,#N/A,#N/A,#N/A,#N/A,#N/A
-Tajikistan,TJK,"10,143,543",Lower middle income,2,6,0.614,29.4%,
-Tanzania,TZA,"67,438,106",Lower middle income,1,1,0.318,49.5%,TZA
-Thailand,THA,"71,801,279",Upper middle income,2,5,3.647,25.1%,THA
-Timor-Leste,TLS,"1,360,596",Lower middle income,#N/A,0,#N/A,45.5%,
-Togo,TGO,"9,053,799",Low income,0,0,0.347,57.4%,
-Tonga,TON,"107,773",Upper middle income,4,#N/A,7.448,#N/A,
-Trinidad and Tobago,TTO,"1,534,937",High income,3,5,30.368,27.8%,
-Tunisia,TUN,"12,458,223",Lower middle income,2,3,1.893,26.5%,
-Turkiye,TUR,"85,326,000",Upper middle income,4,8,6.371,17.0%,TUR
-Turkmenistan,TKM,"6,516,100",Upper middle income,#N/A,6,#N/A,22.0%,
-Turks and Caicos Islands,TCA,"46,062",High income,#N/A,#N/A,#N/A,#N/A,
-Tuvalu,TUV,"11,396",Upper middle income,4,#N/A,6.719,#N/A,
-Uganda,UGA,"48,582,334",Low income,0,1,0.234,45.7%,UGA
-Ukraine,UKR,"37,000,000",Upper middle income,1,5,3.131,19.7%,UKR
-United Arab Emirates,ARE,"9,516,871",High income,3,7,119.308,21.6%,
-United Kingdom,GBR,"68,350,000",High income,5,7,21.149,8.9%,GBR
-United States,USA,"334,914,895",High income,6,10,145.506,9.8%,USA
-Uruguay,URY,"3,423,108",High income,4,6,5.099,17.4%,
-Uzbekistan,UZB,"36,412,350",Lower middle income,1,6,2.447,26.9%,UZB
-Vanuatu,VUT,"334,506",Lower middle income,4,#N/A,5.057,#N/A,
-"Venezuela, RB",VEN,"28,838,499",Upper middle income,#N/A,1,#N/A,40.3%,
-Viet Nam,VNM,"98,858,950",Lower middle income,3,4,1.285,32.7%,VNM
-Virgin Islands (U.S.),,"104,917",High income,#N/A,#N/A,#N/A,#N/A,
-West Bank and Gaza,PSE,"5,165,775",Lower middle income,#N/A,1,#N/A,30.7%,
-"Yemen, Rep.",YEM,"34,449,825",Low income,#N/A,#N/A,#N/A,#N/A,
-Zambia,ZMB,"20,569,737",Lower middle income,0,0,0.276,41.7%,
-Zimbabwe,ZWE,"16,665,409",Lower middle income,1,2,0.545,46.0%,
-,,,,,,,,
-,,,,,,0.097,,
-,,,,,,550.855,,
+Grenada,GRD,"117,255",Upper middle income,2,5,3.001,29.2%,
+Guam,GUM,"168,388",High income,#N/A,#N/A,#N/A,#N/A,
+Guatemala,GTM,"18,547,120",Upper middle income,1,2,0.830,37.2%,
+Guinea,GIN,"14,927,256",Lower middle income,0,1,0.296,61.9%,
+Guinea-Bissau,GNB,"2,225,434",Low income,0,0,0.303,58.0%,
+Guyana,GUY,"833,537",High income,2,3,4.961,29.8%,
+Haiti,HTI,"11,839,326",Lower middle income,0,1,0.203,59.8%,
+Honduras,HND,"10,915,777",Lower middle income,1,2,0.328,44.3%,
+"Hong Kong SAR, China",HKG,"7,497,988",High income,#N/A,#N/A,#N/A,#N/A,
+Hungary,HUN,"9,534,987",High income,5,9,9.213,13.8%,
+Iceland,ISL,"400,754",High income,5,11,28.882,7.5%,
+India,IND,"1,455,000,000",Lower middle income,2,2,0.771,38.6%,IND
+Indonesia,IDN,"284,500,000",Upper middle income,2,2,1.119,38.8%,IDN
+"Iran, Islamic Rep.",IRN,"91,992,710",Upper middle income,2,4,11.134,22.0%,IRN
+Iraq,IRQ,"46,531,395",Upper middle income,2,2,16.092,36.1%,IRQ
+Ireland,IRL,"5,388,103",High income,6,11,54.788,8.4%,
+Isle of Man,,"84,139",High income,#N/A,#N/A,#N/A,#N/A,
+Israel,ISR,"9,959,148",High income,5,9,25.856,12.5%,
+Italy,ITA,"58,678,494",High income,5,11,15.886,10.0%,ITA
+Jamaica,JAM,"2,838,126",Upper middle income,1,1,1.827,34.0%,
+Japan,JPN,"123,500,000",High income,5,10,25.901,12.8%,JPN
+Jordan,JOR,"11,536,780",Lower middle income,1,7,1.844,25.0%,
+Kazakhstan,KAZ,"20,718,163",Upper middle income,3,6,30.131,15.0%,
+Kenya,KEN,"56,982,719",Lower middle income,0,2,0.310,44.1%,KEN
+Kiribati,KIR,"135,503",Lower middle income,4,1,4.315,45.3%,
+"Korea, Dem. People's Rep.",PRK,"26,534,930",Low income,#N/A,#N/A,#N/A,#N/A,
+"Korea, Rep.",KOR,"51,588,158",High income,6,11,45.897,9.8%,KOR
+Kosovo,XKX,"1,740,114",Upper middle income,#N/A,#N/A,#N/A,#N/A,
+Kuwait,KWT,"4,996,554",High income,3,8,87.447,16.7%,
+Kyrgyzstan Republic,KGZ,"7,265,653",Lower middle income,2,5,0.717,26.5%,
+Lao PDR,LAO,"7,821,433",Lower middle income,0,1,0.230,39.2%,
+Latvia,LVA,"1,850,988",High income,5,6,5.530,18.1%,
+Lebanon,LBN,"5,827,692",Lower middle income,2,5,2.983,29.5%,
+Lesotho,LSO,"2,350,374",Lower middle income,1,2,0.974,53.6%,
+Liberia,LBR,"5,672,012",Low income,0,0,0.191,54.4%,
+Libya,LBY,"7,419,789",Upper middle income,5,4,53.762,25.0%,
+Liechtenstein,LIE,"40,254",High income,#N/A,#N/A,#N/A,#N/A,
+Lithuania,LTU,"2,833,782",High income,4,#N/A,6.199,#N/A,
+Luxembourg,LUX,"677,603",High income,6,9,73.246,8.8%,
+"Macao SAR, China",,"672,372",High income,#N/A,#N/A,#N/A,#N/A,
+Madagascar,MDG,"32,352,817",Low income,0,0,0.163,56.0%,
+Malawi,MWI,"21,935,703",Low income,0,2,0.142,47.0%,
+Malaysia,MYS,"35,767,756",Upper middle income,2,4,3.938,27.7%,MYS
+Maldives,MDV,"528,738",Upper middle income,5,9,15.769,24.3%,
+Mali,MLI,"24,838,708",Low income,0,0,0.258,61.3%,
+Malta,MLT,"561,401",High income,5,9,14.715,12.7%,
+Marshall Islands,MHL,"36,915",Upper middle income,4,#N/A,10.423,#N/A,
+Mauritania,MRT,"5,242,230",Lower middle income,1,1,0.601,50.2%,
+Mauritius,MUS,"1,257,857",Upper middle income,3,6,2.085,22.9%,
+Mexico,MEX,"131,500,000",Upper middle income,3,5,5.877,25.5%,MEX
+"Micronesia, Fed. Sts.",FSM,"113,422",Lower middle income,4,#N/A,7.895,#N/A,
+Moldova,MDA,"2,405,253",Upper middle income,2,5,2.044,22.1%,
+Monaco,MCO,"38,486",High income,#N/A,#N/A,#N/A,#N/A,
+Mongolia,MNG,"3,545,906",Upper middle income,2,6,5.903,21.5%,MNG
+Montenegro,MNE,"609,497",Upper middle income,6,8,12.500,17.6%,
+Morocco,MAR,"38,255,972",Lower middle income,1,2,1.073,36.6%,MAR
+Mozambique,MOZ,"35,131,710",Low income,0,0,0.169,59.3%,MOZ
+Myanmar,MMR,"54,675,370",Lower middle income,0,0,0.309,47.4%,MMR
+Namibia,NAM,"3,061,474",Upper middle income,3,1,2.581,34.8%,
+Nauru,NRU,"11,986",High income,4,#N/A,40.165,#N/A,
+Nepal,NPL,"29,634,586",Lower middle income,1,2,0.416,40.2%,
+Netherlands,NLD,"18,045,815",High income,5,9,28.082,11.9%,
+New Caledonia,NCL,"293,986",High income,#N/A,#N/A,#N/A,#N/A,
+New Zealand,NZL,"5,278,477",High income,6,8,37.700,13.1%,NZL
+Nicaragua,NIC,"6,961,821",Lower middle income,1,2,0.421,32.6%,
+Niger,NER,"27,475,122",Low income,0,0,0.110,64.9%,
+Nigeria,NGA,"235,500,000",Lower middle income,0,1,0.390,57.3%,NGA
+North Macedonia,MKD,"1,814,251",Upper middle income,5,8,4.473,17.7%,
+Northern Mariana Islands,MNP,"43,910",High income,#N/A,#N/A,#N/A,#N/A,
+Norway,NOR,"5,589,434",High income,6,11,40.398,10.8%,
+Oman,OMN,"5,388,115",High income,4,6,68.067,23.7%,
+Pakistan,PAK,"253,000,000",Lower middle income,2,0,0.504,52.2%,PAK
+Palau,PLW,"17,679",High income,5,#N/A,59.376,#N/A,
+Panama,PAN,"4,543,383",High income,2,4,1.655,21.6%,
+Papua New Guinea,PNG,"10,669,660",Lower middle income,1,0,1.071,55.0%,PNG
+Paraguay,PRY,"6,971,116",Upper middle income,3,6,1.090,26.5%,
+Peru,PER,"34,397,257",Upper middle income,1,4,0.676,27.9%,
+Philippines,PHL,"116,500,000",Lower middle income,1,2,0.373,34.2%,PHL
+Poland,POL,"36,135,650",High income,5,7,13.424,18.3%,POL
+Portugal,PRT,"10,554,546",High income,5,10,10.671,8.5%,
+Puerto Rico,PRI,"3,193,972",High income,#N/A,#N/A,#N/A,#N/A,
+Qatar,QAT,"2,755,428",High income,4,8,558.763,18.6%,
+Romania,ROU,"18,907,474",High income,5,8,5.842,17.9%,
+Russian Federation,RUS,"142,500,000",High income,4,6,24.184,18.2%,RUS
+Rwanda,RWA,"14,412,954",Low income,0,1,0.253,46.6%,
+Samoa,WSM,"218,663",Lower middle income,4,2,6.813,43.3%,
+San Marino,SMR,"33,703",High income,#N/A,#N/A,#N/A,#N/A,
+Sao Tome and Principe,STP,"237,895",Lower middle income,1,2,0.742,36.1%,
+Saudi Arabia,SAU,"34,161,812",High income,5,6,103.496,20.1%,
+Senegal,SEN,"18,716,975",Lower middle income,0,1,0.285,51.4%,
+Serbia,SRB,"6,554,490",Upper middle income,5,7,4.347,19.3%,
+Seychelles,SYC,"123,298",High income,3,9,3.781,21.9%,
+Sierra Leone,SLE,"8,730,908",Low income,0,1,0.118,57.0%,
+Singapore,SGP,"5,973,620",High income,5,10,41.000,11.4%,
+Sint Maarten (Dutch part),,"43,637",High income,#N/A,#N/A,#N/A,#N/A,
+Slovak Republic,SVK,"5,382,517",High income,5,8,11.441,11.5%,
+Slovenia,SVN,"2,118,002",High income,5,9,17.361,13.7%,
+Solomon Islands,SLB,"828,922",Lower middle income,4,1,5.194,45.1%,
+Somalia,SOM,"19,331,945",Low income,0,0,0.098,70.3%,
+South Africa,ZAF,"64,377,253",Upper middle income,3,3,12.421,31.7%,ZAF
+South Sudan,SSD,"12,066,098",Low income,#N/A,0,#N/A,71.5%,
+Spain,ESP,"48,317,354",High income,6,9,13.213,8.2%,ESP
+Sri Lanka,LKA,"22,216,299",Lower middle income,1,6,0.462,25.2%,
+St. Kitts and Nevis,KNA,"46,883",High income,3,#N/A,5.668,#N/A,
+St. Lucia,LCA,"179,947",Upper middle income,2,2,3.612,31.7%,
+St. Martin (French part),,"25,535",High income,#N/A,#N/A,#N/A,#N/A,
+St. Vincent and the Grenadines,VCT,"100,270",Upper middle income,2,6,2.394,25.4%,
+Sudan,SDN,"51,055,555",Low income,1,0,0.575,53.2%,SDN
+Suriname,SUR,"637,141",Upper middle income,2,4,7.603,29.1%,
+Sweden,SWE,"10,605,466",High income,4,11,18.952,11.1%,SWE
+Switzerland,CHE,"8,952,850",High income,6,12,45.558,8.2%,CHE
+Syrian Arab Republic,SYR,"25,146,594",Low income,2,3,1.649,34.3%,
+"Taiwan, China",TWN,,High income,#N/A,#N/A,#N/A,#N/A,
+Tajikistan,TJK,"10,688,831",Lower middle income,2,6,0.628,29.4%,
+Tanzania,TZA,"69,553,011",Lower middle income,1,1,0.319,49.5%,TZA
+Thailand,THA,"71,643,937",Upper middle income,2,5,3.643,25.1%,THA
+Timor-Leste,TLS,"1,409,578",Lower middle income,#N/A,0,#N/A,45.5%,
+Togo,TGO,"9,618,422",Low income,0,0,0.355,57.4%,
+Tonga,TON,"103,959",Upper middle income,4,#N/A,7.228,#N/A,
+Trinidad and Tobago,TTO,"1,373,484",High income,3,5,27.234,27.8%,
+Tunisia,TUN,"12,312,841",Lower middle income,2,3,1.878,26.5%,
+Turkiye,TUR,"85,633,304",Upper middle income,4,8,6.394,17.0%,TUR
+Turkmenistan,TKM,"7,556,673",Upper middle income,#N/A,6,#N/A,22.0%,
+Turks and Caicos Islands,TCA,"46,695",High income,#N/A,#N/A,#N/A,#N/A,
+Tuvalu,TUV,"9,569",Upper middle income,4,#N/A,5.827,#N/A,
+Uganda,UGA,"50,699,993",Low income,0,1,0.238,45.7%,UGA
+Ukraine,UKR,"38,420,299",Upper middle income,2,5,3.242,19.7%,UKR
+United Arab Emirates,ARE,"10,984,871",High income,3,7,137.584,21.6%,
+United Kingdom,GBR,"68,961,668",High income,5,7,21.332,8.9%,GBR
+United States,USA,"337,500,000",High income,6,10,146.622,9.8%,USA
+Uruguay,URY,"3,385,638",High income,4,6,5.052,17.4%,
+Uzbekistan,UZB,"36,707,644",Lower middle income,1,6,2.465,26.9%,UZB
+Vanuatu,VUT,"331,473",Lower middle income,4,#N/A,5.025,#N/A,
+"Venezuela, RB",VEN,"28,461,220",Upper middle income,#N/A,1,#N/A,40.3%,
+Viet Nam,VNM,"101,500,000",Lower middle income,3,4,1.308,32.7%,VNM
+Virgin Islands (U.S.),,"103,588",High income,#N/A,#N/A,#N/A,#N/A,
+West Bank and Gaza,PSE,"5,297,103",Lower middle income,#N/A,1,#N/A,30.7%,
+"Yemen, Rep.",YEM,"41,178,521",Low income,#N/A,#N/A,#N/A,#N/A,YEM
+Zambia,ZMB,"21,614,415",Lower middle income,0,0,0.281,41.7%,
+Zimbabwe,ZWE,"16,792,584",Lower middle income,1,2,0.548,46.0%,
